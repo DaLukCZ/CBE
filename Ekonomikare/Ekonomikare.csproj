@@ -177,5 +177,14 @@
   <ItemGroup>
     <None Include="Resources\postup10.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\malebackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\male2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\male3.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

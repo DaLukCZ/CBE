@@ -54,6 +54,12 @@ namespace Ekonomikare
                 0
             ));
             otazky.Add(new Otazka(
+                3,
+                "Jaké je hlavní město Austrálie",
+                new string[4] { "Canberra", "Sydney", "Perth", "Melbourne" },
+                0
+            ));
+            otazky.Add(new Otazka(
                 4,
                 "Jaké je hlavní město Norska?",
                 new string[4] { "Oslo", "Sofia", "Bratislava", "Otava" },
@@ -79,8 +85,7 @@ namespace Ekonomikare
             Otazka otazka = ziskejOtazkuPodleStupne(stupen);
             if (otazka == null)
             {
-                Console.WriteLine("Chyba. nebyla nalezena zadna otazka stupne MAX BYL ZDE");
-                MessageBox.Show("Vyhrál jsi dicku");
+                
                 return;
 
             }
@@ -157,7 +162,10 @@ namespace Ekonomikare
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Close(); // jsem dobrej
+            Form2 form2 = new Form2();
+            this.Close();
+            form2.Close();
+            
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -306,6 +314,16 @@ namespace Ekonomikare
         {
             //simpleSound.Play();
             postup();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
