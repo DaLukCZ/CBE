@@ -1,0 +1,1 @@
+4, "Otázka?", new string[4] { "Nejlíp na druhou", "Dobře", "Skvěle", "Nejlíp" }, 0
