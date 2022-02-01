@@ -11,7 +11,7 @@ using System.Windows.Forms;
 namespace Ekonomikare
 {
     
-    public partial class Form1 : Form
+    public partial class da : Form
     {
         private int stupen = 0;
         private Otazka aktualniOtazka;
@@ -19,7 +19,7 @@ namespace Ekonomikare
         private List<Otazka> otazky = new List<Otazka>();
         SoundPlayer simpleSound = new SoundPlayer(Properties.Resources.znelka);
         ImageList photoList = new ImageList();
-        public Form1()
+        public da()
         {
             photoList.Images.Add(Properties.Resources.postup0);
             photoList.Images.Add(Properties.Resources.postup1);
@@ -164,7 +164,8 @@ namespace Ekonomikare
         private void button1_Click(object sender, EventArgs e)
         {
             Form2 form2 = new Form2();
-            Application.Exit();
+            this.Close();
+            form2.Show();
 
         }
 
