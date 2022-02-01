@@ -82,7 +82,7 @@ namespace Ekonomikare
             this.AutoSize = true;
             this.BackgroundImage = global::Ekonomikare.Properties.Resources.male3;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(597, 791);
+            this.ClientSize = new System.Drawing.Size(593, 787);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.pictureBox1);
@@ -94,6 +94,7 @@ namespace Ekonomikare
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(613, 830);
             this.Name = "Form2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Chcete být ekonomikářem?";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.Form2_Load);

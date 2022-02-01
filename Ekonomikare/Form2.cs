@@ -31,8 +31,10 @@ namespace Ekonomikare
         private void button1_Click(object sender, EventArgs e)
         {
             form1 form1 = new form1();
-            form1.Show();
+            Vitez v = new Vitez();
+            //form1.Show();
             this.Hide();
+            v.Show();
         }
     }
 }

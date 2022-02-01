@@ -61,6 +61,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vitez.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vitez.Designer.cs">
+      <DependentUpon>Vitez.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -77,6 +83,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Vitez.resx">
+      <DependentUpon>Vitez.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -188,6 +197,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Ekonomi.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ekoapproved.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\konfety.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\konfety2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jenseuc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
