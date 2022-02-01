@@ -150,17 +150,24 @@ namespace Ekonomikare
         private void zkontrolujOdpoved()
         {
             List<Button> buttons = new List<Button>(new Button[] { button1, button2, button3, button4 });
-            if (aktualniOtazka.spravnaOdpoved == tlacidlo)
+            try
             {
-                stupen += 1;
-                zobrazOtazku();
-            }
-            else
-            {
-                buttons[tlacidlo].BackColor = Color.Red;
-                buttons[aktualniOtazka.spravnaOdpoved].BackColor = Color.Green;
-                MessageBox.Show("Prohál jsi, zkončil jsi na " + stupen + "." + " stupni");
+                if (aktualniOtazka.spravnaOdpoved == tlacidlo)
+                {
+                    stupen += 1;
+                    zobrazOtazku();
+                }
+                else
+                {
+                    buttons[tlacidlo].BackColor = Color.Red;
+                    buttons[aktualniOtazka.spravnaOdpoved].BackColor = Color.Green;
+                    MessageBox.Show("Prohál jsi, skončil jsi na " + stupen + "." + " stupni");
 
+                }
+            }
+            catch (ArgumentOutOfRangeException argumentOutOfRangeException)
+            {
+                MessageBox.Show("Prosím vyber odpověd");
             }
         }
         private void mark(int odpovedId)
