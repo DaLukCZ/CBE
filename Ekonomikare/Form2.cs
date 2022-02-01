@@ -30,9 +30,9 @@ namespace Ekonomikare
 
         private void button1_Click(object sender, EventArgs e)
         {
-            da form1 = new da();
+            form1 form1 = new form1();
             form1.Show();
-            this.Visible = false;
+            this.Hide();
         }
     }
 }

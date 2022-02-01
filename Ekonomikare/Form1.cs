@@ -11,8 +11,8 @@ using System.Windows.Forms;
 
 namespace Ekonomikare
 {
-    
-    public partial class da : Form
+
+    public partial class form1 : Form
     {
         private int stupen = 0;
         private int tlacidlo = 5;
@@ -21,7 +21,7 @@ namespace Ekonomikare
         private List<Otazka> otazky = new List<Otazka>();
         SoundPlayer simpleSound = new SoundPlayer(Properties.Resources.znelka);
         ImageList photoList = new ImageList();
-        public da()
+        public form1()
         {
             photoList.Images.Add(Properties.Resources.postup0);
             photoList.Images.Add(Properties.Resources.postup1);
@@ -93,7 +93,7 @@ namespace Ekonomikare
             Otazka otazka = ziskejOtazkuPodleStupne(stupen);
             if (otazka == null)
             {
-                
+
                 return;
 
             }
@@ -159,7 +159,7 @@ namespace Ekonomikare
             {
                 buttons[tlacidlo].BackColor = Color.Red;
                 buttons[aktualniOtazka.spravnaOdpoved].BackColor = Color.Green;
-                MessageBox.Show("Prohál jsi, zkončil jsi na " + stupen +"." +" stupni");
+                MessageBox.Show("Prohál jsi, zkončil jsi na " + stupen + "." + " stupni");
 
             }
         }
@@ -167,6 +167,15 @@ namespace Ekonomikare
         {
             List<Button> buttons = new List<Button>(new Button[] { button1, button2, button3, button4 });
             buttons[odpovedId].BackColor = Color.DodgerBlue;
+        }
+        private void resetColor()
+        {
+            List<Button> buttons = new List<Button>(new Button[] { button1, button2, button3, button4 });
+            for (int i = 0; i < 4; i++)
+            {
+                buttons[i].BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            }
+
         }
 
 
@@ -185,23 +194,30 @@ namespace Ekonomikare
 
         }
 
+        /*
+         * 50/50
+         */
         private void button6_Click(object sender, EventArgs e)
         {
-            int prvniRandomcislo = random.Next(4);
-            int druheRandomCislo = random.Next(4);
+            resetColor();
             List<Button> buttons = new List<Button>(new Button[] { button1, button2, button3, button4 });
+            List<int> cisla = new List<int>();
+
             for (int i = 0; i < 4; i++)
             {
-                if (prvniRandomcislo == aktualniOtazka.spravnaOdpoved || druheRandomCislo == aktualniOtazka.spravnaOdpoved || druheRandomCislo == prvniRandomcislo)
+                if (aktualniOtazka.spravnaOdpoved != i)
                 {
-                    prvniRandomcislo = random.Next(4);
-                    druheRandomCislo = random.Next(4);
+                    cisla.Add(i);
                 }
             }
-            buttons[prvniRandomcislo].Text = "";
-            buttons[druheRandomCislo].Text = "";
-            buttons[prvniRandomcislo].Enabled = false;
-            buttons[druheRandomCislo].Enabled = false;
+
+            for (int i = 0; i < 2; i++)
+            {
+                int cislo = cisla[random.Next(cisla.Count)];
+                buttons[cislo].Text = "";
+                buttons[cislo].Enabled = false;
+                cisla.Remove(cislo);
+            }
             button_5050.Enabled = false;
             button_5050.BackgroundImage = Properties.Resources._5050Disabled;
 
@@ -216,17 +232,17 @@ namespace Ekonomikare
         private void button_ask_Click(object sender, EventArgs e)
         {
             List<Label> odpovedi = new List<Label>(new Label[] {
-        label_Od1,
-        label_Od2,
-        label_Od3,
-        label_Od4
-      });
+                    label_Od1,
+                    label_Od2,
+                    label_Od3,
+                    label_Od4
+                  });
             List<ProgressBar> progressBars = new List<ProgressBar>(new ProgressBar[] {
-        progressBar1,
-        progressBar2,
-        progressBar3,
-        progressBar4
-      });
+                    progressBar1,
+                    progressBar2,
+                    progressBar3,
+                    progressBar4
+                });
             Random random = new Random();
             int spravnaOdpoved = aktualniOtazka.spravnaOdpoved; // aktualniOtazka.spravnaOdpoved;
             double percent = 70.0;
@@ -293,32 +309,29 @@ namespace Ekonomikare
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            tlacidlo = 0;
-            mark(0);
-            postup();
-            panel_graf.Visible = false;
+            click(0);
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            tlacidlo = 1;
-            mark(1);
-            postup();
-            panel_graf.Visible = false;
+            click(1);
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            tlacidlo = 2;
-            mark(2);
-            postup();
-            panel_graf.Visible = false;
+            click(2);
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            tlacidlo = 3;
-            mark(3);
+            click(3);
+        }
+
+        private void click(int id)
+        {
+            tlacidlo = id;
+            resetColor();
+            mark(id);
             postup();
             panel_graf.Visible = false;
         }
@@ -352,6 +365,11 @@ namespace Ekonomikare
         private void button_Zkontroluj_Click(object sender, EventArgs e)
         {
             zkontrolujOdpoved();
+        }
+
+        private void tableLayoutPanel1_Paint_1(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

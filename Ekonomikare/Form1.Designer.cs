@@ -1,7 +1,7 @@
 ﻿
 namespace Ekonomikare
 {
-    partial class da
+    partial class form1
     {
         /// <summary>
         /// Vyžaduje se proměnná návrháře.
@@ -29,11 +29,13 @@ namespace Ekonomikare
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(da));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(form1));
             this.button_exit = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button_Zkontroluj = new System.Windows.Forms.Button();
             this.panel_graf = new System.Windows.Forms.Panel();
             this.label_Od4 = new System.Windows.Forms.Label();
             this.label_Od3 = new System.Windows.Forms.Label();
@@ -58,7 +60,6 @@ namespace Ekonomikare
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.button_Zkontroluj = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel_graf.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -72,9 +73,9 @@ namespace Ekonomikare
             this.button_exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button_exit.Cursor = System.Windows.Forms.Cursors.Default;
             this.button_exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button_exit.Location = new System.Drawing.Point(1615, 36);
+            this.button_exit.Location = new System.Drawing.Point(1619, 36);
             this.button_exit.Name = "button_exit";
-            this.button_exit.Size = new System.Drawing.Size(231, 101);
+            this.button_exit.Size = new System.Drawing.Size(219, 82);
             this.button_exit.TabIndex = 0;
             this.button_exit.UseVisualStyleBackColor = false;
             this.button_exit.Click += new System.EventHandler(this.button1_Click);
@@ -88,7 +89,7 @@ namespace Ekonomikare
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(291, 145);
             this.button4.TabIndex = 4;
-            this.button4.Text = "button4";
+            this.button4.Text = "Odpověd 4";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -105,6 +106,7 @@ namespace Ekonomikare
             // 
             this.panel1.BackgroundImage = global::Ekonomikare.Properties.Resources.background_;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.button_Zkontroluj);
             this.panel1.Controls.Add(this.panel_graf);
             this.panel1.Controls.Add(this.pictureBox1);
@@ -119,9 +121,30 @@ namespace Ekonomikare
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1829, 977);
+            this.panel1.Size = new System.Drawing.Size(1904, 1041);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(675, 511);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 13);
+            this.label1.TabIndex = 14;
+            // 
+            // button_Zkontroluj
+            // 
+            this.button_Zkontroluj.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button_Zkontroluj.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Zkontroluj.ForeColor = System.Drawing.Color.White;
+            this.button_Zkontroluj.Location = new System.Drawing.Point(382, 759);
+            this.button_Zkontroluj.Name = "button_Zkontroluj";
+            this.button_Zkontroluj.Size = new System.Drawing.Size(210, 93);
+            this.button_Zkontroluj.TabIndex = 13;
+            this.button_Zkontroluj.Text = "Zkontrolovat";
+            this.button_Zkontroluj.UseVisualStyleBackColor = false;
+            this.button_Zkontroluj.Click += new System.EventHandler(this.button_Zkontroluj_Click);
             // 
             // panel_graf
             // 
@@ -141,7 +164,7 @@ namespace Ekonomikare
             this.panel_graf.Controls.Add(this.progressBar2);
             this.panel_graf.Controls.Add(this.progressBar1);
             this.panel_graf.Font = new System.Drawing.Font("Yu Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.panel_graf.Location = new System.Drawing.Point(1188, 36);
+            this.panel_graf.Location = new System.Drawing.Point(1172, 36);
             this.panel_graf.Name = "panel_graf";
             this.panel_graf.Size = new System.Drawing.Size(352, 359);
             this.panel_graf.TabIndex = 12;
@@ -323,6 +346,7 @@ namespace Ekonomikare
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 100F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(346, 100);
             this.tableLayoutPanel1.TabIndex = 10;
+            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint_1);
             // 
             // button8
             // 
@@ -373,7 +397,7 @@ namespace Ekonomikare
             this.button_otazka.Name = "button_otazka";
             this.button_otazka.Size = new System.Drawing.Size(1128, 145);
             this.button_otazka.TabIndex = 9;
-            this.button_otazka.Text = "button5";
+            this.button_otazka.Text = "Otazka";
             this.button_otazka.UseVisualStyleBackColor = false;
             // 
             // button3
@@ -385,7 +409,7 @@ namespace Ekonomikare
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(291, 145);
             this.button3.TabIndex = 8;
-            this.button3.Text = "button3";
+            this.button3.Text = "Odpověd 3";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -398,7 +422,7 @@ namespace Ekonomikare
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(291, 145);
             this.button2.TabIndex = 7;
-            this.button2.Text = "button2";
+            this.button2.Text = "Odpověd 2";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -411,36 +435,24 @@ namespace Ekonomikare
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(291, 145);
             this.button1.TabIndex = 6;
-            this.button1.Text = "button1";
+            this.button1.Text = "Odpověd 1";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // button_Zkontroluj
-            // 
-            this.button_Zkontroluj.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button_Zkontroluj.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_Zkontroluj.ForeColor = System.Drawing.Color.White;
-            this.button_Zkontroluj.Location = new System.Drawing.Point(382, 759);
-            this.button_Zkontroluj.Name = "button_Zkontroluj";
-            this.button_Zkontroluj.Size = new System.Drawing.Size(210, 93);
-            this.button_Zkontroluj.TabIndex = 13;
-            this.button_Zkontroluj.Text = "Zkontrolovat";
-            this.button_Zkontroluj.UseVisualStyleBackColor = false;
-            this.button_Zkontroluj.Click += new System.EventHandler(this.button_Zkontroluj_Click);
-            // 
-            // da
+            // form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1829, 977);
+            this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "da";
+            this.Name = "form1";
             this.Text = "Chcete být milionářem?";
             this.Load += new System.EventHandler(this.Form1_Load_1);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.panel_graf.ResumeLayout(false);
             this.panel_graf.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -480,6 +492,7 @@ namespace Ekonomikare
         private System.Windows.Forms.Button button_otazka;
         private System.Windows.Forms.Button button_ask;
         private System.Windows.Forms.Button button_Zkontroluj;
+        private System.Windows.Forms.Label label1;
     }
 }
 
