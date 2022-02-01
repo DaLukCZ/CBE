@@ -8,12 +8,14 @@ using System.Linq;
 using System.Media;
 using System.Windows.Forms;
 
+
 namespace Ekonomikare
 {
     
     public partial class da : Form
     {
         private int stupen = 0;
+        private int tlacidlo = 5;
         private Otazka aktualniOtazka;
         private Random random = new Random();
         private List<Otazka> otazky = new List<Otazka>();
@@ -83,6 +85,11 @@ namespace Ekonomikare
 
         private void zobrazOtazku()
         {
+            tlacidlo = 5;
+            button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             Otazka otazka = ziskejOtazkuPodleStupne(stupen);
             if (otazka == null)
             {
@@ -140,19 +147,28 @@ namespace Ekonomikare
             return null;
         }
 
-        private void zkontrolujOdpoved(int odpovedId)
+        private void zkontrolujOdpoved()
         {
-            if (aktualniOtazka.spravnaOdpoved == odpovedId)
+            List<Button> buttons = new List<Button>(new Button[] { button1, button2, button3, button4 });
+            if (aktualniOtazka.spravnaOdpoved == tlacidlo)
             {
                 stupen += 1;
-                //Console.WriteLine(+stupen);
                 zobrazOtazku();
             }
             else
             {
-                Console.WriteLine("Nespravna odpoved - " + odpovedId + "  - spravna " + aktualniOtazka.spravnaOdpoved);
+                buttons[tlacidlo].BackColor = Color.Red;
+                buttons[aktualniOtazka.spravnaOdpoved].BackColor = Color.Green;
+                MessageBox.Show("Prohál jsi, zkončil jsi na " + stupen +"." +" stupni");
+
             }
         }
+        private void mark(int odpovedId)
+        {
+            List<Button> buttons = new List<Button>(new Button[] { button1, button2, button3, button4 });
+            buttons[odpovedId].BackColor = Color.DodgerBlue;
+        }
+
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
@@ -277,28 +293,32 @@ namespace Ekonomikare
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            zkontrolujOdpoved(0);
+            tlacidlo = 0;
+            mark(0);
             postup();
             panel_graf.Visible = false;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            zkontrolujOdpoved(1);
+            tlacidlo = 1;
+            mark(1);
             postup();
             panel_graf.Visible = false;
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            zkontrolujOdpoved(2);
+            tlacidlo = 2;
+            mark(2);
             postup();
             panel_graf.Visible = false;
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            zkontrolujOdpoved(3);
+            tlacidlo = 3;
+            mark(3);
             postup();
             panel_graf.Visible = false;
         }
@@ -327,6 +347,11 @@ namespace Ekonomikare
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button_Zkontroluj_Click(object sender, EventArgs e)
+        {
+            zkontrolujOdpoved();
         }
     }
 }

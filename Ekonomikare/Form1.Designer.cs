@@ -58,6 +58,7 @@ namespace Ekonomikare
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.button_Zkontroluj = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel_graf.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -104,6 +105,7 @@ namespace Ekonomikare
             // 
             this.panel1.BackgroundImage = global::Ekonomikare.Properties.Resources.background_;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.button_Zkontroluj);
             this.panel1.Controls.Add(this.panel_graf);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.tableLayoutPanel1);
@@ -413,6 +415,19 @@ namespace Ekonomikare
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
+            // button_Zkontroluj
+            // 
+            this.button_Zkontroluj.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button_Zkontroluj.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Zkontroluj.ForeColor = System.Drawing.Color.White;
+            this.button_Zkontroluj.Location = new System.Drawing.Point(382, 759);
+            this.button_Zkontroluj.Name = "button_Zkontroluj";
+            this.button_Zkontroluj.Size = new System.Drawing.Size(210, 93);
+            this.button_Zkontroluj.TabIndex = 13;
+            this.button_Zkontroluj.Text = "Zkontrolovat";
+            this.button_Zkontroluj.UseVisualStyleBackColor = false;
+            this.button_Zkontroluj.Click += new System.EventHandler(this.button_Zkontroluj_Click);
+            // 
             // da
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -464,6 +479,7 @@ namespace Ekonomikare
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Button button_otazka;
         private System.Windows.Forms.Button button_ask;
+        private System.Windows.Forms.Button button_Zkontroluj;
     }
 }
 
