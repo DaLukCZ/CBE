@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 namespace Ekonomikare
 {
+    
     public partial class Form1 : Form
     {
         private int stupen = 0;
@@ -163,9 +164,8 @@ namespace Ekonomikare
         private void button1_Click(object sender, EventArgs e)
         {
             Form2 form2 = new Form2();
-            this.Close();
-            form2.Close();
-            
+            Application.Exit();
+
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -312,8 +312,10 @@ namespace Ekonomikare
 
         private void Form1_Load_1(object sender, EventArgs e)
         {
+            Form2 form2 = new Form2();
             //simpleSound.Play();
             postup();
+            form2.Visible = false;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

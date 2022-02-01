@@ -14,9 +14,7 @@ namespace Ekonomikare
     {
         public Form2()
         {
-            Form1 form1 = new Form1();
-            InitializeComponent();
-            form1.Visible = false;
+            InitializeComponent();            
         }
 
 
@@ -27,16 +25,14 @@ namespace Ekonomikare
 
         private void button2_Click(object sender, EventArgs e)
         {
-            //TODO: dodělej tlačítko pro vypnutí programu
-            //je nutno udělat podmínku v program.cs
-            //form1 se vytvoří, jen, když button 1 je click
+            Application.Exit();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             Form1 form1 = new Form1();
-            this.Close();
-            form1.Visible = true;
+            form1.Show();
+            this.Visible = false;
         }
     }
 }
