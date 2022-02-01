@@ -115,7 +115,6 @@ namespace Ekonomikare
                 list.Remove(odpoved);
             }
             otazka.odpovedi = odpovedi;
-            Console.WriteLine(otazka.odpovedi);
             button_otazka.Text = otazka.otazka;
             button1.Enabled = true;
             button2.Enabled = true;
@@ -156,6 +155,7 @@ namespace Ekonomikare
                 {
                     stupen += 1;
                     zobrazOtazku();
+                    postup();
                 }
                 else
                 {
@@ -339,7 +339,6 @@ namespace Ekonomikare
             tlacidlo = id;
             resetColor();
             mark(id);
-            postup();
             panel_graf.Visible = false;
         }
 
