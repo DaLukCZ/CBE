@@ -30,50 +30,50 @@ namespace Ekonomikare
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.button_exit = new System.Windows.Forms.Button();
+            this.button_start = new System.Windows.Forms.Button();
+            this.pictureBox_logo = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_logo)).BeginInit();
             this.SuspendLayout();
             // 
-            // button2
+            // button_exit
             // 
-            this.button2.AutoSize = true;
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button2.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(184, 529);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(225, 102);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "Ukončit";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button_exit.AutoSize = true;
+            this.button_exit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button_exit.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_exit.ForeColor = System.Drawing.Color.White;
+            this.button_exit.Location = new System.Drawing.Point(184, 529);
+            this.button_exit.Name = "button_exit";
+            this.button_exit.Size = new System.Drawing.Size(225, 102);
+            this.button_exit.TabIndex = 14;
+            this.button_exit.Text = "Ukončit";
+            this.button_exit.UseVisualStyleBackColor = false;
+            this.button_exit.Click += new System.EventHandler(this.button_Exit_Click);
             // 
-            // button1
+            // button_start
             // 
-            this.button1.AutoSize = true;
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button1.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(184, 385);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(225, 102);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Začít hru";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button_start.AutoSize = true;
+            this.button_start.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button_start.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_start.ForeColor = System.Drawing.Color.White;
+            this.button_start.Location = new System.Drawing.Point(184, 385);
+            this.button_start.Name = "button_start";
+            this.button_start.Size = new System.Drawing.Size(225, 102);
+            this.button_start.TabIndex = 15;
+            this.button_start.Text = "Začít hru";
+            this.button_start.UseVisualStyleBackColor = false;
+            this.button_start.Click += new System.EventHandler(this.button_Start_Click);
             // 
-            // pictureBox1
+            // pictureBox_logo
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = global::Ekonomikare.Properties.Resources.Ekonomi;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(141, 71);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(314, 269);
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
+            this.pictureBox_logo.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox_logo.BackgroundImage = global::Ekonomikare.Properties.Resources.Ekonomi;
+            this.pictureBox_logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox_logo.Location = new System.Drawing.Point(141, 71);
+            this.pictureBox_logo.Name = "pictureBox_logo";
+            this.pictureBox_logo.Size = new System.Drawing.Size(314, 269);
+            this.pictureBox_logo.TabIndex = 12;
+            this.pictureBox_logo.TabStop = false;
             // 
             // Form2
             // 
@@ -83,9 +83,9 @@ namespace Ekonomikare
             this.BackgroundImage = global::Ekonomikare.Properties.Resources.male3;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(593, 787);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.button_start);
+            this.Controls.Add(this.button_exit);
+            this.Controls.Add(this.pictureBox_logo);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -98,7 +98,7 @@ namespace Ekonomikare
             this.Text = "Chcete být ekonomikářem?";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.Form2_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_logo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -106,8 +106,8 @@ namespace Ekonomikare
 
         #endregion
 
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button_exit;
+        private System.Windows.Forms.Button button_start;
+        private System.Windows.Forms.PictureBox pictureBox_logo;
     }
 }

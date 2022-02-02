@@ -31,7 +31,7 @@ namespace Ekonomikare
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(form1));
             this.button_exit = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.button_Odpoved4 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -57,9 +57,9 @@ namespace Ekonomikare
             this.button7 = new System.Windows.Forms.Button();
             this.button_5050 = new System.Windows.Forms.Button();
             this.button_otazka = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.button_Odpoved3 = new System.Windows.Forms.Button();
+            this.button_Odpoved2 = new System.Windows.Forms.Button();
+            this.button_Odpoved1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel_graf.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -78,24 +78,24 @@ namespace Ekonomikare
             this.button_exit.Size = new System.Drawing.Size(219, 82);
             this.button_exit.TabIndex = 0;
             this.button_exit.UseVisualStyleBackColor = false;
-            this.button_exit.Click += new System.EventHandler(this.button1_Click);
+            this.button_exit.Click += new System.EventHandler(this.button_Menu_Click);
             // 
-            // button4
+            // button_Odpoved4
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button4.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(1001, 823);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(291, 145);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Odpověd 4";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.button_Odpoved4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button_Odpoved4.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Odpoved4.ForeColor = System.Drawing.Color.White;
+            this.button_Odpoved4.Location = new System.Drawing.Point(1001, 823);
+            this.button_Odpoved4.Name = "button_Odpoved4";
+            this.button_Odpoved4.Size = new System.Drawing.Size(291, 145);
+            this.button_Odpoved4.TabIndex = 4;
+            this.button_Odpoved4.Text = "Odpověd 4";
+            this.button_Odpoved4.UseVisualStyleBackColor = false;
+            this.button_Odpoved4.Click += new System.EventHandler(this.button_Odpoved4_Click);
             // 
             // panel2
             // 
-            this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
+            this.panel2.BackgroundImage = global::Ekonomikare.Properties.Resources.postup0;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel2.Location = new System.Drawing.Point(1555, 299);
             this.panel2.Name = "panel2";
@@ -112,18 +112,17 @@ namespace Ekonomikare
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.tableLayoutPanel1);
             this.panel1.Controls.Add(this.button_otazka);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.button_Odpoved3);
+            this.panel1.Controls.Add(this.button_Odpoved2);
+            this.panel1.Controls.Add(this.button_Odpoved1);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.button4);
+            this.panel1.Controls.Add(this.button_Odpoved4);
             this.panel1.Controls.Add(this.button_exit);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1904, 1041);
             this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label1
             // 
@@ -227,7 +226,7 @@ namespace Ekonomikare
             this.button_close.TabIndex = 9;
             this.button_close.Text = "Zavřit";
             this.button_close.UseVisualStyleBackColor = true;
-            this.button_close.Click += new System.EventHandler(this.button_close_Click);
+            this.button_close.Click += new System.EventHandler(this.button_GrafClose_Click);
             // 
             // button_ask
             // 
@@ -239,7 +238,7 @@ namespace Ekonomikare
             this.button_ask.TabIndex = 8;
             this.button_ask.Text = "Hlasovat";
             this.button_ask.UseVisualStyleBackColor = true;
-            this.button_ask.Click += new System.EventHandler(this.button_ask_Click);
+            this.button_ask.Click += new System.EventHandler(this.button_Ask_Click);
             // 
             // label_D
             // 
@@ -327,7 +326,6 @@ namespace Ekonomikare
             this.pictureBox1.Size = new System.Drawing.Size(410, 359);
             this.pictureBox1.TabIndex = 11;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -346,7 +344,6 @@ namespace Ekonomikare
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 100F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(346, 100);
             this.tableLayoutPanel1.TabIndex = 10;
-            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint_1);
             // 
             // button8
             // 
@@ -359,7 +356,7 @@ namespace Ekonomikare
             this.button8.Size = new System.Drawing.Size(110, 94);
             this.button8.TabIndex = 2;
             this.button8.UseVisualStyleBackColor = false;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
+            this.button8.Click += new System.EventHandler(this.button_PritelTelefon_Click);
             // 
             // button7
             // 
@@ -372,7 +369,7 @@ namespace Ekonomikare
             this.button7.Size = new System.Drawing.Size(109, 94);
             this.button7.TabIndex = 1;
             this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.button7.Click += new System.EventHandler(this.button_RadaPublika_Click);
             // 
             // button_5050
             // 
@@ -385,7 +382,7 @@ namespace Ekonomikare
             this.button_5050.Size = new System.Drawing.Size(109, 94);
             this.button_5050.TabIndex = 0;
             this.button_5050.UseVisualStyleBackColor = false;
-            this.button_5050.Click += new System.EventHandler(this.button6_Click);
+            this.button_5050.Click += new System.EventHandler(this.button_5050_Click);
             // 
             // button_otazka
             // 
@@ -400,44 +397,44 @@ namespace Ekonomikare
             this.button_otazka.Text = "Otazka";
             this.button_otazka.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // button_Odpoved3
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button3.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(628, 823);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(291, 145);
-            this.button3.TabIndex = 8;
-            this.button3.Text = "Odpověd 3";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button_Odpoved3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button_Odpoved3.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Odpoved3.ForeColor = System.Drawing.Color.White;
+            this.button_Odpoved3.Location = new System.Drawing.Point(628, 823);
+            this.button_Odpoved3.Name = "button_Odpoved3";
+            this.button_Odpoved3.Size = new System.Drawing.Size(291, 145);
+            this.button_Odpoved3.TabIndex = 8;
+            this.button_Odpoved3.Text = "Odpověd 3";
+            this.button_Odpoved3.UseVisualStyleBackColor = false;
+            this.button_Odpoved3.Click += new System.EventHandler(this.button_Odpoved3_Click);
             // 
-            // button2
+            // button_Odpoved2
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button2.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(1001, 641);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(291, 145);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Odpověd 2";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button_Odpoved2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button_Odpoved2.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Odpoved2.ForeColor = System.Drawing.Color.White;
+            this.button_Odpoved2.Location = new System.Drawing.Point(1001, 641);
+            this.button_Odpoved2.Name = "button_Odpoved2";
+            this.button_Odpoved2.Size = new System.Drawing.Size(291, 145);
+            this.button_Odpoved2.TabIndex = 7;
+            this.button_Odpoved2.Text = "Odpověd 2";
+            this.button_Odpoved2.UseVisualStyleBackColor = false;
+            this.button_Odpoved2.Click += new System.EventHandler(this.button_Odpoved2_Click);
             // 
-            // button1
+            // button_Odpoved1
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button1.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(628, 641);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(291, 145);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Odpověd 1";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.button_Odpoved1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button_Odpoved1.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Odpoved1.ForeColor = System.Drawing.Color.White;
+            this.button_Odpoved1.Location = new System.Drawing.Point(628, 641);
+            this.button_Odpoved1.Name = "button_Odpoved1";
+            this.button_Odpoved1.Size = new System.Drawing.Size(291, 145);
+            this.button_Odpoved1.TabIndex = 6;
+            this.button_Odpoved1.Text = "Odpověd 1";
+            this.button_Odpoved1.UseVisualStyleBackColor = false;
+            this.button_Odpoved1.Click += new System.EventHandler(this.button_Odpoved1_Click);
             // 
             // form1
             // 
@@ -464,12 +461,12 @@ namespace Ekonomikare
         #endregion
 
         private System.Windows.Forms.Button button_exit;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button_Odpoved4;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button_Odpoved1;
+        private System.Windows.Forms.Button button_Odpoved3;
+        private System.Windows.Forms.Button button_Odpoved2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button7;

@@ -1,10 +1,7 @@
 ﻿using Milionar;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
 using System.Media;
 using System.Windows.Forms;
 
@@ -14,6 +11,7 @@ namespace Ekonomikare
 
     public partial class form1 : Form
     {
+        //parametry
         private int stupen = 0;
         private int tlacidlo = 5;
         private Otazka aktualniOtazka;
@@ -38,58 +36,77 @@ namespace Ekonomikare
             FormBorderStyle = FormBorderStyle.None;
             WindowState = FormWindowState.Maximized;
 
-            otazky.Add(new Otazka(
+            addOtazka(
                 0,
                 "Jaké je hlavní město Thajska?",
                 new string[4] { "Bangkok", "Tokyo", "Sapporo", "Singapur" },
                 0
-            ));
-            otazky.Add(new Otazka(
+            );
+            addOtazka(
                 1,
                 "Jaké je hlavní město Japonska",
                 new string[4] { "Tokyo", "Praha", "Berlin", "Peking" },
                 0
-            ));
-            otazky.Add(new Otazka(
+            );
+            addOtazka(
                 2,
                 "Jaké je hlavní město Egypta",
                 new string[4] { "Káhira", "Moskva", "Denver", "Singapur" },
                 0
-            ));
-            otazky.Add(new Otazka(
+            );
+            addOtazka(
                 3,
                 "Jaké je hlavní město Austrálie",
                 new string[4] { "Canberra", "Sydney", "Perth", "Melbourne" },
                 0
-            ));
-            otazky.Add(new Otazka(
+            );
+            addOtazka(
                 4,
                 "Jaké je hlavní město Norska?",
                 new string[4] { "Oslo", "Sofia", "Bratislava", "Otava" },
                 0
-            ));
-            otazky.Add(new Otazka(
+            );
+            addOtazka(
                 5,
                 "Jaké je hlavní město Ugandy?",
                 new string[4] { "SupaKicka", "MegaKicka", "HopaKicka", "Mafia" },
                 0
-            ));
-            otazky.Add(new Otazka(
+            );
+            addOtazka(
                 6,
                 "Jaké je hlavní město Česka?",
                 new string[4] { "Praha", "Mamka", "HopaKicka", "Mafia" },
                 0
-            ));
+                );
             zobrazOtazku();
         }
 
+        //form1
+        private void Form1_Load_1(object sender, EventArgs e)
+        {
+            //simpleSound.Play();
+            postup();
+        }
+
+        //addOtazka
+        private void addOtazka(int stupen, string otazka, string[] odpovedi, int spravnaOdpoved)
+        {
+            otazky.Add(new Otazka(
+                stupen,
+                otazka,
+                odpovedi,
+                spravnaOdpoved
+            ));
+        }
+
+        //zobrazOtazku
         private void zobrazOtazku()
         {
             tlacidlo = 5;
-            button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            button_Odpoved1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            button_Odpoved2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            button_Odpoved3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            button_Odpoved4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             Otazka otazka = ziskejOtazkuPodleStupne(stupen);
             if (otazka == null)
             {
@@ -116,16 +133,17 @@ namespace Ekonomikare
             }
             otazka.odpovedi = odpovedi;
             button_otazka.Text = otazka.otazka;
-            button1.Enabled = true;
-            button2.Enabled = true;
-            button3.Enabled = true;
-            button4.Enabled = true;
-            button1.Text = "A) " + odpovedi[0];
-            button2.Text = "B) " + odpovedi[1];
-            button3.Text = "C) " + odpovedi[2];
-            button4.Text = "D) " + odpovedi[3];
+            button_Odpoved1.Enabled = true;
+            button_Odpoved2.Enabled = true;
+            button_Odpoved3.Enabled = true;
+            button_Odpoved4.Enabled = true;
+            button_Odpoved1.Text = "A) " + odpovedi[0];
+            button_Odpoved2.Text = "B) " + odpovedi[1];
+            button_Odpoved3.Text = "C) " + odpovedi[2];
+            button_Odpoved4.Text = "D) " + odpovedi[3];
         }
 
+        //ziskejOtazkuPodleStupne
         private Otazka ziskejOtazkuPodleStupne(int stupen)
         {
             List<Otazka> stupenOtazky = new List<Otazka>();
@@ -146,38 +164,63 @@ namespace Ekonomikare
             return null;
         }
 
+        //zkontroluj
         private void zkontrolujOdpoved()
         {
-            List<Button> buttons = new List<Button>(new Button[] { button1, button2, button3, button4 });
+            List<Button> buttons = new List<Button>(new Button[] { button_Odpoved1, button_Odpoved2, button_Odpoved3, button_Odpoved4 });
             try
             {
                 if (aktualniOtazka.spravnaOdpoved == tlacidlo)
                 {
-                    stupen += 1;
-                    zobrazOtazku();
-                    postup();
+                    if (stupen != 9)
+                    {
+                        stupen += 1;
+                        zobrazOtazku();
+                        postup();
+                    }
+                    else
+                    {
+                        this.Hide();
+                        Vitez v = new Vitez();
+                        v.Show();
+                    }
                 }
                 else
                 {
                     buttons[tlacidlo].BackColor = Color.Red;
                     buttons[aktualniOtazka.spravnaOdpoved].BackColor = Color.Green;
-                    MessageBox.Show("Prohál jsi, skončil jsi na " + stupen + "." + " stupni");
-
+                    if (stupen >= 0 && stupen <= 2)
+                    {
+                        MessageBox.Show("Odcházíš stejně jako jsi přišel");
+                    }
+                    else if (stupen >= 3 && stupen <= 6)//záchraný bod 4
+                    {
+                        MessageBox.Show("Blahopřejeme odcházíš o 10Kč bohatší");
+                        
+                    }
+                    else if (stupen >= 7 && stupen <= 8)//záchraný bod 8
+                    {
+                        MessageBox.Show("Blahopřejeme odcházíš 200Kč bohatší");
+                    }
                 }
             }
-            catch (ArgumentOutOfRangeException argumentOutOfRangeException)
+            catch (ArgumentOutOfRangeException e)
             {
                 MessageBox.Show("Prosím vyber odpověd");
             }
         }
+
+        //mark
         private void mark(int odpovedId)
         {
-            List<Button> buttons = new List<Button>(new Button[] { button1, button2, button3, button4 });
+            List<Button> buttons = new List<Button>(new Button[] { button_Odpoved1, button_Odpoved2, button_Odpoved3, button_Odpoved4 });
             buttons[odpovedId].BackColor = Color.DodgerBlue;
         }
+
+        //resetColor
         private void resetColor()
         {
-            List<Button> buttons = new List<Button>(new Button[] { button1, button2, button3, button4 });
+            List<Button> buttons = new List<Button>(new Button[] { button_Odpoved1, button_Odpoved2, button_Odpoved3, button_Odpoved4 });
             for (int i = 0; i < 4; i++)
             {
                 buttons[i].BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -185,29 +228,19 @@ namespace Ekonomikare
 
         }
 
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-            FormBorderStyle = FormBorderStyle.None;
-            WindowState = FormWindowState.Maximized;
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        //MenuButton
+        private void button_Menu_Click(object sender, EventArgs e)
         {
             Form2 form2 = new Form2();
             this.Close();
             form2.Show();
-
         }
 
-        /*
-         * 50/50
-         */
-        private void button6_Click(object sender, EventArgs e)
+        //50/50
+        private void button_5050_Click(object sender, EventArgs e)
         {
             resetColor();
-            List<Button> buttons = new List<Button>(new Button[] { button1, button2, button3, button4 });
+            List<Button> buttons = new List<Button>(new Button[] { button_Odpoved1, button_Odpoved2, button_Odpoved3, button_Odpoved4 });
             List<int> cisla = new List<int>();
 
             for (int i = 0; i < 4; i++)
@@ -227,31 +260,20 @@ namespace Ekonomikare
             }
             button_5050.Enabled = false;
             button_5050.BackgroundImage = Properties.Resources._5050Disabled;
-
-
         }
 
-        private void button7_Click(object sender, EventArgs e)
+        //RadaPublika
+        private void button_RadaPublika_Click(object sender, EventArgs e)
         {
             panel_graf.Visible = true;
         }
 
-        private void button_ask_Click(object sender, EventArgs e)
+        //AskButton
+        private void button_Ask_Click(object sender, EventArgs e)
         {
-            List<Label> odpovedi = new List<Label>(new Label[] {
-                    label_Od1,
-                    label_Od2,
-                    label_Od3,
-                    label_Od4
-                  });
-            List<ProgressBar> progressBars = new List<ProgressBar>(new ProgressBar[] {
-                    progressBar1,
-                    progressBar2,
-                    progressBar3,
-                    progressBar4
-                });
-            Random random = new Random();
-            int spravnaOdpoved = aktualniOtazka.spravnaOdpoved; // aktualniOtazka.spravnaOdpoved;
+            List<Label> odpovedi = new List<Label>(new Label[] { label_Od1, label_Od2, label_Od3, label_Od4 });
+            List<ProgressBar> progressBars = new List<ProgressBar>(new ProgressBar[] { progressBar1, progressBar2, progressBar3, progressBar4 });
+            int spravnaOdpoved = aktualniOtazka.spravnaOdpoved;
             double percent = 70.0;
 
             for (int i = 0; i < 4; i++)
@@ -271,69 +293,76 @@ namespace Ekonomikare
                 button_close.Enabled = true;
             }
         }
+
+        //obrazky
         private void postup()
         {
             switch (stupen)
             {
                 case 0:
-                    panel2.BackgroundImage = Properties.Resources.postup1;
+                    panel2.BackgroundImage = Properties.Resources.postup0;
                     break;
                 case 1:
-                    panel2.BackgroundImage = Properties.Resources.postup2;
+                    panel2.BackgroundImage = Properties.Resources.postup1;
                     break;
                 case 2:
-                    panel2.BackgroundImage = Properties.Resources.postup3;
+                    panel2.BackgroundImage = Properties.Resources.postup2;
                     break;
                 case 3:
-                    panel2.BackgroundImage = Properties.Resources.postup4;
+                    panel2.BackgroundImage = Properties.Resources.postup3;
                     break;
                 case 4:
-                    panel2.BackgroundImage = Properties.Resources.postup5;
+                    panel2.BackgroundImage = Properties.Resources.postup4;
                     break;
                 case 5:
-                    panel2.BackgroundImage = Properties.Resources.postup6;
+                    panel2.BackgroundImage = Properties.Resources.postup5;
                     break;
                 case 6:
-                    panel2.BackgroundImage = Properties.Resources.postup7;
+                    panel2.BackgroundImage = Properties.Resources.postup6;
                     break;
                 case 7:
-                    panel2.BackgroundImage = Properties.Resources.postup8;
+                    panel2.BackgroundImage = Properties.Resources.postup7;
                     break;
                 case 8:
-                    panel2.BackgroundImage = Properties.Resources.postup9;
+                    panel2.BackgroundImage = Properties.Resources.postup8;
                     break;
                 case 9:
-                    panel2.BackgroundImage = Properties.Resources.postup10;
+                    panel2.BackgroundImage = Properties.Resources.postup9;
                     break;
             }
         }
 
-        private void button_close_Click(object sender, EventArgs e)
+        //grafClose
+        private void button_GrafClose_Click(object sender, EventArgs e)
         {
             panel_graf.Visible = false;
-
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        //odpoved1
+        private void button_Odpoved1_Click(object sender, EventArgs e)
         {
             click(0);
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        //odpoved2
+        private void button_Odpoved2_Click(object sender, EventArgs e)
         {
             click(1);
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        //odpoved3
+        private void button_Odpoved3_Click(object sender, EventArgs e)
         {
             click(2);
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        //odpoved4
+        private void button_Odpoved4_Click(object sender, EventArgs e)
         {
             click(3);
         }
 
+        //click
         private void click(int id)
         {
             tlacidlo = id;
@@ -342,40 +371,17 @@ namespace Ekonomikare
             panel_graf.Visible = false;
         }
 
-        private void button8_Click(object sender, EventArgs e)
+        //pritelTelefon
+        private void button_PritelTelefon_Click(object sender, EventArgs e)
         {
             button8.Enabled = false;
             button8.BackgroundImage = Properties.Resources.pritelx;
         }
 
-
-
-        private void Form1_Load_1(object sender, EventArgs e)
-        {
-            Form2 form2 = new Form2();
-            //simpleSound.Play();
-            postup();
-            form2.Visible = false;
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
+        //kontrola
         private void button_Zkontroluj_Click(object sender, EventArgs e)
         {
             zkontrolujOdpoved();
-        }
-
-        private void tableLayoutPanel1_Paint_1(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }
