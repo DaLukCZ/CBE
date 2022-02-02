@@ -134,10 +134,10 @@ namespace Ekonomikare
         private void zobrazOtazku()
         {
             tlacidlo = 5;
-            button_Odpoved1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            button_Odpoved2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            button_Odpoved3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            button_Odpoved4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            button_Odpoved1.BackColor = System.Drawing.Color.FromArgb(25, 30, 60);
+            button_Odpoved2.BackColor = System.Drawing.Color.FromArgb(25, 30, 60);
+            button_Odpoved3.BackColor = System.Drawing.Color.FromArgb(25, 30, 60);
+            button_Odpoved4.BackColor = System.Drawing.Color.FromArgb(25, 30, 60);
             Otazka otazka = ziskejOtazkuPodleStupne(stupen);
             if (otazka == null)
             {
@@ -163,7 +163,7 @@ namespace Ekonomikare
                 list.Remove(odpoved);
             }
             otazka.odpovedi = odpovedi;
-            button_otazka.Text = otazka.otazka;
+            label_otazka.Text = otazka.otazka;
             button_Odpoved1.Enabled = true;
             button_Odpoved2.Enabled = true;
             button_Odpoved3.Enabled = true;
@@ -195,11 +195,19 @@ namespace Ekonomikare
             return null;
         }
 
+        //restart
+        public void restart() {
+            stupen = 0;
+            tlacidlo = 5;
+            resetColor();
+            zobrazOtazku();
+            postup();
+        }
+
         //zkontroluj
         private void zkontrolujOdpoved()
         {
             Prohra p = new Prohra();
-            Form2 form2 = new Form2();
             List<Button> buttons = new List<Button>(new Button[] { button_Odpoved1, button_Odpoved2, button_Odpoved3, button_Odpoved4 });
             try
             {
@@ -224,14 +232,14 @@ namespace Ekonomikare
                     buttons[aktualniOtazka.spravnaOdpoved].BackColor = Color.Green;
                     if (stupen >= 0 && stupen <= 2)
                     {
-                        
+
                         p.Show();
                     }
                     else if (stupen >= 3 && stupen <= 6)//záchraný bod 4
                     {
                         p.Show();
                         //MessageBox.Show("Blahopřejeme odcházíš o 10Kč bohatší");
-                        
+
                     }
                     else if (stupen >= 7 && stupen <= 8)//záchraný bod 8
                     {
@@ -259,17 +267,16 @@ namespace Ekonomikare
             List<Button> buttons = new List<Button>(new Button[] { button_Odpoved1, button_Odpoved2, button_Odpoved3, button_Odpoved4 });
             for (int i = 0; i < 4; i++)
             {
-                buttons[i].BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+                buttons[i].BackColor = System.Drawing.Color.FromArgb(25, 30, 60);
             }
 
         }
 
-        //MenuButton
+        //menu
         private void button_Menu_Click(object sender, EventArgs e)
         {
-            Form2 form2 = new Form2();
             this.Close();
-            form2.Show();
+            FormHandler.form2.Show();
         }
 
         //50/50
@@ -311,7 +318,6 @@ namespace Ekonomikare
             List<ProgressBar> progressBars = new List<ProgressBar>(new ProgressBar[] { progressBar1, progressBar2, progressBar3, progressBar4 });
             int spravnaOdpoved = aktualniOtazka.spravnaOdpoved;
             double percent = 70.0;
-
             for (int i = 0; i < 4; i++)
             {
                 double actualPercent = percent / 4 + random.Next((int)(percent / 4));
@@ -324,8 +330,8 @@ namespace Ekonomikare
                     actualPercent -= 30;
                 percent -= actualPercent;
                 button_ask.Enabled = false;
-                button7.Enabled = false;
-                button7.BackgroundImage = Properties.Resources.radaPublx;
+                button_RadaPublika.Enabled = false;
+                button_RadaPublika.BackgroundImage = Properties.Resources.radaPublx;
                 button_close.Enabled = true;
             }
         }
@@ -410,14 +416,26 @@ namespace Ekonomikare
         //pritelTelefon
         private void button_PritelTelefon_Click(object sender, EventArgs e)
         {
-            button8.Enabled = false;
-            button8.BackgroundImage = Properties.Resources.pritelx;
+            button_PritelTelefon.Enabled = false;
+            button_PritelTelefon.BackgroundImage = Properties.Resources.pritelx;
         }
 
         //kontrola
         private void button_Zkontroluj_Click(object sender, EventArgs e)
         {
             zkontrolujOdpoved();
+        }
+
+        //exit
+        private void button_exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+            Environment.Exit(0);
         }
     }
 }

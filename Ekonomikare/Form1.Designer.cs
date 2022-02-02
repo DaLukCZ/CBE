@@ -30,10 +30,12 @@ namespace Ekonomikare
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.button_exit = new System.Windows.Forms.Button();
+            this.button_menu = new System.Windows.Forms.Button();
             this.button_Odpoved4 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button_exit = new System.Windows.Forms.Button();
+            this.label_otazka = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.button_Zkontroluj = new System.Windows.Forms.Button();
             this.panel_graf = new System.Windows.Forms.Panel();
@@ -53,8 +55,8 @@ namespace Ekonomikare
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.button_PritelTelefon = new System.Windows.Forms.Button();
+            this.button_RadaPublika = new System.Windows.Forms.Button();
             this.button_5050 = new System.Windows.Forms.Button();
             this.button_otazka = new System.Windows.Forms.Button();
             this.button_Odpoved3 = new System.Windows.Forms.Button();
@@ -66,23 +68,23 @@ namespace Ekonomikare
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button_exit
+            // button_menu
             // 
-            this.button_exit.BackColor = System.Drawing.Color.Transparent;
-            this.button_exit.BackgroundImage = global::Ekonomikare.Properties.Resources.exit;
-            this.button_exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button_exit.Cursor = System.Windows.Forms.Cursors.Default;
-            this.button_exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button_exit.Location = new System.Drawing.Point(1619, 36);
-            this.button_exit.Name = "button_exit";
-            this.button_exit.Size = new System.Drawing.Size(219, 82);
-            this.button_exit.TabIndex = 0;
-            this.button_exit.UseVisualStyleBackColor = false;
-            this.button_exit.Click += new System.EventHandler(this.button_Menu_Click);
+            this.button_menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
+            this.button_menu.BackgroundImage = global::Ekonomikare.Properties.Resources.MENU;
+            this.button_menu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button_menu.Cursor = System.Windows.Forms.Cursors.Default;
+            this.button_menu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button_menu.Location = new System.Drawing.Point(1619, 36);
+            this.button_menu.Name = "button_menu";
+            this.button_menu.Size = new System.Drawing.Size(219, 82);
+            this.button_menu.TabIndex = 0;
+            this.button_menu.UseVisualStyleBackColor = false;
+            this.button_menu.Click += new System.EventHandler(this.button_Menu_Click);
             // 
             // button_Odpoved4
             // 
-            this.button_Odpoved4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button_Odpoved4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
             this.button_Odpoved4.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Odpoved4.ForeColor = System.Drawing.Color.White;
             this.button_Odpoved4.Location = new System.Drawing.Point(1001, 823);
@@ -104,8 +106,10 @@ namespace Ekonomikare
             // 
             // panel1
             // 
-            this.panel1.BackgroundImage = global::Ekonomikare.Properties.Resources.background_;
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.button_exit);
+            this.panel1.Controls.Add(this.label_otazka);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.button_Zkontroluj);
             this.panel1.Controls.Add(this.panel_graf);
@@ -117,12 +121,37 @@ namespace Ekonomikare
             this.panel1.Controls.Add(this.button_Odpoved1);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.button_Odpoved4);
-            this.panel1.Controls.Add(this.button_exit);
+            this.panel1.Controls.Add(this.button_menu);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1904, 1041);
             this.panel1.TabIndex = 0;
+            // 
+            // button_exit
+            // 
+            this.button_exit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
+            this.button_exit.BackgroundImage = global::Ekonomikare.Properties.Resources.exit;
+            this.button_exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button_exit.Location = new System.Drawing.Point(82, 36);
+            this.button_exit.Name = "button_exit";
+            this.button_exit.Size = new System.Drawing.Size(219, 82);
+            this.button_exit.TabIndex = 0;
+            this.button_exit.UseVisualStyleBackColor = false;
+            this.button_exit.Click += new System.EventHandler(this.button_exit_Click);
+            // 
+            // label_otazka
+            // 
+            this.label_otazka.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
+            this.label_otazka.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label_otazka.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label_otazka.ForeColor = System.Drawing.Color.White;
+            this.label_otazka.Location = new System.Drawing.Point(406, 462);
+            this.label_otazka.Name = "label_otazka";
+            this.label_otazka.Size = new System.Drawing.Size(1102, 122);
+            this.label_otazka.TabIndex = 15;
+            this.label_otazka.Text = "Otazka";
+            this.label_otazka.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label1
             // 
@@ -134,7 +163,7 @@ namespace Ekonomikare
             // 
             // button_Zkontroluj
             // 
-            this.button_Zkontroluj.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button_Zkontroluj.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
             this.button_Zkontroluj.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Zkontroluj.ForeColor = System.Drawing.Color.White;
             this.button_Zkontroluj.Location = new System.Drawing.Point(382, 759);
@@ -165,14 +194,14 @@ namespace Ekonomikare
             this.panel_graf.Font = new System.Drawing.Font("Yu Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.panel_graf.Location = new System.Drawing.Point(1172, 36);
             this.panel_graf.Name = "panel_graf";
-            this.panel_graf.Size = new System.Drawing.Size(352, 359);
+            this.panel_graf.Size = new System.Drawing.Size(350, 350);
             this.panel_graf.TabIndex = 12;
             this.panel_graf.Visible = false;
             // 
             // label_Od4
             // 
             this.label_Od4.AutoSize = true;
-            this.label_Od4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label_Od4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
             this.label_Od4.Font = new System.Drawing.Font("Yu Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label_Od4.ForeColor = System.Drawing.Color.White;
             this.label_Od4.Location = new System.Drawing.Point(227, 203);
@@ -184,7 +213,7 @@ namespace Ekonomikare
             // label_Od3
             // 
             this.label_Od3.AutoSize = true;
-            this.label_Od3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label_Od3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
             this.label_Od3.Font = new System.Drawing.Font("Yu Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label_Od3.ForeColor = System.Drawing.Color.White;
             this.label_Od3.Location = new System.Drawing.Point(227, 144);
@@ -196,7 +225,7 @@ namespace Ekonomikare
             // label_Od2
             // 
             this.label_Od2.AutoSize = true;
-            this.label_Od2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label_Od2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
             this.label_Od2.Font = new System.Drawing.Font("Yu Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label_Od2.ForeColor = System.Drawing.Color.White;
             this.label_Od2.Location = new System.Drawing.Point(227, 90);
@@ -208,7 +237,7 @@ namespace Ekonomikare
             // label_Od1
             // 
             this.label_Od1.AutoSize = true;
-            this.label_Od1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label_Od1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
             this.label_Od1.Font = new System.Drawing.Font("Yu Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label_Od1.ForeColor = System.Drawing.Color.White;
             this.label_Od1.Location = new System.Drawing.Point(227, 36);
@@ -243,7 +272,7 @@ namespace Ekonomikare
             // label_D
             // 
             this.label_D.AutoSize = true;
-            this.label_D.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label_D.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
             this.label_D.Font = new System.Drawing.Font("Yu Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label_D.ForeColor = System.Drawing.Color.White;
             this.label_D.Location = new System.Drawing.Point(18, 203);
@@ -255,7 +284,7 @@ namespace Ekonomikare
             // label_C
             // 
             this.label_C.AutoSize = true;
-            this.label_C.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label_C.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
             this.label_C.Font = new System.Drawing.Font("Yu Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label_C.ForeColor = System.Drawing.Color.White;
             this.label_C.Location = new System.Drawing.Point(17, 143);
@@ -267,7 +296,7 @@ namespace Ekonomikare
             // label_B
             // 
             this.label_B.AutoSize = true;
-            this.label_B.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label_B.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
             this.label_B.Font = new System.Drawing.Font("Yu Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label_B.ForeColor = System.Drawing.Color.White;
             this.label_B.Location = new System.Drawing.Point(18, 90);
@@ -279,7 +308,7 @@ namespace Ekonomikare
             // label_A
             // 
             this.label_A.AutoSize = true;
-            this.label_A.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label_A.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
             this.label_A.Font = new System.Drawing.Font("Yu Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label_A.ForeColor = System.Drawing.Color.White;
             this.label_A.Location = new System.Drawing.Point(18, 36);
@@ -321,21 +350,21 @@ namespace Ekonomikare
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = global::Ekonomikare.Properties.Resources.Ekonomi;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(758, 36);
+            this.pictureBox1.Location = new System.Drawing.Point(784, 36);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(410, 359);
+            this.pictureBox1.Size = new System.Drawing.Size(350, 350);
             this.pictureBox1.TabIndex = 11;
             this.pictureBox1.TabStop = false;
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.Controls.Add(this.button8, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.button7, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.button_PritelTelefon, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.button_RadaPublika, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.button_5050, 0, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(1555, 182);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -345,35 +374,35 @@ namespace Ekonomikare
             this.tableLayoutPanel1.Size = new System.Drawing.Size(346, 100);
             this.tableLayoutPanel1.TabIndex = 10;
             // 
-            // button8
+            // button_PritelTelefon
             // 
-            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button8.BackgroundImage = global::Ekonomikare.Properties.Resources.pritel;
-            this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button8.Location = new System.Drawing.Point(233, 3);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(110, 94);
-            this.button8.TabIndex = 2;
-            this.button8.UseVisualStyleBackColor = false;
-            this.button8.Click += new System.EventHandler(this.button_PritelTelefon_Click);
+            this.button_PritelTelefon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
+            this.button_PritelTelefon.BackgroundImage = global::Ekonomikare.Properties.Resources.pritel;
+            this.button_PritelTelefon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button_PritelTelefon.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button_PritelTelefon.Location = new System.Drawing.Point(233, 3);
+            this.button_PritelTelefon.Name = "button_PritelTelefon";
+            this.button_PritelTelefon.Size = new System.Drawing.Size(110, 94);
+            this.button_PritelTelefon.TabIndex = 2;
+            this.button_PritelTelefon.UseVisualStyleBackColor = false;
+            this.button_PritelTelefon.Click += new System.EventHandler(this.button_PritelTelefon_Click);
             // 
-            // button7
+            // button_RadaPublika
             // 
-            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button7.BackgroundImage = global::Ekonomikare.Properties.Resources.radaPubl;
-            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button7.Location = new System.Drawing.Point(118, 3);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(109, 94);
-            this.button7.TabIndex = 1;
-            this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.button_RadaPublika_Click);
+            this.button_RadaPublika.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
+            this.button_RadaPublika.BackgroundImage = global::Ekonomikare.Properties.Resources.radaPubl;
+            this.button_RadaPublika.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button_RadaPublika.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button_RadaPublika.Location = new System.Drawing.Point(118, 3);
+            this.button_RadaPublika.Name = "button_RadaPublika";
+            this.button_RadaPublika.Size = new System.Drawing.Size(109, 94);
+            this.button_RadaPublika.TabIndex = 1;
+            this.button_RadaPublika.UseVisualStyleBackColor = false;
+            this.button_RadaPublika.Click += new System.EventHandler(this.button_RadaPublika_Click);
             // 
             // button_5050
             // 
-            this.button_5050.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button_5050.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
             this.button_5050.BackgroundImage = global::Ekonomikare.Properties.Resources._5050;
             this.button_5050.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button_5050.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -386,7 +415,7 @@ namespace Ekonomikare
             // 
             // button_otazka
             // 
-            this.button_otazka.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button_otazka.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
             this.button_otazka.Enabled = false;
             this.button_otazka.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_otazka.ForeColor = System.Drawing.Color.White;
@@ -394,12 +423,11 @@ namespace Ekonomikare
             this.button_otazka.Name = "button_otazka";
             this.button_otazka.Size = new System.Drawing.Size(1128, 145);
             this.button_otazka.TabIndex = 9;
-            this.button_otazka.Text = "Otazka";
             this.button_otazka.UseVisualStyleBackColor = false;
             // 
             // button_Odpoved3
             // 
-            this.button_Odpoved3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button_Odpoved3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
             this.button_Odpoved3.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Odpoved3.ForeColor = System.Drawing.Color.White;
             this.button_Odpoved3.Location = new System.Drawing.Point(628, 823);
@@ -412,7 +440,7 @@ namespace Ekonomikare
             // 
             // button_Odpoved2
             // 
-            this.button_Odpoved2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button_Odpoved2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
             this.button_Odpoved2.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Odpoved2.ForeColor = System.Drawing.Color.White;
             this.button_Odpoved2.Location = new System.Drawing.Point(1001, 641);
@@ -425,7 +453,7 @@ namespace Ekonomikare
             // 
             // button_Odpoved1
             // 
-            this.button_Odpoved1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button_Odpoved1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
             this.button_Odpoved1.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Odpoved1.ForeColor = System.Drawing.Color.White;
             this.button_Odpoved1.Location = new System.Drawing.Point(628, 641);
@@ -436,17 +464,19 @@ namespace Ekonomikare
             this.button_Odpoved1.UseVisualStyleBackColor = false;
             this.button_Odpoved1.Click += new System.EventHandler(this.button_Odpoved1_Click);
             // 
-            // form1
+            // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
+            this.BackgroundImage = global::Ekonomikare.Properties.Resources.background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "form1";
+            this.Name = "Form1";
             this.Text = "Chcete být milionářem?";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load_1);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -460,7 +490,7 @@ namespace Ekonomikare
 
         #endregion
 
-        private System.Windows.Forms.Button button_exit;
+        private System.Windows.Forms.Button button_menu;
         private System.Windows.Forms.Button button_Odpoved4;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
@@ -468,8 +498,8 @@ namespace Ekonomikare
         private System.Windows.Forms.Button button_Odpoved3;
         private System.Windows.Forms.Button button_Odpoved2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button_PritelTelefon;
+        private System.Windows.Forms.Button button_RadaPublika;
         private System.Windows.Forms.Button button_5050;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel_graf;
@@ -490,6 +520,8 @@ namespace Ekonomikare
         private System.Windows.Forms.Button button_ask;
         private System.Windows.Forms.Button button_Zkontroluj;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label_otazka;
+        private System.Windows.Forms.Button button_exit;
     }
 }
 

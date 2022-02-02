@@ -37,7 +37,7 @@
             // 
             // button_Odpoved1
             // 
-            this.button_Odpoved1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button_Odpoved1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
             this.button_Odpoved1.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button_Odpoved1.ForeColor = System.Drawing.Color.White;
             this.button_Odpoved1.Location = new System.Drawing.Point(310, 219);
@@ -50,7 +50,7 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
             this.button1.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(136, 221);
@@ -104,6 +104,7 @@
             this.Name = "Prohra";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Prohra";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Prohra_FormClosed);
             this.Load += new System.EventHandler(this.Prohra_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

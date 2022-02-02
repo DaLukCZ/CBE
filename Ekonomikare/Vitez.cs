@@ -29,11 +29,15 @@ namespace Ekonomikare
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form1 form1 = new Form1();  
-            Form2 form2 = new Form2();
             this.Close();
-            form1.Visible = false;
-            form2.Show();
+            FormHandler.form1.Hide();
+            FormHandler.form2.Show();
+        }
+
+        private void Vitez_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+            Environment.Exit(0);
         }
     }
 }

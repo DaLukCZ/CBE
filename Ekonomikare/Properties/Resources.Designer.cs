@@ -83,9 +83,9 @@ namespace Ekonomikare.Properties {
         /// <summary>
         ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap background_ {
+        internal static System.Drawing.Bitmap background {
             get {
-                object obj = ResourceManager.GetObject("background_", resourceCulture);
+                object obj = ResourceManager.GetObject("background", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -186,6 +186,16 @@ namespace Ekonomikare.Properties {
         internal static System.Drawing.Bitmap malebackground {
             get {
                 object obj = ResourceManager.GetObject("malebackground", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MENU {
+            get {
+                object obj = ResourceManager.GetObject("MENU", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

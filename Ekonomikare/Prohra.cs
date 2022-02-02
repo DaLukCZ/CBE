@@ -12,7 +12,6 @@ namespace Ekonomikare
 {
     public partial class Prohra : Form
     {
-        Form1 form1 = new Form1();
         public Prohra()
         {
             InitializeComponent();
@@ -35,11 +34,14 @@ namespace Ekonomikare
 
         private void button1_Click(object sender, EventArgs e)
         {
+            FormHandler.form1.restart();
             this.Close();
-            
-            Form2 form2 = new Form2();
-            form1.Visible = false;
-            form2.Show();
+        }
+
+        private void Prohra_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+            Environment.Exit(0);
         }
     }
 }

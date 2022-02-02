@@ -39,7 +39,7 @@ namespace Ekonomikare
             // button_exit
             // 
             this.button_exit.AutoSize = true;
-            this.button_exit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button_exit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
             this.button_exit.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_exit.ForeColor = System.Drawing.Color.White;
             this.button_exit.Location = new System.Drawing.Point(184, 529);
@@ -53,7 +53,7 @@ namespace Ekonomikare
             // button_start
             // 
             this.button_start.AutoSize = true;
-            this.button_start.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button_start.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
             this.button_start.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_start.ForeColor = System.Drawing.Color.White;
             this.button_start.Location = new System.Drawing.Point(184, 385);
@@ -82,7 +82,7 @@ namespace Ekonomikare
             this.AutoSize = true;
             this.BackgroundImage = global::Ekonomikare.Properties.Resources.male3;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(613, 830);
+            this.ClientSize = new System.Drawing.Size(597, 791);
             this.Controls.Add(this.button_start);
             this.Controls.Add(this.button_exit);
             this.Controls.Add(this.pictureBox_logo);
@@ -97,6 +97,7 @@ namespace Ekonomikare
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Chcete být ekonomikářem?";
             this.TopMost = true;
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form2_FormClosed);
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_logo)).EndInit();
             this.ResumeLayout(false);
