@@ -104,7 +104,6 @@
             this.Name = "Prohra";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Prohra";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Prohra_FormClosed);
             this.Load += new System.EventHandler(this.Prohra_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

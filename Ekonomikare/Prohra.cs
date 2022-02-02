@@ -37,11 +37,5 @@ namespace Ekonomikare
             FormHandler.form1.restart();
             this.Close();
         }
-
-        private void Prohra_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            Application.Exit();
-            Environment.Exit(0);
-        }
     }
 }

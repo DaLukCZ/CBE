@@ -60,6 +60,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pritel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pritel.Designer.cs">
+      <DependentUpon>Pritel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Prohra.cs">
       <SubType>Form</SubType>
@@ -84,6 +90,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pritel.resx">
+      <DependentUpon>Pritel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Prohra.resx">
       <DependentUpon>Prohra.cs</DependentUpon>

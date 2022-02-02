@@ -275,8 +275,8 @@ namespace Ekonomikare
         //menu
         private void button_Menu_Click(object sender, EventArgs e)
         {
-            this.Close();
             FormHandler.form2.Show();
+            this.Hide();   
         }
 
         //50/50
@@ -374,6 +374,11 @@ namespace Ekonomikare
             }
         }
 
+        //metoda pro získání odpovědi
+        private string getOdpoved() {
+            return aktualniOtazka.odpovedi[aktualniOtazka.spravnaOdpoved];
+        }
+
         //grafClose
         private void button_GrafClose_Click(object sender, EventArgs e)
         {
@@ -430,12 +435,6 @@ namespace Ekonomikare
         private void button_exit_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            Application.Exit();
-            Environment.Exit(0);
         }
     }
 }

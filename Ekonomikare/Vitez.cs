@@ -33,11 +33,5 @@ namespace Ekonomikare
             FormHandler.form1.Hide();
             FormHandler.form2.Show();
         }
-
-        private void Vitez_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            Application.Exit();
-            Environment.Exit(0);
-        }
     }
 }
