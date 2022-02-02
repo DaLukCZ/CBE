@@ -18,10 +18,9 @@ namespace Ekonomikare
 
         private void button_Start_Click(object sender, EventArgs e)
         {
-            form1 form1 = new form1();
+            Form1 form1 = new Form1();
             form1.Show();
             this.Hide();
-            
         }
 
         private void button_Exit_Click(object sender, EventArgs e)

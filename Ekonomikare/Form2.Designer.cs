@@ -82,12 +82,12 @@ namespace Ekonomikare
             this.AutoSize = true;
             this.BackgroundImage = global::Ekonomikare.Properties.Resources.male3;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(593, 787);
+            this.ClientSize = new System.Drawing.Size(613, 830);
             this.Controls.Add(this.button_start);
             this.Controls.Add(this.button_exit);
             this.Controls.Add(this.pictureBox_logo);
             this.Cursor = System.Windows.Forms.Cursors.Default;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(613, 830);

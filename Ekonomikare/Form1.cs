@@ -9,7 +9,7 @@ using System.Windows.Forms;
 namespace Ekonomikare
 {
 
-    public partial class form1 : Form
+    public partial class Form1 : Form
     {
         //parametry
         private int stupen = 0;
@@ -19,7 +19,7 @@ namespace Ekonomikare
         private List<Otazka> otazky = new List<Otazka>();
         SoundPlayer simpleSound = new SoundPlayer(Properties.Resources.znelka);
         ImageList photoList = new ImageList();
-        public form1()
+        public Form1()
         {
             photoList.Images.Add(Properties.Resources.postup0);
             photoList.Images.Add(Properties.Resources.postup1);
@@ -72,8 +72,39 @@ namespace Ekonomikare
                 new string[4] { "SupaKicka", "MegaKicka", "HopaKicka", "Mafia" },
                 0
             );
+
             addOtazka(
                 6,
+                "Jaké je hlavní město Česka?",
+                new string[4] { "Praha", "Mamka", "HopaKicka", "Mafia" },
+                0
+                );
+            addOtazka(
+                6,
+                "Jaké je hlavní město Česka?",
+                new string[4] { "Praha", "Mamka", "HopaKicka", "Mafia" },
+                0
+                );
+            addOtazka(
+                7,
+                "Jaké je hlavní město Česka?",
+                new string[4] { "Praha", "Mamka", "HopaKicka", "Mafia" },
+                0
+                );
+            addOtazka(
+                8,
+                "Jaké je hlavní město Česka?",
+                new string[4] { "Praha", "Mamka", "HopaKicka", "Mafia" },
+                0
+                );
+            addOtazka(
+                9,
+                "Jaké je hlavní město Česka?",
+                new string[4] { "Praha", "Mamka", "HopaKicka", "Mafia" },
+                0
+                );
+            addOtazka(
+                10,
                 "Jaké je hlavní město Česka?",
                 new string[4] { "Praha", "Mamka", "HopaKicka", "Mafia" },
                 0
@@ -167,6 +198,8 @@ namespace Ekonomikare
         //zkontroluj
         private void zkontrolujOdpoved()
         {
+            Prohra p = new Prohra();
+            Form2 form2 = new Form2();
             List<Button> buttons = new List<Button>(new Button[] { button_Odpoved1, button_Odpoved2, button_Odpoved3, button_Odpoved4 });
             try
             {
@@ -191,16 +224,19 @@ namespace Ekonomikare
                     buttons[aktualniOtazka.spravnaOdpoved].BackColor = Color.Green;
                     if (stupen >= 0 && stupen <= 2)
                     {
-                        MessageBox.Show("Odcházíš stejně jako jsi přišel");
+                        
+                        p.Show();
                     }
                     else if (stupen >= 3 && stupen <= 6)//záchraný bod 4
                     {
-                        MessageBox.Show("Blahopřejeme odcházíš o 10Kč bohatší");
+                        p.Show();
+                        //MessageBox.Show("Blahopřejeme odcházíš o 10Kč bohatší");
                         
                     }
                     else if (stupen >= 7 && stupen <= 8)//záchraný bod 8
                     {
-                        MessageBox.Show("Blahopřejeme odcházíš 200Kč bohatší");
+                        p.Show();
+                        //MessageBox.Show("Blahopřejeme odcházíš 200Kč bohatší");
                     }
                 }
             }
