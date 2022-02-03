@@ -83,6 +83,46 @@ namespace Ekonomikare.Properties {
         /// <summary>
         ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap back {
+            get {
+                object obj = ResourceManager.GetObject("back", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap backblack {
+            get {
+                object obj = ResourceManager.GetObject("backblack", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap backblue {
+            get {
+                object obj = ResourceManager.GetObject("backblue", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap backg {
+            get {
+                object obj = ResourceManager.GetObject("backg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap background {
             get {
                 object obj = ResourceManager.GetObject("background", resourceCulture);
@@ -186,6 +226,16 @@ namespace Ekonomikare.Properties {
         internal static System.Drawing.Bitmap malebackground {
             get {
                 object obj = ResourceManager.GetObject("malebackground", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap marekvasut {
+            get {
+                object obj = ResourceManager.GetObject("marekvasut", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -382,9 +432,9 @@ namespace Ekonomikare.Properties {
         /// <summary>
         ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap s {
+        internal static System.Drawing.Bitmap skovy {
             get {
-                object obj = ResourceManager.GetObject("s", resourceCulture);
+                object obj = ResourceManager.GetObject("skovy", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -395,16 +445,6 @@ namespace Ekonomikare.Properties {
         internal static System.Drawing.Bitmap winning {
             get {
                 object obj = ResourceManager.GetObject("winning", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap xd {
-            get {
-                object obj = ResourceManager.GetObject("xd", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

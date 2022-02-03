@@ -174,6 +174,7 @@ namespace Ekonomikare
             button_Odpoved4.Text = "D) " + odpovedi[3];
         }
 
+        
         //ziskejOtazkuPodleStupne
         private Otazka ziskejOtazkuPodleStupne(int stupen)
         {
@@ -375,8 +376,13 @@ namespace Ekonomikare
         }
 
         //metoda pro získání odpovědi
-        private string getOdpoved() {
+        public string getOdpoved() {
             return aktualniOtazka.odpovedi[aktualniOtazka.spravnaOdpoved];
+        }
+
+        public string getOtazku()
+        {
+            return aktualniOtazka.otazka;
         }
 
         //grafClose
@@ -421,6 +427,8 @@ namespace Ekonomikare
         //pritelTelefon
         private void button_PritelTelefon_Click(object sender, EventArgs e)
         {
+            Pritel p = new Pritel();
+            p.Show();
             button_PritelTelefon.Enabled = false;
             button_PritelTelefon.BackgroundImage = Properties.Resources.pritelx;
         }

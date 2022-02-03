@@ -170,7 +170,7 @@ namespace Ekonomikare
             this.button_Zkontroluj.Name = "button_Zkontroluj";
             this.button_Zkontroluj.Size = new System.Drawing.Size(210, 93);
             this.button_Zkontroluj.TabIndex = 13;
-            this.button_Zkontroluj.Text = "Zkontrolovat";
+            this.button_Zkontroluj.Text = "Kontrola";
             this.button_Zkontroluj.UseVisualStyleBackColor = false;
             this.button_Zkontroluj.Click += new System.EventHandler(this.button_Zkontroluj_Click);
             // 

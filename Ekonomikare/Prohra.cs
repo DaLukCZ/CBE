@@ -19,7 +19,7 @@ namespace Ekonomikare
 
         private void Prohra_Load(object sender, EventArgs e)
         {
-
+            label3.Text = "Zprávná odpověď byla " +FormHandler.form1.getOdpoved() +".";
         }
 
         private void button_Odpoved1_Click(object sender, EventArgs e)

@@ -79,6 +79,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Rada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rada.Designer.cs">
+      <DependentUpon>Rada.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vitez.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +107,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rada.resx">
+      <DependentUpon>Rada.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vitez.resx">
       <DependentUpon>Vitez.cs</DependentUpon>
@@ -240,6 +249,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\MENU.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marekvasut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\skovy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backblack.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backblue.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
