@@ -19,6 +19,7 @@ namespace Ekonomikare
         private void button_Start_Click(object sender, EventArgs e)
         {
             FormHandler.form1.Show();
+            FormHandler.form1.restart();
             this.Hide();
         }
 

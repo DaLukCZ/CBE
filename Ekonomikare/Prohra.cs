@@ -19,7 +19,8 @@ namespace Ekonomikare
 
         private void Prohra_Load(object sender, EventArgs e)
         {
-            label3.Text = "Zprávná odpověď byla " +FormHandler.form1.getOdpoved() +".";
+            label3.Text = "Správná odpověď byla " + FormHandler.form1.getOdpoved() + ".";
+            label_pocet.Text = "" + FormHandler.form1.getStupen() + " / 10";
         }
 
         private void button_Odpoved1_Click(object sender, EventArgs e)
@@ -36,6 +37,13 @@ namespace Ekonomikare
         {
             FormHandler.form1.restart();
             this.Close();
+        }
+
+        private void button_Menu_Click(object sender, EventArgs e)
+        {
+            FormHandler.form2.Show();
+            FormHandler.form1.Hide();
+            this.Hide();
         }
     }
 }

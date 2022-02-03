@@ -385,6 +385,10 @@ namespace Ekonomikare
             return aktualniOtazka.otazka;
         }
 
+        public int getStupen() {
+            return stupen;
+        }
+
         //grafClose
         private void button_GrafClose_Click(object sender, EventArgs e)
         {
