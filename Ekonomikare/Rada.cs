@@ -23,7 +23,7 @@ namespace Ekonomikare
         }
 
         public void ahoj() {
-            List<Label> odpovedi = new List<Label>(new Label[] { label_Od1, label_Od2, label_Od3, label_Od4 });
+            /*List<Label> odpovedi = new List<Label>(new Label[] { label_Od1, label_Od2, label_Od3, label_Od4 });
             List<ProgressBar> progressBars = new List<ProgressBar>(new ProgressBar[] { progressBar1, progressBar2, progressBar3, progressBar4 });
             int spravnaOdpoved = FormHandler.form1.aktualniOtazka.spravnaOdpoved;
             double percent = 70.0;
@@ -42,7 +42,7 @@ namespace Ekonomikare
                 button_RadaPublika.Enabled = false;
                 button_RadaPublika.BackgroundImage = Properties.Resources.radaPublx;
                 button_close.Enabled = true;
-            }
+            }*/
         }
     }
 }
