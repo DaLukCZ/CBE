@@ -57,7 +57,6 @@
             this.label1.Size = new System.Drawing.Size(716, 29);
             this.label1.TabIndex = 3;
             this.label1.Text = "ekonomikářem, přede mnou sedí váš student a potřebuje vaši pomoc. ";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -70,7 +69,6 @@
             this.label2.Size = new System.Drawing.Size(808, 29);
             this.label2.TabIndex = 4;
             this.label2.Text = "Dobrý večer, pane učiteli Skovajso,  u telefonu Marek Vašut z pořadu Chcete být ";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 

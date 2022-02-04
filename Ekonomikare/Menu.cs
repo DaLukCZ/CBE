@@ -4,16 +4,19 @@ using System.Windows.Forms;
 
 namespace Ekonomikare
 {
-    public partial class Form2 : Form
+    public partial class Menu : Form
     {
         //parametry
-        public Form2()
+        private bool song = true;
+        SoundPlayer simpleSound = new SoundPlayer(Properties.Resources.music);
+        public Menu()
         {
             InitializeComponent();
         }
 
-        private void Form2_Load(object sender, EventArgs e)
+        private void Menu_Load(object sender, EventArgs e)
         {
+            simpleSound.Play();
         }
 
         private void button_Start_Click(object sender, EventArgs e)
@@ -26,6 +29,11 @@ namespace Ekonomikare
         private void button_Exit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void button_Settings_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

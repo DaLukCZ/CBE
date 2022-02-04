@@ -9,7 +9,7 @@ using System.Windows.Forms;
 namespace Ekonomikare
 {
 
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
         //parametry
         private int Currentstep = 0;
@@ -17,9 +17,8 @@ namespace Ekonomikare
         private Question currentQuestion;
         private Random random = new Random();
         private List<Question> questions = new List<Question>();
-        SoundPlayer simpleSound = new SoundPlayer(Properties.Resources.music);
         ImageList photoList = new ImageList();
-        public Form1()
+        public MainForm()
         {
             photoList.Images.Add(Properties.Resources.step0);
             photoList.Images.Add(Properties.Resources.step1);
@@ -112,9 +111,8 @@ namespace Ekonomikare
         }
 
         //form1
-        private void Form1_Load_1(object sender, EventArgs e)
+        private void Main_Load_1(object sender, EventArgs e)
         {
-            //simpleSound.Play();
             step();
         }
 
