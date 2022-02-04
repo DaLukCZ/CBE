@@ -112,7 +112,7 @@
             this.label_pocet.TabIndex = 14;
             this.label_pocet.Text = ".";
             // 
-            // Prohra
+            // Lose
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -130,9 +130,9 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Location = new System.Drawing.Point(615, 12);
-            this.Name = "Prohra";
+            this.Name = "Lose";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Prohra";
+            this.Text = "Lose";
             this.Load += new System.EventHandler(this.Lose_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

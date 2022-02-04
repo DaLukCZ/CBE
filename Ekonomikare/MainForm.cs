@@ -16,6 +16,7 @@ namespace Ekonomikare
         private int buttonek = 5;
         private Question currentQuestion;
         private Random random = new Random();
+        private Ask ask = new Ask();
         private List<Question> questions = new List<Question>();
         ImageList photoList = new ImageList();
         public MainForm()
@@ -120,21 +121,21 @@ namespace Ekonomikare
         private void addQuestion(int step, string question, string[] answers, int rightAnswer)
         {
             questions.Add(new Question(
-                step,
-                question,
-                answers,
-                rightAnswer
-            ));
+            step,
+            question,
+            answers,
+            rightAnswer
+        ));
         }
 
         //zobrazOtazku
         private void showQuestion()
         {
             buttonek = 5;
-            button_Odpoved1.BackColor = System.Drawing.Color.FromArgb(25, 30, 60);
-            button_Odpoved2.BackColor = System.Drawing.Color.FromArgb(25, 30, 60);
-            button_Odpoved3.BackColor = System.Drawing.Color.FromArgb(25, 30, 60);
-            button_Odpoved4.BackColor = System.Drawing.Color.FromArgb(25, 30, 60);
+            button_Answer1.BackColor = System.Drawing.Color.FromArgb(25, 30, 60);
+            button_Answer2.BackColor = System.Drawing.Color.FromArgb(25, 30, 60);
+            button_Answer3.BackColor = System.Drawing.Color.FromArgb(25, 30, 60);
+            button_Answer4.BackColor = System.Drawing.Color.FromArgb(25, 30, 60);
             Question question = getQuestionByStep(Currentstep);
             if (question == null)
             {
@@ -159,14 +160,14 @@ namespace Ekonomikare
             }
             question.answers = answers;
             label_otazka.Text = question.question;
-            button_Odpoved1.Enabled = true;
-            button_Odpoved2.Enabled = true;
-            button_Odpoved3.Enabled = true;
-            button_Odpoved4.Enabled = true;
-            button_Odpoved1.Text = "A) " + answers[0];
-            button_Odpoved2.Text = "B) " + answers[1];
-            button_Odpoved3.Text = "C) " + answers[2];
-            button_Odpoved4.Text = "D) " + answers[3];
+            button_Answer1.Enabled = true;
+            button_Answer2.Enabled = true;
+            button_Answer3.Enabled = true;
+            button_Answer4.Enabled = true;
+            button_Answer1.Text = "A) " + answers[0];
+            button_Answer2.Text = "B) " + answers[1];
+            button_Answer3.Text = "C) " + answers[2];
+            button_Answer4.Text = "D) " + answers[3];
         }
 
 
@@ -194,17 +195,17 @@ namespace Ekonomikare
         //restart
         public void restart()
         {
-            List<Label> answers = new List<Label>(new Label[] { label_Od1, label_Od2, label_Od3, label_Od4 });
-            List<ProgressBar> progressBars = new List<ProgressBar>(new ProgressBar[] { progressBar1, progressBar2, progressBar3, progressBar4 });
+            List<Label> answers = new List<Label>(new Label[] { ask.getLabels(1), ask.getLabels(2), ask.getLabels(3), ask.getLabels(4) });
+            List<ProgressBar> progressBars = new List<ProgressBar>(new ProgressBar[] { ask.getPG(1), ask.getPG(2), ask.getPG(3), ask.getPG(4) });
             Currentstep = 0;
             buttonek = 5;
             button_5050.Enabled = true;
             button_5050.BackgroundImage = Properties.Resources._5050;
-            button_RadaPublika.Enabled = true;
-            button_RadaPublika.BackgroundImage = Properties.Resources.helpAudiance;
-            button_PritelTelefon.Enabled = true;
-            button_PritelTelefon.BackgroundImage = Properties.Resources.callFriend;
-            button_ask.Enabled = true;
+            button_HelpAudiance.Enabled = true;
+            button_HelpAudiance.BackgroundImage = Properties.Resources.helpAudiance;
+            button_CallHelp.Enabled = true;
+            button_CallHelp.BackgroundImage = Properties.Resources.callFriend;
+            ask.setAsk();
             for (int i = 0; i < 4; i++)
             {
                 answers[i].Text = "";
@@ -220,7 +221,7 @@ namespace Ekonomikare
         private void checkAnswer()
         {
             Lose lose = new Lose();
-            List<Button> buttons = new List<Button>(new Button[] { button_Odpoved1, button_Odpoved2, button_Odpoved3, button_Odpoved4 });
+            List<Button> buttons = new List<Button>(new Button[] { button_Answer1, button_Answer2, button_Answer3, button_Answer4 });
             try
             {
                 if (currentQuestion.rightAnswer == buttonek)
@@ -254,14 +255,14 @@ namespace Ekonomikare
         //mark
         private void mark(int answerID)
         {
-            List<Button> buttons = new List<Button>(new Button[] { button_Odpoved1, button_Odpoved2, button_Odpoved3, button_Odpoved4 });
+            List<Button> buttons = new List<Button>(new Button[] { button_Answer1, button_Answer2, button_Answer3, button_Answer4 });
             buttons[answerID].BackColor = Color.DodgerBlue;
         }
 
         //resetColor
         private void resetColor()
         {
-            List<Button> buttons = new List<Button>(new Button[] { button_Odpoved1, button_Odpoved2, button_Odpoved3, button_Odpoved4 });
+            List<Button> buttons = new List<Button>(new Button[] { button_Answer1, button_Answer2, button_Answer3, button_Answer4 });
             for (int i = 0; i < 4; i++)
             {
                 buttons[i].BackColor = System.Drawing.Color.FromArgb(25, 30, 60);
@@ -280,7 +281,7 @@ namespace Ekonomikare
         private void button_5050_Click(object sender, EventArgs e)
         {
             resetColor();
-            List<Button> buttons = new List<Button>(new Button[] { button_Odpoved1, button_Odpoved2, button_Odpoved3, button_Odpoved4 });
+            List<Button> buttons = new List<Button>(new Button[] { button_Answer1, button_Answer2, button_Answer3, button_Answer4 });
             List<int> numbers = new List<int>();
 
             for (int i = 0; i < 4; i++)
@@ -305,63 +306,8 @@ namespace Ekonomikare
         //RadaPublika
         private void button_Audiance_Help_Click(object sender, EventArgs e)
         {
-            panel_graf.Visible = true;
+            ask.Show();
         }
-
-        //AskButton
-        private void button_Ask_Click(object sender, EventArgs e)
-        {
-            List<Label> answers = new List<Label>(new Label[] { label_Od1, label_Od2, label_Od3, label_Od4 });
-            List<ProgressBar> progressBars = new List<ProgressBar>(new ProgressBar[] { progressBar1, progressBar2, progressBar3, progressBar4 });
-            List<Button> buttons = new List<Button>(new Button[] { button_Odpoved1, button_Odpoved2, button_Odpoved3, button_Odpoved4 });
-            int spravnaOdpoved = currentQuestion.rightAnswer;
-            if (button_5050.Enabled)
-            {
-                int randC1 = random.Next(40, 70);
-                int rest1 = (100 - randC1) - random.Next(10, 100 - randC1);
-                int rest2 = 100 - rest1 - randC1 - random.Next(5, 100 - rest1 - randC1);
-                int rest3 = 100 - rest2 - rest1 - randC1;
-                List<int> rests = new List<int>(new int[] { rest1, rest2, rest3 });
-                for (int i = 0; i < 4; i++)
-                {
-                    if (i == spravnaOdpoved)
-                    {
-                        answers[i].Text = randC1 + "%";
-                        progressBars[i].Value = randC1;
-                    }
-                    if (i != spravnaOdpoved)
-                    {
-                        answers[i].Text = rests[0] + "%";
-                        progressBars[i].Value = rests[0];
-                        rests.RemoveAt(0);
-                    }
-                }
-
-            }
-            else
-            {
-                int randC2 = random.Next(55, 85);
-                for (int i = 0; i < 4; i++)
-                {
-                    if (i == spravnaOdpoved)
-                    {
-                        answers[i].Text = randC2 + "%";
-                        progressBars[i].Value = randC2;
-                    }
-                    if (i != spravnaOdpoved && buttons[i].Enabled)
-                    {
-                        answers[i].Text = (100 - randC2) + "%";
-                        progressBars[i].Value = (100 - randC2);
-                    }
-                }
-
-            }
-            button_ask.Enabled = false;
-            button_RadaPublika.Enabled = false;
-            button_RadaPublika.BackgroundImage = Properties.Resources.helpAudianceX;
-            button_close.Enabled = true;
-        }
-
         //obrazky
         private void step()
         {
@@ -416,10 +362,42 @@ namespace Ekonomikare
             return Currentstep;
         }
 
-        //grafClose
-        private void button_Graph_Close_Click(object sender, EventArgs e)
+        public int getCurrentAnswer()
         {
-            panel_graf.Visible = false;
+            return currentQuestion.rightAnswer;
+        }
+
+        public bool getButton5050()
+        {
+            return button_5050.Enabled;
+        }
+
+        public Button getButtons(int button)
+        {
+            switch (button)
+            {
+                case 1:
+                    return button_Answer1;
+                case 2:
+                    return button_Answer2;
+                case 3:
+                    return button_Answer3;
+                case 4:
+                    return button_Answer4;
+                default:
+                    return null;
+            }
+        }
+
+        public void setAudiance(bool boolean)
+        {
+
+            button_HelpAudiance.Enabled = boolean;
+        }
+
+        public void setAudianceBack(Bitmap bitmap)
+        {
+            button_HelpAudiance.BackgroundImage = bitmap;
         }
 
         //odpoved1
@@ -452,7 +430,7 @@ namespace Ekonomikare
             buttonek = id;
             resetColor();
             mark(id);
-            panel_graf.Visible = false;
+            ask.Hide();
         }
 
         //pritelTelefon
@@ -460,13 +438,14 @@ namespace Ekonomikare
         {
             CallHelp help = new CallHelp();
             help.Show();
-            button_PritelTelefon.Enabled = false;
-            button_PritelTelefon.BackgroundImage = Properties.Resources.CallFriendX;
+            button_CallHelp.Enabled = false;
+            button_CallHelp.BackgroundImage = Properties.Resources.CallFriendX;
         }
 
         //kontrola
         private void button_Check_Click(object sender, EventArgs e)
         {
+            ask.Hide();
             checkAnswer();
         }
 
