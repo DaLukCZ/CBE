@@ -28,7 +28,7 @@ namespace Ekonomikare
             {
                 case 1:
                     return label_Answer1;
-                case 2:
+                case 2: 
                     return label_Answer2;
                 case 3:
                     return label_Answer3;

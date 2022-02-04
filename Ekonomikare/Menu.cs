@@ -9,6 +9,7 @@ namespace Ekonomikare
         //parametry
         private bool song = true;
         SoundPlayer simpleSound = new SoundPlayer(Properties.Resources.music);
+        Settings settings = new Settings();
         public Menu()
         {
             InitializeComponent();
@@ -33,7 +34,7 @@ namespace Ekonomikare
 
         private void button_Settings_Click(object sender, EventArgs e)
         {
-
+            settings.Show();
         }
     }
 }

@@ -391,7 +391,6 @@ namespace Ekonomikare
 
         public void setAudiance(bool boolean)
         {
-
             button_HelpAudiance.Enabled = boolean;
         }
 
