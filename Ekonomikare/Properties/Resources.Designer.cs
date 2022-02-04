@@ -73,9 +73,9 @@ namespace Ekonomikare.Properties {
         /// <summary>
         ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _5050Disabled {
+        internal static System.Drawing.Bitmap _5050X {
             get {
-                object obj = ResourceManager.GetObject("_5050Disabled", resourceCulture);
+                object obj = ResourceManager.GetObject("_5050X", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,6 +133,26 @@ namespace Ekonomikare.Properties {
         /// <summary>
         ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap callFriend {
+            get {
+                object obj = ResourceManager.GetObject("callFriend", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CallFriendX {
+            get {
+                object obj = ResourceManager.GetObject("CallFriendX", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ekoapproved {
             get {
                 object obj = ResourceManager.GetObject("ekoapproved", resourceCulture);
@@ -173,9 +193,19 @@ namespace Ekonomikare.Properties {
         /// <summary>
         ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap jenseuc {
+        internal static System.Drawing.Bitmap helpAudiance {
             get {
-                object obj = ResourceManager.GetObject("jenseuc", resourceCulture);
+                object obj = ResourceManager.GetObject("helpAudiance", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap helpAudianceX {
+            get {
+                object obj = ResourceManager.GetObject("helpAudianceX", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -251,121 +281,20 @@ namespace Ekonomikare.Properties {
         }
         
         /// <summary>
+        ///   Vyhledává lokalizovaný prostředek typu System.IO.UnmanagedMemoryStream podobný System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream music {
+            get {
+                return ResourceManager.GetStream("music", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Vyhledá lokalizovaný řetězec podobný 4, &quot;Otázka?&quot;, new string[4] { &quot;Nejlíp na druhou&quot;, &quot;Dobře&quot;, &quot;Skvěle&quot;, &quot;Nejlíp&quot; }, 0.
         /// </summary>
         internal static string otazky {
             get {
                 return ResourceManager.GetString("otazky", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap postup0 {
-            get {
-                object obj = ResourceManager.GetObject("postup0", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap postup1 {
-            get {
-                object obj = ResourceManager.GetObject("postup1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap postup10 {
-            get {
-                object obj = ResourceManager.GetObject("postup10", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap postup2 {
-            get {
-                object obj = ResourceManager.GetObject("postup2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap postup3 {
-            get {
-                object obj = ResourceManager.GetObject("postup3", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap postup4 {
-            get {
-                object obj = ResourceManager.GetObject("postup4", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap postup5 {
-            get {
-                object obj = ResourceManager.GetObject("postup5", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap postup6 {
-            get {
-                object obj = ResourceManager.GetObject("postup6", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap postup7 {
-            get {
-                object obj = ResourceManager.GetObject("postup7", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap postup8 {
-            get {
-                object obj = ResourceManager.GetObject("postup8", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap postup9 {
-            get {
-                object obj = ResourceManager.GetObject("postup9", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -392,46 +321,6 @@ namespace Ekonomikare.Properties {
         /// <summary>
         ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap pritel {
-            get {
-                object obj = ResourceManager.GetObject("pritel", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap pritelx {
-            get {
-                object obj = ResourceManager.GetObject("pritelx", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap radaPubl {
-            get {
-                object obj = ResourceManager.GetObject("radaPubl", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap radaPublx {
-            get {
-                object obj = ResourceManager.GetObject("radaPublx", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap skovy {
             get {
                 object obj = ResourceManager.GetObject("skovy", resourceCulture);
@@ -442,19 +331,100 @@ namespace Ekonomikare.Properties {
         /// <summary>
         ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap winning {
+        internal static System.Drawing.Bitmap step0 {
             get {
-                object obj = ResourceManager.GetObject("winning", resourceCulture);
+                object obj = ResourceManager.GetObject("step0", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Vyhledává lokalizovaný prostředek typu System.IO.UnmanagedMemoryStream podobný System.IO.MemoryStream.
+        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream znelka {
+        internal static System.Drawing.Bitmap step1 {
             get {
-                return ResourceManager.GetStream("znelka", resourceCulture);
+                object obj = ResourceManager.GetObject("step1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap step2 {
+            get {
+                object obj = ResourceManager.GetObject("step2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap step3 {
+            get {
+                object obj = ResourceManager.GetObject("step3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap step4 {
+            get {
+                object obj = ResourceManager.GetObject("step4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap step5 {
+            get {
+                object obj = ResourceManager.GetObject("step5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap step6 {
+            get {
+                object obj = ResourceManager.GetObject("step6", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap step7 {
+            get {
+                object obj = ResourceManager.GetObject("step7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap step8 {
+            get {
+                object obj = ResourceManager.GetObject("step8", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap step9 {
+            get {
+                object obj = ResourceManager.GetObject("step9", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }

@@ -53,25 +53,25 @@
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
     <Compile Include="FormHandler.cs" />
-    <Compile Include="Otazka.cs" />
+    <Compile Include="Question.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pritel.cs">
+    <Compile Include="CallHelp.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Pritel.Designer.cs">
-      <DependentUpon>Pritel.cs</DependentUpon>
+    <Compile Include="CallHelp.Designer.cs">
+      <DependentUpon>CallHelp.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
-    <Compile Include="Prohra.cs">
+    <Compile Include="Lose.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Prohra.Designer.cs">
-      <DependentUpon>Prohra.cs</DependentUpon>
+    <Compile Include="Lose.Designer.cs">
+      <DependentUpon>Lose.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -79,17 +79,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Rada.cs">
+    <Compile Include="Victory.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Rada.Designer.cs">
-      <DependentUpon>Rada.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Vitez.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vitez.Designer.cs">
-      <DependentUpon>Vitez.cs</DependentUpon>
+    <Compile Include="Victory.Designer.cs">
+      <DependentUpon>Victory.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -97,22 +91,19 @@
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pritel.resx">
-      <DependentUpon>Pritel.cs</DependentUpon>
+    <EmbeddedResource Include="CallHelp.resx">
+      <DependentUpon>CallHelp.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Prohra.resx">
-      <DependentUpon>Prohra.cs</DependentUpon>
+    <EmbeddedResource Include="Lose.resx">
+      <DependentUpon>Lose.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Rada.resx">
-      <DependentUpon>Rada.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Vitez.resx">
-      <DependentUpon>Vitez.cs</DependentUpon>
+    <EmbeddedResource Include="Victory.resx">
+      <DependentUpon>Victory.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

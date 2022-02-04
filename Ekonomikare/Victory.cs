@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace Ekonomikare
 {
-    public partial class Vitez : Form
+    public partial class Victory : Form
     {
-        public Vitez()
+        public Victory()
         {
             InitializeComponent();
         }
 
-        private void Vitez_Load(object sender, EventArgs e)
+        private void Victory_Load(object sender, EventArgs e)
         {
-
+            //song
         }
 
         private void label1_Click(object sender, EventArgs e)

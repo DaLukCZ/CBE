@@ -124,58 +124,52 @@
   <data name="Ekonomi" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Ekonomi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="postup5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="step5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\postup5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pritel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="callFriend" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pritel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="radaPublx" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="helpAudianceX" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\radaPublx.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="postup6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="step6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\postup6.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="postup10" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\postup10.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="postup7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="step7" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\postup7.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="otazky" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\otazky.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
-  <data name="postup1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="step1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\postup1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="postup2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="step2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\postup2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pritelx" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="CallFriendX" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pritelx.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="malebackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\malebackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="postup3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="step3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\postup3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="postup4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="step4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\postup4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="winning" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\winning.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="znelka" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="music" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\znelka.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="postup8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="step8" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\postup8.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="postup0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="step0" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\postup0.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="male2" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -184,13 +178,13 @@
   <data name="pozadi1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pozadi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="postup9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="step9" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\postup9.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="radaPubl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="helpAudiance" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\radaPubl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="_5050Disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="_5050X" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\5050Disabled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="_5050" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -210,9 +204,6 @@
   </data>
   <data name="konfety2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\konfety2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="jenseuc" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\jenseuc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="background" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\background.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

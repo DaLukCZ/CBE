@@ -10,20 +10,20 @@ using System.Windows.Forms;
 
 namespace Ekonomikare
 {
-    public partial class Prohra : Form
+    public partial class Lose : Form
     {
-        public Prohra()
+        public Lose()
         {
             InitializeComponent();
         }
 
-        private void Prohra_Load(object sender, EventArgs e)
+        private void Lose_Load(object sender, EventArgs e)
         {
-            label3.Text = "Správná odpověď byla " + FormHandler.form1.getOdpoved() + ".";
-            label_pocet.Text = "" + FormHandler.form1.getStupen() + " / 10";
+            label3.Text = "Správná odpověď byla " + FormHandler.form1.getAnswer() + ".";
+            label_pocet.Text = "" + FormHandler.form1.getStep() + " / 10";
         }
 
-        private void button_Odpoved1_Click(object sender, EventArgs e)
+        private void button_Answer1_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }

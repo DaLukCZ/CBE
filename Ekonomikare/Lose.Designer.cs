@@ -1,6 +1,6 @@
 ﻿namespace Ekonomikare
 {
-    partial class Prohra
+    partial class Lose
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Prohra));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Lose));
             this.button_exit = new System.Windows.Forms.Button();
             this.button_newGame = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -48,7 +48,7 @@
             this.button_exit.TabIndex = 7;
             this.button_exit.Text = "Ukončit";
             this.button_exit.UseVisualStyleBackColor = false;
-            this.button_exit.Click += new System.EventHandler(this.button_Odpoved1_Click);
+            this.button_exit.Click += new System.EventHandler(this.button_Answer1_Click);
             // 
             // button_newGame
             // 

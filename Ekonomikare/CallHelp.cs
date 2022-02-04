@@ -10,28 +10,18 @@ using System.Windows.Forms;
 
 namespace Ekonomikare
 {
-    public partial class Pritel : Form
+    public partial class CallHelp : Form
     {
-        public int pokrok = 0;
-        public Pritel()
+        public int progress = 0;
+        public CallHelp()
         {
             InitializeComponent();
         }
 
-        private void Pritel_Load(object sender, EventArgs e)
+        private void CallHelp_Load(object sender, EventArgs e)
         {
-            label5.Text = "Otázka zní: "+FormHandler.form1.getOtazku();
-            label6.Text = "Vždyť jsme se nedávno učili. Je to " + FormHandler.form1.getOdpoved();   
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
+            label5.Text = "Otázka zní: " + FormHandler.form1.getQuestion();
+            label6.Text = "Vždyť jsme se nedávno učili. Je to " + FormHandler.form1.getAnswer();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -39,13 +29,14 @@ namespace Ekonomikare
             this.Close();
         }
 
-        private void button_Odpoved1_Click(object sender, EventArgs e)
+        private void button_Answer1_Click(object sender, EventArgs e)
         {
-            pokrok++;
-            Console.WriteLine(pokrok);
+            progress++;
+            Console.WriteLine(progress);
         }
 
-        public void vymaz() {
+        public void clear()
+        {
             pictureBox1.Visible = false;
             pictureBox2.Visible = false;
             pictureBox3.Visible = false;
@@ -57,22 +48,27 @@ namespace Ekonomikare
             label5.Visible = false;
             label6.Visible = false;
         }
-        public void konverzuj() {
-            if (pokrok == 1) {
+        public void talk()
+        {
+            if (progress == 1)
+            {
                 pictureBox1.Visible = true;
                 label1.Visible = true;
                 label2.Visible = true;
                 label3.Visible = true;
             }
-            if (pokrok == 2) {
+            if (progress == 2)
+            {
                 pictureBox2.Visible = true;
                 label4.Visible = true;
             }
-            if (pokrok == 3) { 
+            if (progress == 3)
+            {
                 pictureBox3.Visible = true;
                 label5.Visible = true;
             }
-            if (pokrok == 4) { 
+            if (progress == 4)
+            {
                 pictureBox4.Visible = true;
                 label6.Visible = true;
             }
