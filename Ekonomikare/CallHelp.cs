@@ -12,6 +12,13 @@ namespace Ekonomikare
 {
     public partial class CallHelp : Form
     {
+        Random r = new Random();
+        //List<string> aswers = new List<string>(new string[] { "Vždyť jsme se nedávno učili. Je to", "Ty brďo, to jste mě zaskočil. Opravdu nevím" });
+        string aswer1 = "Vždyť jsme se nedávno učili. Je to ";
+        string aswer2 = "Ty brďo, nevím přesně, ale asi ";
+        string aswer3 = "Ty brďo, to jste mě zaskočil. Opravdu nevím.";
+        //string aswer1 = "Vždyť jsme se nedávno učili. Je to ";
+        int randN;
         public int progress = 0;
         public CallHelp()
         {
@@ -20,19 +27,14 @@ namespace Ekonomikare
 
         private void CallHelp_Load(object sender, EventArgs e)
         {
-            label5.Text = "Otázka zní: " + FormHandler.form1.getQuestion();
-            label6.Text = "Vždyť jsme se nedávno učili. Je to " + FormHandler.form1.getAnswer();
+            clear();
+            randN = r.Next(10);
+            Console.WriteLine(randN);
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void button_Answer1_Click(object sender, EventArgs e)
-        {
-            progress++;
-            Console.WriteLine(progress);
         }
 
         public void clear()
@@ -65,12 +67,37 @@ namespace Ekonomikare
             if (progress == 3)
             {
                 pictureBox3.Visible = true;
+                label5.Text = "Otázka zní: " + FormHandler.form1.getQuestion();
                 label5.Visible = true;
             }
             if (progress == 4)
             {
                 pictureBox4.Visible = true;
+                generAswer();
                 label6.Visible = true;
+            }
+            if (progress >= 4) {
+                button1.Visible = false;
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            progress++;
+            talk();
+        }
+
+        public void generAswer() {
+            if (randN >= 0 && randN < 5)
+            {
+                label6.Text = aswer1 + FormHandler.form1.getAnswer();
+            }
+            else if (randN >= 5 && randN < 7)
+            {
+                label6.Text = aswer2 + FormHandler.form1.getAnswer();
+            }
+            else {
+                label6.Text = aswer3;
             }
         }
     }
