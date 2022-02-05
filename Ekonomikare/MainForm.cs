@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Media;
+using System.Threading;
 using System.Windows.Forms;
 
 
@@ -32,6 +33,7 @@ namespace Ekonomikare
             photoList.Images.Add(Properties.Resources.step8);
             photoList.Images.Add(Properties.Resources.step9);
             InitializeComponent();
+
             FormBorderStyle = FormBorderStyle.None;
             WindowState = FormWindowState.Maximized;
 

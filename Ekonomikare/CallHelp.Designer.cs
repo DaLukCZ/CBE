@@ -170,7 +170,7 @@
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.BackgroundImage = global::Ekonomikare.Properties.Resources.skovy;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(76, 212);
+            this.pictureBox2.Location = new System.Drawing.Point(76, 206);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(131, 120);
             this.pictureBox2.TabIndex = 15;

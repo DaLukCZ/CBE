@@ -1,4 +1,6 @@
 ﻿
+using System.Threading;
+
 namespace Ekonomikare
 {
     partial class MainForm
@@ -91,7 +93,8 @@ namespace Ekonomikare
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.button_exit);
             this.panel1.Controls.Add(this.label_otazka);
             this.panel1.Controls.Add(this.label1);
@@ -281,16 +284,22 @@ namespace Ekonomikare
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.BackgroundImage = global::Ekonomikare.Properties.Resources.background;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            Thread img = new Thread(() =>
+            {
+                this.BackgroundImage = global::Ekonomikare.Properties.Resources.background;
+            });
+            img.Start();
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximumSize = new System.Drawing.Size(3840, 2160);
-            this.MinimumSize = new System.Drawing.Size(854, 480);
             this.Name = "MainForm";
             this.Text = "Chcete být milionářem?";
-            this.Load += new System.EventHandler(this.Main_Load_1);
+            Thread thr = new Thread(() =>
+            {
+                this.Load += new System.EventHandler(this.Main_Load_1);
+            });
+            thr.Start();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
