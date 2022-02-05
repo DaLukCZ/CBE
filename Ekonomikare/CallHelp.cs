@@ -14,9 +14,12 @@ namespace Ekonomikare
     {
         Random r = new Random();
         //List<string> aswers = new List<string>(new string[] { "Vždyť jsme se nedávno učili. Je to", "Ty brďo, to jste mě zaskočil. Opravdu nevím" });
+        string TerHello = "Dobrý večer, manžel mi o vás hodně vyprávěl. Jasně, ptejte se.";
+        string SkovyHello = "Dobrý večer, kolego, jasně.";
         string aswer1 = "Vždyť jsme se nedávno učili. Je to ";
         string aswer2 = "Ty brďo, nevím přesně, ale asi ";
         string aswer3 = "Ty brďo, to jste mě zaskočil. Opravdu nevím.";
+        string call;
         int randN;
         int randN2;
         public int progress = 0;
@@ -30,7 +33,11 @@ namespace Ekonomikare
             clear();
             randN = r.Next(10);
             randN2 = r.Next(10);
+            button1.Visible = false;
+            button2.Visible = false;
+            Console.WriteLine(randN2);
         }
+
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -79,6 +86,7 @@ namespace Ekonomikare
             if (progress >= 4)
             {
                 button1.Visible = false;
+                button2.Visible = true;
             }
         }
 
@@ -97,14 +105,17 @@ namespace Ekonomikare
                 {
                     label6.Text = aswer1 + FormHandler.form1.getAnswer();
                 }
-                else if (randN >= 4 && randN < 6)
+                else if (randN >= 4 && randN < 7)
                 {
-                    if (randN2 < 3)
+                    if (randN2 <= 4)
                     {
                         int randN3 = r.Next(4);
-                        label6.Text = FormHandler.form1.getRandomAnswer(randN3);
+                        label6.Text = aswer2 + FormHandler.form1.getRandomAnswer(randN3);
+                        Console.WriteLine(FormHandler.form1.getRandomAnswer(randN3));
                     }
-                    label6.Text = aswer2 + FormHandler.form1.getAnswer();
+                    else{
+                        label6.Text = aswer2 + FormHandler.form1.getAnswer();
+                    }
                 }
                 else
                 {
@@ -113,14 +124,13 @@ namespace Ekonomikare
             }
             else
             {
-
                 if (randN >= 0 && randN < 4)
                 {
                     label6.Text = aswer1 + FormHandler.form1.getAnswer();
                 }
-                else if (randN >= 4 && randN < 6)
+                else if (randN >= 4 && randN < 7)
                 {
-                    if (randN2 < 3)
+                    if (randN2 < 4)
                     {
                         int randN3 = r.Next(4);
                         while (!buttons[randN3].Enabled)
@@ -138,21 +148,33 @@ namespace Ekonomikare
                 {
                     label6.Text = aswer3;
                 }
-                /*
-                if (i == spravnaOdpoved)
-                {
-                    answers[i].Text = randC2 + "%";
-                    progressBars[i].Value = randC2;
-                }
-                if (i != spravnaOdpoved && buttons[i].Enabled)
-                {
-                    answers[i].Text = (100 - randC2) + "%";
-                    progressBars[i].Value = (100 - randC2);
-                }
-                */
             }
         }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            pictureBox2.BackgroundImage = Properties.Resources.skovy;
+            pictureBox4.BackgroundImage = Properties.Resources.skovy;
+            button3.Hide();
+            button4.Hide();
+            button1.Visible = true;
+            label4.Text = SkovyHello;
+            call = "pane učiteli Skovajso";
+            label2.Text = "Dobrý večer, " + call + ",  u telefonu Marek Vašut z pořadu Chcete být";
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            pictureBox2.BackgroundImage = Properties.Resources.ohno;
+            pictureBox4.BackgroundImage = Properties.Resources.ohno;
+            button3.Hide();
+            button4.Hide();
+            button1.Visible = true;
+            label4.Text = TerHello;
+            call = "paní učitelko Přikrylová";
+            label2.Text = "Dobrý večer, " + call + ",  u telefonu Marek Vašut z pořadu Chcete být";
+
+        }
     }
 }
 

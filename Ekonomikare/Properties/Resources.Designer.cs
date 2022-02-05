@@ -290,6 +290,16 @@ namespace Ekonomikare.Properties {
         }
         
         /// <summary>
+        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ohno {
+            get {
+                object obj = ResourceManager.GetObject("ohno", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Vyhledá lokalizovaný řetězec podobný 4, &quot;Otázka?&quot;, new string[4] { &quot;Nejlíp na druhou&quot;, &quot;Dobře&quot;, &quot;Skvěle&quot;, &quot;Nejlíp&quot; }, 0.
         /// </summary>
         internal static string otazky {

@@ -353,9 +353,9 @@ namespace Ekonomikare
         {
             return currentQuestion.answers[currentQuestion.rightAnswer];
         }
-        public string getRandomAnswer(int cislo)
+        public string getRandomAnswer(int button)
         {
-            return currentQuestion.answers[cislo];
+            return currentQuestion.answers[button];
         }
 
         public string getQuestion()
@@ -458,6 +458,11 @@ namespace Ekonomikare
         private void button_Exit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

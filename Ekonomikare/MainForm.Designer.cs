@@ -113,6 +113,7 @@ namespace Ekonomikare
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1904, 1041);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // button_exit
             // 
@@ -144,7 +145,7 @@ namespace Ekonomikare
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(675, 511);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 13);
+            this.label1.Size = new System.Drawing.Size(0, 15);
             this.label1.TabIndex = 14;
             // 
             // button_Zkontroluj
@@ -284,22 +285,14 @@ namespace Ekonomikare
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            Thread img = new Thread(() =>
-            {
-                this.BackgroundImage = global::Ekonomikare.Properties.Resources.background;
-            });
-            img.Start();
+            this.BackgroundImage = global::Ekonomikare.Properties.Resources.background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
             this.Text = "Chcete být milionářem?";
-            Thread thr = new Thread(() =>
-            {
-                this.Load += new System.EventHandler(this.Main_Load_1);
-            });
-            thr.Start();
+            this.Load += new System.EventHandler(this.Main_Load_1);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
