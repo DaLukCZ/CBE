@@ -351,6 +351,10 @@ namespace Ekonomikare
         {
             return currentQuestion.answers[currentQuestion.rightAnswer];
         }
+        public string getRandomAnswer(int cislo)
+        {
+            return currentQuestion.answers[cislo];
+        }
 
         public string getQuestion()
         {

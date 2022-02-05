@@ -17,8 +17,8 @@ namespace Ekonomikare
         string aswer1 = "Vždyť jsme se nedávno učili. Je to ";
         string aswer2 = "Ty brďo, nevím přesně, ale asi ";
         string aswer3 = "Ty brďo, to jste mě zaskočil. Opravdu nevím.";
-        //string aswer1 = "Vždyť jsme se nedávno učili. Je to ";
         int randN;
+        int randN2;
         public int progress = 0;
         public CallHelp()
         {
@@ -29,7 +29,7 @@ namespace Ekonomikare
         {
             clear();
             randN = r.Next(10);
-            Console.WriteLine(randN);
+            randN2 = r.Next(10);
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -76,7 +76,8 @@ namespace Ekonomikare
                 generAswer();
                 label6.Visible = true;
             }
-            if (progress >= 4) {
+            if (progress >= 4)
+            {
                 button1.Visible = false;
             }
         }
@@ -87,18 +88,71 @@ namespace Ekonomikare
             talk();
         }
 
-        public void generAswer() {
-            if (randN >= 0 && randN < 5)
+        public void generAswer()
+        {
+            List<Button> buttons = new List<Button>(new Button[] { FormHandler.form1.getButtons(1), FormHandler.form1.getButtons(2), FormHandler.form1.getButtons(3), FormHandler.form1.getButtons(4) });
+            if (FormHandler.form1.getButton5050())
             {
-                label6.Text = aswer1 + FormHandler.form1.getAnswer();
+                if (randN >= 0 && randN < 4)
+                {
+                    label6.Text = aswer1 + FormHandler.form1.getAnswer();
+                }
+                else if (randN >= 4 && randN < 6)
+                {
+                    if (randN2 < 3)
+                    {
+                        int randN3 = r.Next(4);
+                        label6.Text = FormHandler.form1.getRandomAnswer(randN3);
+                    }
+                    label6.Text = aswer2 + FormHandler.form1.getAnswer();
+                }
+                else
+                {
+                    label6.Text = aswer3;
+                }
             }
-            else if (randN >= 5 && randN < 7)
+            else
             {
-                label6.Text = aswer2 + FormHandler.form1.getAnswer();
-            }
-            else {
-                label6.Text = aswer3;
+
+                if (randN >= 0 && randN < 4)
+                {
+                    label6.Text = aswer1 + FormHandler.form1.getAnswer();
+                }
+                else if (randN >= 4 && randN < 6)
+                {
+                    if (randN2 < 3)
+                    {
+                        int randN3 = r.Next(4);
+                        while (!buttons[randN3].Enabled)
+                        {
+                            randN3 = r.Next(4);
+                        }
+                        label6.Text = aswer2 + FormHandler.form1.getRandomAnswer(randN3);
+                    }
+                    else
+                    {
+                        label6.Text = aswer2 + FormHandler.form1.getAnswer();
+                    }
+                }
+                else
+                {
+                    label6.Text = aswer3;
+                }
+                /*
+                if (i == spravnaOdpoved)
+                {
+                    answers[i].Text = randC2 + "%";
+                    progressBars[i].Value = randC2;
+                }
+                if (i != spravnaOdpoved && buttons[i].Enabled)
+                {
+                    answers[i].Text = (100 - randC2) + "%";
+                    progressBars[i].Value = (100 - randC2);
+                }
+                */
             }
         }
+
     }
 }
+

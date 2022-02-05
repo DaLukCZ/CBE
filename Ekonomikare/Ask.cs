@@ -114,5 +114,10 @@ namespace Ekonomikare
         {
             this.Hide();
         }
+
+        private void Ask_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

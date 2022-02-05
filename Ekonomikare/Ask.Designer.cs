@@ -213,6 +213,7 @@
             this.Name = "Ask";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ask";
+            this.Load += new System.EventHandler(this.Ask_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
