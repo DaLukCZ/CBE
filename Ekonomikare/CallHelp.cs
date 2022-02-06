@@ -107,13 +107,13 @@ namespace Ekonomikare
                 }
                 else if (randN >= 4 && randN < 7)
                 {
-                    if (randN2 <= 4)
+                    if (randN2 <= 3)
                     {
                         int randN3 = r.Next(4);
                         label6.Text = aswer2 + FormHandler.form1.getRandomAnswer(randN3);
-                        Console.WriteLine(FormHandler.form1.getRandomAnswer(randN3));
                     }
-                    else{
+                    else
+                    {
                         label6.Text = aswer2 + FormHandler.form1.getAnswer();
                     }
                 }

@@ -113,7 +113,6 @@ namespace Ekonomikare
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1904, 1041);
             this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // button_exit
             // 
@@ -135,7 +134,7 @@ namespace Ekonomikare
             this.label_otazka.ForeColor = System.Drawing.Color.White;
             this.label_otazka.Location = new System.Drawing.Point(406, 462);
             this.label_otazka.Name = "label_otazka";
-            this.label_otazka.Size = new System.Drawing.Size(1102, 122);
+            this.label_otazka.Size = new System.Drawing.Size(1105, 122);
             this.label_otazka.TabIndex = 15;
             this.label_otazka.Text = "Otazka";
             this.label_otazka.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -145,7 +144,7 @@ namespace Ekonomikare
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(675, 511);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 15);
+            this.label1.Size = new System.Drawing.Size(0, 13);
             this.label1.TabIndex = 14;
             // 
             // button_Zkontroluj

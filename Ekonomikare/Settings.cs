@@ -15,7 +15,13 @@ namespace Ekonomikare
         public Settings()
         {
             InitializeComponent();
+            showTXT();
         }
 
+        private void showTXT()
+        {
+            string text = System.IO.File.ReadAllText("test.txt");
+            label1.Text = text;
+        }
     }
 }

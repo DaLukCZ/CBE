@@ -90,7 +90,7 @@ namespace Ekonomikare
             this.button_Settings.UseVisualStyleBackColor = false;
             this.button_Settings.Click += new System.EventHandler(this.button_Settings_Click);
             // 
-            // Form2
+            // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -106,13 +106,10 @@ namespace Ekonomikare
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(600, 830);
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(600, 830);
-            this.Name = "Form2";
+            this.Name = "Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Chcete být ekonomikářem?";
-            this.TopMost = true;
             this.Load += new System.EventHandler(this.Menu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_logo)).EndInit();
             this.ResumeLayout(false);

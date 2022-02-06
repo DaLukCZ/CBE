@@ -17,12 +17,12 @@ namespace Ekonomikare
 
         private void Menu_Load(object sender, EventArgs e)
         {
-            simpleSound.Play();
+            //simpleSound.Play();
         }
 
         private void button_Start_Click(object sender, EventArgs e)
         {
-            FormHandler.form1.Show(); 
+            FormHandler.form1.Show();
             FormHandler.form1.restart();
 
             this.Hide();

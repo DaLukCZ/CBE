@@ -15,6 +15,8 @@ namespace Ekonomikare
         public Victory()
         {
             InitializeComponent();
+            FormBorderStyle = FormBorderStyle.None;
+            WindowState = FormWindowState.Maximized;
         }
 
         private void Victory_Load(object sender, EventArgs e)
@@ -32,6 +34,11 @@ namespace Ekonomikare
             this.Close();
             FormHandler.form1.Hide();
             FormHandler.form2.Show();
+        }
+
+        private void button_Exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

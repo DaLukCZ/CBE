@@ -86,6 +86,7 @@
             this.label3.Size = new System.Drawing.Size(23, 36);
             this.label3.TabIndex = 12;
             this.label3.Text = ".";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button_Menu
             // 
@@ -111,6 +112,7 @@
             this.label_pocet.Size = new System.Drawing.Size(23, 36);
             this.label_pocet.TabIndex = 14;
             this.label_pocet.Text = ".";
+            this.label_pocet.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Lose
             // 
@@ -129,10 +131,13 @@
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Location = new System.Drawing.Point(615, 12);
+            this.Location = new System.Drawing.Point(590, 10);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Lose";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Lose";
+            this.TopMost = true;
             this.Load += new System.EventHandler(this.Lose_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

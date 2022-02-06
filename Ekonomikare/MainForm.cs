@@ -33,83 +33,9 @@ namespace Ekonomikare
             photoList.Images.Add(Properties.Resources.step8);
             photoList.Images.Add(Properties.Resources.step9);
             InitializeComponent();
-
             FormBorderStyle = FormBorderStyle.None;
             WindowState = FormWindowState.Maximized;
-
-            addQuestion(
-                0,
-                "Jaké je hlavní město Thajska?",
-                new string[4] { "Bangkok", "Tokyo", "Sapporo", "Singapur" },
-                0
-            );
-            addQuestion(
-                1,
-                "Jaké je hlavní město Japonska",
-                new string[4] { "Tokyo", "Praha", "Berlin", "Peking" },
-                0
-            );
-            addQuestion(
-                2,
-                "Jaké je hlavní město Egypta",
-                new string[4] { "Káhira", "Moskva", "Denver", "Singapur" },
-                0
-            );
-            addQuestion(
-                3,
-                "Jaké je hlavní město Austrálie",
-                new string[4] { "Canberra", "Sydney", "Perth", "Melbourne" },
-                0
-            );
-            addQuestion(
-                4,
-                "Jaké je hlavní město Norska?",
-                new string[4] { "Oslo", "Sofia", "Bratislava", "Otava" },
-                0
-            );
-            addQuestion(
-                5,
-                "Jaké je hlavní město Sloveska?",
-                new string[4] { "Bratislava", "Praha", "Vídeň", "Brno" },
-                0
-            );
-
-            addQuestion(
-                6,
-                "Jaké je hlavní město Česka?",
-                new string[4] { "Praha", "Mamka", "HopaKicka", "Mafia" },
-                0
-                );
-            addQuestion(
-                6,
-                "Jaké je hlavní město Německa?",
-                new string[4] { "Berlin", "Ottava", "Hop", "Mafia" },
-                0
-                );
-            addQuestion(
-                7,
-                "Jaké je hlavní město Česka?",
-                new string[4] { "Praha", "Mamka", "HopaKicka", "Mafia" },
-                0
-                );
-            addQuestion(
-                8,
-                "Jaké je hlavní město Česka?",
-                new string[4] { "Praha", "Mamka", "HopaKicka", "Mafia" },
-                0
-                );
-            addQuestion(
-                9,
-                "Jaké je hlavní město Česka?",
-                new string[4] { "Praha", "Mamka", "HopaKicka", "Mafia" },
-                0
-                );
-            addQuestion(
-                10,
-                "Jaké je hlavní město Česka?",
-                new string[4] { "Praha", "Mamka", "HopaKicka", "Mafia" },
-                0
-                );
+            readTXT();
             showQuestion();
         }
 
@@ -405,6 +331,21 @@ namespace Ekonomikare
             button_HelpAudiance.BackgroundImage = bitmap;
         }
 
+        public void readTXT()
+        {
+            foreach (string line in System.IO.File.ReadLines("otazky.txt"))
+            {
+                List<string> hodnoty1 = new List<string>(line.Split('-'));
+                addQuestion(
+                    int.Parse(hodnoty1[0]),
+                    hodnoty1[1],
+                    new string[4] { hodnoty1[2], hodnoty1[3], hodnoty1[4], hodnoty1[5] },
+                    int.Parse(hodnoty1[6])
+                    );
+            }
+            Console.WriteLine(questions);
+        }
+
         //odpoved1
         private void button_Answer1_Click(object sender, EventArgs e)
         {
@@ -458,11 +399,6 @@ namespace Ekonomikare
         private void button_Exit_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }
