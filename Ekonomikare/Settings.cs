@@ -20,8 +20,8 @@ namespace Ekonomikare
 
         private void showTXT()
         {
-            string text = System.IO.File.ReadAllText("test.txt");
-            label1.Text = text;
+            //string text = System.IO.File.ReadAllText("otazky.txt");
+            //label1.Text = text;
         }
     }
 }
