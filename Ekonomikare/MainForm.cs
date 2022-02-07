@@ -384,10 +384,13 @@ namespace Ekonomikare
         {
             CallHelp help = new CallHelp();
             help.Show();
+        }
+
+        public void fuckOf()
+        {
             button_CallHelp.Enabled = false;
             button_CallHelp.BackgroundImage = Properties.Resources.CallFriendX;
         }
-
         //kontrola
         private void button_Check_Click(object sender, EventArgs e)
         {
@@ -399,6 +402,11 @@ namespace Ekonomikare
         private void button_Exit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

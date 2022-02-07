@@ -34,8 +34,9 @@ namespace Ekonomikare
             randN = r.Next(10);
             randN2 = r.Next(10);
             button1.Visible = false;
-            button2.Visible = false;
+            button2.Visible = true;
             Console.WriteLine(randN2);
+            writeAnswers();
         }
 
 
@@ -56,6 +57,7 @@ namespace Ekonomikare
             label4.Visible = false;
             label5.Visible = false;
             label6.Visible = false;
+            label7.Visible = false; 
         }
         public void talk()
         {
@@ -76,6 +78,7 @@ namespace Ekonomikare
                 pictureBox3.Visible = true;
                 label5.Text = "Otázka zní: " + FormHandler.form1.getQuestion();
                 label5.Visible = true;
+                label7.Visible = true;
             }
             if (progress == 4)
             {
@@ -161,6 +164,7 @@ namespace Ekonomikare
             label4.Text = SkovyHello;
             call = "pane učiteli Skovajso";
             label2.Text = "Dobrý večer, " + call + ",  u telefonu Marek Vašut z pořadu Chcete být";
+            FormHandler.form1.fuckOf();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -173,7 +177,13 @@ namespace Ekonomikare
             label4.Text = TerHello;
             call = "paní učitelko Přikrylová";
             label2.Text = "Dobrý večer, " + call + ",  u telefonu Marek Vašut z pořadu Chcete být";
+            FormHandler.form1.fuckOf();
 
+        }
+
+        private void writeAnswers()
+        {
+            label7.Text = "Za A) " + FormHandler.form1.getRandomAnswer(0) + " za B) "+FormHandler.form1.getRandomAnswer(1) + " za C) "+FormHandler.form1.getRandomAnswer(2) + " nebo za D) " +FormHandler.form1.getRandomAnswer(3);
         }
     }
 }

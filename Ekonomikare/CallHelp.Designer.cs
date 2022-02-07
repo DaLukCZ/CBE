@@ -43,6 +43,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -57,7 +58,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(225, 101);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(891, 37);
+            this.label1.Size = new System.Drawing.Size(716, 29);
             this.label1.TabIndex = 3;
             this.label1.Text = "ekonomikářem, přede mnou sedí váš student a potřebuje vaši pomoc. ";
             // 
@@ -69,7 +70,7 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(225, 72);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(31, 46);
+            this.label2.Size = new System.Drawing.Size(19, 29);
             this.label2.TabIndex = 4;
             this.label2.Text = ".";
             // 
@@ -81,7 +82,7 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(225, 130);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(376, 37);
+            this.label3.Size = new System.Drawing.Size(301, 29);
             this.label3.TabIndex = 5;
             this.label3.Text = "Jste schopen mu napovědět?";
             // 
@@ -93,7 +94,7 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(225, 257);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(351, 37);
+            this.label4.Size = new System.Drawing.Size(278, 29);
             this.label4.TabIndex = 6;
             this.label4.Text = "Dobrý večer, kolego, jasně.";
             // 
@@ -114,9 +115,9 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(226, 397);
+            this.label5.Location = new System.Drawing.Point(225, 391);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(25, 37);
+            this.label5.Size = new System.Drawing.Size(19, 29);
             this.label5.TabIndex = 8;
             this.label5.Text = ".";
             // 
@@ -139,7 +140,7 @@
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(226, 554);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(25, 37);
+            this.label6.Size = new System.Drawing.Size(19, 29);
             this.label6.TabIndex = 10;
             this.label6.Text = ".";
             // 
@@ -217,6 +218,18 @@
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(225, 420);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(19, 29);
+            this.label7.TabIndex = 19;
+            this.label7.Text = ".";
+            // 
             // CallHelp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -225,6 +238,7 @@
             this.BackgroundImage = global::Ekonomikare.Properties.Resources.backblue;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1149, 711);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
@@ -269,5 +283,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label label7;
     }
 }

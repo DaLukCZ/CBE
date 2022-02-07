@@ -117,6 +117,19 @@ namespace Ekonomikare
 
         private void Ask_Load(object sender, EventArgs e)
         {
+            setAnswer();
+        }
+
+        public void setAnswer()
+        {
+            label_A.Text = "A) " + FormHandler.form1.getRandomAnswer(0);
+            label_B.Text = "B) " + FormHandler.form1.getRandomAnswer(1);
+            label_C.Text = "C) " + FormHandler.form1.getRandomAnswer(2);
+            label_D.Text = "D) " + FormHandler.form1.getRandomAnswer(3);
+        }
+
+        private void label_A_Click(object sender, EventArgs e)
+        {
 
         }
     }
