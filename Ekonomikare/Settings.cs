@@ -23,5 +23,10 @@ namespace Ekonomikare
             //string text = System.IO.File.ReadAllText("otazky.txt");
             //label1.Text = text;
         }
+
+        private void Settings_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
