@@ -43,7 +43,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Calibri", 80.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label1.ForeColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(733, 35);
+            this.label1.Location = new System.Drawing.Point(706, 35);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(581, 131);
             this.label1.TabIndex = 0;
@@ -56,7 +56,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Calibri", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(630, 166);
+            this.label2.Location = new System.Drawing.Point(559, 166);
             this.label2.MaximumSize = new System.Drawing.Size(900, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(869, 90);
@@ -71,9 +71,9 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = global::Ekonomikare.Properties.Resources.ekoapproved;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(833, 324);
+            this.pictureBox1.Location = new System.Drawing.Point(798, 372);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(481, 372);
+            this.pictureBox1.Size = new System.Drawing.Size(380, 296);
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
@@ -85,7 +85,7 @@
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(960, 769);
+            this.button1.Location = new System.Drawing.Point(883, 773);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(225, 105);
             this.button1.TabIndex = 16;
@@ -100,7 +100,7 @@
             this.button_Exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button_Exit.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Exit.ForeColor = System.Drawing.Color.White;
-            this.button_Exit.Location = new System.Drawing.Point(960, 899);
+            this.button_Exit.Location = new System.Drawing.Point(883, 895);
             this.button_Exit.Name = "button_Exit";
             this.button_Exit.Size = new System.Drawing.Size(225, 102);
             this.button_Exit.TabIndex = 17;

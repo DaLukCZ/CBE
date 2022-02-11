@@ -70,5 +70,10 @@ namespace Ekonomikare
         public int getClickCount() { 
             return ClickCount;
         }
+
+        private void Settings_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
