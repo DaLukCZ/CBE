@@ -280,5 +280,26 @@
   <ItemGroup>
     <None Include="Resources\ohno.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hudba.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pozadi.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hudbavpozadi.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\y.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\male21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sound.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\soundoff.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
