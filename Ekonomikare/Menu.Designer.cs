@@ -34,6 +34,7 @@ namespace Ekonomikare
             this.button_Start = new System.Windows.Forms.Button();
             this.pictureBox_logo = new System.Windows.Forms.PictureBox();
             this.button_Settings = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_logo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -90,6 +91,19 @@ namespace Ekonomikare
             this.button_Settings.UseVisualStyleBackColor = false;
             this.button_Settings.Click += new System.EventHandler(this.button_Settings_Click);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Black;
+            this.button1.BackgroundImage = global::Ekonomikare.Properties.Resources.sound;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.ForeColor = System.Drawing.Color.Transparent;
+            this.button1.Location = new System.Drawing.Point(485, 714);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 65);
+            this.button1.TabIndex = 17;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -98,6 +112,7 @@ namespace Ekonomikare
             this.BackgroundImage = global::Ekonomikare.Properties.Resources.male3;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(584, 791);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.button_Settings);
             this.Controls.Add(this.button_Start);
             this.Controls.Add(this.button_Exit);
@@ -123,5 +138,6 @@ namespace Ekonomikare
         private System.Windows.Forms.Button button_Start;
         private System.Windows.Forms.PictureBox pictureBox_logo;
         private System.Windows.Forms.Button button_Settings;
+        private System.Windows.Forms.Button button1;
     }
 }

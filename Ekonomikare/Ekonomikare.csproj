@@ -301,5 +301,8 @@
   <ItemGroup>
     <None Include="Resources\soundoff.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pozadnihudba.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
