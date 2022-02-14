@@ -57,7 +57,7 @@ namespace Ekonomikare
             label4.Visible = false;
             label5.Visible = false;
             label6.Visible = false;
-            label7.Visible = false; 
+            label7.Visible = false;
         }
         public void talk()
         {
@@ -183,7 +183,12 @@ namespace Ekonomikare
 
         private void writeAnswers()
         {
-            label7.Text = "Za A) " + FormHandler.form1.getRandomAnswer(0) + " za B) "+FormHandler.form1.getRandomAnswer(1) + " za C) "+FormHandler.form1.getRandomAnswer(2) + " nebo za D) " +FormHandler.form1.getRandomAnswer(3);
+            label7.Text = "Za A) " + FormHandler.form1.getRandomAnswer(0) + " za B) " + FormHandler.form1.getRandomAnswer(1) + " za C) " + FormHandler.form1.getRandomAnswer(2) + " nebo za D) " + FormHandler.form1.getRandomAnswer(3);
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

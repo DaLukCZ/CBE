@@ -229,6 +229,7 @@
             this.label7.Size = new System.Drawing.Size(19, 29);
             this.label7.TabIndex = 19;
             this.label7.Text = ".";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // CallHelp
             // 

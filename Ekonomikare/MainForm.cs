@@ -358,7 +358,7 @@ namespace Ekonomikare
         {
             foreach (string line in System.IO.File.ReadLines("otazky.txt"))
             {
-                List<string> hodnoty1 = new List<string>(line.Split('-'));
+                List<string> hodnoty1 = new List<string>(line.Split(';'));
                 addQuestion(
                     int.Parse(hodnoty1[0]),
                     hodnoty1[1],

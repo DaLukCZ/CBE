@@ -50,7 +50,6 @@ namespace Ekonomikare
             this.button_Answer3 = new System.Windows.Forms.Button();
             this.button_Answer2 = new System.Windows.Forms.Button();
             this.button_Answer1 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
@@ -295,16 +294,6 @@ namespace Ekonomikare
             this.button_Answer1.UseVisualStyleBackColor = false;
             this.button_Answer1.Click += new System.EventHandler(this.button_Answer1_Click);
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(1447, 705);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(6, 50);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -313,7 +302,6 @@ namespace Ekonomikare
             this.BackgroundImage = global::Ekonomikare.Properties.Resources.background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1923, 946);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
@@ -346,7 +334,6 @@ namespace Ekonomikare
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label_otazka;
         private System.Windows.Forms.Button button_exit;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
     }
 }
