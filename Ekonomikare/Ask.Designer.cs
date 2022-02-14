@@ -47,79 +47,75 @@
             // 
             // label_D
             // 
-            this.label_D.AutoSize = true;
             this.label_D.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
             this.label_D.Font = new System.Drawing.Font("Yu Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label_D.ForeColor = System.Drawing.Color.White;
             this.label_D.Location = new System.Drawing.Point(87, 237);
             this.label_D.Name = "label_D";
-            this.label_D.Size = new System.Drawing.Size(27, 26);
+            this.label_D.Size = new System.Drawing.Size(179, 52);
             this.label_D.TabIndex = 7;
             this.label_D.Text = "D";
             // 
             // label_C
             // 
-            this.label_C.AutoSize = true;
             this.label_C.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
             this.label_C.Font = new System.Drawing.Font("Yu Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label_C.ForeColor = System.Drawing.Color.White;
             this.label_C.Location = new System.Drawing.Point(88, 182);
             this.label_C.Name = "label_C";
-            this.label_C.Size = new System.Drawing.Size(26, 26);
+            this.label_C.Size = new System.Drawing.Size(178, 55);
             this.label_C.TabIndex = 6;
             this.label_C.Text = "C";
             // 
             // label_B
             // 
-            this.label_B.AutoSize = true;
             this.label_B.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
             this.label_B.Font = new System.Drawing.Font("Yu Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label_B.ForeColor = System.Drawing.Color.White;
             this.label_B.Location = new System.Drawing.Point(88, 126);
             this.label_B.Name = "label_B";
-            this.label_B.Size = new System.Drawing.Size(26, 26);
+            this.label_B.Size = new System.Drawing.Size(178, 56);
             this.label_B.TabIndex = 5;
             this.label_B.Text = "B";
             // 
             // label_A
             // 
-            this.label_A.AutoSize = true;
             this.label_A.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
             this.label_A.Font = new System.Drawing.Font("Yu Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label_A.ForeColor = System.Drawing.Color.White;
-            this.label_A.Location = new System.Drawing.Point(88, 74);
+            this.label_A.Location = new System.Drawing.Point(87, 73);
             this.label_A.Name = "label_A";
-            this.label_A.Size = new System.Drawing.Size(26, 26);
+            this.label_A.Size = new System.Drawing.Size(178, 52);
             this.label_A.TabIndex = 4;
             this.label_A.Text = "A";
             this.label_A.Click += new System.EventHandler(this.label_A_Click);
             // 
             // progressBar4
             // 
-            this.progressBar4.Location = new System.Drawing.Point(272, 242);
+            this.progressBar4.Location = new System.Drawing.Point(272, 240);
             this.progressBar4.Name = "progressBar4";
-            this.progressBar4.Size = new System.Drawing.Size(174, 23);
+            this.progressBar4.Size = new System.Drawing.Size(194, 38);
             this.progressBar4.TabIndex = 3;
             // 
             // progressBar3
             // 
             this.progressBar3.Location = new System.Drawing.Point(272, 185);
             this.progressBar3.Name = "progressBar3";
-            this.progressBar3.Size = new System.Drawing.Size(175, 23);
+            this.progressBar3.Size = new System.Drawing.Size(194, 40);
             this.progressBar3.TabIndex = 2;
             // 
             // progressBar2
             // 
             this.progressBar2.Location = new System.Drawing.Point(272, 129);
             this.progressBar2.Name = "progressBar2";
-            this.progressBar2.Size = new System.Drawing.Size(175, 23);
+            this.progressBar2.Size = new System.Drawing.Size(194, 38);
             this.progressBar2.TabIndex = 1;
             // 
             // progressBar1
             // 
             this.progressBar1.Location = new System.Drawing.Point(272, 74);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(175, 23);
+            this.progressBar1.Size = new System.Drawing.Size(194, 37);
             this.progressBar1.TabIndex = 0;
             // 
             // button_Ask
@@ -142,7 +138,7 @@
             this.button_close.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
             this.button_close.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_close.ForeColor = System.Drawing.Color.White;
-            this.button_close.Location = new System.Drawing.Point(459, 327);
+            this.button_close.Location = new System.Drawing.Point(395, 327);
             this.button_close.Name = "button_close";
             this.button_close.Size = new System.Drawing.Size(225, 102);
             this.button_close.TabIndex = 17;
@@ -154,11 +150,11 @@
             // 
             this.label_Answer1.AutoSize = true;
             this.label_Answer1.BackColor = System.Drawing.Color.Transparent;
-            this.label_Answer1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label_Answer1.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label_Answer1.ForeColor = System.Drawing.Color.Transparent;
-            this.label_Answer1.Location = new System.Drawing.Point(485, 78);
+            this.label_Answer1.Location = new System.Drawing.Point(485, 73);
             this.label_Answer1.Name = "label_Answer1";
-            this.label_Answer1.Size = new System.Drawing.Size(50, 19);
+            this.label_Answer1.Size = new System.Drawing.Size(65, 26);
             this.label_Answer1.TabIndex = 18;
             this.label_Answer1.Text = "label1";
             // 
@@ -166,11 +162,11 @@
             // 
             this.label_Answer2.AutoSize = true;
             this.label_Answer2.BackColor = System.Drawing.Color.Transparent;
-            this.label_Answer2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label_Answer2.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label_Answer2.ForeColor = System.Drawing.Color.White;
             this.label_Answer2.Location = new System.Drawing.Point(485, 133);
             this.label_Answer2.Name = "label_Answer2";
-            this.label_Answer2.Size = new System.Drawing.Size(50, 19);
+            this.label_Answer2.Size = new System.Drawing.Size(65, 26);
             this.label_Answer2.TabIndex = 19;
             this.label_Answer2.Text = "label2";
             // 
@@ -178,11 +174,11 @@
             // 
             this.label_Answer3.AutoSize = true;
             this.label_Answer3.BackColor = System.Drawing.Color.Transparent;
-            this.label_Answer3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label_Answer3.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label_Answer3.ForeColor = System.Drawing.Color.White;
             this.label_Answer3.Location = new System.Drawing.Point(486, 189);
             this.label_Answer3.Name = "label_Answer3";
-            this.label_Answer3.Size = new System.Drawing.Size(50, 19);
+            this.label_Answer3.Size = new System.Drawing.Size(65, 26);
             this.label_Answer3.TabIndex = 20;
             this.label_Answer3.Text = "label3";
             // 
@@ -190,11 +186,12 @@
             // 
             this.label_Answer4.AutoSize = true;
             this.label_Answer4.BackColor = System.Drawing.Color.Transparent;
-            this.label_Answer4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label_Answer4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label_Answer4.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label_Answer4.ForeColor = System.Drawing.Color.White;
             this.label_Answer4.Location = new System.Drawing.Point(485, 242);
             this.label_Answer4.Name = "label_Answer4";
-            this.label_Answer4.Size = new System.Drawing.Size(50, 19);
+            this.label_Answer4.Size = new System.Drawing.Size(65, 26);
             this.label_Answer4.TabIndex = 21;
             this.label_Answer4.Text = "label4";
             // 
@@ -223,8 +220,9 @@
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Location = new System.Drawing.Point(590, 10);
             this.Name = "Ask";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Ask";
             this.Load += new System.EventHandler(this.Ask_Load);
             this.ResumeLayout(false);
