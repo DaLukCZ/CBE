@@ -19,18 +19,15 @@ namespace Ekonomikare
         private void Menu_Load(object sender, EventArgs e)
         {
             prvniSound();
-            button_Settings.Visible = false;
         }
 
         private void button_Start_Click(object sender, EventArgs e)
         {
             FormHandler.form1.Show();
             FormHandler.form1.restart();
-            //FormHandler.form1.zapniZvuk();  
             this.Hide();
             sound1.Stop();
-            FormHandler.form1.setSoundy2(soundy);
-            //Console.WriteLine(getSoundy());
+            FormHandler.form1.zapniZvuk();
         }
 
         private void button_Exit_Click(object sender, EventArgs e)
@@ -43,28 +40,14 @@ namespace Ekonomikare
             //settings.Show();
         }
 
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            zmenPolaritu();
-            if (soundy)
-            {
-                sound1.PlayLooping();
-                button1.BackgroundImage = Properties.Resources.soundoff;
-            }
-            else {
-                button1.BackgroundImage = Properties.Resources.sound;
-                sound1.Stop();
-            }
-        }
-
         public void prvniSound()
         {
             if (soundy)
             {
                 sound1.PlayLooping();
             }
-            else {
+            else
+            {
                 sound1.Stop();
             }
         }

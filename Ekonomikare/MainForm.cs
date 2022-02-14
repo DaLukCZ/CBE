@@ -19,9 +19,9 @@ namespace Ekonomikare
         private Random random = new Random();
         private Ask ask = new Ask();
         private List<Question> questions = new List<Question>();
-        private bool soundy2 = true;
+        private bool soundy = true;
         ImageList photoList = new ImageList();
-        public SoundPlayer sound2 = new SoundPlayer(Properties.Resources.pozadnihudba);
+        public SoundPlayer sound = new SoundPlayer(Properties.Resources.pozadnihudba);
         public MainForm()
         {
             photoList.Images.Add(Properties.Resources.step0);
@@ -39,26 +39,32 @@ namespace Ekonomikare
             WindowState = FormWindowState.Maximized;
             readTXT();
             showQuestion();
-            //zapniZvuk();
+           
         }
 
         //form1
         private void Main_Load_1(object sender, EventArgs e)
         {
             step();
-            zapniZvuk();
-            Console.WriteLine(soundy2);
+            sound.PlayLooping();
         }
-
         public void zapniZvuk()
         {
-            if (soundy2)
+            sound.PlayLooping();
+        }
+
+        public void přepniZvuk()
+        {
+            if (soundy)
             {
-                sound2.PlayLooping();
+                sound.PlayLooping();
+                button2.BackgroundImage = Properties.Resources.sound;
+                soundy = false;
             }
             else { 
-                sound2.Stop();
+                sound.Stop();
                 button2.BackgroundImage = Properties.Resources.soundoff;
+                soundy = true;
             }
         }
 
@@ -421,25 +427,9 @@ namespace Ekonomikare
             Application.Exit();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button_sound_Click(object sender, EventArgs e)
         {
-            FormHandler.form2.zmenPolaritu();
-            if (soundy2)
-            {
-                sound2.PlayLooping();
-                button2.BackgroundImage = Properties.Resources.sound;
-            }
-            else {
-                sound2.Stop();
-                button2.BackgroundImage = Properties.Resources.soundoff;
-            }
-        }
-
-        public bool getSoundy2() { 
-            return soundy2;
-        }
-        public void setSoundy2(bool noveSoundy2) { 
-            soundy2 = noveSoundy2;  
+            přepniZvuk();
         }
     }
 }
