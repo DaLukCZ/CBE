@@ -48,9 +48,9 @@
             // label_D
             // 
             this.label_D.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
-            this.label_D.Font = new System.Drawing.Font("Yu Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label_D.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label_D.ForeColor = System.Drawing.Color.White;
-            this.label_D.Location = new System.Drawing.Point(119, 253);
+            this.label_D.Location = new System.Drawing.Point(120, 253);
             this.label_D.Name = "label_D";
             this.label_D.Size = new System.Drawing.Size(225, 50);
             this.label_D.TabIndex = 7;
@@ -59,7 +59,7 @@
             // label_C
             // 
             this.label_C.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
-            this.label_C.Font = new System.Drawing.Font("Yu Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label_C.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label_C.ForeColor = System.Drawing.Color.White;
             this.label_C.Location = new System.Drawing.Point(121, 188);
             this.label_C.Name = "label_C";
@@ -70,7 +70,7 @@
             // label_B
             // 
             this.label_B.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
-            this.label_B.Font = new System.Drawing.Font("Yu Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label_B.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label_B.ForeColor = System.Drawing.Color.White;
             this.label_B.Location = new System.Drawing.Point(121, 121);
             this.label_B.Name = "label_B";
@@ -81,7 +81,7 @@
             // label_A
             // 
             this.label_A.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
-            this.label_A.Font = new System.Drawing.Font("Yu Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label_A.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label_A.ForeColor = System.Drawing.Color.White;
             this.label_A.Location = new System.Drawing.Point(120, 53);
             this.label_A.Name = "label_A";

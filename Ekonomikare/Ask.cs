@@ -84,7 +84,10 @@ namespace Ekonomikare
                         rests.RemoveAt(0);
                     }
                 }
-
+                for (int i = 0; i < 4; i++)
+                {
+                    answers[i].Visible = true;
+                }
             }
             else
             {
@@ -102,12 +105,16 @@ namespace Ekonomikare
                         progressBars[i].Value = (100 - randC2);
                     }
                 }
+                for (int i = 0; i < 4; i++)
+                {
+                    if (buttons[i].Enabled)
+                    {
+                        answers[i].Visible = true;
+                    }
+                }
 
             }
-            for (int i = 0; i < 4; i++)
-            {
-                answers[i].Visible = true;
-            }
+
             button_Ask.Enabled = false;
             FormHandler.form1.setAudiance(false);
             FormHandler.form1.setAudianceBack(Properties.Resources.helpAudianceX);
