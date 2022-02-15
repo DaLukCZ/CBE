@@ -160,6 +160,7 @@ namespace Ekonomikare
             for (int i = 0; i < 4; i++)
             {
                 answers[i].Text = "";
+                answers[i].Visible = false;
                 progressBars[i].Value = 0;
             }
 
@@ -258,6 +259,7 @@ namespace Ekonomikare
         private void button_Audiance_Help_Click(object sender, EventArgs e)
         {
             ask.Show();
+            ask.setAnswer();
         }
         //obrazky
         private void step()
