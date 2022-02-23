@@ -411,7 +411,7 @@ namespace Ekonomikare
             help.Show();
         }
 
-        public void fuckOf()
+        public void callHelpDis()
         {
             button_CallHelp.Enabled = false;
             button_CallHelp.BackgroundImage = Properties.Resources.CallFriendX;
@@ -432,6 +432,11 @@ namespace Ekonomikare
         private void button_sound_Click(object sender, EventArgs e)
         {
             přepniZvuk();
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

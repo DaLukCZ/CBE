@@ -44,6 +44,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -227,7 +228,6 @@
             this.label7.Size = new System.Drawing.Size(799, 62);
             this.label7.TabIndex = 19;
             this.label7.Text = ".";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // CallHelp
             // 
@@ -283,5 +283,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label7;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }

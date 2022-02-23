@@ -13,7 +13,6 @@ namespace Ekonomikare
     public partial class CallHelp : Form
     {
         Random r = new Random();
-        //List<string> aswers = new List<string>(new string[] { "Vždyť jsme se nedávno učili. Je to", "Ty brďo, to jste mě zaskočil. Opravdu nevím" });
         string TerHello = "Dobrý večer, manžel mi o vás hodně vyprávěl. Jasně, ptejte se.";
         string SkovyHello = "Dobrý večer, kolego, jasně.";
         string aswer1 = "Vždyť jsme se nedávno učili. Je to ";
@@ -101,6 +100,7 @@ namespace Ekonomikare
 
         public void generAswer()
         {
+
             List<Button> buttons = new List<Button>(new Button[] { FormHandler.form1.getButtons(1), FormHandler.form1.getButtons(2), FormHandler.form1.getButtons(3), FormHandler.form1.getButtons(4) });
             if (FormHandler.form1.getButton5050())
             {
@@ -164,7 +164,7 @@ namespace Ekonomikare
             label4.Text = SkovyHello;
             call = "pane učiteli Skovajso";
             label2.Text = "Dobrý večer, " + call + ",  u telefonu Marek Vašut z pořadu Chcete být";
-            FormHandler.form1.fuckOf();
+            FormHandler.form1.callHelpDis();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -177,19 +177,41 @@ namespace Ekonomikare
             label4.Text = TerHello;
             call = "paní učitelko Přikrylová";
             label2.Text = "Dobrý večer, " + call + ",  u telefonu Marek Vašut z pořadu Chcete být";
-            FormHandler.form1.fuckOf();
+            FormHandler.form1.callHelpDis();
 
         }
 
         private void writeAnswers()
         {
-            label7.Text = "Za A) " + FormHandler.form1.getRandomAnswer(0) + " za B) " + FormHandler.form1.getRandomAnswer(1) + " za C) " + FormHandler.form1.getRandomAnswer(2) + " nebo za D) " + FormHandler.form1.getRandomAnswer(3);
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
+            string od1 = FormHandler.form1.getRandomAnswer(0);
+            string od2 = FormHandler.form1.getRandomAnswer(1);
+            string od3 = FormHandler.form1.getRandomAnswer(2);
+            string od4 = FormHandler.form1.getRandomAnswer(3);
+            List<string> odpo = new List<string>(new string[] { od1, od2, od3, od4 });
+            List<Button> buttonsAnswer = new List<Button>(new Button[] { FormHandler.form1.getButtons(1), FormHandler.form1.getButtons(2), FormHandler.form1.getButtons(3), FormHandler.form1.getButtons(4) });
+            List<Button> buttons = new List<Button>(new Button[] { FormHandler.form1.getButtons(1), FormHandler.form1.getButtons(2), FormHandler.form1.getButtons(3), FormHandler.form1.getButtons(4) });
+            if (FormHandler.form1.getButton5050())
+            {
+                label7.Text = "Za A) " + FormHandler.form1.getRandomAnswer(0) + " za B) " + FormHandler.form1.getRandomAnswer(1) + " za C) " + FormHandler.form1.getRandomAnswer(2) + " nebo za D) " + FormHandler.form1.getRandomAnswer(3);
+            }
+            else
+            {
+                string celaOtaz = "";
+                int p = 0;
+                for (int i = 0; i < 4; i++)
+                {
+                    if (buttons[i].Enabled)
+                    {
+                        if (p == 1)
+                        {
+                            celaOtaz += " nebo ";
+                        }
+                        p++;
+                        celaOtaz += odpo[i];
+                    }
+                }
+                label7.Text = celaOtaz;
+            }
         }
     }
 }
-
