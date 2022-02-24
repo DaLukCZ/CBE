@@ -187,8 +187,9 @@ namespace Ekonomikare
             string od2 = FormHandler.form1.getRandomAnswer(1);
             string od3 = FormHandler.form1.getRandomAnswer(2);
             string od4 = FormHandler.form1.getRandomAnswer(3);
+            //List<Guna.UI2.WinForms.Guna2Button> buttonsG = new List<Guna.UI2.WinForms.Guna2Button>(new Guna.UI2.WinForms.Guna2Button[] { guna2Button1 });
+
             List<string> odpo = new List<string>(new string[] { od1, od2, od3, od4 });
-            List<Button> buttonsAnswer = new List<Button>(new Button[] { FormHandler.form1.getButtons(1), FormHandler.form1.getButtons(2), FormHandler.form1.getButtons(3), FormHandler.form1.getButtons(4) });
             List<Button> buttons = new List<Button>(new Button[] { FormHandler.form1.getButtons(1), FormHandler.form1.getButtons(2), FormHandler.form1.getButtons(3), FormHandler.form1.getButtons(4) });
             if (FormHandler.form1.getButton5050())
             {
@@ -214,4 +215,5 @@ namespace Ekonomikare
             }
         }
     }
+
 }

@@ -312,6 +312,16 @@ namespace Ekonomikare.Properties {
         /// <summary>
         ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Must {
+            get {
+                object obj = ResourceManager.GetObject("Must", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ohno {
             get {
                 object obj = ResourceManager.GetObject("ohno", resourceCulture);
