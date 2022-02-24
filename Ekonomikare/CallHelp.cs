@@ -163,7 +163,7 @@ namespace Ekonomikare
             button1.Visible = true;
             label4.Text = SkovyHello;
             call = "pane učiteli Skovajso";
-            label2.Text = "Dobrý večer, " + call + ",  u telefonu Marek Vašut z pořadu Chcete být";
+            label2.Text = "Dobrý večer, " + call + ",  u telefonu Adam Skovajsa z pořadu Chcete být";
             FormHandler.form1.callHelpDis();
         }
 
@@ -176,7 +176,7 @@ namespace Ekonomikare
             button1.Visible = true;
             label4.Text = TerHello;
             call = "paní učitelko Přikrylová";
-            label2.Text = "Dobrý večer, " + call + ",  u telefonu Marek Vašut z pořadu Chcete být";
+            label2.Text = "Dobrý večer, " + call + ",  u telefonu Adam Skovajsa z pořadu Chcete být";
             FormHandler.form1.callHelpDis();
 
         }

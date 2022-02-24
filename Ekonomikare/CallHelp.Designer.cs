@@ -102,7 +102,7 @@
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.BackgroundImage = global::Ekonomikare.Properties.Resources.marekvasut;
+            this.pictureBox3.BackgroundImage = global::Ekonomikare.Properties.Resources.skovyKolo;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox3.Location = new System.Drawing.Point(76, 350);
             this.pictureBox3.Name = "pictureBox3";
@@ -160,7 +160,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = global::Ekonomikare.Properties.Resources.marekvasut;
+            this.pictureBox1.BackgroundImage = global::Ekonomikare.Properties.Resources.skovyKolo;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(76, 54);
             this.pictureBox1.Name = "pictureBox1";

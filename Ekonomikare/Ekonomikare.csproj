@@ -308,5 +308,11 @@
   <ItemGroup>
     <None Include="Resources\pozadnihudba.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\skovyKolo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bgvpng.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
