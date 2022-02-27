@@ -16,7 +16,7 @@ namespace Ekonomikare
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CallHelp());
+            Application.Run(new Menu());
         }
     }
 }

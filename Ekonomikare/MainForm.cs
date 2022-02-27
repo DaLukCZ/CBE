@@ -24,16 +24,6 @@ namespace Ekonomikare
         public SoundPlayer sound = new SoundPlayer(Properties.Resources.pozadnihudba);
         public MainForm()
         {
-            photoList.Images.Add(Properties.Resources.step0);
-            photoList.Images.Add(Properties.Resources.step1);
-            photoList.Images.Add(Properties.Resources.step2);
-            photoList.Images.Add(Properties.Resources.step3);
-            photoList.Images.Add(Properties.Resources.step4);
-            photoList.Images.Add(Properties.Resources.step5);
-            photoList.Images.Add(Properties.Resources.step6);
-            photoList.Images.Add(Properties.Resources.step7);
-            photoList.Images.Add(Properties.Resources.step8);
-            photoList.Images.Add(Properties.Resources.step9);
             InitializeComponent();
             FormBorderStyle = FormBorderStyle.None;
             WindowState = FormWindowState.Maximized;
