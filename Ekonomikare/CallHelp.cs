@@ -204,7 +204,6 @@ namespace Ekonomikare
             pictureBox2.BackgroundImage = Properties.Resources.Must;
             pictureBox4.BackgroundImage = Properties.Resources.Must;
             label2.Hide();
-            label3.Hide();
             button1.Visible = true;
             label2.Text = "Ahoj Igore, dali mi za úkol uvádět nějakou hovadinu s otázkami.";
             label1.Text = "Poradíš mu, protože já žeprý nemůžu?";

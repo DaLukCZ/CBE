@@ -243,6 +243,16 @@ namespace Ekonomikare.Properties {
         /// <summary>
         ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap homeTelefon {
+            get {
+                object obj = ResourceManager.GetObject("homeTelefon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap konfety {
             get {
                 object obj = ResourceManager.GetObject("konfety", resourceCulture);
@@ -345,6 +355,16 @@ namespace Ekonomikare.Properties {
         internal static System.Drawing.Bitmap ohno {
             get {
                 object obj = ResourceManager.GetObject("ohno", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap osohaButton {
+            get {
+                object obj = ResourceManager.GetObject("osohaButton", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -533,6 +553,16 @@ namespace Ekonomikare.Properties {
         internal static System.Drawing.Bitmap step9 {
             get {
                 object obj = ResourceManager.GetObject("step9", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap telefon {
+            get {
+                object obj = ResourceManager.GetObject("telefon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

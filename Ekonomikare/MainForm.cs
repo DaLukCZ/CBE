@@ -29,7 +29,7 @@ namespace Ekonomikare
             WindowState = FormWindowState.Maximized;
             readTXT();
             showQuestion();
-           
+
         }
 
         //form1
@@ -51,7 +51,8 @@ namespace Ekonomikare
                 button2.BackgroundImage = Properties.Resources.sound;
                 soundy = false;
             }
-            else { 
+            else
+            {
                 sound.Stop();
                 button2.BackgroundImage = Properties.Resources.soundoff;
                 soundy = true;
@@ -62,10 +63,10 @@ namespace Ekonomikare
         private void addQuestion(int step, string question, string[] answers, int rightAnswer)
         {
             questions.Add(new Question(
-            step,
+            step - 1,
             question,
             answers,
-            rightAnswer
+            rightAnswer - 1
         ));
         }
 
@@ -358,7 +359,6 @@ namespace Ekonomikare
                     int.Parse(hodnoty1[6])
                     );
             }
-            Console.WriteLine(questions);
         }
 
         //odpoved1
