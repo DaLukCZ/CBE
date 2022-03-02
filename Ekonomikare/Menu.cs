@@ -7,20 +7,21 @@ namespace Ekonomikare
     public partial class Menu : Form
     {
         //parametry
-        private bool soundy = true;
         public SoundPlayer sound1 = new SoundPlayer(Properties.Resources.music);
 
-        //Settings settings = new Settings();
+        //konstuktor
         public Menu()
         {
             InitializeComponent();
         }
 
+        //load formu
         private void Menu_Load(object sender, EventArgs e)
         {
             prvniSound();
         }
-
+        
+        //začne novou hru
         private void button_Start_Click(object sender, EventArgs e)
         {
             FormHandler.form1.Show();
@@ -30,43 +31,16 @@ namespace Ekonomikare
             FormHandler.form1.zapniZvuk();
         }
 
+        //vypíná aplikaci
         private void button_Exit_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void button_Settings_Click(object sender, EventArgs e)
-        {
-            //settings.Show();
-        }
-
+        //úvodní znělka
         public void prvniSound()
         {
-            if (soundy)
-            {
                 sound1.PlayLooping();
-            }
-            else
-            {
-                sound1.Stop();
-            }
-        }
-
-        public bool getSoundy()
-        {
-            return soundy;
-        }
-
-        public void zmenPolaritu()
-        {
-            if (soundy)
-            {
-                soundy = false;
-            }
-            else
-            {
-                soundy = true;
-            }
         }
     }
 }

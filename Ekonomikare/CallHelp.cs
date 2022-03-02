@@ -110,7 +110,7 @@ namespace Ekonomikare
                     if (randN2 <= 3)
                     {
                         int randN3 = r.Next(4);
-                        label6.Text = aswer2 + FormHandler.form1.getRandomAnswer(randN3);
+                        label6.Text = aswer2 + FormHandler.form1.getuCurrentAnswerButtonu(randN3);
                     }
                     else
                     {
@@ -137,7 +137,7 @@ namespace Ekonomikare
                         {
                             randN3 = r.Next(4);
                         }
-                        label6.Text = aswer2 + FormHandler.form1.getRandomAnswer(randN3);
+                        label6.Text = aswer2 + FormHandler.form1.getuCurrentAnswerButtonu(randN3);
                     }
                     else
                     {
@@ -154,17 +154,17 @@ namespace Ekonomikare
 
         private void writeAnswers()
         {
-            string od1 = FormHandler.form1.getRandomAnswer(0);
-            string od2 = FormHandler.form1.getRandomAnswer(1);
-            string od3 = FormHandler.form1.getRandomAnswer(2);
-            string od4 = FormHandler.form1.getRandomAnswer(3);
+            string od1 = FormHandler.form1.getuCurrentAnswerButtonu(0);
+            string od2 = FormHandler.form1.getuCurrentAnswerButtonu(1);
+            string od3 = FormHandler.form1.getuCurrentAnswerButtonu(2);
+            string od4 = FormHandler.form1.getuCurrentAnswerButtonu(3);
             //List<Guna.UI2.WinForms.Guna2Button> buttonsG = new List<Guna.UI2.WinForms.Guna2Button>(new Guna.UI2.WinForms.Guna2Button[] { guna2Button1 });
 
             List<string> odpo = new List<string>(new string[] { od1, od2, od3, od4 });
             List<Button> buttons = new List<Button>(new Button[] { FormHandler.form1.getButtons(1), FormHandler.form1.getButtons(2), FormHandler.form1.getButtons(3), FormHandler.form1.getButtons(4) });
             if (FormHandler.form1.getButton5050())
             {
-                label7.Text = "Za A) " + FormHandler.form1.getRandomAnswer(0) + " za B) " + FormHandler.form1.getRandomAnswer(1) + " za C) " + FormHandler.form1.getRandomAnswer(2) + " nebo za D) " + FormHandler.form1.getRandomAnswer(3);
+                label7.Text = "Za A) " + FormHandler.form1.getuCurrentAnswerButtonu(0) + " za B) " + FormHandler.form1.getuCurrentAnswerButtonu(1) + " za C) " + FormHandler.form1.getuCurrentAnswerButtonu(2) + " nebo za D) " + FormHandler.form1.getuCurrentAnswerButtonu(3);
             }
             else
             {

@@ -48,7 +48,6 @@
             this.label1.Size = new System.Drawing.Size(581, 131);
             this.label1.TabIndex = 0;
             this.label1.Text = "GRATULACE";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -64,7 +63,6 @@
             this.label2.Text = "Tisíc korun z  tebe asi Milionáře neudělá, alespoň se ale můžeš považovat za dobr" +
     "ého ekonomikáře.";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // pictureBox1
             // 
@@ -111,7 +109,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Ekonomikare.Properties.Resources.konfety;
+            this.BackgroundImage = global::Ekonomikare.Properties.Resources.konfetySkovy;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1920, 1080);
             this.Controls.Add(this.button_Exit);

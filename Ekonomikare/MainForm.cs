@@ -20,8 +20,9 @@ namespace Ekonomikare
         private Ask ask = new Ask();
         private List<Question> questions = new List<Question>();
         private bool soundy = true;
-        ImageList photoList = new ImageList();
         public SoundPlayer sound = new SoundPlayer(Properties.Resources.pozadnihudba);
+        
+        //konstruktor
         public MainForm()
         {
             InitializeComponent();
@@ -32,17 +33,20 @@ namespace Ekonomikare
 
         }
 
-        //form1
+        //form load
         private void Main_Load_1(object sender, EventArgs e)
         {
             step();
             sound.PlayLooping();
         }
+
+        //zapíná zvuk
         public void zapniZvuk()
         {
             sound.PlayLooping();
         }
 
+        //zvuky zapíná a vypíná a nastavuje obrázek
         public void setSound()
         {
             soundy = !soundy;
@@ -294,31 +298,38 @@ namespace Ekonomikare
         {
             return currentQuestion.answers[currentQuestion.rightAnswer];
         }
-        public string getRandomAnswer(int button)
+
+        //getuje aktuální odpověd na určitém buttonu pro používání v jiných formech
+        public string getuCurrentAnswerButtonu(int button)
         {
             return currentQuestion.answers[button];
         }
 
+        //getuje aktualní otázku pro používání v jiných formech
         public string getQuestion()
         {
             return currentQuestion.question;
         }
 
+        //getuje aktuální pro používání v jiných formech
         public int getStep()
         {
             return Currentstep;
         }
 
+        //getuje aktuální odpověd pro používání v jiných formech
         public int getCurrentAnswer()
         {
             return currentQuestion.rightAnswer;
         }
 
+        //getuje button5050 pro používání v jiných formech
         public bool getButton5050()
         {
             return button_5050.Enabled;
         }
 
+        //getuje buttony 1-4 pro používání v jiných formech
         public Button getButtons(int button)
         {
             switch (button)
@@ -336,16 +347,19 @@ namespace Ekonomikare
             }
         }
 
+        //nastavuje pomoc publika
         public void setAudiance(bool boolean)
         {
             button_HelpAudiance.Enabled = boolean;
         }
 
+        //nastavuje obrázek publika
         public void setAudianceBack(Bitmap bitmap)
         {
             button_HelpAudiance.BackgroundImage = bitmap;
         }
 
+        //metoda pro čtení txt
         public void readTXT()
         {
             foreach (string line in System.IO.File.ReadLines("otazky.txt"))
@@ -400,6 +414,7 @@ namespace Ekonomikare
             help.Show();
         }
 
+        //vypne tlačitko call friend
         public void callHelpDis()
         {
             button_CallHelp.Enabled = false;
@@ -418,14 +433,11 @@ namespace Ekonomikare
             Application.Exit();
         }
 
+        //při kliknutí volá metodu setSound
         private void button_sound_Click(object sender, EventArgs e)
         {
             setSound();
         }
 
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 }

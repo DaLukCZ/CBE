@@ -12,6 +12,7 @@ namespace Ekonomikare
 {
     public partial class Victory : Form
     {
+
         public Victory()
         {
             InitializeComponent();
@@ -24,11 +25,7 @@ namespace Ekonomikare
             //song
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        //zpátky do menu
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -36,14 +33,10 @@ namespace Ekonomikare
             FormHandler.form2.Show();
         }
 
+        //vypíná aplikaci
         private void button_Exit_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

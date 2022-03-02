@@ -223,6 +223,16 @@ namespace Ekonomikare.Properties {
         /// <summary>
         ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap konfetySkovy {
+            get {
+                object obj = ResourceManager.GetObject("konfetySkovy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap male3 {
             get {
                 object obj = ResourceManager.GetObject("male3", resourceCulture);

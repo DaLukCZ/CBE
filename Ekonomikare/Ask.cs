@@ -12,16 +12,19 @@ namespace Ekonomikare
 {
     public partial class Ask : Form
     {
+        //konsturktor
         public Ask()
         {
             InitializeComponent();
         }
 
+        //tlačítko ask nastavuje na true
         public void setAsk()
         {
             button_Ask.Enabled = true;
         }
 
+        //vrací labely
         public Label getLabels(int label)
         {
             switch (label)
@@ -38,6 +41,7 @@ namespace Ekonomikare
                     return null;
             }
         }
+        //vrací progress bary
         public ProgressBar getPG(int pg)
         {
             switch (pg)
@@ -55,7 +59,7 @@ namespace Ekonomikare
             }
         }
 
-
+        //určuje/generuje kolik procent bude mít určitý progress bar
         private void button_Ask_Click(object sender, EventArgs e)
         {
             Random random = new Random();
@@ -121,22 +125,25 @@ namespace Ekonomikare
             button_close.Enabled = true;
         }
 
+        //zavírá tento form
         private void button_close_Click(object sender, EventArgs e)
         {
             this.Hide();
         }
 
+        //load formu
         private void Ask_Load(object sender, EventArgs e)
         {
             setAnswer();
         }
 
+        //určuje text
         public void setAnswer()
         {
-            label_A.Text = "A) " + FormHandler.form1.getRandomAnswer(0);
-            label_B.Text = "B) " + FormHandler.form1.getRandomAnswer(1);
-            label_C.Text = "C) " + FormHandler.form1.getRandomAnswer(2);
-            label_D.Text = "D) " + FormHandler.form1.getRandomAnswer(3);
+            label_A.Text = "A) " + FormHandler.form1.getuCurrentAnswerButtonu(0);
+            label_B.Text = "B) " + FormHandler.form1.getuCurrentAnswerButtonu(1);
+            label_C.Text = "C) " + FormHandler.form1.getuCurrentAnswerButtonu(2);
+            label_D.Text = "D) " + FormHandler.form1.getuCurrentAnswerButtonu(3);
         }
     }
 }

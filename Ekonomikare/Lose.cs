@@ -12,28 +12,33 @@ namespace Ekonomikare
 {
     public partial class Lose : Form
     {
+        //konstruktor
         public Lose()
         {
             InitializeComponent();
         }
 
+        //load formu
         private void Lose_Load(object sender, EventArgs e)
         {
             label3.Text = "Správná odpověď byla " + FormHandler.form1.getAnswer() + ".";
             label_pocet.Text = "" + FormHandler.form1.getStep() + " / 10";
         }
 
+        //vypne aplikaci
         private void button_Answer1_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
+        //začne novou hru
         private void button1_Click(object sender, EventArgs e)
         {
             FormHandler.form1.restart();
             this.Close();
         }
 
+        //pošle do menu
         private void button_Menu_Click(object sender, EventArgs e)
         {
             FormHandler.form2.Show();
