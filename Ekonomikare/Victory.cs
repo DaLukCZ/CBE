@@ -25,6 +25,16 @@ namespace Ekonomikare
             //song
         }
 
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams handleParams = base.CreateParams;
+                handleParams.ExStyle |= 0x02000000;
+                return handleParams;
+            }
+        }
+
         //zpátky do menu
         private void button1_Click(object sender, EventArgs e)
         {
