@@ -74,7 +74,7 @@ namespace Ekonomikare
             this.button_Answer4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
             this.button_Answer4.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Answer4.ForeColor = System.Drawing.Color.White;
-            this.button_Answer4.Location = new System.Drawing.Point(1001, 823);
+            this.button_Answer4.Location = new System.Drawing.Point(997, 883);
             this.button_Answer4.Name = "button_Answer4";
             this.button_Answer4.Size = new System.Drawing.Size(291, 145);
             this.button_Answer4.TabIndex = 4;
@@ -113,7 +113,7 @@ namespace Ekonomikare
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1923, 946);
+            this.panel1.Size = new System.Drawing.Size(1904, 1041);
             this.panel1.TabIndex = 0;
             // 
             // button2
@@ -147,7 +147,7 @@ namespace Ekonomikare
             this.label_otazka.Cursor = System.Windows.Forms.Cursors.Default;
             this.label_otazka.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label_otazka.ForeColor = System.Drawing.Color.White;
-            this.label_otazka.Location = new System.Drawing.Point(406, 462);
+            this.label_otazka.Location = new System.Drawing.Point(406, 402);
             this.label_otazka.Name = "label_otazka";
             this.label_otazka.Size = new System.Drawing.Size(1105, 122);
             this.label_otazka.TabIndex = 15;
@@ -167,7 +167,7 @@ namespace Ekonomikare
             this.button_Zkontroluj.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
             this.button_Zkontroluj.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Zkontroluj.ForeColor = System.Drawing.Color.White;
-            this.button_Zkontroluj.Location = new System.Drawing.Point(382, 759);
+            this.button_Zkontroluj.Location = new System.Drawing.Point(378, 819);
             this.button_Zkontroluj.Name = "button_Zkontroluj";
             this.button_Zkontroluj.Size = new System.Drawing.Size(210, 93);
             this.button_Zkontroluj.TabIndex = 13;
@@ -250,7 +250,7 @@ namespace Ekonomikare
             this.button_otazka.Enabled = false;
             this.button_otazka.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_otazka.ForeColor = System.Drawing.Color.White;
-            this.button_otazka.Location = new System.Drawing.Point(396, 448);
+            this.button_otazka.Location = new System.Drawing.Point(396, 388);
             this.button_otazka.Name = "button_otazka";
             this.button_otazka.Size = new System.Drawing.Size(1128, 145);
             this.button_otazka.TabIndex = 9;
@@ -261,7 +261,7 @@ namespace Ekonomikare
             this.button_Answer3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
             this.button_Answer3.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Answer3.ForeColor = System.Drawing.Color.White;
-            this.button_Answer3.Location = new System.Drawing.Point(628, 823);
+            this.button_Answer3.Location = new System.Drawing.Point(624, 883);
             this.button_Answer3.Name = "button_Answer3";
             this.button_Answer3.Size = new System.Drawing.Size(291, 145);
             this.button_Answer3.TabIndex = 8;
@@ -274,7 +274,7 @@ namespace Ekonomikare
             this.button_Answer2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
             this.button_Answer2.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Answer2.ForeColor = System.Drawing.Color.White;
-            this.button_Answer2.Location = new System.Drawing.Point(1001, 641);
+            this.button_Answer2.Location = new System.Drawing.Point(997, 701);
             this.button_Answer2.Name = "button_Answer2";
             this.button_Answer2.Size = new System.Drawing.Size(291, 145);
             this.button_Answer2.TabIndex = 7;
@@ -287,7 +287,7 @@ namespace Ekonomikare
             this.button_Answer1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
             this.button_Answer1.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Answer1.ForeColor = System.Drawing.Color.White;
-            this.button_Answer1.Location = new System.Drawing.Point(628, 641);
+            this.button_Answer1.Location = new System.Drawing.Point(624, 701);
             this.button_Answer1.Name = "button_Answer1";
             this.button_Answer1.Size = new System.Drawing.Size(291, 145);
             this.button_Answer1.TabIndex = 6;
@@ -300,9 +300,9 @@ namespace Ekonomikare
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.BackgroundImage = global::Ekonomikare.Properties.Resources.bgvpng;
+            this.BackgroundImage = global::Ekonomikare.Properties.Resources.skovyNaZidly;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(1923, 946);
+            this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";

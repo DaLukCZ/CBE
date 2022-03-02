@@ -43,19 +43,18 @@ namespace Ekonomikare
             sound.PlayLooping();
         }
 
-        public void přepniZvuk()
+        public void setSound()
         {
+            soundy = !soundy;
             if (soundy)
             {
                 sound.PlayLooping();
                 button2.BackgroundImage = Properties.Resources.sound;
-                soundy = false;
             }
             else
             {
                 sound.Stop();
                 button2.BackgroundImage = Properties.Resources.soundoff;
-                soundy = true;
             }
         }
 
@@ -421,7 +420,7 @@ namespace Ekonomikare
 
         private void button_sound_Click(object sender, EventArgs e)
         {
-            přepniZvuk();
+            setSound();
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)

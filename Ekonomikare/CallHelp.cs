@@ -191,8 +191,6 @@ namespace Ekonomikare
         {
             pictureBox2.BackgroundImage = Properties.Resources.TerkaKolo;
             pictureBox4.BackgroundImage = Properties.Resources.TerkaKolo;
-            panel2.Hide();
-            panel3.Hide();
             button1.Visible = true;
             label2.Text = "Ahoj Terko, dali mi za úkol uvádět nějakou hovadinu s otázkami.";
             label1.Text = "Poradíš mu, protože já žeprý nemůžu?";

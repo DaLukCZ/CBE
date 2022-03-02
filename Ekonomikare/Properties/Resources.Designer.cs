@@ -63,26 +63,6 @@ namespace Ekonomikare.Properties {
         /// <summary>
         ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _1 {
-            get {
-                object obj = ResourceManager.GetObject("_1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _2 {
-            get {
-                object obj = ResourceManager.GetObject("_2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap _5050 {
             get {
                 object obj = ResourceManager.GetObject("_5050", resourceCulture);
@@ -96,16 +76,6 @@ namespace Ekonomikare.Properties {
         internal static System.Drawing.Bitmap _5050X {
             get {
                 object obj = ResourceManager.GetObject("_5050X", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap back {
-            get {
-                object obj = ResourceManager.GetObject("back", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -243,49 +213,9 @@ namespace Ekonomikare.Properties {
         /// <summary>
         ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap homeTelefon {
-            get {
-                object obj = ResourceManager.GetObject("homeTelefon", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap konfety {
             get {
                 object obj = ResourceManager.GetObject("konfety", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap konfety2 {
-            get {
-                object obj = ResourceManager.GetObject("konfety2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap male2 {
-            get {
-                object obj = ResourceManager.GetObject("male2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap male21 {
-            get {
-                object obj = ResourceManager.GetObject("male21", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -306,16 +236,6 @@ namespace Ekonomikare.Properties {
         internal static System.Drawing.Bitmap malebackground {
             get {
                 object obj = ResourceManager.GetObject("malebackground", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap marekvasut {
-            get {
-                object obj = ResourceManager.GetObject("marekvasut", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -350,61 +270,11 @@ namespace Ekonomikare.Properties {
         }
         
         /// <summary>
-        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap ohno {
-            get {
-                object obj = ResourceManager.GetObject("ohno", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap osohaButton {
-            get {
-                object obj = ResourceManager.GetObject("osohaButton", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
         ///   Vyhledá lokalizovaný řetězec podobný 4, &quot;Otázka?&quot;, new string[4] { &quot;Nejlíp na druhou&quot;, &quot;Dobře&quot;, &quot;Skvěle&quot;, &quot;Nejlíp&quot; }, 0.
         /// </summary>
         internal static string otazky {
             get {
                 return ResourceManager.GetString("otazky", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap png {
-            get {
-                object obj = ResourceManager.GetObject("png", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap pozadi {
-            get {
-                object obj = ResourceManager.GetObject("pozadi", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap pozadi1 {
-            get {
-                object obj = ResourceManager.GetObject("pozadi1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -420,9 +290,9 @@ namespace Ekonomikare.Properties {
         /// <summary>
         ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap skovy {
+        internal static System.Drawing.Bitmap skovyKolo {
             get {
-                object obj = ResourceManager.GetObject("skovy", resourceCulture);
+                object obj = ResourceManager.GetObject("skovyKolo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -430,9 +300,9 @@ namespace Ekonomikare.Properties {
         /// <summary>
         ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap skovyKolo {
+        internal static System.Drawing.Bitmap skovyNaZidly {
             get {
-                object obj = ResourceManager.GetObject("skovyKolo", resourceCulture);
+                object obj = ResourceManager.GetObject("skovyNaZidly", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
