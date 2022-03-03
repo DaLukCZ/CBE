@@ -43,7 +43,6 @@ namespace Ekonomikare
             randN2 = r.Next(10);
             button1.Visible = false;
             button2.Visible = true;
-            Console.WriteLine(randN2);
             writeAnswers();
         }
 

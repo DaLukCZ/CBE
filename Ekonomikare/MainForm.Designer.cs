@@ -36,7 +36,6 @@ namespace Ekonomikare
             this.button_Answer4 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
             this.button_exit = new System.Windows.Forms.Button();
             this.label_otazka = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -96,7 +95,6 @@ namespace Ekonomikare
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button_exit);
             this.panel1.Controls.Add(this.label_otazka);
             this.panel1.Controls.Add(this.label1);
@@ -115,19 +113,6 @@ namespace Ekonomikare
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1904, 1041);
             this.panel1.TabIndex = 0;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Black;
-            this.button2.BackgroundImage = global::Ekonomikare.Properties.Resources.sound;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.ForeColor = System.Drawing.Color.Transparent;
-            this.button2.Location = new System.Drawing.Point(1800, 856);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 65);
-            this.button2.TabIndex = 18;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button_sound_Click);
             // 
             // button_exit
             // 
@@ -202,7 +187,6 @@ namespace Ekonomikare
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 100F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(346, 100);
-            this.tableLayoutPanel1.TabIndex = 10;
             this.tableLayoutPanel1.TabIndex = 10;
             // 
             // button_CallHelp
@@ -335,7 +319,6 @@ namespace Ekonomikare
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label_otazka;
         private System.Windows.Forms.Button button_exit;
-        private System.Windows.Forms.Button button2;
     }
 }
 

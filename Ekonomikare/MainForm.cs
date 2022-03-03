@@ -30,7 +30,6 @@ namespace Ekonomikare
         private Random random = new Random();
         private Ask ask = new Ask();
         private List<Question> questions = new List<Question>();
-        private bool soundy = true;
         public SoundPlayer sound = new SoundPlayer(Properties.Resources.pozadnihudba);
         
         //konstruktor
@@ -55,22 +54,6 @@ namespace Ekonomikare
         public void zapniZvuk()
         {
             sound.PlayLooping();
-        }
-
-        //zvuky zapíná a vypíná a nastavuje obrázek
-        public void setSound()
-        {
-            soundy = !soundy;
-            if (soundy)
-            {
-                sound.PlayLooping();
-                button2.BackgroundImage = Properties.Resources.sound;
-            }
-            else
-            {
-                sound.Stop();
-                button2.BackgroundImage = Properties.Resources.soundoff;
-            }
         }
 
         //addOtazka
@@ -443,12 +426,5 @@ namespace Ekonomikare
         {
             Application.Exit();
         }
-
-        //při kliknutí volá metodu setSound
-        private void button_sound_Click(object sender, EventArgs e)
-        {
-            setSound();
-        }
-
     }
 }
