@@ -294,7 +294,7 @@ namespace Ekonomikare
         }
 
         //getuje aktuální odpověd na určitém buttonu pro používání v jiných formech
-        public string getuCurrentAnswerButtonu(int button)
+        public string getuCurrentAnswerOnButtonu(int button)
         {
             return currentQuestion.answers[button];
         }

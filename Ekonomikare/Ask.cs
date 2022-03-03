@@ -79,7 +79,7 @@ namespace Ekonomikare
             int spravnaOdpoved = FormHandler.form1.getCurrentAnswer();
             if (FormHandler.form1.getButton5050())
             {
-                int randC1 = random.Next(40, 70);
+                int randC1 = random.Next(36, 66);
                 int rest1 = (100 - randC1) - random.Next(10, 100 - randC1);
                 int rest2 = 100 - rest1 - randC1 - random.Next(5, 100 - rest1 - randC1);
                 int rest3 = 100 - rest2 - rest1 - randC1;
@@ -105,7 +105,7 @@ namespace Ekonomikare
             }
             else
             {
-                int randC2 = random.Next(55, 85);
+                int randC2 = random.Next(50, 75);
                 for (int i = 0; i < 4; i++)
                 {
                     if (i == spravnaOdpoved)
@@ -150,10 +150,10 @@ namespace Ekonomikare
         //určuje text
         public void setAnswer()
         {
-            label_A.Text = "A) " + FormHandler.form1.getuCurrentAnswerButtonu(0);
-            label_B.Text = "B) " + FormHandler.form1.getuCurrentAnswerButtonu(1);
-            label_C.Text = "C) " + FormHandler.form1.getuCurrentAnswerButtonu(2);
-            label_D.Text = "D) " + FormHandler.form1.getuCurrentAnswerButtonu(3);
+            label_A.Text = "A) " + FormHandler.form1.getuCurrentAnswerOnButtonu(0);
+            label_B.Text = "B) " + FormHandler.form1.getuCurrentAnswerOnButtonu(1);
+            label_C.Text = "C) " + FormHandler.form1.getuCurrentAnswerOnButtonu(2);
+            label_D.Text = "D) " + FormHandler.form1.getuCurrentAnswerOnButtonu(3);
         }
     }
 }
