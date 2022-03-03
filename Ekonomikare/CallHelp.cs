@@ -196,8 +196,7 @@ namespace Ekonomikare
             }
         }
 
-
-        private void panel2_Click(object sender, EventArgs e)
+        private void guna2Button2_Click(object sender, EventArgs e)
         {
             pictureBox2.BackgroundImage = Properties.Resources.TerkaKolo;
             pictureBox4.BackgroundImage = Properties.Resources.TerkaKolo;
@@ -205,17 +204,23 @@ namespace Ekonomikare
             label2.Text = "Ahoj Terko, dali mi za úkol uvádět nějakou hovadinu s otázkami.";
             label1.Text = "Poradíš mu, protože já žeprý nemůžu?";
             FormHandler.form1.callHelpDis();
+            guna2Button2.Hide();
+            guna2Button1.Hide();
+            panel1.Hide();
         }
 
-        private void panel3_Click(object sender, EventArgs e)
+        private void guna2Button1_Click(object sender, EventArgs e)
         {
-            pictureBox2.BackgroundImage = Properties.Resources.Must;
-            pictureBox4.BackgroundImage = Properties.Resources.Must;
+            pictureBox2.BackgroundImage = Properties.Resources.hrdinaKolo;
+            pictureBox4.BackgroundImage = Properties.Resources.hrdinaKolo;
             label2.Hide();
             button1.Visible = true;
-            label2.Text = "Ahoj Igore, dali mi za úkol uvádět nějakou hovadinu s otázkami.";
+            label2.Text = "Ahoj Zdeňo, dali mi za úkol uvádět nějakou hovadinu s otázkami.";
             label1.Text = "Poradíš mu, protože já žeprý nemůžu?";
             FormHandler.form1.callHelpDis();
+            guna2Button2.Hide();
+            guna2Button1.Hide();
+            panel1.Hide();
         }
     }
 
