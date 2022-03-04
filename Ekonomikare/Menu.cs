@@ -7,7 +7,6 @@ namespace Ekonomikare
     public partial class Menu : Form
     {
         //parametry
-        public SoundPlayer sound1 = new SoundPlayer(Properties.Resources.music);
 
         //konstuktor
         public Menu()
@@ -28,7 +27,6 @@ namespace Ekonomikare
         //load formu
         private void Menu_Load(object sender, EventArgs e)
         {
-            prvniSound();
         }
         
         //začne novou hru
@@ -37,8 +35,6 @@ namespace Ekonomikare
             FormHandler.form1.Show();
             FormHandler.form1.restart();
             this.Hide();
-            sound1.Stop();
-            FormHandler.form1.zapniZvuk();
         }
 
         //vypíná aplikaci
@@ -47,10 +43,13 @@ namespace Ekonomikare
             Application.Exit();
         }
 
-        //úvodní znělka
-        public void prvniSound()
+        private void button1_Click(object sender, EventArgs e)
         {
-                sound1.PlayLooping();
+            Settings settings = new Settings();
+            settings.Show();
+            settings.change5050();
+            settings.setCheckBox5050();
+            this.Hide();
         }
     }
 }

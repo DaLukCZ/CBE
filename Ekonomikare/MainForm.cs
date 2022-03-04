@@ -30,7 +30,6 @@ namespace Ekonomikare
         private Random random = new Random();
         private Ask ask = new Ask();
         private List<Question> questions = new List<Question>();
-        public SoundPlayer sound = new SoundPlayer(Properties.Resources.pozadnihudba);
         
         //konstruktor
         public MainForm()
@@ -47,13 +46,6 @@ namespace Ekonomikare
         private void Main_Load_1(object sender, EventArgs e)
         {
             step();
-            sound.PlayLooping();
-        }
-
-        //zapíná zvuk
-        public void zapniZvuk()
-        {
-            sound.PlayLooping();
         }
 
         //addOtazka
@@ -141,9 +133,9 @@ namespace Ekonomikare
             button_5050.Enabled = true;
             button_5050.BackgroundImage = Properties.Resources._5050;
             button_HelpAudiance.Enabled = true;
-            button_HelpAudiance.BackgroundImage = Properties.Resources.helpAudiance;
+            button_HelpAudiance.BackgroundImage = Properties.Resources.radaPubl;
             button_CallHelp.Enabled = true;
-            button_CallHelp.BackgroundImage = Properties.Resources.callFriend;
+            button_CallHelp.BackgroundImage = Properties.Resources.pritel;
             ask.setAsk();
             for (int i = 0; i < 4; i++)
             {
@@ -186,7 +178,7 @@ namespace Ekonomikare
                     lose.Show();
                 }
             }
-            catch (ArgumentOutOfRangeException e)
+            catch (Exception)
             {
                 MessageBox.Show("Prosím vyber odpověd");
             }
@@ -217,6 +209,10 @@ namespace Ekonomikare
             this.Hide();
         }
 
+        public void setBool(bool zmena) {
+            button_5050.Visible = zmena;
+        }
+
         //50/50
         private void button_5050_Click(object sender, EventArgs e)
         {
@@ -240,7 +236,7 @@ namespace Ekonomikare
                 numbers.Remove(number);
             }
             button_5050.Enabled = false;
-            button_5050.BackgroundImage = Properties.Resources._5050X;
+            button_5050.BackgroundImage = Properties.Resources._5050Disabled;
         }
 
         //RadaPublika
@@ -255,34 +251,34 @@ namespace Ekonomikare
             switch (Currentstep)
             {
                 case 0:
-                    panel2.BackgroundImage = Properties.Resources.step0;
+                    panel2.BackgroundImage = Properties.Resources.postup0;
                     break;
                 case 1:
-                    panel2.BackgroundImage = Properties.Resources.step1;
+                    panel2.BackgroundImage = Properties.Resources.postup1;
                     break;
                 case 2:
-                    panel2.BackgroundImage = Properties.Resources.step2;
+                    panel2.BackgroundImage = Properties.Resources.postup2;
                     break;
                 case 3:
-                    panel2.BackgroundImage = Properties.Resources.step3;
+                    panel2.BackgroundImage = Properties.Resources.postup3;
                     break;
                 case 4:
-                    panel2.BackgroundImage = Properties.Resources.step4;
+                    panel2.BackgroundImage = Properties.Resources.postup4;
                     break;
                 case 5:
-                    panel2.BackgroundImage = Properties.Resources.step5;
+                    panel2.BackgroundImage = Properties.Resources.postup5;
                     break;
                 case 6:
-                    panel2.BackgroundImage = Properties.Resources.step6;
+                    panel2.BackgroundImage = Properties.Resources.postup6;
                     break;
                 case 7:
-                    panel2.BackgroundImage = Properties.Resources.step7;
+                    panel2.BackgroundImage = Properties.Resources.postup7;
                     break;
                 case 8:
-                    panel2.BackgroundImage = Properties.Resources.step8;
+                    panel2.BackgroundImage = Properties.Resources.postup8;
                     break;
                 case 9:
-                    panel2.BackgroundImage = Properties.Resources.step9;
+                    panel2.BackgroundImage = Properties.Resources.postup9;
                     break;
             }
         }
@@ -357,7 +353,7 @@ namespace Ekonomikare
         public void readTXT()
         {
             int radky = 0;
-            foreach (string line in System.IO.File.ReadLines("otazky.txt"))
+            foreach (string line in System.IO.File.ReadLines("otazky.json"))
             {
                 radky++;
                 List<string> hodnoty1 = new List<string>(line.Split(';'));
@@ -420,7 +416,7 @@ namespace Ekonomikare
         public void callHelpDis()
         {
             button_CallHelp.Enabled = false;
-            button_CallHelp.BackgroundImage = Properties.Resources.CallFriendX;
+            button_CallHelp.BackgroundImage = Properties.Resources.pritelx;
         }
         //kontrola
         private void button_Check_Click(object sender, EventArgs e)

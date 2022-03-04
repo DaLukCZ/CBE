@@ -83,7 +83,7 @@ namespace Ekonomikare
             // 
             // panel2
             // 
-            this.panel2.BackgroundImage = global::Ekonomikare.Properties.Resources.step0;
+            this.panel2.BackgroundImage = global::Ekonomikare.Properties.Resources.postup0;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel2.Location = new System.Drawing.Point(1555, 299);
             this.panel2.Name = "panel2";
@@ -163,7 +163,7 @@ namespace Ekonomikare
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = global::Ekonomikare.Properties.Resources.Ekonomi;
+            this.pictureBox1.BackgroundImage = global::Ekonomikare.Properties.Resources.Ekonomi1;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(784, 36);
             this.pictureBox1.Name = "pictureBox1";
@@ -192,7 +192,7 @@ namespace Ekonomikare
             // button_CallHelp
             // 
             this.button_CallHelp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
-            this.button_CallHelp.BackgroundImage = global::Ekonomikare.Properties.Resources.callFriend;
+            this.button_CallHelp.BackgroundImage = global::Ekonomikare.Properties.Resources.pritel;
             this.button_CallHelp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button_CallHelp.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button_CallHelp.Location = new System.Drawing.Point(233, 3);
@@ -205,7 +205,7 @@ namespace Ekonomikare
             // button_HelpAudiance
             // 
             this.button_HelpAudiance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
-            this.button_HelpAudiance.BackgroundImage = global::Ekonomikare.Properties.Resources.helpAudiance;
+            this.button_HelpAudiance.BackgroundImage = global::Ekonomikare.Properties.Resources.radaPubl;
             this.button_HelpAudiance.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button_HelpAudiance.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button_HelpAudiance.Location = new System.Drawing.Point(118, 3);

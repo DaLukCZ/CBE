@@ -36,6 +36,9 @@
     <Reference Include="Guna.UI2, Version=2.0.3.1, Culture=neutral, PublicKeyToken=e4b9cdd7b4cde4b4, processorArchitecture=MSIL">
       <HintPath>..\packages\Guna.UI2.WinForms.2.0.3.1\lib\net40\Guna.UI2.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -62,6 +65,11 @@
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
     <Compile Include="FormHandler.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Question.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
@@ -83,10 +91,11 @@
       <DependentUpon>Lose.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
+    <Compile Include="Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
     </Compile>
     <Compile Include="Victory.cs">
       <SubType>Form</SubType>
@@ -114,6 +123,9 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Settings.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Victory.resx">
       <DependentUpon>Victory.cs</DependentUpon>
     </EmbeddedResource>
@@ -132,40 +144,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\5050.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\5050Disabled.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\background#.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Ekonomi.png" />
+    <None Include="Resources\buttony.csv" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\pritel.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\pritelx.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\radaPubl.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\radaPublx.png" />
-  </ItemGroup>
-  <ItemGroup>
+    <None Include="Resources\rady.json" />
     <None Include="Resources\winning.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\znelka.wav" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\pozadi.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\exit.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\otazky.txt" />
@@ -184,6 +173,126 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\postup71.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\malebackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jenseuc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marekvasut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\skovy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ohno.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hudba.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pozadi.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hudbavpozadi.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\y.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\male21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pozadnihudba.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bgvpng.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Must.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HodlKolo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\osohaButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\homeTelefon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\50501.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pritelx1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5050.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5050Disabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backblack.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ekoapproved.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ekonomi.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ekonomi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hrdinaKolo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\konfety.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\konfety2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\konfetySkovy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\male2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\male3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MENU.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\postup0.jpg" />
@@ -219,76 +328,25 @@
     <None Include="Resources\postup10.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\malebackground.png" />
+    <None Include="Resources\pozadi.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\male2.png" />
+    <None Include="Resources\pritel.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\male3.png" />
+    <None Include="Resources\pritelx.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Ekonomi.ico" />
+    <None Include="Resources\radaPubl.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\ekoapproved.png" />
+    <None Include="Resources\radaPublx.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\konfety.png" />
+    <None Include="Resources\skovyKolo.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\konfety2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\xd.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\jenseuc.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\s.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\background.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\MENU.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\marekvasut.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\skovy.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\back.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\backg.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\backblack.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\backblue.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ohno.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\hudba.wav" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\pozadi.wav" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\hudbavpozadi.wav" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\y.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\male21.png" />
+    <None Include="Resources\skovyNaZidly.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\sound.png" />
@@ -297,49 +355,13 @@
     <None Include="Resources\soundoff.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\pozadnihudba.wav" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\skovyKolo.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\bgvpng.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Must.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\2.png" />
+    <None Include="Resources\telefon.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\TerkaKolo.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\png.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\HodlKolo.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\osohaButton.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\homeTelefon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\skovyNaZidly.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\konfetySkovy.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\telefon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\hrdinaKolo.png" />
+    <None Include="Resources\backblue.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace Ekonomikare
 {
     public partial class Ask : Form
@@ -131,7 +132,7 @@ namespace Ekonomikare
 
             button_Ask.Enabled = false;
             FormHandler.form1.setAudiance(false);
-            FormHandler.form1.setAudianceBack(Properties.Resources.helpAudianceX);
+            FormHandler.form1.setAudianceBack(Properties.Resources.radaPublx);
             button_close.Enabled = true;
         }
 
