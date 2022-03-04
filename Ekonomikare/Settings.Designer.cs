@@ -31,8 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Settings));
             this.checkBox5050 = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBoxFriend = new System.Windows.Forms.CheckBox();
+            this.checkBoxRada = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // checkBox5050
@@ -62,30 +62,30 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // checkBox1
+            // checkBoxFriend
             // 
-            this.checkBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
-            this.checkBox1.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.checkBox1.ForeColor = System.Drawing.SystemColors.Control;
-            this.checkBox1.Location = new System.Drawing.Point(142, 261);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(263, 50);
-            this.checkBox1.TabIndex = 18;
-            this.checkBox1.Text = " - Přítel na telefonu";
-            this.checkBox1.UseVisualStyleBackColor = false;
+            this.checkBoxFriend.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
+            this.checkBoxFriend.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.checkBoxFriend.ForeColor = System.Drawing.SystemColors.Control;
+            this.checkBoxFriend.Location = new System.Drawing.Point(142, 261);
+            this.checkBoxFriend.Name = "checkBoxFriend";
+            this.checkBoxFriend.Size = new System.Drawing.Size(263, 50);
+            this.checkBoxFriend.TabIndex = 18;
+            this.checkBoxFriend.Text = " - Přítel na telefonu";
+            this.checkBoxFriend.UseVisualStyleBackColor = false;
             // 
-            // checkBox2
+            // checkBoxRada
             // 
-            this.checkBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
-            this.checkBox2.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.checkBox2.ForeColor = System.Drawing.SystemColors.Control;
-            this.checkBox2.Location = new System.Drawing.Point(142, 196);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(263, 50);
-            this.checkBox2.TabIndex = 18;
-            this.checkBox2.Text = " - Rada Publika";
-            this.checkBox2.UseVisualStyleBackColor = false;
-            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
+            this.checkBoxRada.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
+            this.checkBoxRada.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.checkBoxRada.ForeColor = System.Drawing.SystemColors.Control;
+            this.checkBoxRada.Location = new System.Drawing.Point(142, 196);
+            this.checkBoxRada.Name = "checkBoxRada";
+            this.checkBoxRada.Size = new System.Drawing.Size(263, 50);
+            this.checkBoxRada.TabIndex = 18;
+            this.checkBoxRada.Text = " - Rada Publika";
+            this.checkBoxRada.UseVisualStyleBackColor = false;
+            this.checkBoxRada.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
             // Settings
             // 
@@ -95,8 +95,8 @@
             this.BackgroundImage = global::Ekonomikare.Properties.Resources.male3;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(584, 791);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.checkBoxRada);
+            this.Controls.Add(this.checkBoxFriend);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.checkBox5050);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -116,7 +116,7 @@
 
         private System.Windows.Forms.CheckBox checkBox5050;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox checkBoxFriend;
+        private System.Windows.Forms.CheckBox checkBoxRada;
     }
 }

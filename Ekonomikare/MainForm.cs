@@ -353,7 +353,7 @@ namespace Ekonomikare
         public void readTXT()
         {
             int radky = 0;
-            foreach (string line in System.IO.File.ReadLines("otazky.json"))
+            foreach (string line in System.IO.File.ReadLines("otazky.txt"))
             {
                 radky++;
                 List<string> hodnoty1 = new List<string>(line.Split(';'));

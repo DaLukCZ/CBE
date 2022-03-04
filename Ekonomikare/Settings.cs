@@ -19,8 +19,9 @@ namespace Ekonomikare
 
         public Settings()
         {
-            
+
             InitializeComponent();
+            write();
             read();
         }
 
@@ -70,14 +71,6 @@ namespace Ekonomikare
         private void Settings_Load(object sender, EventArgs e)
         {
         }
-    
-        private bool toBoolean(string S)
-        {
-            if (S == "true")
-                return true;
-            else
-                return false;
-        }
 
         public void addBool(bool B)
         {
@@ -85,13 +78,19 @@ namespace Ekonomikare
         }
 
         private void read() {
-            foreach (string line in File.ReadLines("rady.json"))
+            foreach (string line in File.ReadLines("settings.txt"))
             {
                 List<string> hodnoty1 = new List<string>(line.Split(';'));
                 for (int i = 0; i < hodnoty1.Count; i++)
-                    addBool(toBoolean(hodnoty1[i]));
+                    addBool(bool.Parse(hodnoty1[i]));
             }
-            Console.WriteLine("sgnjsdkg    " + buttony[2]);
         }
+
+        private void write(){
+            string radek = checkBox5050.Checked + ";" + checkBoxRada.Checked + ";" + checkBoxFriend.Checked + ";";
+            File.WriteAllText("rady.txt" , radek);
+        } 
+
+
     }
 }
