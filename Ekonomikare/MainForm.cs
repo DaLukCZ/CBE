@@ -209,8 +209,17 @@ namespace Ekonomikare
             this.Hide();
         }
 
-        public void setBool(bool zmena) {
+        public void setBool5050(bool zmena) {
             button_5050.Visible = zmena;
+        }
+
+        public void setBoolRada(bool zmena)
+        {
+            button_HelpAudiance.Visible = zmena;
+        }
+        public void setBoolPritel(bool zmena)
+        {
+            button_CallHelp.Visible = zmena;
         }
 
         //50/50

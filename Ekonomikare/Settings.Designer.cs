@@ -73,6 +73,7 @@
             this.checkBoxFriend.TabIndex = 18;
             this.checkBoxFriend.Text = " - Přítel na telefonu";
             this.checkBoxFriend.UseVisualStyleBackColor = false;
+            this.checkBoxFriend.CheckedChanged += new System.EventHandler(this.checkBoxFriend_CheckedChanged);
             // 
             // checkBoxRada
             // 
@@ -85,7 +86,7 @@
             this.checkBoxRada.TabIndex = 18;
             this.checkBoxRada.Text = " - Rada Publika";
             this.checkBoxRada.UseVisualStyleBackColor = false;
-            this.checkBoxRada.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
+            this.checkBoxRada.CheckedChanged += new System.EventHandler(this.checkBox_Rada_CheckedChanged);
             // 
             // Settings
             // 

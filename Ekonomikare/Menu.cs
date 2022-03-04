@@ -47,8 +47,6 @@ namespace Ekonomikare
         {
             Settings settings = new Settings();
             settings.Show();
-            settings.change5050();
-            settings.setCheckBox5050();
             this.Hide();
         }
     }

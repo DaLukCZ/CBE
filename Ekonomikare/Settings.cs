@@ -9,7 +9,6 @@ using System.Threading.Tasks;
 using System.IO;
 using System.Windows.Forms;
 using System.Reflection;
-using Newtonsoft.Json;
 
 namespace Ekonomikare
 {
@@ -37,7 +36,8 @@ namespace Ekonomikare
 
         private void checkBox5050_CheckedChanged(object sender, EventArgs e)
         {
-            change5050();
+            change();
+            write();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -46,26 +46,29 @@ namespace Ekonomikare
             this.Hide();
         }
 
-        public void change5050()
+        public void change()
         {
             if (!checkBox5050.Checked)
-            {
-                FormHandler.form1.setBool(false);
-                //File.ReadA
-            }
+                FormHandler.form1.setBool5050(false);
             else
-                FormHandler.form1.setBool(true);
+                FormHandler.form1.setBool5050(true);
+
+            if(!checkBoxRada.Checked)
+                FormHandler.form1.setBoolRada(false);
+            else
+                FormHandler.form1.setBoolRada(true);
+
+            if(!checkBoxFriend.Checked)
+                FormHandler.form1.setBoolPritel(false);
+            else
+                FormHandler.form1.setBoolPritel(true);
+
         }
 
-        public void setCheckBox5050()
+        private void checkBox_Rada_CheckedChanged(object sender, EventArgs e)
         {
-            checkBox5050.Checked = FormHandler.form1.getButton5050();
-
-        }
-
-        private void checkBox2_CheckedChanged(object sender, EventArgs e)
-        {
-
+            change();
+            write();
         }
 
         private void Settings_Load(object sender, EventArgs e)
@@ -89,8 +92,12 @@ namespace Ekonomikare
         private void write(){
             string radek = checkBox5050.Checked + ";" + checkBoxRada.Checked + ";" + checkBoxFriend.Checked + ";";
             File.WriteAllText("rady.txt" , radek);
-        } 
+        }
 
-
+        private void checkBoxFriend_CheckedChanged(object sender, EventArgs e)
+        {
+            change();
+            write();
+        }
     }
 }
