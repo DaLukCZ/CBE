@@ -45,10 +45,9 @@
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
             this.button1.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(214, 610);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Location = new System.Drawing.Point(160, 496);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(300, 126);
+            this.button1.Size = new System.Drawing.Size(225, 102);
             this.button1.TabIndex = 17;
             this.button1.Text = "Zpět";
             this.button1.UseVisualStyleBackColor = false;
@@ -62,9 +61,10 @@
             this.guna2CheckBox1.CheckedState.BorderThickness = 0;
             this.guna2CheckBox1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2CheckBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
-            this.guna2CheckBox1.Location = new System.Drawing.Point(292, 436);
+            this.guna2CheckBox1.Location = new System.Drawing.Point(219, 354);
+            this.guna2CheckBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2CheckBox1.Name = "guna2CheckBox1";
-            this.guna2CheckBox1.Size = new System.Drawing.Size(18, 17);
+            this.guna2CheckBox1.Size = new System.Drawing.Size(15, 14);
             this.guna2CheckBox1.TabIndex = 20;
             this.guna2CheckBox1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.guna2CheckBox1.UncheckedState.BorderRadius = 0;
@@ -79,15 +79,17 @@
             this.checkBoxRada.CheckedState.BorderThickness = 0;
             this.checkBoxRada.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
             this.checkBoxRada.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.checkBoxRada.Location = new System.Drawing.Point(104, 177);
+            this.checkBoxRada.Location = new System.Drawing.Point(78, 144);
+            this.checkBoxRada.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBoxRada.Name = "checkBoxRada";
-            this.checkBoxRada.Size = new System.Drawing.Size(91, 88);
+            this.checkBoxRada.Size = new System.Drawing.Size(68, 72);
             this.checkBoxRada.TabIndex = 21;
             this.checkBoxRada.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.checkBoxRada.UncheckedState.BorderRadius = 2;
             this.checkBoxRada.UncheckedState.BorderThickness = 0;
             this.checkBoxRada.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
             this.checkBoxRada.UseTransparentBackground = true;
+            this.checkBoxRada.CheckedChanged += new System.EventHandler(this.checkBox5050_CheckedChanged);
             // 
             // label1
             // 
@@ -95,9 +97,10 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
             this.label1.Font = new System.Drawing.Font("Calibri", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(267, 196);
+            this.label1.Location = new System.Drawing.Point(200, 159);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(141, 58);
+            this.label1.Size = new System.Drawing.Size(112, 46);
             this.label1.TabIndex = 23;
             this.label1.Text = "50/50";
             // 
@@ -107,9 +110,10 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
             this.label2.Font = new System.Drawing.Font("Calibri", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(267, 322);
+            this.label2.Location = new System.Drawing.Point(200, 262);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(277, 58);
+            this.label2.Size = new System.Drawing.Size(223, 46);
             this.label2.TabIndex = 24;
             this.label2.Text = "Rada publika";
             // 
@@ -121,15 +125,17 @@
             this.checkBox5050.CheckedState.BorderThickness = 0;
             this.checkBox5050.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
             this.checkBox5050.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.checkBox5050.Location = new System.Drawing.Point(104, 303);
+            this.checkBox5050.Location = new System.Drawing.Point(78, 246);
+            this.checkBox5050.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox5050.Name = "checkBox5050";
-            this.checkBox5050.Size = new System.Drawing.Size(91, 88);
+            this.checkBox5050.Size = new System.Drawing.Size(68, 72);
             this.checkBox5050.TabIndex = 25;
             this.checkBox5050.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.checkBox5050.UncheckedState.BorderRadius = 2;
             this.checkBox5050.UncheckedState.BorderThickness = 0;
             this.checkBox5050.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
             this.checkBox5050.UseTransparentBackground = true;
+            this.checkBox5050.CheckedChanged += new System.EventHandler(this.checkBox_Rada_CheckedChanged);
             // 
             // checkBoxFriend
             // 
@@ -139,15 +145,17 @@
             this.checkBoxFriend.CheckedState.BorderThickness = 0;
             this.checkBoxFriend.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
             this.checkBoxFriend.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.checkBoxFriend.Location = new System.Drawing.Point(104, 424);
+            this.checkBoxFriend.Location = new System.Drawing.Point(78, 344);
+            this.checkBoxFriend.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBoxFriend.Name = "checkBoxFriend";
-            this.checkBoxFriend.Size = new System.Drawing.Size(91, 88);
+            this.checkBoxFriend.Size = new System.Drawing.Size(68, 72);
             this.checkBoxFriend.TabIndex = 26;
             this.checkBoxFriend.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.checkBoxFriend.UncheckedState.BorderRadius = 2;
             this.checkBoxFriend.UncheckedState.BorderThickness = 0;
             this.checkBoxFriend.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
             this.checkBoxFriend.UseTransparentBackground = true;
+            this.checkBoxFriend.CheckedChanged += new System.EventHandler(this.checkBoxFriend_CheckedChanged);
             // 
             // label3
             // 
@@ -155,20 +163,21 @@
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
             this.label3.Font = new System.Drawing.Font("Calibri", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(267, 436);
+            this.label3.Location = new System.Drawing.Point(200, 354);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(364, 58);
+            this.label3.Size = new System.Drawing.Size(292, 46);
             this.label3.TabIndex = 27;
             this.label3.Text = "Přítel na telefonu";
             // 
             // Settings
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackgroundImage = global::Ekonomikare.Properties.Resources.male3;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(686, 798);
+            this.ClientSize = new System.Drawing.Size(514, 648);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.checkBoxFriend);
             this.Controls.Add(this.checkBox5050);
@@ -179,7 +188,6 @@
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Settings";

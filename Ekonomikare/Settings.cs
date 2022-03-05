@@ -35,13 +35,13 @@ namespace Ekonomikare
 
         private void checkBox5050_CheckedChanged(object sender, EventArgs e)
         {
-            change();
-            write();
+            update();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
+            FormHandler.form2.Show();
         }
 
         public void change()
@@ -70,8 +70,7 @@ namespace Ekonomikare
         }
         private void checkBox_Rada_CheckedChanged(object sender, EventArgs e)
         {
-            change();
-            write();
+            update();
         }
 
         private void Settings_Load(object sender, EventArgs e)
@@ -85,7 +84,7 @@ namespace Ekonomikare
         }
 
         private void read() {
-            List<CheckBox> boxy = new List<CheckBox>(new CheckBox[] { checkBox5050, checkBoxRada, checkBoxFriend });
+            List<Guna.UI2.WinForms.Guna2CustomCheckBox> boxy = new List<Guna.UI2.WinForms.Guna2CustomCheckBox>(new Guna.UI2.WinForms.Guna2CustomCheckBox[] { checkBox5050, checkBoxRada, checkBoxFriend });
             foreach (string line in File.ReadLines("settings.txt"))
             {
                 List<string> hodnoty1 = new List<string>(line.Split(';'));
@@ -105,8 +104,7 @@ namespace Ekonomikare
 
         private void checkBoxFriend_CheckedChanged(object sender, EventArgs e)
         {
-            change();
-            write();
+            update();
         }
     }
 }
