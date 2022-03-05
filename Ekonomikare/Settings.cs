@@ -14,14 +14,13 @@ namespace Ekonomikare
 {
     public partial class Settings : Form
     {
-        private List<bool> buttony = new List<bool>();
+        private List<bool> booleany = new List<bool>();
 
         public Settings()
         {
 
             InitializeComponent();
-            write();
-            read();
+            update();
         }
 
         protected override CreateParams CreateParams
@@ -64,6 +63,11 @@ namespace Ekonomikare
 
         }
 
+        public void update()
+        {
+            read();
+            write();
+        }
         private void checkBox_Rada_CheckedChanged(object sender, EventArgs e)
         {
             change();
@@ -72,25 +76,31 @@ namespace Ekonomikare
 
         private void Settings_Load(object sender, EventArgs e)
         {
+            update();
         }
 
         public void addBool(bool B)
         {
-            buttony.Add(B);
+            booleany.Add(B);
         }
 
         private void read() {
+            List<CheckBox> boxy = new List<CheckBox>(new CheckBox[] { checkBox5050, checkBoxRada, checkBoxFriend });
             foreach (string line in File.ReadLines("settings.txt"))
             {
                 List<string> hodnoty1 = new List<string>(line.Split(';'));
                 for (int i = 0; i < hodnoty1.Count; i++)
                     addBool(bool.Parse(hodnoty1[i]));
             }
+            for (int i = 0; i < 3; i++) {
+                boxy[i].Checked = booleany[i];
+            }
+
         }
 
         private void write(){
-            string radek = checkBox5050.Checked + ";" + checkBoxRada.Checked + ";" + checkBoxFriend.Checked + ";";
-            File.WriteAllText("rady.txt" , radek);
+            string radek = checkBox5050.Checked + ";" + checkBoxRada.Checked + ";" + checkBoxFriend.Checked;
+            File.WriteAllText("settings.txt", radek);
         }
 
         private void checkBoxFriend_CheckedChanged(object sender, EventArgs e)
