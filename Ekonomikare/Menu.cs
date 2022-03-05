@@ -47,6 +47,7 @@ namespace Ekonomikare
         {
             Settings settings = new Settings();
             settings.Show();
+            settings.update();
             this.Hide();
         }
     }
