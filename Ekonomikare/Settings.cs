@@ -68,7 +68,7 @@ namespace Ekonomikare
         }
 
         public void read() {
-            List<CheckBox> boxy = new List<CheckBox>(new CheckBox[] { checkBox5050, checkBoxRada, checkBoxFriend });
+            List<Guna.UI2.WinForms.Guna2CustomCheckBox> boxy = new List<Guna.UI2.WinForms.Guna2CustomCheckBox>(new Guna.UI2.WinForms.Guna2CustomCheckBox[] { checkBox5050, checkBoxRada, checkBoxFriend });
             foreach (string line in File.ReadLines("settings.txt"))
             {
                 List<string> hodnoty1 = new List<string>(line.Split(';'));
