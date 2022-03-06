@@ -12,6 +12,7 @@ namespace Ekonomikare
         public Menu()
         {
             InitializeComponent();
+            showContie();
         }
 
         protected override CreateParams CreateParams
@@ -49,6 +50,24 @@ namespace Ekonomikare
             settings.Show();
             settings.read();
             this.Hide();
+        }
+
+        private void Contienue_Click(object sender, EventArgs e)
+        {
+            FormHandler.form1.Show();
+            this.Hide();
+        }
+
+        public void showContie()
+        {
+            if (!FormHandler.form1.getLose() && FormHandler.form1.getStep() > 0)
+            {
+                Contienue.Visible = true;
+            }
+            else
+            {
+                Contienue.Visible = false;
+            }
         }
     }
 }

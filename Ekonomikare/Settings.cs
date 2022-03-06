@@ -35,6 +35,7 @@ namespace Ekonomikare
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
+            FormHandler.form2.showContie();
             FormHandler.form2.Show();
         }
 

@@ -31,6 +31,7 @@ namespace Ekonomikare
         private Ask ask = new Ask();
         private List<Question> questions = new List<Question>();
         private bool button50;
+        private bool loseBool = false;
         
         //konstruktor
         public MainForm()
@@ -158,7 +159,7 @@ namespace Ekonomikare
         //zkontroluj
         private void checkAnswer()
         {
-            Lose lose = new Lose();
+            
             List<Button> buttons = new List<Button>(new Button[] { button_Answer1, button_Answer2, button_Answer3, button_Answer4 });
             try
             {
@@ -179,8 +180,10 @@ namespace Ekonomikare
                 }
                 else
                 {
+                    Lose lose = new Lose();
                     buttons[buttonek].BackColor = Color.Red;
                     buttons[currentQuestion.rightAnswer].BackColor = Color.Green;
+                    loseBool = true;
                     lose.Show();
                 }
             }
@@ -188,6 +191,11 @@ namespace Ekonomikare
             {
                 MessageBox.Show("Prosím vyber odpověd");
             }
+        }
+
+        public bool getLose()
+        {
+            return loseBool;
         }
 
         //mark
@@ -203,7 +211,7 @@ namespace Ekonomikare
             List<Button> buttons = new List<Button>(new Button[] { button_Answer1, button_Answer2, button_Answer3, button_Answer4 });
             for (int i = 0; i < 4; i++)
             {
-                buttons[i].BackColor = System.Drawing.Color.FromArgb(25, 30, 60);
+                buttons[i].BackColor = Color.FromArgb(25, 30, 60);
             }
 
         }
@@ -212,6 +220,7 @@ namespace Ekonomikare
         private void button_Menu_Click(object sender, EventArgs e)
         {
             FormHandler.form2.Show();
+            FormHandler.form2.showContie();
             this.Hide();
         }
 
