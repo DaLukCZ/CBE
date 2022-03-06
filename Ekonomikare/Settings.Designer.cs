@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Settings));
             this.button1 = new System.Windows.Forms.Button();
             this.guna2CheckBox1 = new Guna.UI2.WinForms.Guna2CheckBox();
@@ -37,6 +38,8 @@
             this.checkBox5050 = new Guna.UI2.WinForms.Guna2CustomCheckBox();
             this.checkBoxFriend = new Guna.UI2.WinForms.Guna2CustomCheckBox();
             this.checkBoxRada = new Guna.UI2.WinForms.Guna2CustomCheckBox();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -182,6 +185,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Chcete být Ekonomem?";
             this.Load += new System.EventHandler(this.Settings_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -196,5 +200,6 @@
         private Guna.UI2.WinForms.Guna2CustomCheckBox checkBox5050;
         private Guna.UI2.WinForms.Guna2CustomCheckBox checkBoxFriend;
         private Guna.UI2.WinForms.Guna2CustomCheckBox checkBoxRada;
+        private System.Windows.Forms.BindingSource bindingSource1;
     }
 }

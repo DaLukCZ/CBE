@@ -151,6 +151,7 @@ namespace Ekonomikare
                 progressBars[i].Value = 0;
             }
             button50 = false;
+            loseBool = false;
             resetColor();
             showQuestion();
             step();
@@ -184,6 +185,7 @@ namespace Ekonomikare
                     buttons[buttonek].BackColor = Color.Red;
                     buttons[currentQuestion.rightAnswer].BackColor = Color.Green;
                     loseBool = true;
+                    FormHandler.form2.showContie();
                     lose.Show();
                 }
             }
