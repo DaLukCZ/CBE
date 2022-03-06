@@ -78,7 +78,7 @@ namespace Ekonomikare
             List<ProgressBar> progressBars = new List<ProgressBar>(new ProgressBar[] { progressBar1, progressBar2, progressBar3, progressBar4 });
             List<Button> buttons = new List<Button>(new Button[] { FormHandler.form1.getButtons(1), FormHandler.form1.getButtons(2), FormHandler.form1.getButtons(3), FormHandler.form1.getButtons(4) });
             int spravnaOdpoved = FormHandler.form1.getCurrentAnswer();
-            if (FormHandler.form1.getButton5050())
+            if (!FormHandler.form1.get5050bool())
             {
                 int randC1 = random.Next(36, 66);
                 int rest1 = (100 - randC1) - random.Next(10, 100 - randC1);

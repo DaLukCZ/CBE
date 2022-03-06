@@ -18,9 +18,8 @@ namespace Ekonomikare
 
         public Settings()
         {
-
             InitializeComponent();
-            update();
+            read();
         }
 
         protected override CreateParams CreateParams
@@ -31,11 +30,6 @@ namespace Ekonomikare
                 handleParams.ExStyle |= 0x02000000;
                 return handleParams;
             }
-        }
-
-        private void checkBox5050_CheckedChanged(object sender, EventArgs e)
-        {
-            update();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -63,19 +57,9 @@ namespace Ekonomikare
 
         }
 
-        public void update()
-        {
-            read();
-            write();
-        }
-        private void checkBox_Rada_CheckedChanged(object sender, EventArgs e)
-        {
-            update();
-        }
-
         private void Settings_Load(object sender, EventArgs e)
         {
-            update();
+            read();
         }
 
         public void addBool(bool B)
@@ -83,8 +67,8 @@ namespace Ekonomikare
             booleany.Add(B);
         }
 
-        private void read() {
-            List<Guna.UI2.WinForms.Guna2CustomCheckBox> boxy = new List<Guna.UI2.WinForms.Guna2CustomCheckBox>(new Guna.UI2.WinForms.Guna2CustomCheckBox[] { checkBox5050, checkBoxRada, checkBoxFriend });
+        public void read() {
+            List<CheckBox> boxy = new List<CheckBox>(new CheckBox[] { checkBox5050, checkBoxRada, checkBoxFriend });
             foreach (string line in File.ReadLines("settings.txt"))
             {
                 List<string> hodnoty1 = new List<string>(line.Split(';'));
@@ -97,14 +81,27 @@ namespace Ekonomikare
 
         }
 
-        private void write(){
+        public void write(){
             string radek = checkBox5050.Checked + ";" + checkBoxRada.Checked + ";" + checkBoxFriend.Checked;
             File.WriteAllText("settings.txt", radek);
         }
 
+        private void checkBox5050_CheckedChanged(object sender, EventArgs e)
+        {
+            write();
+            change();
+        }
+
+        private void checkBoxRada_CheckedChanged(object sender, EventArgs e)
+        {
+            write();
+            change();
+        }
+
         private void checkBoxFriend_CheckedChanged(object sender, EventArgs e)
         {
-            update();
+            write();
+            change();
         }
     }
 }

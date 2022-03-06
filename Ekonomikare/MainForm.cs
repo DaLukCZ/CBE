@@ -30,6 +30,7 @@ namespace Ekonomikare
         private Random random = new Random();
         private Ask ask = new Ask();
         private List<Question> questions = new List<Question>();
+        private bool button50;
         
         //konstruktor
         public MainForm()
@@ -46,6 +47,11 @@ namespace Ekonomikare
         private void Main_Load_1(object sender, EventArgs e)
         {
             step();
+        }
+
+        public bool get5050bool()
+        {
+            return button50;
         }
 
         //addOtazka
@@ -143,7 +149,7 @@ namespace Ekonomikare
                 answers[i].Visible = false;
                 progressBars[i].Value = 0;
             }
-
+            button50 = false;
             resetColor();
             showQuestion();
             step();
@@ -244,6 +250,7 @@ namespace Ekonomikare
                 buttons[number].Enabled = false;
                 numbers.Remove(number);
             }
+            button50 = true;
             button_5050.Enabled = false;
             button_5050.BackgroundImage = Properties.Resources._5050Disabled;
         }
@@ -387,6 +394,23 @@ namespace Ekonomikare
             click(0);
         }
 
+        public bool getButtonsBool(int button)
+        {
+            switch (button)
+            {
+                case 1:
+                    return button_Answer1.Enabled;
+                case 2:
+                    return button_Answer1.Enabled;
+                case 3:
+                    return button_Answer1.Enabled;
+                case 4:
+                    return button_Answer1.Enabled;
+                default:
+                    return false;
+            }     
+        }
+
         //odpoved2
         private void button_Answer2_Click(object sender, EventArgs e)
         {
@@ -430,6 +454,7 @@ namespace Ekonomikare
         //kontrola
         private void button_Check_Click(object sender, EventArgs e)
         {
+            button50 = false;
             ask.Hide();
             checkAnswer();
         }

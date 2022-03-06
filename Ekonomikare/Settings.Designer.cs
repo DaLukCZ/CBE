@@ -31,12 +31,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Settings));
             this.button1 = new System.Windows.Forms.Button();
             this.guna2CheckBox1 = new Guna.UI2.WinForms.Guna2CheckBox();
-            this.checkBoxRada = new Guna.UI2.WinForms.Guna2CustomCheckBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.checkBox5050 = new Guna.UI2.WinForms.Guna2CustomCheckBox();
-            this.checkBoxFriend = new Guna.UI2.WinForms.Guna2CustomCheckBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.checkBox5050 = new System.Windows.Forms.CheckBox();
+            this.checkBoxRada = new System.Windows.Forms.CheckBox();
+            this.checkBoxFriend = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // button1
@@ -62,7 +62,7 @@
             this.guna2CheckBox1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2CheckBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
             this.guna2CheckBox1.Location = new System.Drawing.Point(219, 354);
-            this.guna2CheckBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2CheckBox1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2CheckBox1.Name = "guna2CheckBox1";
             this.guna2CheckBox1.Size = new System.Drawing.Size(15, 14);
             this.guna2CheckBox1.TabIndex = 20;
@@ -70,26 +70,6 @@
             this.guna2CheckBox1.UncheckedState.BorderRadius = 0;
             this.guna2CheckBox1.UncheckedState.BorderThickness = 0;
             this.guna2CheckBox1.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            // 
-            // checkBoxRada
-            // 
-            this.checkBoxRada.BackColor = System.Drawing.Color.Transparent;
-            this.checkBoxRada.CheckedState.BorderColor = System.Drawing.Color.Transparent;
-            this.checkBoxRada.CheckedState.BorderRadius = 2;
-            this.checkBoxRada.CheckedState.BorderThickness = 0;
-            this.checkBoxRada.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
-            this.checkBoxRada.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.checkBoxRada.Location = new System.Drawing.Point(78, 144);
-            this.checkBoxRada.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.checkBoxRada.Name = "checkBoxRada";
-            this.checkBoxRada.Size = new System.Drawing.Size(68, 72);
-            this.checkBoxRada.TabIndex = 21;
-            this.checkBoxRada.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.checkBoxRada.UncheckedState.BorderRadius = 2;
-            this.checkBoxRada.UncheckedState.BorderThickness = 0;
-            this.checkBoxRada.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
-            this.checkBoxRada.UseTransparentBackground = true;
-            this.checkBoxRada.CheckedChanged += new System.EventHandler(this.checkBox5050_CheckedChanged);
             // 
             // label1
             // 
@@ -117,46 +97,6 @@
             this.label2.TabIndex = 24;
             this.label2.Text = "Rada publika";
             // 
-            // checkBox5050
-            // 
-            this.checkBox5050.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox5050.CheckedState.BorderColor = System.Drawing.Color.Transparent;
-            this.checkBox5050.CheckedState.BorderRadius = 2;
-            this.checkBox5050.CheckedState.BorderThickness = 0;
-            this.checkBox5050.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
-            this.checkBox5050.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.checkBox5050.Location = new System.Drawing.Point(78, 246);
-            this.checkBox5050.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.checkBox5050.Name = "checkBox5050";
-            this.checkBox5050.Size = new System.Drawing.Size(68, 72);
-            this.checkBox5050.TabIndex = 25;
-            this.checkBox5050.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.checkBox5050.UncheckedState.BorderRadius = 2;
-            this.checkBox5050.UncheckedState.BorderThickness = 0;
-            this.checkBox5050.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
-            this.checkBox5050.UseTransparentBackground = true;
-            this.checkBox5050.CheckedChanged += new System.EventHandler(this.checkBox_Rada_CheckedChanged);
-            // 
-            // checkBoxFriend
-            // 
-            this.checkBoxFriend.BackColor = System.Drawing.Color.Transparent;
-            this.checkBoxFriend.CheckedState.BorderColor = System.Drawing.Color.Transparent;
-            this.checkBoxFriend.CheckedState.BorderRadius = 2;
-            this.checkBoxFriend.CheckedState.BorderThickness = 0;
-            this.checkBoxFriend.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
-            this.checkBoxFriend.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.checkBoxFriend.Location = new System.Drawing.Point(78, 344);
-            this.checkBoxFriend.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.checkBoxFriend.Name = "checkBoxFriend";
-            this.checkBoxFriend.Size = new System.Drawing.Size(68, 72);
-            this.checkBoxFriend.TabIndex = 26;
-            this.checkBoxFriend.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.checkBoxFriend.UncheckedState.BorderRadius = 2;
-            this.checkBoxFriend.UncheckedState.BorderThickness = 0;
-            this.checkBoxFriend.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
-            this.checkBoxFriend.UseTransparentBackground = true;
-            this.checkBoxFriend.CheckedChanged += new System.EventHandler(this.checkBoxFriend_CheckedChanged);
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -170,6 +110,39 @@
             this.label3.TabIndex = 27;
             this.label3.Text = "Přítel na telefonu";
             // 
+            // checkBox5050
+            // 
+            this.checkBox5050.AutoSize = true;
+            this.checkBox5050.Location = new System.Drawing.Point(78, 183);
+            this.checkBox5050.Name = "checkBox5050";
+            this.checkBox5050.Size = new System.Drawing.Size(80, 17);
+            this.checkBox5050.TabIndex = 28;
+            this.checkBox5050.Text = "checkBox1";
+            this.checkBox5050.UseVisualStyleBackColor = true;
+            this.checkBox5050.CheckedChanged += new System.EventHandler(this.checkBox5050_CheckedChanged);
+            // 
+            // checkBoxRada
+            // 
+            this.checkBoxRada.AutoSize = true;
+            this.checkBoxRada.Location = new System.Drawing.Point(78, 274);
+            this.checkBoxRada.Name = "checkBoxRada";
+            this.checkBoxRada.Size = new System.Drawing.Size(80, 17);
+            this.checkBoxRada.TabIndex = 29;
+            this.checkBoxRada.Text = "checkBox2";
+            this.checkBoxRada.UseVisualStyleBackColor = true;
+            this.checkBoxRada.CheckedChanged += new System.EventHandler(this.checkBoxRada_CheckedChanged);
+            // 
+            // checkBoxFriend
+            // 
+            this.checkBoxFriend.AutoSize = true;
+            this.checkBoxFriend.Location = new System.Drawing.Point(78, 369);
+            this.checkBoxFriend.Name = "checkBoxFriend";
+            this.checkBoxFriend.Size = new System.Drawing.Size(80, 17);
+            this.checkBoxFriend.TabIndex = 30;
+            this.checkBoxFriend.Text = "checkBox3";
+            this.checkBoxFriend.UseVisualStyleBackColor = true;
+            this.checkBoxFriend.CheckedChanged += new System.EventHandler(this.checkBoxFriend_CheckedChanged);
+            // 
             // Settings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -178,12 +151,12 @@
             this.BackgroundImage = global::Ekonomikare.Properties.Resources.male3;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(514, 648);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.checkBoxFriend);
+            this.Controls.Add(this.checkBoxRada);
             this.Controls.Add(this.checkBox5050);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.checkBoxRada);
             this.Controls.Add(this.guna2CheckBox1);
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -202,11 +175,11 @@
         #endregion
         private System.Windows.Forms.Button button1;
         private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox1;
-        private Guna.UI2.WinForms.Guna2CustomCheckBox checkBoxRada;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private Guna.UI2.WinForms.Guna2CustomCheckBox checkBox5050;
-        private Guna.UI2.WinForms.Guna2CustomCheckBox checkBoxFriend;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.CheckBox checkBox5050;
+        private System.Windows.Forms.CheckBox checkBoxRada;
+        private System.Windows.Forms.CheckBox checkBoxFriend;
     }
 }
