@@ -29,10 +29,11 @@ namespace Ekonomikare
         private Question currentQuestion;
         private Random random = new Random();
         private Ask ask = new Ask();
+        private CallHelp help = new CallHelp();
         private List<Question> questions = new List<Question>();
         private bool button50;
         private bool loseBool = false;
-        
+
         //konstruktor
         public MainForm()
         {
@@ -160,7 +161,7 @@ namespace Ekonomikare
         //zkontroluj
         private void checkAnswer()
         {
-            
+
             List<Button> buttons = new List<Button>(new Button[] { button_Answer1, button_Answer2, button_Answer3, button_Answer4 });
             try
             {
@@ -419,7 +420,7 @@ namespace Ekonomikare
                     return button_Answer1.Enabled;
                 default:
                     return false;
-            }     
+            }
         }
 
         //odpoved2
@@ -447,12 +448,12 @@ namespace Ekonomikare
             resetColor();
             mark(id);
             ask.Hide();
+            help.Hide();
         }
 
         //pritelTelefon
         private void button_Call_Help_Click(object sender, EventArgs e)
         {
-            CallHelp help = new CallHelp();
             help.Show();
         }
 
@@ -467,6 +468,7 @@ namespace Ekonomikare
         {
             button50 = false;
             ask.Hide();
+            help.Hide();
             checkAnswer();
         }
 

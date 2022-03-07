@@ -33,7 +33,7 @@ namespace Ekonomikare
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button_Back_Click(object sender, EventArgs e)
         {
             this.Hide();
             FormHandler.form2.showContie();
