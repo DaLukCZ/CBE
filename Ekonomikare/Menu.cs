@@ -6,8 +6,7 @@ namespace Ekonomikare
 {
     public partial class Menu : Form
     {
-        //parametry
-
+        private SoundPlayer music = new SoundPlayer(Properties.Resources.menumusic);
         //konstuktor
         public Menu()
         {
@@ -28,6 +27,7 @@ namespace Ekonomikare
         //load formu
         private void Menu_Load(object sender, EventArgs e)
         {
+            music.Play();
         }
         
         //začne novou hru
@@ -50,6 +50,7 @@ namespace Ekonomikare
             settings.Show();
             settings.read();
             this.Hide();
+            music.Stop();
         }
 
         private void Contienue_Click(object sender, EventArgs e)

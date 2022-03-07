@@ -33,6 +33,7 @@ namespace Ekonomikare
         private List<Question> questions = new List<Question>();
         private bool button50;
         private bool loseBool = false;
+        private SoundPlayer music = new SoundPlayer(Properties.Resources.mainmusic);
 
         //konstruktor
         public MainForm()
@@ -48,6 +49,7 @@ namespace Ekonomikare
         //form load
         private void Main_Load_1(object sender, EventArgs e)
         {
+            music.PlayLooping();
             step();
         }
 
