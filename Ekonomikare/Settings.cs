@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.IO;
 using System.Windows.Forms;
 using System.Reflection;
+using Guna.UI2.WinForms;
 
 namespace Ekonomikare
 {
@@ -55,7 +56,6 @@ namespace Ekonomikare
                 FormHandler.form1.setBoolPritel(false);
             else
                 FormHandler.form1.setBoolPritel(true);
-
         }
 
         private void Settings_Load(object sender, EventArgs e)
@@ -69,12 +69,12 @@ namespace Ekonomikare
         }
 
         public void read() {
-            List<Guna.UI2.WinForms.Guna2CustomCheckBox> boxy = new List<Guna.UI2.WinForms.Guna2CustomCheckBox>(new Guna.UI2.WinForms.Guna2CustomCheckBox[] { checkBox5050, checkBoxRada, checkBoxFriend });
+            List<Guna2CustomCheckBox> boxy = new List<Guna2CustomCheckBox>(new Guna2CustomCheckBox[] { checkBox5050, checkBoxRada, checkBoxFriend });
             foreach (string line in File.ReadLines("settings.txt"))
             {
-                List<string> hodnoty1 = new List<string>(line.Split(';'));
-                for (int i = 0; i < hodnoty1.Count; i++)
-                    addBool(bool.Parse(hodnoty1[i]));
+                List<string> hodnoty = new List<string>(line.Split(';'));
+                for (int i = 0; i < hodnoty.Count; i++)
+                    addBool(bool.Parse(hodnoty[i]));
             }
             for (int i = 0; i < 3; i++) {
                 boxy[i].Checked = booleany[i];

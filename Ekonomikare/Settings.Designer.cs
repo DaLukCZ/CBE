@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Settings));
             this.button1 = new System.Windows.Forms.Button();
-            this.guna2CheckBox1 = new Guna.UI2.WinForms.Guna2CheckBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -48,7 +47,7 @@
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
             this.button1.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(145, 496);
+            this.button1.Location = new System.Drawing.Point(180, 543);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(225, 102);
             this.button1.TabIndex = 17;
@@ -56,30 +55,12 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // guna2CheckBox1
-            // 
-            this.guna2CheckBox1.AutoSize = true;
-            this.guna2CheckBox1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox1.CheckedState.BorderRadius = 0;
-            this.guna2CheckBox1.CheckedState.BorderThickness = 0;
-            this.guna2CheckBox1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
-            this.guna2CheckBox1.Location = new System.Drawing.Point(219, 354);
-            this.guna2CheckBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.guna2CheckBox1.Name = "guna2CheckBox1";
-            this.guna2CheckBox1.Size = new System.Drawing.Size(15, 14);
-            this.guna2CheckBox1.TabIndex = 20;
-            this.guna2CheckBox1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2CheckBox1.UncheckedState.BorderRadius = 0;
-            this.guna2CheckBox1.UncheckedState.BorderThickness = 0;
-            this.guna2CheckBox1.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            // 
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
             this.label1.Font = new System.Drawing.Font("Calibri", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(200, 159);
+            this.label1.Location = new System.Drawing.Point(238, 159);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(115, 50);
@@ -91,7 +72,7 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
             this.label2.Font = new System.Drawing.Font("Calibri", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(200, 262);
+            this.label2.Location = new System.Drawing.Point(238, 262);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(225, 50);
@@ -103,7 +84,7 @@
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
             this.label3.Font = new System.Drawing.Font("Calibri", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(200, 354);
+            this.label3.Location = new System.Drawing.Point(238, 354);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(300, 50);
@@ -116,7 +97,7 @@
             this.checkBox5050.CheckedState.BorderRadius = 2;
             this.checkBox5050.CheckedState.BorderThickness = 0;
             this.checkBox5050.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.checkBox5050.Location = new System.Drawing.Point(97, 159);
+            this.checkBox5050.Location = new System.Drawing.Point(122, 159);
             this.checkBox5050.Name = "checkBox5050";
             this.checkBox5050.Size = new System.Drawing.Size(50, 50);
             this.checkBox5050.TabIndex = 31;
@@ -133,7 +114,7 @@
             this.checkBoxFriend.CheckedState.BorderRadius = 2;
             this.checkBoxFriend.CheckedState.BorderThickness = 0;
             this.checkBoxFriend.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.checkBoxFriend.Location = new System.Drawing.Point(97, 354);
+            this.checkBoxFriend.Location = new System.Drawing.Point(122, 354);
             this.checkBoxFriend.Name = "checkBoxFriend";
             this.checkBoxFriend.Size = new System.Drawing.Size(50, 50);
             this.checkBoxFriend.TabIndex = 32;
@@ -150,7 +131,7 @@
             this.checkBoxRada.CheckedState.BorderRadius = 2;
             this.checkBoxRada.CheckedState.BorderThickness = 0;
             this.checkBoxRada.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.checkBoxRada.Location = new System.Drawing.Point(97, 262);
+            this.checkBoxRada.Location = new System.Drawing.Point(122, 262);
             this.checkBoxRada.Name = "checkBoxRada";
             this.checkBoxRada.Size = new System.Drawing.Size(50, 50);
             this.checkBoxRada.TabIndex = 33;
@@ -168,14 +149,13 @@
             this.AutoSize = true;
             this.BackgroundImage = global::Ekonomikare.Properties.Resources.male3;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(514, 648);
+            this.ClientSize = new System.Drawing.Size(584, 791);
             this.Controls.Add(this.checkBoxRada);
             this.Controls.Add(this.checkBoxFriend);
             this.Controls.Add(this.checkBox5050);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.guna2CheckBox1);
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -193,7 +173,6 @@
 
         #endregion
         private System.Windows.Forms.Button button1;
-        private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
