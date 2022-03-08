@@ -7,6 +7,7 @@ namespace Ekonomikare
     public partial class Menu : Form
     {
         private SoundPlayer music = new SoundPlayer(Properties.Resources.menumusic);
+        Settings settings = new Settings();
         //konstuktor
         public Menu()
         {
@@ -46,7 +47,7 @@ namespace Ekonomikare
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Settings settings = new Settings();
+            
             settings.Show();
             settings.read();
             this.Hide();
@@ -69,6 +70,9 @@ namespace Ekonomikare
             {
                 Contienue.Visible = false;
             }
+        }
+        public void setText(string s) {
+            label1.Text = s;
         }
     }
 }

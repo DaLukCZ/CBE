@@ -38,6 +38,12 @@
             this.checkBoxFriend = new Guna.UI2.WinForms.Guna2CustomCheckBox();
             this.checkBoxRada = new Guna.UI2.WinForms.Guna2CustomCheckBox();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.napoveda = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,7 +53,7 @@
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
             this.button1.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(180, 543);
+            this.button1.Location = new System.Drawing.Point(186, 651);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(225, 102);
             this.button1.TabIndex = 17;
@@ -60,7 +66,7 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
             this.label1.Font = new System.Drawing.Font("Calibri", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(238, 159);
+            this.label1.Location = new System.Drawing.Point(230, 400);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(115, 50);
@@ -72,7 +78,7 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
             this.label2.Font = new System.Drawing.Font("Calibri", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(238, 262);
+            this.label2.Location = new System.Drawing.Point(230, 475);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(225, 50);
@@ -84,7 +90,7 @@
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
             this.label3.Font = new System.Drawing.Font("Calibri", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(238, 354);
+            this.label3.Location = new System.Drawing.Point(230, 550);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(300, 50);
@@ -97,7 +103,7 @@
             this.checkBox5050.CheckedState.BorderRadius = 2;
             this.checkBox5050.CheckedState.BorderThickness = 0;
             this.checkBox5050.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.checkBox5050.Location = new System.Drawing.Point(122, 159);
+            this.checkBox5050.Location = new System.Drawing.Point(137, 400);
             this.checkBox5050.Name = "checkBox5050";
             this.checkBox5050.Size = new System.Drawing.Size(50, 50);
             this.checkBox5050.TabIndex = 31;
@@ -114,7 +120,7 @@
             this.checkBoxFriend.CheckedState.BorderRadius = 2;
             this.checkBoxFriend.CheckedState.BorderThickness = 0;
             this.checkBoxFriend.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.checkBoxFriend.Location = new System.Drawing.Point(122, 354);
+            this.checkBoxFriend.Location = new System.Drawing.Point(137, 550);
             this.checkBoxFriend.Name = "checkBoxFriend";
             this.checkBoxFriend.Size = new System.Drawing.Size(50, 50);
             this.checkBoxFriend.TabIndex = 32;
@@ -131,7 +137,7 @@
             this.checkBoxRada.CheckedState.BorderRadius = 2;
             this.checkBoxRada.CheckedState.BorderThickness = 0;
             this.checkBoxRada.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.checkBoxRada.Location = new System.Drawing.Point(122, 262);
+            this.checkBoxRada.Location = new System.Drawing.Point(137, 475);
             this.checkBoxRada.Name = "checkBoxRada";
             this.checkBoxRada.Size = new System.Drawing.Size(50, 50);
             this.checkBoxRada.TabIndex = 33;
@@ -142,6 +148,79 @@
             this.checkBoxRada.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
             this.checkBoxRada.CheckedChanged += new System.EventHandler(this.checkBoxRada_CheckedChanged);
             // 
+            // napoveda
+            // 
+            this.napoveda.AutoSize = true;
+            this.napoveda.BackColor = System.Drawing.Color.Transparent;
+            this.napoveda.Font = new System.Drawing.Font("Calibri", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.napoveda.ForeColor = System.Drawing.Color.White;
+            this.napoveda.Location = new System.Drawing.Point(143, 294);
+            this.napoveda.Name = "napoveda";
+            this.napoveda.Size = new System.Drawing.Size(300, 78);
+            this.napoveda.TabIndex = 34;
+            this.napoveda.Text = "Nápovědy";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Calibri", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label4.ForeColor = System.Drawing.Color.Transparent;
+            this.label4.Location = new System.Drawing.Point(205, 29);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(167, 78);
+            this.label4.TabIndex = 35;
+            this.label4.Text = "Obor";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(179, 116);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(216, 29);
+            this.label5.TabIndex = 37;
+            this.label5.Text = "Zadejte název oboru";
+            // 
+            // button2
+            // 
+            this.button2.AutoSize = true;
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
+            this.button2.Font = new System.Drawing.Font("Calibri", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(419, 153);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(153, 49);
+            this.button2.TabIndex = 38;
+            this.button2.Text = "Aplikovat";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(23, 163);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(125, 29);
+            this.label6.TabIndex = 39;
+            this.label6.Text = "Chcete být:";
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
+            this.textBox1.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBox1.ForeColor = System.Drawing.Color.White;
+            this.textBox1.Location = new System.Drawing.Point(151, 158);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(263, 40);
+            this.textBox1.TabIndex = 40;
+            // 
             // Settings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -150,6 +229,12 @@
             this.BackgroundImage = global::Ekonomikare.Properties.Resources.male3;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(584, 791);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.napoveda);
             this.Controls.Add(this.checkBoxRada);
             this.Controls.Add(this.checkBoxFriend);
             this.Controls.Add(this.checkBox5050);
@@ -180,5 +265,11 @@
         private Guna.UI2.WinForms.Guna2CustomCheckBox checkBoxFriend;
         private Guna.UI2.WinForms.Guna2CustomCheckBox checkBoxRada;
         private System.Windows.Forms.BindingSource bindingSource1;
+        private System.Windows.Forms.Label napoveda;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

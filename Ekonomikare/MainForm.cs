@@ -479,5 +479,9 @@ namespace Ekonomikare
         {
             Application.Exit();
         }
+        public void setText(string s)
+        {
+            label2.Text = s;
+        }
     }
 }

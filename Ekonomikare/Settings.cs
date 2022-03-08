@@ -16,6 +16,7 @@ namespace Ekonomikare
     public partial class Settings : Form
     {
         private List<bool> booleany = new List<bool>();
+        public string obor;
 
         public Settings()
         {
@@ -47,12 +48,12 @@ namespace Ekonomikare
             else
                 FormHandler.form1.setBool5050(true);
 
-            if(!checkBoxRada.Checked)
+            if (!checkBoxRada.Checked)
                 FormHandler.form1.setBoolRada(false);
             else
                 FormHandler.form1.setBoolRada(true);
 
-            if(!checkBoxFriend.Checked)
+            if (!checkBoxFriend.Checked)
                 FormHandler.form1.setBoolPritel(false);
             else
                 FormHandler.form1.setBoolPritel(true);
@@ -82,7 +83,7 @@ namespace Ekonomikare
 
         }
 
-        public void write(){
+        public void write() {
             string radek = checkBox5050.Checked + ";" + checkBoxRada.Checked + ";" + checkBoxFriend.Checked;
             File.WriteAllText("settings.txt", radek);
         }
@@ -103,6 +104,14 @@ namespace Ekonomikare
         {
             write();
             change();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {   
+            FormHandler.form2.setText(textBox1.Text.ToUpper());
+            FormHandler.form1.setText(textBox1.Text.ToUpper());
+            textBox1.Clear();
+            
         }
     }
 }

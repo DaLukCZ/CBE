@@ -40,7 +40,6 @@ namespace Ekonomikare
             this.label_otazka = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.button_Zkontroluj = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.button_CallHelp = new System.Windows.Forms.Button();
             this.button_HelpAudiance = new System.Windows.Forms.Button();
@@ -49,9 +48,11 @@ namespace Ekonomikare
             this.button_Answer3 = new System.Windows.Forms.Button();
             this.button_Answer2 = new System.Windows.Forms.Button();
             this.button_Answer1 = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // button_menu
@@ -95,11 +96,11 @@ namespace Ekonomikare
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.button_exit);
             this.panel1.Controls.Add(this.label_otazka);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.button_Zkontroluj);
-            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.tableLayoutPanel1);
             this.panel1.Controls.Add(this.button_otazka);
             this.panel1.Controls.Add(this.button_Answer3);
@@ -159,17 +160,6 @@ namespace Ekonomikare
             this.button_Zkontroluj.Text = "Kontrola";
             this.button_Zkontroluj.UseVisualStyleBackColor = false;
             this.button_Zkontroluj.Click += new System.EventHandler(this.button_Check_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = global::Ekonomikare.Properties.Resources.Ekonomi1;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(784, 36);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(350, 350);
-            this.pictureBox1.TabIndex = 11;
-            this.pictureBox1.TabStop = false;
             // 
             // tableLayoutPanel1
             // 
@@ -279,6 +269,27 @@ namespace Ekonomikare
             this.button_Answer1.UseVisualStyleBackColor = false;
             this.button_Answer1.Click += new System.EventHandler(this.button_Answer1_Click);
             // 
+            // panel3
+            // 
+            this.panel3.BackgroundImage = global::Ekonomikare.Properties.Resources.zkouska;
+            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel3.Controls.Add(this.label2);
+            this.panel3.Location = new System.Drawing.Point(765, 11);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(383, 352);
+            this.panel3.TabIndex = 16;
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(15, 158);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(365, 46);
+            this.label2.TabIndex = 17;
+            this.label2.Text = "Ekonomikem";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -294,8 +305,8 @@ namespace Ekonomikare
             this.Load += new System.EventHandler(this.Main_Load_1);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -313,12 +324,13 @@ namespace Ekonomikare
         private System.Windows.Forms.Button button_CallHelp;
         private System.Windows.Forms.Button button_HelpAudiance;
         private System.Windows.Forms.Button button_5050;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button_otazka;
         private System.Windows.Forms.Button button_Zkontroluj;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label_otazka;
         private System.Windows.Forms.Button button_exit;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label2;
     }
 }
 
