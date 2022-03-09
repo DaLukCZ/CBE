@@ -118,11 +118,11 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="postup9" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\postup9.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="pozadi" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pozadi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value />
   </data>
   <data name="Ekonomi" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Ekonomi.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -139,8 +139,8 @@
   <data name="pritel" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pritel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="radaPublx" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\radaPublx.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="simplebackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Graphics\simplebackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MENU" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MENU.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -153,6 +153,9 @@
   </data>
   <data name="konfetySkovy" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\konfetySkovy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_5050Disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\5050Disabled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="soundoff" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\soundoff.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,17 +172,17 @@
   <data name="background" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\background.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="_5050" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\5050.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="postup1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\postup1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="mainmusic" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Music\mainmusic.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pritelx" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pritelx.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="TerkaKolo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TerkaKolo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="backgroundPhoto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Graphics\backgroundPhoto.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="postup2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\postup2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -193,8 +196,8 @@
   <data name="backblack" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\backblack.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="TerkaKolo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TerkaKolo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pritelx" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pritelx.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="male2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\male2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -205,11 +208,14 @@
   <data name="menumusic" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Music\menumusic.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="postup3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\postup3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="postup4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\postup4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="hrdinaKolo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hrdinaKolo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="radaPublx" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\radaPublx.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="backgroundPhotocrop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Graphics\backgroundPhotocrop.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="postup8" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\postup8.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -226,8 +232,8 @@
   <data name="ekoapproved" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ekoapproved.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="postup4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\postup4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="postup9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\postup9.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="zkouska" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\zkouska.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -238,14 +244,17 @@
   <data name="logoV2NoText" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Graphics\logoV2NoText.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="backblue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backblue.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="male3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\male3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="_5050Disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\5050Disabled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="postup3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\postup3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="String1" xml:space="preserve">
-    <value />
+  <data name="hrdinaKolo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hrdinaKolo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Ekonomi1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Ekonomi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -253,13 +262,13 @@
   <data name="skovyKolo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\skovyKolo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="backblue" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\backblue.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="_5050" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\5050.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="button10" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Graphics\button10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="simplebackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Graphics\simplebackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="button3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Graphics\button3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
