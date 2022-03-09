@@ -29,7 +29,6 @@ namespace Ekonomikare
         private Question currentQuestion;
         private Random random = new Random();
         private Ask ask = new Ask();
-        private CallHelp help = new CallHelp();
         private List<Question> questions = new List<Question>();
         private bool button50;
         private bool loseBool = false;
@@ -207,6 +206,7 @@ namespace Ekonomikare
         private void mark(int answerID)
         {
             List<Button> buttons = new List<Button>(new Button[] { button_Answer1, button_Answer2, button_Answer3, button_Answer4 });
+            if(!loseBool)
             buttons[answerID].BackColor = Color.DodgerBlue;
         }
 
@@ -224,9 +224,12 @@ namespace Ekonomikare
         //menu
         private void button_Menu_Click(object sender, EventArgs e)
         {
-            FormHandler.form2.Show();
-            FormHandler.form2.showContie();
-            this.Hide();
+            if (!loseBool)
+            {
+                FormHandler.form2.Show();
+                FormHandler.form2.showContie();
+                this.Hide();
+            }
         }
 
         public void setBool5050(bool zmena) {
@@ -246,34 +249,40 @@ namespace Ekonomikare
         private void button_5050_Click(object sender, EventArgs e)
         {
             resetColor();
-            List<Button> buttons = new List<Button>(new Button[] { button_Answer1, button_Answer2, button_Answer3, button_Answer4 });
-            List<int> numbers = new List<int>();
-
-            for (int i = 0; i < 4; i++)
+            if (!loseBool)
             {
-                if (currentQuestion.rightAnswer != i)
+                List<Button> buttons = new List<Button>(new Button[] { button_Answer1, button_Answer2, button_Answer3, button_Answer4 });
+                List<int> numbers = new List<int>();
+
+                for (int i = 0; i < 4; i++)
                 {
-                    numbers.Add(i);
+                    if (currentQuestion.rightAnswer != i)
+                    {
+                        numbers.Add(i);
+                    }
                 }
-            }
 
-            for (int i = 0; i < 2; i++)
-            {
-                int number = numbers[random.Next(numbers.Count)];
-                buttons[number].Text = "";
-                buttons[number].Enabled = false;
-                numbers.Remove(number);
+                for (int i = 0; i < 2; i++)
+                {
+                    int number = numbers[random.Next(numbers.Count)];
+                    buttons[number].Text = "";
+                    buttons[number].Enabled = false;
+                    numbers.Remove(number);
+                }
+                button50 = true;
+                button_5050.Enabled = false;
+                button_5050.BackgroundImage = Properties.Resources._5050Disabled;
             }
-            button50 = true;
-            button_5050.Enabled = false;
-            button_5050.BackgroundImage = Properties.Resources._5050Disabled;
         }
 
         //RadaPublika
         private void button_Audiance_Help_Click(object sender, EventArgs e)
         {
-            ask.Show();
-            ask.setAnswer();
+            if (!loseBool)
+            {
+                ask.Show();
+                ask.setAnswer();
+            }
         }
         //obrazky
         private void step()
@@ -397,7 +406,7 @@ namespace Ekonomikare
                         );
                 } else
                 {
-                    Console.WriteLine("Chyba v otázkách na řádku - " + radky + " má jen " + hodnoty1.Count + " hodnot");
+                    MessageBox.Show("Chyba v otázkách na řádku " + radky + " má jen " + hodnoty1.Count + " hodnot", "Chyba v otázkách!");
                 }
             }
         }
@@ -446,17 +455,23 @@ namespace Ekonomikare
         //click
         private void click(int id)
         {
-            buttonek = id;
-            resetColor();
-            mark(id);
+            if (!loseBool)
+            {
+                buttonek = id;
+                resetColor();
+                mark(id);
+            }
             ask.Hide();
-            help.Hide();
         }
 
         //pritelTelefon
         private void button_Call_Help_Click(object sender, EventArgs e)
         {
-            help.Show();
+            if (!loseBool)
+            {
+                CallHelp help = new CallHelp();
+                help.Show();
+            }
         }
 
         //vypne tlačitko call friend
@@ -470,7 +485,6 @@ namespace Ekonomikare
         {
             button50 = false;
             ask.Hide();
-            help.Hide();
             checkAnswer();
         }
 

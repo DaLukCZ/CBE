@@ -106,12 +106,34 @@ namespace Ekonomikare
             change();
         }
 
+        private void dropDown_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (dropDown.Text != "Jiné")
+            {
+                FormHandler.form2.setText(dropDown.Text);
+                FormHandler.form1.setText(dropDown.Text);
+                dropDown.Text = dropDown.Text;
+            }
+            else
+            {
+                buttonAplikovat.Visible = true;
+                textBox.Visible = true;
+            }
+        }
+
         private void button2_Click(object sender, EventArgs e)
-        {   
-            FormHandler.form2.setText(textBox1.Text.ToUpper());
-            FormHandler.form1.setText(textBox1.Text.ToUpper());
-            textBox1.Clear();
-            
+        {
+            if (textBox.Text != "")
+            {
+                FormHandler.form2.setText(textBox.Text);
+                FormHandler.form1.setText(textBox.Text);
+                buttonAplikovat.Visible = false;
+                textBox.Visible = false;
+            }
+            else
+            {
+                MessageBox.Show("Prosím zadejte název");
+            }
         }
     }
 }

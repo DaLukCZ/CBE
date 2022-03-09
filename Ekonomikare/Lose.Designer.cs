@@ -77,13 +77,13 @@
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Calibri", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label3.Location = new System.Drawing.Point(59, 141);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(23, 36);
+            this.label3.Size = new System.Drawing.Size(625, 86);
             this.label3.TabIndex = 12;
             this.label3.Text = ".";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -107,11 +107,11 @@
             this.label_pocet.BackColor = System.Drawing.Color.Transparent;
             this.label_pocet.Font = new System.Drawing.Font("Calibri", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label_pocet.ForeColor = System.Drawing.Color.White;
-            this.label_pocet.Location = new System.Drawing.Point(340, 226);
+            this.label_pocet.Location = new System.Drawing.Point(337, 243);
             this.label_pocet.Name = "label_pocet";
-            this.label_pocet.Size = new System.Drawing.Size(23, 36);
+            this.label_pocet.Size = new System.Drawing.Size(87, 36);
             this.label_pocet.TabIndex = 14;
-            this.label_pocet.Text = ".";
+            this.label_pocet.Text = "10/10";
             this.label_pocet.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Lose
