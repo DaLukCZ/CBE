@@ -396,5 +396,17 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Graphics\logoV2NoText.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Graphics\button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Graphics\button10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Graphics\simplebackground.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
