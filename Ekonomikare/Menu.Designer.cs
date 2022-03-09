@@ -45,6 +45,8 @@ namespace Ekonomikare
             this.button_Exit.BackColor = System.Drawing.Color.Transparent;
             this.button_Exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button_Exit.FlatAppearance.BorderSize = 0;
+            this.button_Exit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button_Exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button_Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Exit.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Exit.ForeColor = System.Drawing.Color.White;
@@ -62,6 +64,8 @@ namespace Ekonomikare
             this.button_Start.AutoSize = true;
             this.button_Start.BackColor = System.Drawing.Color.Transparent;
             this.button_Start.FlatAppearance.BorderSize = 0;
+            this.button_Start.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button_Start.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button_Start.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Start.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Start.ForeColor = System.Drawing.Color.Transparent;
@@ -82,6 +86,8 @@ namespace Ekonomikare
             this.button1.BackgroundImage = global::Ekonomikare.Properties.Resources.button3;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;

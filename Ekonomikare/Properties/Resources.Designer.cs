@@ -481,6 +481,16 @@ namespace Ekonomikare.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap settingscrop {
+            get {
+                object obj = ResourceManager.GetObject("settingscrop", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap simplebackground {
             get {
                 object obj = ResourceManager.GetObject("simplebackground", resourceCulture);

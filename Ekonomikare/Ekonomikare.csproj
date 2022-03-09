@@ -417,5 +417,8 @@
   <ItemGroup>
     <None Include="Resources\Graphics\button3.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Graphics\settingscrop.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
