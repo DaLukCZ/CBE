@@ -42,7 +42,20 @@ namespace Ekonomikare
             WindowState = FormWindowState.Maximized;
             readTXT();
             showQuestion();
+            transparent();
+        }
 
+        private void transparent()
+        {
+            List<Button> buttons = new List<Button>(new Button[] { button_Answer1, button_Answer2, button_Answer3, button_Answer4, button_Zkontroluj, button_otazka });
+            for (int i = 0; i < 6; i++)
+            {
+                buttons[i].FlatStyle = FlatStyle.Flat;
+                buttons[i].FlatAppearance.BorderSize = 0;
+                buttons[i].FlatAppearance.MouseDownBackColor = Color.Transparent;
+                buttons[i].FlatAppearance.MouseOverBackColor = Color.Transparent;
+                buttons[i].BackColor = Color.Transparent;
+            }
         }
 
         //form load
@@ -72,10 +85,7 @@ namespace Ekonomikare
         private void showQuestion()
         {
             buttonek = 5;
-            button_Answer1.BackColor = System.Drawing.Color.FromArgb(25, 30, 60);
-            button_Answer2.BackColor = System.Drawing.Color.FromArgb(25, 30, 60);
-            button_Answer3.BackColor = System.Drawing.Color.FromArgb(25, 30, 60);
-            button_Answer4.BackColor = System.Drawing.Color.FromArgb(25, 30, 60);
+            resetColor();
             Question question = getQuestionByStep(Currentstep);
             if (question == null)
             {
@@ -216,7 +226,7 @@ namespace Ekonomikare
             List<Button> buttons = new List<Button>(new Button[] { button_Answer1, button_Answer2, button_Answer3, button_Answer4 });
             for (int i = 0; i < 4; i++)
             {
-                buttons[i].BackColor = Color.FromArgb(25, 30, 60);
+                buttons[i].BackgroundImage = Properties.Resources.odpovedDark;
             }
 
         }

@@ -110,8 +110,8 @@ namespace Ekonomikare
         {
             if (dropDown.Text != "Jiné")
             {
-                FormHandler.form2.setText(dropDown.Text);
-                FormHandler.form1.setText(dropDown.Text);
+                FormHandler.form2.setText(dropDown.Text.ToUpper());
+                FormHandler.form1.setText(dropDown.Text.ToUpper());
                 dropDown.Text = dropDown.Text;
             }
             else
@@ -123,16 +123,20 @@ namespace Ekonomikare
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (textBox.Text != "")
+            if (textBox.Text != "" && textBox.Text.Length < 12)
             {
-                FormHandler.form2.setText(textBox.Text);
-                FormHandler.form1.setText(textBox.Text);
+                FormHandler.form2.setText(textBox.Text.ToUpper());
+                FormHandler.form1.setText(textBox.Text.ToUpper());
                 buttonAplikovat.Visible = false;
                 textBox.Visible = false;
             }
+            else if (textBox.Text.Length >= 12)
+            {
+                MessageBox.Show("Název je přiliš dlouhý. Maximálně 11 znaků", "Příliš dlouhý název!");
+            }
             else
             {
-                MessageBox.Show("Prosím zadejte název");
+                MessageBox.Show("Prosím zadejte název", "Nebyl zadán název");
             }
         }
     }

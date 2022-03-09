@@ -36,6 +36,8 @@ namespace Ekonomikare
             this.button_Answer4 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.button_exit = new System.Windows.Forms.Button();
             this.label_otazka = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -44,15 +46,13 @@ namespace Ekonomikare
             this.button_CallHelp = new System.Windows.Forms.Button();
             this.button_HelpAudiance = new System.Windows.Forms.Button();
             this.button_5050 = new System.Windows.Forms.Button();
-            this.button_otazka = new System.Windows.Forms.Button();
             this.button_Answer3 = new System.Windows.Forms.Button();
             this.button_Answer2 = new System.Windows.Forms.Button();
             this.button_Answer1 = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.button_otazka = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button_menu
@@ -71,12 +71,14 @@ namespace Ekonomikare
             // 
             // button_Answer4
             // 
-            this.button_Answer4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
+            this.button_Answer4.BackColor = System.Drawing.Color.Transparent;
+            this.button_Answer4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_Answer4.BackgroundImage")));
+            this.button_Answer4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button_Answer4.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Answer4.ForeColor = System.Drawing.Color.White;
-            this.button_Answer4.Location = new System.Drawing.Point(997, 883);
+            this.button_Answer4.Location = new System.Drawing.Point(969, 846);
             this.button_Answer4.Name = "button_Answer4";
-            this.button_Answer4.Size = new System.Drawing.Size(291, 145);
+            this.button_Answer4.Size = new System.Drawing.Size(570, 145);
             this.button_Answer4.TabIndex = 4;
             this.button_Answer4.Text = "Odpověd 4";
             this.button_Answer4.UseVisualStyleBackColor = false;
@@ -115,6 +117,28 @@ namespace Ekonomikare
             this.panel1.Size = new System.Drawing.Size(1904, 1041);
             this.panel1.TabIndex = 0;
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Transparent;
+            this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
+            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel3.Controls.Add(this.label2);
+            this.panel3.Location = new System.Drawing.Point(678, 36);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(620, 340);
+            this.panel3.TabIndex = 19;
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Bell MT", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(38, 137);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(545, 71);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "EKONOMIKEM";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // button_exit
             // 
             this.button_exit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
@@ -133,9 +157,9 @@ namespace Ekonomikare
             this.label_otazka.Cursor = System.Windows.Forms.Cursors.Default;
             this.label_otazka.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label_otazka.ForeColor = System.Drawing.Color.White;
-            this.label_otazka.Location = new System.Drawing.Point(406, 402);
+            this.label_otazka.Location = new System.Drawing.Point(471, 402);
             this.label_otazka.Name = "label_otazka";
-            this.label_otazka.Size = new System.Drawing.Size(1105, 122);
+            this.label_otazka.Size = new System.Drawing.Size(983, 122);
             this.label_otazka.TabIndex = 15;
             this.label_otazka.Text = "Otazka";
             this.label_otazka.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -150,12 +174,14 @@ namespace Ekonomikare
             // 
             // button_Zkontroluj
             // 
-            this.button_Zkontroluj.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
+            this.button_Zkontroluj.BackColor = System.Drawing.Color.Transparent;
+            this.button_Zkontroluj.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_Zkontroluj.BackgroundImage")));
+            this.button_Zkontroluj.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button_Zkontroluj.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Zkontroluj.ForeColor = System.Drawing.Color.White;
-            this.button_Zkontroluj.Location = new System.Drawing.Point(378, 819);
+            this.button_Zkontroluj.Location = new System.Drawing.Point(677, 596);
             this.button_Zkontroluj.Name = "button_Zkontroluj";
-            this.button_Zkontroluj.Size = new System.Drawing.Size(210, 93);
+            this.button_Zkontroluj.Size = new System.Drawing.Size(565, 93);
             this.button_Zkontroluj.TabIndex = 13;
             this.button_Zkontroluj.Text = "Kontrola";
             this.button_Zkontroluj.UseVisualStyleBackColor = false;
@@ -218,9 +244,56 @@ namespace Ekonomikare
             this.button_5050.UseVisualStyleBackColor = false;
             this.button_5050.Click += new System.EventHandler(this.button_5050_Click);
             // 
+            // button_Answer3
+            // 
+            this.button_Answer3.BackColor = System.Drawing.Color.Transparent;
+            this.button_Answer3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_Answer3.BackgroundImage")));
+            this.button_Answer3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button_Answer3.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Answer3.ForeColor = System.Drawing.Color.White;
+            this.button_Answer3.Location = new System.Drawing.Point(371, 846);
+            this.button_Answer3.Name = "button_Answer3";
+            this.button_Answer3.Size = new System.Drawing.Size(565, 145);
+            this.button_Answer3.TabIndex = 8;
+            this.button_Answer3.Text = "Odpověd 3";
+            this.button_Answer3.UseVisualStyleBackColor = false;
+            this.button_Answer3.Click += new System.EventHandler(this.button_Answer3_Click);
+            // 
+            // button_Answer2
+            // 
+            this.button_Answer2.BackColor = System.Drawing.Color.Transparent;
+            this.button_Answer2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_Answer2.BackgroundImage")));
+            this.button_Answer2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button_Answer2.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Answer2.ForeColor = System.Drawing.Color.White;
+            this.button_Answer2.Location = new System.Drawing.Point(969, 695);
+            this.button_Answer2.Name = "button_Answer2";
+            this.button_Answer2.Size = new System.Drawing.Size(565, 145);
+            this.button_Answer2.TabIndex = 7;
+            this.button_Answer2.Text = "Odpověd 2";
+            this.button_Answer2.UseVisualStyleBackColor = false;
+            this.button_Answer2.Click += new System.EventHandler(this.button_Answer2_Click);
+            // 
+            // button_Answer1
+            // 
+            this.button_Answer1.BackColor = System.Drawing.Color.Transparent;
+            this.button_Answer1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_Answer1.BackgroundImage")));
+            this.button_Answer1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button_Answer1.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Answer1.ForeColor = System.Drawing.Color.White;
+            this.button_Answer1.Location = new System.Drawing.Point(371, 695);
+            this.button_Answer1.Name = "button_Answer1";
+            this.button_Answer1.Size = new System.Drawing.Size(565, 145);
+            this.button_Answer1.TabIndex = 6;
+            this.button_Answer1.Text = "Odpověd 1";
+            this.button_Answer1.UseVisualStyleBackColor = false;
+            this.button_Answer1.Click += new System.EventHandler(this.button_Answer1_Click);
+            // 
             // button_otazka
             // 
-            this.button_otazka.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
+            this.button_otazka.BackColor = System.Drawing.Color.Transparent;
+            this.button_otazka.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_otazka.BackgroundImage")));
+            this.button_otazka.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button_otazka.Enabled = false;
             this.button_otazka.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_otazka.ForeColor = System.Drawing.Color.White;
@@ -229,66 +302,6 @@ namespace Ekonomikare
             this.button_otazka.Size = new System.Drawing.Size(1128, 145);
             this.button_otazka.TabIndex = 9;
             this.button_otazka.UseVisualStyleBackColor = false;
-            // 
-            // button_Answer3
-            // 
-            this.button_Answer3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
-            this.button_Answer3.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_Answer3.ForeColor = System.Drawing.Color.White;
-            this.button_Answer3.Location = new System.Drawing.Point(624, 883);
-            this.button_Answer3.Name = "button_Answer3";
-            this.button_Answer3.Size = new System.Drawing.Size(291, 145);
-            this.button_Answer3.TabIndex = 8;
-            this.button_Answer3.Text = "Odpověd 3";
-            this.button_Answer3.UseVisualStyleBackColor = false;
-            this.button_Answer3.Click += new System.EventHandler(this.button_Answer3_Click);
-            // 
-            // button_Answer2
-            // 
-            this.button_Answer2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
-            this.button_Answer2.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_Answer2.ForeColor = System.Drawing.Color.White;
-            this.button_Answer2.Location = new System.Drawing.Point(997, 701);
-            this.button_Answer2.Name = "button_Answer2";
-            this.button_Answer2.Size = new System.Drawing.Size(291, 145);
-            this.button_Answer2.TabIndex = 7;
-            this.button_Answer2.Text = "Odpověd 2";
-            this.button_Answer2.UseVisualStyleBackColor = false;
-            this.button_Answer2.Click += new System.EventHandler(this.button_Answer2_Click);
-            // 
-            // button_Answer1
-            // 
-            this.button_Answer1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
-            this.button_Answer1.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_Answer1.ForeColor = System.Drawing.Color.White;
-            this.button_Answer1.Location = new System.Drawing.Point(624, 701);
-            this.button_Answer1.Name = "button_Answer1";
-            this.button_Answer1.Size = new System.Drawing.Size(291, 145);
-            this.button_Answer1.TabIndex = 6;
-            this.button_Answer1.Text = "Odpověd 1";
-            this.button_Answer1.UseVisualStyleBackColor = false;
-            this.button_Answer1.Click += new System.EventHandler(this.button_Answer1_Click);
-            // 
-            // panel3
-            // 
-            this.panel3.BackgroundImage = global::Ekonomikare.Properties.Resources.zkouska;
-            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel3.Controls.Add(this.label2);
-            this.panel3.Location = new System.Drawing.Point(765, 11);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(383, 352);
-            this.panel3.TabIndex = 16;
-            // 
-            // label2
-            // 
-            this.label2.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(15, 158);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(365, 46);
-            this.label2.TabIndex = 17;
-            this.label2.Text = "Ekonomikem";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // MainForm
             // 
@@ -305,8 +318,8 @@ namespace Ekonomikare
             this.Load += new System.EventHandler(this.Main_Load_1);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.tableLayoutPanel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -314,23 +327,23 @@ namespace Ekonomikare
         #endregion
 
         private System.Windows.Forms.Button button_menu;
-        private System.Windows.Forms.Button button_Answer4;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button_Answer1;
-        private System.Windows.Forms.Button button_Answer3;
-        private System.Windows.Forms.Button button_Answer2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Button button_CallHelp;
         private System.Windows.Forms.Button button_HelpAudiance;
         private System.Windows.Forms.Button button_5050;
-        private System.Windows.Forms.Button button_otazka;
         private System.Windows.Forms.Button button_Zkontroluj;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label_otazka;
         private System.Windows.Forms.Button button_exit;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button_otazka;
+        private System.Windows.Forms.Button button_Answer4;
+        private System.Windows.Forms.Button button_Answer3;
+        private System.Windows.Forms.Button button_Answer2;
+        private System.Windows.Forms.Button button_Answer1;
     }
 }
 

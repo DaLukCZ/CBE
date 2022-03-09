@@ -396,5 +396,20 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Graphics\icon48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Graphics\icon64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Graphics\icon256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Graphics\logoV2NoTextDark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Graphics\odpovedDark.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

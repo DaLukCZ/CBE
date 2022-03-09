@@ -32,7 +32,7 @@ namespace Ekonomikare
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.button_Exit = new System.Windows.Forms.Button();
             this.button_Start = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.button_settings = new System.Windows.Forms.Button();
             this.Contienue = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -42,12 +42,14 @@ namespace Ekonomikare
             // button_Exit
             // 
             this.button_Exit.AutoSize = true;
-            this.button_Exit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
+            this.button_Exit.BackColor = System.Drawing.Color.Transparent;
+            this.button_Exit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_Exit.BackgroundImage")));
+            this.button_Exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button_Exit.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Exit.ForeColor = System.Drawing.Color.White;
-            this.button_Exit.Location = new System.Drawing.Point(180, 677);
+            this.button_Exit.Location = new System.Drawing.Point(52, 677);
             this.button_Exit.Name = "button_Exit";
-            this.button_Exit.Size = new System.Drawing.Size(225, 102);
+            this.button_Exit.Size = new System.Drawing.Size(492, 102);
             this.button_Exit.TabIndex = 14;
             this.button_Exit.Text = "Ukončit";
             this.button_Exit.UseVisualStyleBackColor = false;
@@ -56,39 +58,46 @@ namespace Ekonomikare
             // button_Start
             // 
             this.button_Start.AutoSize = true;
-            this.button_Start.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
+            this.button_Start.BackColor = System.Drawing.Color.Transparent;
+            this.button_Start.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_Start.BackgroundImage")));
+            this.button_Start.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button_Start.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Start.ForeColor = System.Drawing.Color.White;
-            this.button_Start.Location = new System.Drawing.Point(180, 461);
+            this.button_Start.Location = new System.Drawing.Point(52, 461);
             this.button_Start.Name = "button_Start";
-            this.button_Start.Size = new System.Drawing.Size(225, 102);
+            this.button_Start.Size = new System.Drawing.Size(492, 102);
             this.button_Start.TabIndex = 15;
             this.button_Start.Text = "Nová Hra";
             this.button_Start.UseVisualStyleBackColor = false;
             this.button_Start.Click += new System.EventHandler(this.button_Start_Click);
             // 
-            // button1
+            // button_settings
             // 
-            this.button1.AutoSize = true;
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
-            this.button1.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(180, 569);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(225, 102);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "Nastavení";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button_settings.AutoSize = true;
+            this.button_settings.BackColor = System.Drawing.Color.Transparent;
+            this.button_settings.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_settings.BackgroundImage")));
+            this.button_settings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button_settings.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_settings.ForeColor = System.Drawing.Color.White;
+            this.button_settings.Location = new System.Drawing.Point(52, 569);
+            this.button_settings.Name = "button_settings";
+            this.button_settings.Size = new System.Drawing.Size(492, 102);
+            this.button_settings.TabIndex = 16;
+            this.button_settings.Text = "Nastavení";
+            this.button_settings.UseVisualStyleBackColor = false;
+            this.button_settings.Click += new System.EventHandler(this.button1_Click);
             // 
             // Contienue
             // 
-            this.Contienue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
+            this.Contienue.BackColor = System.Drawing.Color.Transparent;
+            this.Contienue.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Contienue.BackgroundImage")));
+            this.Contienue.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Contienue.FlatAppearance.BorderSize = 0;
             this.Contienue.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Contienue.ForeColor = System.Drawing.Color.White;
-            this.Contienue.Location = new System.Drawing.Point(180, 353);
+            this.Contienue.Location = new System.Drawing.Point(52, 353);
             this.Contienue.Name = "Contienue";
-            this.Contienue.Size = new System.Drawing.Size(225, 102);
+            this.Contienue.Size = new System.Drawing.Size(492, 102);
             this.Contienue.TabIndex = 17;
             this.Contienue.Text = "Pokračovat";
             this.Contienue.UseVisualStyleBackColor = false;
@@ -98,23 +107,23 @@ namespace Ekonomikare
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.BackgroundImage = global::Ekonomikare.Properties.Resources.zkouska;
+            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(106, 28);
+            this.panel1.Location = new System.Drawing.Point(7, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(365, 309);
+            this.panel1.Size = new System.Drawing.Size(571, 325);
             this.panel1.TabIndex = 18;
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.Font = new System.Drawing.Font("Calisto MT", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(24, 143);
+            this.label1.Location = new System.Drawing.Point(36, 132);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(328, 33);
+            this.label1.Size = new System.Drawing.Size(501, 66);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Ekonomikářem";
+            this.label1.Text = "EKONOMEM";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Menu
@@ -127,7 +136,7 @@ namespace Ekonomikare
             this.ClientSize = new System.Drawing.Size(584, 791);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.Contienue);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.button_settings);
             this.Controls.Add(this.button_Start);
             this.Controls.Add(this.button_Exit);
             this.Cursor = System.Windows.Forms.Cursors.Default;
@@ -149,7 +158,7 @@ namespace Ekonomikare
 
         private System.Windows.Forms.Button button_Exit;
         private System.Windows.Forms.Button button_Start;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button_settings;
         private System.Windows.Forms.Button Contienue;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;

@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Drawing;
 using System.Media;
 using System.Windows.Forms;
 
@@ -13,6 +15,7 @@ namespace Ekonomikare
         {
             InitializeComponent();
             showContie();
+            transparent();
         }
 
         protected override CreateParams CreateParams
@@ -22,6 +25,18 @@ namespace Ekonomikare
                 CreateParams handleParams = base.CreateParams;
                 handleParams.ExStyle |= 0x02000000;
                 return handleParams;
+            }
+        }
+
+        private void transparent()
+        {
+            List<Button> buttons = new List<Button>(new Button[] { Contienue, button_Start, button_settings, button_Exit });
+            for (int i = 0; i < 4; i++) {
+                buttons[i].FlatStyle = FlatStyle.Flat;
+                buttons[i].FlatAppearance.BorderSize = 0;
+                buttons[i].FlatAppearance.MouseDownBackColor = Color.Transparent;
+                buttons[i].FlatAppearance.MouseOverBackColor = Color.Transparent;
+                buttons[i].BackColor = Color.Transparent;
             }
         }
 

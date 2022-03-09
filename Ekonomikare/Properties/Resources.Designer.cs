@@ -183,6 +183,36 @@ namespace Ekonomikare.Properties {
         /// <summary>
         ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icon256 {
+            get {
+                object obj = ResourceManager.GetObject("icon256", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icon48 {
+            get {
+                object obj = ResourceManager.GetObject("icon48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icon64 {
+            get {
+                object obj = ResourceManager.GetObject("icon64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap konfety {
             get {
                 object obj = ResourceManager.GetObject("konfety", resourceCulture);
@@ -206,6 +236,16 @@ namespace Ekonomikare.Properties {
         internal static System.Drawing.Bitmap konfetySkovy {
             get {
                 object obj = ResourceManager.GetObject("konfetySkovy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logoV2NoTextDark {
+            get {
+                object obj = ResourceManager.GetObject("logoV2NoTextDark", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -255,6 +295,16 @@ namespace Ekonomikare.Properties {
         internal static System.IO.UnmanagedMemoryStream menumusic {
             get {
                 return ResourceManager.GetStream("menumusic", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap odpovedDark {
+            get {
+                object obj = ResourceManager.GetObject("odpovedDark", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
