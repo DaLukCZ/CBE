@@ -397,6 +397,30 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Graphics\logoV2NoText.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Graphics\button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Graphics\button10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Graphics\simplebackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Graphics\backgroundPhoto.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Graphics\backgroundPhotocrop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Graphics\button3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Graphics\settingscrop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\Graphics\icon48.png" />
   </ItemGroup>
   <ItemGroup>
