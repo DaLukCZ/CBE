@@ -81,23 +81,23 @@ namespace Ekonomikare
             // 
             // button_settings
             // 
-            this.button1.AutoSize = true;
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.BackgroundImage = global::Ekonomikare.Properties.Resources.button3;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(175, 652);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(400, 100);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "Nastavení";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button_settings.AutoSize = true;
+            this.button_settings.BackColor = System.Drawing.Color.Transparent;
+            this.button_settings.BackgroundImage = global::Ekonomikare.Properties.Resources.button3;
+            this.button_settings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button_settings.FlatAppearance.BorderSize = 0;
+            this.button_settings.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button_settings.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button_settings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_settings.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_settings.ForeColor = System.Drawing.Color.White;
+            this.button_settings.Location = new System.Drawing.Point(175, 652);
+            this.button_settings.Name = "button1";
+            this.button_settings.Size = new System.Drawing.Size(400, 100);
+            this.button_settings.TabIndex = 16;
+            this.button_settings.Text = "Nastavení";
+            this.button_settings.UseVisualStyleBackColor = false;
+            this.button_settings.Click += new System.EventHandler(this.button1_Click);
             // 
             // Contienue
             // 
@@ -149,7 +149,7 @@ namespace Ekonomikare
             this.ClientSize = new System.Drawing.Size(750, 1000);
             this.Controls.Add(this.Contienue);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.button_settings);
             this.Controls.Add(this.button_Start);
             this.Controls.Add(this.button_Exit);
             this.Cursor = System.Windows.Forms.Cursors.Default;
