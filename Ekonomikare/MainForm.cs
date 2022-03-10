@@ -32,6 +32,7 @@ namespace Ekonomikare
         private List<Question> questions = new List<Question>();
         private bool button50;
         private bool loseBool = false;
+        string otazky = "Jiné_otázky.txt";
         private SoundPlayer music = new SoundPlayer(Properties.Resources.mainmusic);
 
         //konstruktor
@@ -402,11 +403,16 @@ namespace Ekonomikare
             button_HelpAudiance.BackgroundImage = bitmap;
         }
 
+        public void setOtazky(string ot)
+        {
+            otazky = ot;
+        }
+
         //metoda pro čtení txt
         public void readTXT()
         {
             int radky = 0;
-            foreach (string line in System.IO.File.ReadLines("otazky.txt"))
+            foreach (string line in System.IO.File.ReadLines(otazky))
             {
                 radky++;
                 List<string> hodnoty1 = new List<string>(line.Split(';'));
@@ -418,7 +424,8 @@ namespace Ekonomikare
                         new string[4] { hodnoty1[2], hodnoty1[3], hodnoty1[4], hodnoty1[5] },
                         int.Parse(hodnoty1[6])
                         );
-                } else
+                }
+                else
                 {
                     MessageBox.Show("Chyba v otázkách na řádku " + radky + " má jen " + hodnoty1.Count + " hodnot", "Chyba v otázkách!");
                 }

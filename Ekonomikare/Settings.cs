@@ -92,23 +92,24 @@ namespace Ekonomikare
 
         private void dropDown_SelectedIndexChanged(object sender, EventArgs e)
         {
+            Console.WriteLine("Už chci spát, kurvfga " + dropDown.Text);
             if (dropDown.Text != "Jiné")
             {
+                FormHandler.form1.setOtazky(dropDown.Text + "_otázky.txt");
+                FormHandler.form1.readTXT();
+                FormHandler.form2.contie(false);
                 FormHandler.form2.setText(dropDown.Text.ToUpper());
                 FormHandler.form1.setText(dropDown.Text.ToUpper());
-                dropDown.Text = dropDown.Text;
             }
             else
             {
                 buttonAplikovat.Visible = true;
                 textBox.Visible = true;
+                FormHandler.form1.setOtazky("Jiné_otázky.txt");
+                FormHandler.form1.readTXT();
+                FormHandler.form2.contie(false);
             }
-        }
-
-        private void button_save_Click(object sender, EventArgs e)
-        {
-            write();
-            change();
+            FormHandler.form1.restart();
         }
 
         private void buttonAplikovat_Click(object sender, EventArgs e)
@@ -128,6 +129,24 @@ namespace Ekonomikare
             {
                 MessageBox.Show("Prosím zadejte název", "Nebyl zadán název");
             }
+        }
+
+        private void checkBox5050_CheckedChanged(object sender, EventArgs e)
+        {
+            write();
+            change();
+        }
+
+        private void checkBoxRada_CheckedChanged(object sender, EventArgs e)
+        {
+            write();
+            change();
+        }
+
+        private void checkBoxFriend_CheckedChanged(object sender, EventArgs e)
+        {
+            write();
+            change();
         }
     }
 }

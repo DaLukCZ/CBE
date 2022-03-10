@@ -43,7 +43,6 @@
             this.dropDown = new System.Windows.Forms.ComboBox();
             this.textBox = new System.Windows.Forms.TextBox();
             this.buttonAplikovat = new System.Windows.Forms.Button();
-            this.button_save = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -121,6 +120,7 @@
             this.checkBox5050.UncheckedState.BorderRadius = 0;
             this.checkBox5050.UncheckedState.BorderThickness = 0;
             this.checkBox5050.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
+            this.checkBox5050.CheckedChanged += new System.EventHandler(this.checkBox5050_CheckedChanged);
             // 
             // checkBoxFriend
             // 
@@ -137,6 +137,7 @@
             this.checkBoxFriend.UncheckedState.BorderRadius = 0;
             this.checkBoxFriend.UncheckedState.BorderThickness = 0;
             this.checkBoxFriend.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
+            this.checkBoxFriend.CheckedChanged += new System.EventHandler(this.checkBoxFriend_CheckedChanged);
             // 
             // checkBoxRada
             // 
@@ -153,6 +154,7 @@
             this.checkBoxRada.UncheckedState.BorderRadius = 0;
             this.checkBoxRada.UncheckedState.BorderThickness = 0;
             this.checkBoxRada.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
+            this.checkBoxRada.CheckedChanged += new System.EventHandler(this.checkBoxRada_CheckedChanged);
             // 
             // label4
             // 
@@ -188,18 +190,12 @@
             this.dropDown.FormattingEnabled = true;
             this.dropDown.IntegralHeight = false;
             this.dropDown.Items.AddRange(new object[] {
-            "Doktorem",
             "Ekonomikem",
-            "Elektrikářem",
             "Fyzikem",
             "Chemikem",
             "Matematikem",
             "Programátorem",
-            "Přírodovědcem",
             "Síťařem",
-            "Strojařem",
-            "Učitelem",
-            "Veterinářem",
             "Jiné"});
             this.dropDown.Location = new System.Drawing.Point(175, 200);
             this.dropDown.Name = "dropDown";
@@ -233,26 +229,6 @@
             this.buttonAplikovat.Visible = false;
             this.buttonAplikovat.Click += new System.EventHandler(this.buttonAplikovat_Click);
             // 
-            // button_save
-            // 
-            this.button_save.AutoSize = true;
-            this.button_save.BackColor = System.Drawing.Color.Transparent;
-            this.button_save.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_save.BackgroundImage")));
-            this.button_save.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button_save.FlatAppearance.BorderSize = 0;
-            this.button_save.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button_save.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button_save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_save.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_save.ForeColor = System.Drawing.Color.White;
-            this.button_save.Location = new System.Drawing.Point(175, 700);
-            this.button_save.Name = "button_save";
-            this.button_save.Size = new System.Drawing.Size(400, 100);
-            this.button_save.TabIndex = 44;
-            this.button_save.Text = "Použít";
-            this.button_save.UseVisualStyleBackColor = false;
-            this.button_save.Click += new System.EventHandler(this.button_save_Click);
-            // 
             // Settings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -261,7 +237,6 @@
             this.BackgroundImage = global::Ekonomikare.Properties.Resources.settingscrop;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(750, 1000);
-            this.Controls.Add(this.button_save);
             this.Controls.Add(this.buttonAplikovat);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -302,6 +277,5 @@
         private System.Windows.Forms.ComboBox dropDown;
         private System.Windows.Forms.TextBox textBox;
         private System.Windows.Forms.Button buttonAplikovat;
-        private System.Windows.Forms.Button button_save;
     }
 }
