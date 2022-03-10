@@ -62,9 +62,7 @@ namespace Ekonomikare
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
-            settings.Show();
-            settings.read();
+            FormHandler.sett.Show();
             this.Hide();
             music.Stop();
         }

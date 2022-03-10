@@ -69,7 +69,8 @@ namespace Ekonomikare
             booleany.Add(B);
         }
 
-        public void read() {
+        public void read()
+        {
             List<Guna2CustomCheckBox> boxy = new List<Guna2CustomCheckBox>(new Guna2CustomCheckBox[] { checkBox5050, checkBoxRada, checkBoxFriend });
             foreach (string line in File.ReadLines("settings.txt"))
             {
@@ -77,13 +78,15 @@ namespace Ekonomikare
                 for (int i = 0; i < hodnoty.Count; i++)
                     addBool(bool.Parse(hodnoty[i]));
             }
-            for (int i = 0; i < 3; i++) {
+            for (int i = 0; i < 3; i++)
+            {
                 boxy[i].Checked = booleany[i];
             }
 
         }
 
-        public void write() {
+        public void write()
+        {
             string radek = checkBox5050.Checked + ";" + checkBoxRada.Checked + ";" + checkBoxFriend.Checked;
             File.WriteAllText("settings.txt", radek);
         }
@@ -123,16 +126,16 @@ namespace Ekonomikare
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (textBox.Text != "" && textBox.Text.Length < 12)
+            if (textBox.Text != "" && textBox.Text.Length < 13)
             {
                 FormHandler.form2.setText(textBox.Text.ToUpper());
                 FormHandler.form1.setText(textBox.Text.ToUpper());
                 buttonAplikovat.Visible = false;
                 textBox.Visible = false;
             }
-            else if (textBox.Text.Length >= 12)
+            else if (textBox.Text.Length >= 13)
             {
-                MessageBox.Show("Název je přiliš dlouhý. Maximálně 11 znaků", "Příliš dlouhý název!");
+                MessageBox.Show("Název je přiliš dlouhý. Maximálně 12 znaků", "Příliš dlouhý název!");
             }
             else
             {

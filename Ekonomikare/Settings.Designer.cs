@@ -115,7 +115,6 @@
             this.checkBox5050.Name = "checkBox5050";
             this.checkBox5050.Size = new System.Drawing.Size(50, 50);
             this.checkBox5050.TabIndex = 31;
-            this.checkBox5050.Text = "guna2CustomCheckBox1";
             this.checkBox5050.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
             this.checkBox5050.UncheckedState.BorderRadius = 0;
             this.checkBox5050.UncheckedState.BorderThickness = 0;
@@ -133,7 +132,6 @@
             this.checkBoxFriend.Name = "checkBoxFriend";
             this.checkBoxFriend.Size = new System.Drawing.Size(50, 50);
             this.checkBoxFriend.TabIndex = 32;
-            this.checkBoxFriend.Text = "guna2CustomCheckBox1";
             this.checkBoxFriend.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.checkBoxFriend.UncheckedState.BorderRadius = 0;
             this.checkBoxFriend.UncheckedState.BorderThickness = 0;
@@ -151,7 +149,6 @@
             this.checkBoxRada.Name = "checkBoxRada";
             this.checkBoxRada.Size = new System.Drawing.Size(50, 50);
             this.checkBoxRada.TabIndex = 33;
-            this.checkBoxRada.Text = "guna2CustomCheckBox1";
             this.checkBoxRada.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.checkBoxRada.UncheckedState.BorderRadius = 0;
             this.checkBoxRada.UncheckedState.BorderThickness = 0;

@@ -11,6 +11,7 @@ namespace Ekonomikare
     {
         public static MainForm form1 = new MainForm();
         public static Menu form2 = new Menu();
+        public static Settings sett = new Settings();
 
     }
 }

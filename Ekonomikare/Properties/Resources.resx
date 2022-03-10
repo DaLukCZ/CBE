@@ -289,4 +289,13 @@
   <data name="odpovedDark" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Graphics\odpovedDark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="odpovedGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Graphics\odpovedGreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="odpovedMark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Graphics\odpovedMark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="odpovedRed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Graphics\odpovedRed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

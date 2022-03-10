@@ -43,17 +43,17 @@ namespace Ekonomikare
             // 
             this.button_Exit.AutoSize = true;
             this.button_Exit.BackColor = System.Drawing.Color.Transparent;
-            this.button_Exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button_Exit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_Exit.BackgroundImage")));
+            this.button_Exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button_Exit.FlatAppearance.BorderSize = 0;
             this.button_Exit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button_Exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button_Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Exit.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Exit.ForeColor = System.Drawing.Color.White;
-            this.button_Exit.Image = global::Ekonomikare.Properties.Resources.button3;
-            this.button_Exit.Location = new System.Drawing.Point(175, 792);
+            this.button_Exit.Location = new System.Drawing.Point(75, 850);
             this.button_Exit.Name = "button_Exit";
-            this.button_Exit.Size = new System.Drawing.Size(400, 101);
+            this.button_Exit.Size = new System.Drawing.Size(600, 100);
             this.button_Exit.TabIndex = 14;
             this.button_Exit.Text = "Ukončit";
             this.button_Exit.UseVisualStyleBackColor = false;
@@ -63,17 +63,17 @@ namespace Ekonomikare
             // 
             this.button_Start.AutoSize = true;
             this.button_Start.BackColor = System.Drawing.Color.Transparent;
+            this.button_Start.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_Start.BackgroundImage")));
+            this.button_Start.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button_Start.FlatAppearance.BorderSize = 0;
             this.button_Start.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button_Start.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button_Start.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Start.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Start.ForeColor = System.Drawing.Color.Transparent;
-            this.button_Start.Image = global::Ekonomikare.Properties.Resources.button3;
-            this.button_Start.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button_Start.Location = new System.Drawing.Point(175, 512);
+            this.button_Start.Location = new System.Drawing.Point(75, 550);
             this.button_Start.Name = "button_Start";
-            this.button_Start.Size = new System.Drawing.Size(400, 101);
+            this.button_Start.Size = new System.Drawing.Size(600, 100);
             this.button_Start.TabIndex = 15;
             this.button_Start.Text = "Nová Hra";
             this.button_Start.UseVisualStyleBackColor = false;
@@ -83,17 +83,17 @@ namespace Ekonomikare
             // 
             this.button_settings.AutoSize = true;
             this.button_settings.BackColor = System.Drawing.Color.Transparent;
-            this.button_settings.BackgroundImage = global::Ekonomikare.Properties.Resources.button3;
-            this.button_settings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button_settings.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_settings.BackgroundImage")));
+            this.button_settings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button_settings.FlatAppearance.BorderSize = 0;
             this.button_settings.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button_settings.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button_settings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_settings.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_settings.ForeColor = System.Drawing.Color.White;
-            this.button_settings.Location = new System.Drawing.Point(175, 652);
-            this.button_settings.Name = "button1";
-            this.button_settings.Size = new System.Drawing.Size(400, 100);
+            this.button_settings.Location = new System.Drawing.Point(75, 700);
+            this.button_settings.Name = "button_settings";
+            this.button_settings.Size = new System.Drawing.Size(600, 100);
             this.button_settings.TabIndex = 16;
             this.button_settings.Text = "Nastavení";
             this.button_settings.UseVisualStyleBackColor = false;
@@ -102,14 +102,15 @@ namespace Ekonomikare
             // Contienue
             // 
             this.Contienue.BackColor = System.Drawing.Color.Transparent;
+            this.Contienue.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Contienue.BackgroundImage")));
+            this.Contienue.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Contienue.FlatAppearance.BorderSize = 0;
             this.Contienue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Contienue.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Contienue.ForeColor = System.Drawing.Color.Transparent;
-            this.Contienue.Image = global::Ekonomikare.Properties.Resources.button10;
-            this.Contienue.Location = new System.Drawing.Point(236, 404);
+            this.Contienue.Location = new System.Drawing.Point(223, 469);
             this.Contienue.Name = "Contienue";
-            this.Contienue.Size = new System.Drawing.Size(260, 102);
+            this.Contienue.Size = new System.Drawing.Size(300, 50);
             this.Contienue.TabIndex = 17;
             this.Contienue.Text = "Pokračovat";
             this.Contienue.UseVisualStyleBackColor = false;
@@ -119,7 +120,7 @@ namespace Ekonomikare
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.BackgroundImage = global::Ekonomikare.Properties.Resources.logoV2NoText;
+            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(75, 30);
@@ -130,13 +131,13 @@ namespace Ekonomikare
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("Calisto MT", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Georgia", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(38, 167);
+            this.label1.Location = new System.Drawing.Point(3, 167);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(525, 72);
+            this.label1.Size = new System.Drawing.Size(594, 72);
             this.label1.TabIndex = 0;
-            this.label1.Text = "EKONOMEM";
+            this.label1.Text = "...";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Menu
@@ -148,9 +149,9 @@ namespace Ekonomikare
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(750, 1000);
             this.Controls.Add(this.Contienue);
+            this.Controls.Add(this.button_Start);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button_settings);
-            this.Controls.Add(this.button_Start);
             this.Controls.Add(this.button_Exit);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.DoubleBuffered = true;

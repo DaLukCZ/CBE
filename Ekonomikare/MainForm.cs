@@ -194,8 +194,8 @@ namespace Ekonomikare
                 else
                 {
                     Lose lose = new Lose();
-                    buttons[buttonek].BackColor = Color.Red;
-                    buttons[currentQuestion.rightAnswer].BackColor = Color.Green;
+                    buttons[buttonek].BackgroundImage = Properties.Resources.odpovedRed;
+                    buttons[currentQuestion.rightAnswer].BackgroundImage = Properties.Resources.odpovedGreen;
                     loseBool = true;
                     FormHandler.form2.showContie();
                     lose.Show();
@@ -216,8 +216,8 @@ namespace Ekonomikare
         private void mark(int answerID)
         {
             List<Button> buttons = new List<Button>(new Button[] { button_Answer1, button_Answer2, button_Answer3, button_Answer4 });
-            if(!loseBool)
-            buttons[answerID].BackColor = Color.DodgerBlue;
+            if (!loseBool)
+                buttons[answerID].BackgroundImage = Properties.Resources.odpovedMark;
         }
 
         //resetColor

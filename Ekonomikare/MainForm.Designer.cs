@@ -46,10 +46,10 @@ namespace Ekonomikare
             this.button_CallHelp = new System.Windows.Forms.Button();
             this.button_HelpAudiance = new System.Windows.Forms.Button();
             this.button_5050 = new System.Windows.Forms.Button();
+            this.button_otazka = new System.Windows.Forms.Button();
             this.button_Answer3 = new System.Windows.Forms.Button();
             this.button_Answer2 = new System.Windows.Forms.Button();
             this.button_Answer1 = new System.Windows.Forms.Button();
-            this.button_otazka = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -244,6 +244,20 @@ namespace Ekonomikare
             this.button_5050.UseVisualStyleBackColor = false;
             this.button_5050.Click += new System.EventHandler(this.button_5050_Click);
             // 
+            // button_otazka
+            // 
+            this.button_otazka.BackColor = System.Drawing.Color.Transparent;
+            this.button_otazka.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_otazka.BackgroundImage")));
+            this.button_otazka.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button_otazka.Enabled = false;
+            this.button_otazka.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_otazka.ForeColor = System.Drawing.Color.White;
+            this.button_otazka.Location = new System.Drawing.Point(396, 388);
+            this.button_otazka.Name = "button_otazka";
+            this.button_otazka.Size = new System.Drawing.Size(1128, 145);
+            this.button_otazka.TabIndex = 9;
+            this.button_otazka.UseVisualStyleBackColor = false;
+            // 
             // button_Answer3
             // 
             this.button_Answer3.BackColor = System.Drawing.Color.Transparent;
@@ -288,20 +302,6 @@ namespace Ekonomikare
             this.button_Answer1.Text = "Odpověd 1";
             this.button_Answer1.UseVisualStyleBackColor = false;
             this.button_Answer1.Click += new System.EventHandler(this.button_Answer1_Click);
-            // 
-            // button_otazka
-            // 
-            this.button_otazka.BackColor = System.Drawing.Color.Transparent;
-            this.button_otazka.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_otazka.BackgroundImage")));
-            this.button_otazka.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button_otazka.Enabled = false;
-            this.button_otazka.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_otazka.ForeColor = System.Drawing.Color.White;
-            this.button_otazka.Location = new System.Drawing.Point(396, 388);
-            this.button_otazka.Name = "button_otazka";
-            this.button_otazka.Size = new System.Drawing.Size(1128, 145);
-            this.button_otazka.TabIndex = 9;
-            this.button_otazka.UseVisualStyleBackColor = false;
             // 
             // MainForm
             // 
