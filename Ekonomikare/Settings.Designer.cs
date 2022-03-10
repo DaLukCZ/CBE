@@ -43,6 +43,7 @@
             this.dropDown = new System.Windows.Forms.ComboBox();
             this.textBox = new System.Windows.Forms.TextBox();
             this.buttonAplikovat = new System.Windows.Forms.Button();
+            this.button_save = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,16 +51,17 @@
             // 
             this.button1.AutoSize = true;
             this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = global::Ekonomikare.Properties.Resources.button3;
-            this.button1.Location = new System.Drawing.Point(175, 800);
+            this.button1.Location = new System.Drawing.Point(175, 850);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(400, 103);
+            this.button1.Size = new System.Drawing.Size(400, 100);
             this.button1.TabIndex = 17;
             this.button1.Text = "Zpět";
             this.button1.UseVisualStyleBackColor = false;
@@ -83,7 +85,7 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
             this.label2.Font = new System.Drawing.Font("Calibri", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(175, 475);
+            this.label2.Location = new System.Drawing.Point(175, 500);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(325, 50);
@@ -96,7 +98,7 @@
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
             this.label3.Font = new System.Drawing.Font("Calibri", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(175, 550);
+            this.label3.Location = new System.Drawing.Point(175, 600);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(325, 50);
@@ -119,7 +121,6 @@
             this.checkBox5050.UncheckedState.BorderRadius = 0;
             this.checkBox5050.UncheckedState.BorderThickness = 0;
             this.checkBox5050.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
-            this.checkBox5050.CheckedChanged += new System.EventHandler(this.checkBox5050_CheckedChanged);
             // 
             // checkBoxFriend
             // 
@@ -128,7 +129,7 @@
             this.checkBoxFriend.CheckedState.BorderThickness = 0;
             this.checkBoxFriend.CheckedState.FillColor = System.Drawing.Color.White;
             this.checkBoxFriend.CheckMarkColor = System.Drawing.Color.Black;
-            this.checkBoxFriend.Location = new System.Drawing.Point(525, 550);
+            this.checkBoxFriend.Location = new System.Drawing.Point(525, 600);
             this.checkBoxFriend.Name = "checkBoxFriend";
             this.checkBoxFriend.Size = new System.Drawing.Size(50, 50);
             this.checkBoxFriend.TabIndex = 32;
@@ -136,7 +137,6 @@
             this.checkBoxFriend.UncheckedState.BorderRadius = 0;
             this.checkBoxFriend.UncheckedState.BorderThickness = 0;
             this.checkBoxFriend.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
-            this.checkBoxFriend.CheckedChanged += new System.EventHandler(this.checkBoxFriend_CheckedChanged);
             // 
             // checkBoxRada
             // 
@@ -145,7 +145,7 @@
             this.checkBoxRada.CheckedState.BorderThickness = 0;
             this.checkBoxRada.CheckedState.FillColor = System.Drawing.Color.White;
             this.checkBoxRada.CheckMarkColor = System.Drawing.Color.Black;
-            this.checkBoxRada.Location = new System.Drawing.Point(525, 475);
+            this.checkBoxRada.Location = new System.Drawing.Point(525, 500);
             this.checkBoxRada.Name = "checkBoxRada";
             this.checkBoxRada.Size = new System.Drawing.Size(50, 50);
             this.checkBoxRada.TabIndex = 33;
@@ -153,7 +153,6 @@
             this.checkBoxRada.UncheckedState.BorderRadius = 0;
             this.checkBoxRada.UncheckedState.BorderThickness = 0;
             this.checkBoxRada.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
-            this.checkBoxRada.CheckedChanged += new System.EventHandler(this.checkBoxRada_CheckedChanged);
             // 
             // label4
             // 
@@ -225,14 +224,34 @@
             this.buttonAplikovat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
             this.buttonAplikovat.Font = new System.Drawing.Font("Calibri", 24.2F, System.Drawing.FontStyle.Bold);
             this.buttonAplikovat.ForeColor = System.Drawing.Color.White;
-            this.buttonAplikovat.Location = new System.Drawing.Point(175, 275);
+            this.buttonAplikovat.Location = new System.Drawing.Point(175, 300);
             this.buttonAplikovat.Name = "buttonAplikovat";
             this.buttonAplikovat.Size = new System.Drawing.Size(400, 50);
             this.buttonAplikovat.TabIndex = 43;
             this.buttonAplikovat.Text = "Aplikovat";
             this.buttonAplikovat.UseVisualStyleBackColor = false;
             this.buttonAplikovat.Visible = false;
-            this.buttonAplikovat.Click += new System.EventHandler(this.button2_Click);
+            this.buttonAplikovat.Click += new System.EventHandler(this.buttonAplikovat_Click);
+            // 
+            // button_save
+            // 
+            this.button_save.AutoSize = true;
+            this.button_save.BackColor = System.Drawing.Color.Transparent;
+            this.button_save.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_save.BackgroundImage")));
+            this.button_save.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button_save.FlatAppearance.BorderSize = 0;
+            this.button_save.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button_save.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button_save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_save.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_save.ForeColor = System.Drawing.Color.White;
+            this.button_save.Location = new System.Drawing.Point(175, 700);
+            this.button_save.Name = "button_save";
+            this.button_save.Size = new System.Drawing.Size(400, 100);
+            this.button_save.TabIndex = 44;
+            this.button_save.Text = "Použít";
+            this.button_save.UseVisualStyleBackColor = false;
+            this.button_save.Click += new System.EventHandler(this.button_save_Click);
             // 
             // Settings
             // 
@@ -242,6 +261,7 @@
             this.BackgroundImage = global::Ekonomikare.Properties.Resources.settingscrop;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(750, 1000);
+            this.Controls.Add(this.button_save);
             this.Controls.Add(this.buttonAplikovat);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -282,5 +302,6 @@
         private System.Windows.Forms.ComboBox dropDown;
         private System.Windows.Forms.TextBox textBox;
         private System.Windows.Forms.Button buttonAplikovat;
+        private System.Windows.Forms.Button button_save;
     }
 }

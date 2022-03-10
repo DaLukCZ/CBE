@@ -44,8 +44,8 @@ namespace Ekonomikare
         //začne novou hru
         private void button1_Click(object sender, EventArgs e)
         {
-            FormHandler.form1.restart();
             this.Close();
+            FormHandler.form1.restart();
         }
 
         //pošle do menu

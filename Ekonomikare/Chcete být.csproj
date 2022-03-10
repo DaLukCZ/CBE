@@ -444,5 +444,23 @@
   <ItemGroup>
     <None Include="Resources\Graphics\odpovedRed.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\male22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\male31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Graphics\odpovedGreenMale.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Graphics\odpovedMarkMale.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Graphics\odpovedRedMale.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Graphics\odpovedDarkMale.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

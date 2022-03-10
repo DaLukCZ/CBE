@@ -173,38 +173,41 @@ namespace Ekonomikare
         private void checkAnswer()
         {
 
-            List<Button> buttons = new List<Button>(new Button[] { button_Answer1, button_Answer2, button_Answer3, button_Answer4 });
-            try
+            if (!loseBool)
             {
-                if (currentQuestion.rightAnswer == buttonek)
+                List<Button> buttons = new List<Button>(new Button[] { button_Answer1, button_Answer2, button_Answer3, button_Answer4 });
+                try
                 {
-                    if (Currentstep != 9)
+                    if (currentQuestion.rightAnswer == buttonek)
                     {
-                        Currentstep += 1;
-                        showQuestion();
-                        step();
+                        if (Currentstep != 9)
+                        {
+                            Currentstep += 1;
+                            showQuestion();
+                            step();
+                        }
+                        else
+                        {
+                            this.Hide();
+                            FormHandler.form2.contie(false);
+                            Victory victory = new Victory();
+                            victory.Show();
+                        }
                     }
                     else
                     {
-                        this.Hide();
+                        Lose lose = new Lose();
+                        buttons[buttonek].BackgroundImage = Properties.Resources.odpovedRedMale;
+                        buttons[currentQuestion.rightAnswer].BackgroundImage = Properties.Resources.odpovedGreenMale;
                         FormHandler.form2.contie(false);
-                        Victory victory = new Victory();
-                        victory.Show();
+                        loseBool = true;
+                        lose.Show();
                     }
                 }
-                else
+                catch (Exception)
                 {
-                    Lose lose = new Lose();
-                    buttons[buttonek].BackgroundImage = Properties.Resources.odpovedRed;
-                    buttons[currentQuestion.rightAnswer].BackgroundImage = Properties.Resources.odpovedGreen;
-                    FormHandler.form2.contie(false);
-                    loseBool = true;
-                    lose.Show();
+                    MessageBox.Show("Prosím vyber odpověd");
                 }
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Prosím vyber odpověd");
             }
         }
 
@@ -218,7 +221,7 @@ namespace Ekonomikare
         {
             List<Button> buttons = new List<Button>(new Button[] { button_Answer1, button_Answer2, button_Answer3, button_Answer4 });
             if (!loseBool)
-                buttons[answerID].BackgroundImage = Properties.Resources.odpovedMark;
+                buttons[answerID].BackgroundImage = Properties.Resources.odpovedMarkMale;
         }
 
         //resetColor
@@ -227,7 +230,7 @@ namespace Ekonomikare
             List<Button> buttons = new List<Button>(new Button[] { button_Answer1, button_Answer2, button_Answer3, button_Answer4 });
             for (int i = 0; i < 4; i++)
             {
-                buttons[i].BackgroundImage = Properties.Resources.odpovedDark;
+                buttons[i].BackgroundImage = Properties.Resources.odpovedDarkMale;
             }
 
         }

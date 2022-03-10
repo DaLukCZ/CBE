@@ -90,24 +90,6 @@ namespace Ekonomikare
             File.WriteAllText("settings.txt", radek);
         }
 
-        private void checkBox5050_CheckedChanged(object sender, EventArgs e)
-        {
-            write();
-            change();
-        }
-
-        private void checkBoxRada_CheckedChanged(object sender, EventArgs e)
-        {
-            write();
-            change();
-        }
-
-        private void checkBoxFriend_CheckedChanged(object sender, EventArgs e)
-        {
-            write();
-            change();
-        }
-
         private void dropDown_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (dropDown.Text != "Jiné")
@@ -123,7 +105,13 @@ namespace Ekonomikare
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button_save_Click(object sender, EventArgs e)
+        {
+            write();
+            change();
+        }
+
+        private void buttonAplikovat_Click(object sender, EventArgs e)
         {
             if (textBox.Text != "" && textBox.Text.Length < 13)
             {
