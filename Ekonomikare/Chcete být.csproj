@@ -462,5 +462,57 @@
   <ItemGroup>
     <None Include="Resources\Graphics\odpovedDarkMale.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Graphics\buttonBorderGold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Graphics\buttonBorderGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Graphics\buttonBorderPink.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Graphics\buttonBorderRed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Graphics\Background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Graphics\5050.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Graphics\audience.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Graphics\call.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Graphics\ask.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Graphics\askframe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Graphics\backgroundCallwindow.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

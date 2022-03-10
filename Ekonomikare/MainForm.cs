@@ -150,7 +150,7 @@ namespace Ekonomikare
             Currentstep = 0;
             buttonek = 5;
             button_5050.Enabled = true;
-            button_5050.BackgroundImage = Properties.Resources._5050;
+            button_5050.BackgroundImage = Properties.Resources.a5050;
             button_HelpAudiance.Enabled = true;
             button_HelpAudiance.BackgroundImage = Properties.Resources.radaPubl;
             button_CallHelp.Enabled = true;
@@ -197,8 +197,8 @@ namespace Ekonomikare
                     else
                     {
                         Lose lose = new Lose();
-                        buttons[buttonek].BackgroundImage = Properties.Resources.odpovedRedMale;
-                        buttons[currentQuestion.rightAnswer].BackgroundImage = Properties.Resources.odpovedGreenMale;
+                        buttons[buttonek].BackgroundImage = Properties.Resources.buttonBorderRed;
+                        buttons[currentQuestion.rightAnswer].BackgroundImage = Properties.Resources.buttonBorderGreen;
                         FormHandler.form2.contie(false);
                         loseBool = true;
                         lose.Show();
@@ -221,7 +221,7 @@ namespace Ekonomikare
         {
             List<Button> buttons = new List<Button>(new Button[] { button_Answer1, button_Answer2, button_Answer3, button_Answer4 });
             if (!loseBool)
-                buttons[answerID].BackgroundImage = Properties.Resources.odpovedMarkMale;
+                buttons[answerID].BackgroundImage = Properties.Resources.buttonBorderGreen;
         }
 
         //resetColor
@@ -230,7 +230,7 @@ namespace Ekonomikare
             List<Button> buttons = new List<Button>(new Button[] { button_Answer1, button_Answer2, button_Answer3, button_Answer4 });
             for (int i = 0; i < 4; i++)
             {
-                buttons[i].BackgroundImage = Properties.Resources.odpovedDarkMale;
+                buttons[i].BackgroundImage = Properties.Resources.buttonBorderPink;
             }
 
         }

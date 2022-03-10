@@ -76,7 +76,7 @@ namespace Ekonomikare
             this.button_Answer4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button_Answer4.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Answer4.ForeColor = System.Drawing.Color.White;
-            this.button_Answer4.Location = new System.Drawing.Point(963, 735);
+            this.button_Answer4.Location = new System.Drawing.Point(963, 775);
             this.button_Answer4.Name = "button_Answer4";
             this.button_Answer4.Size = new System.Drawing.Size(550, 150);
             this.button_Answer4.TabIndex = 4;
@@ -155,11 +155,12 @@ namespace Ekonomikare
             // 
             this.label_otazka.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
             this.label_otazka.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label_otazka.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label_otazka.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label_otazka.ForeColor = System.Drawing.Color.White;
-            this.label_otazka.Location = new System.Drawing.Point(470, 398);
+            this.label_otazka.Location = new System.Drawing.Point(484, 472);
             this.label_otazka.Name = "label_otazka";
-            this.label_otazka.Size = new System.Drawing.Size(967, 113);
+            this.label_otazka.Size = new System.Drawing.Size(936, 113);
             this.label_otazka.TabIndex = 15;
             this.label_otazka.Text = "Otazka";
             this.label_otazka.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -179,7 +180,7 @@ namespace Ekonomikare
             this.button_Zkontroluj.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button_Zkontroluj.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Zkontroluj.ForeColor = System.Drawing.Color.White;
-            this.button_Zkontroluj.Location = new System.Drawing.Point(670, 902);
+            this.button_Zkontroluj.Location = new System.Drawing.Point(670, 925);
             this.button_Zkontroluj.Name = "button_Zkontroluj";
             this.button_Zkontroluj.Size = new System.Drawing.Size(565, 93);
             this.button_Zkontroluj.TabIndex = 13;
@@ -207,10 +208,14 @@ namespace Ekonomikare
             // 
             // button_CallHelp
             // 
-            this.button_CallHelp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
-            this.button_CallHelp.BackgroundImage = global::Ekonomikare.Properties.Resources.pritel;
+            this.button_CallHelp.BackColor = System.Drawing.Color.Transparent;
+            this.button_CallHelp.BackgroundImage = global::Ekonomikare.Properties.Resources.call;
             this.button_CallHelp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button_CallHelp.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button_CallHelp.FlatAppearance.BorderSize = 0;
+            this.button_CallHelp.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button_CallHelp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button_CallHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_CallHelp.Location = new System.Drawing.Point(233, 3);
             this.button_CallHelp.Name = "button_CallHelp";
             this.button_CallHelp.Size = new System.Drawing.Size(110, 94);
@@ -220,10 +225,14 @@ namespace Ekonomikare
             // 
             // button_HelpAudiance
             // 
-            this.button_HelpAudiance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
-            this.button_HelpAudiance.BackgroundImage = global::Ekonomikare.Properties.Resources.radaPubl;
+            this.button_HelpAudiance.BackColor = System.Drawing.Color.Transparent;
+            this.button_HelpAudiance.BackgroundImage = global::Ekonomikare.Properties.Resources.audience;
             this.button_HelpAudiance.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button_HelpAudiance.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button_HelpAudiance.FlatAppearance.BorderSize = 0;
+            this.button_HelpAudiance.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button_HelpAudiance.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button_HelpAudiance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_HelpAudiance.Location = new System.Drawing.Point(118, 3);
             this.button_HelpAudiance.Name = "button_HelpAudiance";
             this.button_HelpAudiance.Size = new System.Drawing.Size(109, 94);
@@ -233,10 +242,14 @@ namespace Ekonomikare
             // 
             // button_5050
             // 
-            this.button_5050.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
-            this.button_5050.BackgroundImage = global::Ekonomikare.Properties.Resources._5050;
+            this.button_5050.BackColor = System.Drawing.Color.Transparent;
+            this.button_5050.BackgroundImage = global::Ekonomikare.Properties.Resources.a5050;
             this.button_5050.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button_5050.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button_5050.FlatAppearance.BorderSize = 0;
+            this.button_5050.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button_5050.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button_5050.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_5050.Location = new System.Drawing.Point(3, 3);
             this.button_5050.Name = "button_5050";
             this.button_5050.Size = new System.Drawing.Size(109, 94);
@@ -247,12 +260,12 @@ namespace Ekonomikare
             // button_otazka
             // 
             this.button_otazka.BackColor = System.Drawing.Color.Transparent;
-            this.button_otazka.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_otazka.BackgroundImage")));
+            this.button_otazka.BackgroundImage = global::Ekonomikare.Properties.Resources.odpovedDark;
             this.button_otazka.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button_otazka.Enabled = false;
             this.button_otazka.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_otazka.ForeColor = System.Drawing.Color.White;
-            this.button_otazka.Location = new System.Drawing.Point(392, 382);
+            this.button_otazka.Location = new System.Drawing.Point(392, 457);
             this.button_otazka.Name = "button_otazka";
             this.button_otazka.Size = new System.Drawing.Size(1121, 145);
             this.button_otazka.TabIndex = 9;
@@ -265,7 +278,7 @@ namespace Ekonomikare
             this.button_Answer3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button_Answer3.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Answer3.ForeColor = System.Drawing.Color.White;
-            this.button_Answer3.Location = new System.Drawing.Point(392, 735);
+            this.button_Answer3.Location = new System.Drawing.Point(392, 775);
             this.button_Answer3.Name = "button_Answer3";
             this.button_Answer3.Size = new System.Drawing.Size(550, 150);
             this.button_Answer3.TabIndex = 8;
@@ -280,7 +293,7 @@ namespace Ekonomikare
             this.button_Answer2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button_Answer2.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Answer2.ForeColor = System.Drawing.Color.White;
-            this.button_Answer2.Location = new System.Drawing.Point(963, 559);
+            this.button_Answer2.Location = new System.Drawing.Point(963, 620);
             this.button_Answer2.Name = "button_Answer2";
             this.button_Answer2.Size = new System.Drawing.Size(550, 150);
             this.button_Answer2.TabIndex = 7;
@@ -295,7 +308,7 @@ namespace Ekonomikare
             this.button_Answer1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button_Answer1.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Answer1.ForeColor = System.Drawing.Color.White;
-            this.button_Answer1.Location = new System.Drawing.Point(392, 559);
+            this.button_Answer1.Location = new System.Drawing.Point(392, 620);
             this.button_Answer1.Name = "button_Answer1";
             this.button_Answer1.Size = new System.Drawing.Size(550, 150);
             this.button_Answer1.TabIndex = 6;
@@ -308,7 +321,7 @@ namespace Ekonomikare
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.BackgroundImage = global::Ekonomikare.Properties.Resources.skovyNaZidly;
+            this.BackgroundImage = global::Ekonomikare.Properties.Resources.Background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.panel1);
@@ -337,13 +350,13 @@ namespace Ekonomikare
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label_otazka;
         private System.Windows.Forms.Button button_exit;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button_otazka;
         private System.Windows.Forms.Button button_Answer4;
         private System.Windows.Forms.Button button_Answer3;
         private System.Windows.Forms.Button button_Answer2;
         private System.Windows.Forms.Button button_Answer1;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label2;
     }
 }
 
