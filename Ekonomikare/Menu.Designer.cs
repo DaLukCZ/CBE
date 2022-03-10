@@ -135,9 +135,9 @@ namespace Ekonomikare
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(3, 167);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(594, 72);
+            this.label1.Size = new System.Drawing.Size(600, 71);
             this.label1.TabIndex = 0;
-            this.label1.Text = "...";
+            this.label1.Text = "EKONOMEM";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Menu
