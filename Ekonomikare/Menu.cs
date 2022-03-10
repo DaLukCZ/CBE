@@ -14,7 +14,6 @@ namespace Ekonomikare
         public Menu()
         {
             InitializeComponent();
-            showContie();
             transparent();
         }
 
@@ -49,9 +48,15 @@ namespace Ekonomikare
         //začne novou hru
         private void button_Start_Click(object sender, EventArgs e)
         {
+            contie(true);
             FormHandler.form1.Show();
             FormHandler.form1.restart();
             this.Hide();
+        }
+
+        public void contie(bool pravda)
+        {
+            Contienue.Visible = pravda;
         }
 
         //vypíná aplikaci

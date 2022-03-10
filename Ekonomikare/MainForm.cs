@@ -187,6 +187,7 @@ namespace Ekonomikare
                     else
                     {
                         this.Hide();
+                        FormHandler.form2.contie(false);
                         Victory victory = new Victory();
                         victory.Show();
                     }
@@ -196,8 +197,8 @@ namespace Ekonomikare
                     Lose lose = new Lose();
                     buttons[buttonek].BackgroundImage = Properties.Resources.odpovedRed;
                     buttons[currentQuestion.rightAnswer].BackgroundImage = Properties.Resources.odpovedGreen;
+                    FormHandler.form2.contie(false);
                     loseBool = true;
-                    FormHandler.form2.showContie();
                     lose.Show();
                 }
             }
@@ -237,7 +238,7 @@ namespace Ekonomikare
             if (!loseBool)
             {
                 FormHandler.form2.Show();
-                FormHandler.form2.showContie();
+                FormHandler.form2.contie(true);
                 this.Hide();
             }
         }
