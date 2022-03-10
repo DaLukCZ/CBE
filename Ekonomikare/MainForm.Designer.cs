@@ -136,7 +136,7 @@ namespace Ekonomikare
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(545, 71);
             this.label2.TabIndex = 0;
-            this.label2.Text = "EKONOMIKEM";
+            this.label2.Text = "KÝMKOLIV";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button_exit
