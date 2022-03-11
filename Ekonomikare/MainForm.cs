@@ -82,6 +82,11 @@ namespace Ekonomikare
         ));
         }
 
+        public void clearQuestions()
+        {
+            questions.Clear();
+        }
+
         //zobrazOtazku
         private void showQuestion()
         {

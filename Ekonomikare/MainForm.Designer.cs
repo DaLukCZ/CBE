@@ -36,7 +36,6 @@ namespace Ekonomikare
             this.button_Answer4 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.button_exit = new System.Windows.Forms.Button();
             this.label_otazka = new System.Windows.Forms.Label();
@@ -51,7 +50,6 @@ namespace Ekonomikare
             this.button_Answer2 = new System.Windows.Forms.Button();
             this.button_Answer1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -98,7 +96,7 @@ namespace Ekonomikare
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.panel3);
+            this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.button_exit);
             this.panel1.Controls.Add(this.label_otazka);
             this.panel1.Controls.Add(this.label1);
@@ -117,26 +115,15 @@ namespace Ekonomikare
             this.panel1.Size = new System.Drawing.Size(1904, 1041);
             this.panel1.TabIndex = 0;
             // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Transparent;
-            this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
-            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel3.Controls.Add(this.label2);
-            this.panel3.Location = new System.Drawing.Point(678, 36);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(620, 340);
-            this.panel3.TabIndex = 19;
-            // 
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Georgia", 36F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(38, 137);
+            this.label2.Location = new System.Drawing.Point(714, 204);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(545, 71);
+            this.label2.Size = new System.Drawing.Size(501, 75);
             this.label2.TabIndex = 0;
-            this.label2.Text = "KÝMKOLIV";
+            this.label2.Text = "EXPERTEM";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button_exit
@@ -158,9 +145,9 @@ namespace Ekonomikare
             this.label_otazka.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label_otazka.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label_otazka.ForeColor = System.Drawing.Color.White;
-            this.label_otazka.Location = new System.Drawing.Point(484, 472);
+            this.label_otazka.Location = new System.Drawing.Point(469, 472);
             this.label_otazka.Name = "label_otazka";
-            this.label_otazka.Size = new System.Drawing.Size(936, 113);
+            this.label_otazka.Size = new System.Drawing.Size(972, 113);
             this.label_otazka.TabIndex = 15;
             this.label_otazka.Text = "Otazka";
             this.label_otazka.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -265,9 +252,9 @@ namespace Ekonomikare
             this.button_otazka.Enabled = false;
             this.button_otazka.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_otazka.ForeColor = System.Drawing.Color.White;
-            this.button_otazka.Location = new System.Drawing.Point(392, 457);
+            this.button_otazka.Location = new System.Drawing.Point(372, 457);
             this.button_otazka.Name = "button_otazka";
-            this.button_otazka.Size = new System.Drawing.Size(1121, 145);
+            this.button_otazka.Size = new System.Drawing.Size(1164, 145);
             this.button_otazka.TabIndex = 9;
             this.button_otazka.UseVisualStyleBackColor = false;
             // 
@@ -331,7 +318,6 @@ namespace Ekonomikare
             this.Load += new System.EventHandler(this.Main_Load_1);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel3.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -355,7 +341,6 @@ namespace Ekonomikare
         private System.Windows.Forms.Button button_Answer3;
         private System.Windows.Forms.Button button_Answer2;
         private System.Windows.Forms.Button button_Answer1;
-        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label2;
     }
 }

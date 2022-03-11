@@ -96,6 +96,7 @@ namespace Ekonomikare
             if (dropDown.Text != "Jiné")
             {
                 FormHandler.form1.setOtazky(dropDown.Text + "_otázky.txt");
+                FormHandler.form1.clearQuestions();
                 FormHandler.form1.readTXT();
                 FormHandler.form2.contie(false);
                 FormHandler.form2.setText(dropDown.Text.ToUpper());
@@ -106,6 +107,7 @@ namespace Ekonomikare
                 buttonAplikovat.Visible = true;
                 textBox.Visible = true;
                 FormHandler.form1.setOtazky("Jiné_otázky.txt");
+                FormHandler.form1.clearQuestions();
                 FormHandler.form1.readTXT();
                 FormHandler.form2.contie(false);
             }

@@ -51,7 +51,7 @@ namespace Ekonomikare
             this.button_Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Exit.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Exit.ForeColor = System.Drawing.Color.White;
-            this.button_Exit.Location = new System.Drawing.Point(75, 825);
+            this.button_Exit.Location = new System.Drawing.Point(75, 750);
             this.button_Exit.Name = "button_Exit";
             this.button_Exit.Size = new System.Drawing.Size(600, 100);
             this.button_Exit.TabIndex = 14;
@@ -71,7 +71,7 @@ namespace Ekonomikare
             this.button_Start.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Start.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Start.ForeColor = System.Drawing.Color.Transparent;
-            this.button_Start.Location = new System.Drawing.Point(75, 525);
+            this.button_Start.Location = new System.Drawing.Point(75, 450);
             this.button_Start.Name = "button_Start";
             this.button_Start.Size = new System.Drawing.Size(600, 100);
             this.button_Start.TabIndex = 15;
@@ -91,7 +91,7 @@ namespace Ekonomikare
             this.button_settings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_settings.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_settings.ForeColor = System.Drawing.Color.White;
-            this.button_settings.Location = new System.Drawing.Point(75, 675);
+            this.button_settings.Location = new System.Drawing.Point(75, 600);
             this.button_settings.Name = "button_settings";
             this.button_settings.Size = new System.Drawing.Size(600, 100);
             this.button_settings.TabIndex = 16;
@@ -108,7 +108,7 @@ namespace Ekonomikare
             this.Contienue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Contienue.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Contienue.ForeColor = System.Drawing.Color.Transparent;
-            this.Contienue.Location = new System.Drawing.Point(75, 525);
+            this.Contienue.Location = new System.Drawing.Point(75, 450);
             this.Contienue.Name = "Contienue";
             this.Contienue.Size = new System.Drawing.Size(600, 100);
             this.Contienue.TabIndex = 17;
@@ -137,7 +137,7 @@ namespace Ekonomikare
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(600, 71);
             this.label1.TabIndex = 0;
-            this.label1.Text = "KÝMKOLIV";
+            this.label1.Text = "EXPERTEM";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Menu
@@ -147,7 +147,7 @@ namespace Ekonomikare
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.BackgroundImage = global::Ekonomikare.Properties.Resources.backgroundPhotocrop;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(750, 1000);
+            this.ClientSize = new System.Drawing.Size(750, 911);
             this.Controls.Add(this.Contienue);
             this.Controls.Add(this.button_Start);
             this.Controls.Add(this.panel1);
