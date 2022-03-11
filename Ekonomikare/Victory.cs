@@ -48,5 +48,10 @@ namespace Ekonomikare
         {
             Application.Exit();
         }
+
+        public void setText(string s)
+        {
+            label2.Text = "Tisíc korun z tebe asi Milionáře neudělá, alespoň jsi dobrým " + s +".";
+        }
     }
 }

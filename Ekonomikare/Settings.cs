@@ -98,6 +98,7 @@ namespace Ekonomikare
                 FormHandler.form1.clearQuestions();
                 FormHandler.form1.readTXT();
                 FormHandler.form2.contie(false);
+                FormHandler.form3.setText(dropDown.Text);
                 FormHandler.form2.setText(dropDown.Text.ToUpper());
                 FormHandler.form1.setText(dropDown.Text.ToUpper());
             }
@@ -117,6 +118,7 @@ namespace Ekonomikare
         {
             if (textBox.Text != "" && textBox.Text.Length < 13)
             {
+                FormHandler.form3.setText(dropDown.Text);
                 FormHandler.form2.setText(textBox.Text.ToUpper());
                 FormHandler.form1.setText(textBox.Text.ToUpper());
                 buttonAplikovat.Visible = false;

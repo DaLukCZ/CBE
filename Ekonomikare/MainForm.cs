@@ -34,6 +34,7 @@ namespace Ekonomikare
         private bool loseBool = false;
         string otazky = "Jiné_otázky.txt";
         private SoundPlayer music = new SoundPlayer(Properties.Resources.mainmusic);
+        public Victory victory = new Victory();
 
         //konstruktor
         public MainForm()
@@ -196,7 +197,6 @@ namespace Ekonomikare
                         {
                             this.Hide();
                             FormHandler.form2.contie(false);
-                            Victory victory = new Victory();
                             victory.Show();
                         }
                     }
