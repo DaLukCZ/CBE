@@ -132,7 +132,7 @@ namespace Ekonomikare
 
             button_Ask.Enabled = false;
             FormHandler.form1.setAudiance(false);
-            FormHandler.form1.setAudianceBack(Properties.Resources.radaPublx);
+            FormHandler.form1.setAudianceBack(Properties.Resources.audienceOff);
             button_close.Enabled = true;
         }
 

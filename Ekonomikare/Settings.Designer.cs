@@ -190,7 +190,7 @@
             this.dropDown.FormattingEnabled = true;
             this.dropDown.IntegralHeight = false;
             this.dropDown.Items.AddRange(new object[] {
-            "Ekonomikem",
+            "Ekonomem",
             "Fyzikem",
             "Chemikem",
             "Matematikem",

@@ -495,5 +495,14 @@
   <ItemGroup>
     <None Include="Resources\Graphics\backgroundCallwindow.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Graphics\5050Off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Graphics\audienceOff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Graphics\callOff.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

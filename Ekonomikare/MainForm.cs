@@ -158,9 +158,9 @@ namespace Ekonomikare
             button_5050.Enabled = true;
             button_5050.BackgroundImage = Properties.Resources.a5050;
             button_HelpAudiance.Enabled = true;
-            button_HelpAudiance.BackgroundImage = Properties.Resources.radaPubl;
+            button_HelpAudiance.BackgroundImage = Properties.Resources.audience;
             button_CallHelp.Enabled = true;
-            button_CallHelp.BackgroundImage = Properties.Resources.pritel;
+            button_CallHelp.BackgroundImage = Properties.Resources.call;
             ask.setAsk();
             for (int i = 0; i < 4; i++)
             {
@@ -291,7 +291,7 @@ namespace Ekonomikare
                 }
                 button50 = true;
                 button_5050.Enabled = false;
-                button_5050.BackgroundImage = Properties.Resources._5050Disabled;
+                button_5050.BackgroundImage = Properties.Resources._5050Off;
             }
         }
 
@@ -504,7 +504,7 @@ namespace Ekonomikare
         public void callHelpDis()
         {
             button_CallHelp.Enabled = false;
-            button_CallHelp.BackgroundImage = Properties.Resources.pritelx;
+            button_CallHelp.BackgroundImage = Properties.Resources.callOff;
         }
         //kontrola
         private void button_Check_Click(object sender, EventArgs e)

@@ -92,7 +92,6 @@ namespace Ekonomikare
 
         private void dropDown_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Console.WriteLine("Už chci spát, kurvfga " + dropDown.Text);
             if (dropDown.Text != "Jiné")
             {
                 FormHandler.form1.setOtazky(dropDown.Text + "_otázky.txt");
