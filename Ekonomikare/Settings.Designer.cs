@@ -195,7 +195,6 @@
             "Chemikem",
             "Matematikem",
             "Programátorem",
-            "Síťařem",
             "Jiné"});
             this.dropDown.Location = new System.Drawing.Point(175, 200);
             this.dropDown.Name = "dropDown";

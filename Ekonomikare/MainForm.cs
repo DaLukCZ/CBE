@@ -426,19 +426,21 @@ namespace Ekonomikare
             foreach (string line in System.IO.File.ReadLines(otazky))
             {
                 radky++;
-                List<string> hodnoty1 = new List<string>(line.Split(';'));
-                if (hodnoty1.Count == 7)
-                {
-                    addQuestion(
-                        int.Parse(hodnoty1[0]),
-                        hodnoty1[1],
-                        new string[4] { hodnoty1[2], hodnoty1[3], hodnoty1[4], hodnoty1[5] },
-                        int.Parse(hodnoty1[6])
-                        );
-                }
-                else
-                {
-                    MessageBox.Show("Chyba v otázkách na řádku " + radky + " má jen " + hodnoty1.Count + " hodnot", "Chyba v otázkách!");
+                if (radky != 1) {
+                    List<string> hodnoty1 = new List<string>(line.Split(';'));
+                    if (hodnoty1.Count == 7)
+                    {
+                        addQuestion(
+                            int.Parse(hodnoty1[0]),
+                            hodnoty1[1],
+                            new string[4] { hodnoty1[2], hodnoty1[3], hodnoty1[4], hodnoty1[5] },
+                            int.Parse(hodnoty1[6])
+                            );
+                    }
+                    else
+                    {
+                        MessageBox.Show("Chyba v otázkách na řádku " + radky + " má jen " + hodnoty1.Count + " hodnot", "Chyba v otázkách!");
+                    }
                 }
             }
         }
