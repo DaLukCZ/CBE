@@ -83,7 +83,7 @@ namespace Ekonomikare
             if (progress == 3)
             {
                 pictureBox3.Visible = true;
-                label5.Text = "Otázka zní: " + FormHandler.form1.getQuestion();
+                label5.Text = "Otázka zní: " + FormHandler.main.getQuestion();
                 label5.Visible = true;
                 label7.Visible = true;
             }
@@ -109,23 +109,23 @@ namespace Ekonomikare
         public void generAswer()
         {
 
-            List<Button> buttons = new List<Button>(new Button[] { FormHandler.form1.getButtons(1), FormHandler.form1.getButtons(2), FormHandler.form1.getButtons(3), FormHandler.form1.getButtons(4) });
-            if (FormHandler.form1.getButton5050())
+            List<Button> buttons = new List<Button>(new Button[] { FormHandler.main.getButtons(1), FormHandler.main.getButtons(2), FormHandler.main.getButtons(3), FormHandler.main.getButtons(4) });
+            if (FormHandler.main.getButton5050())
             {
                 if (randN >= 0 && randN < 4)
                 {
-                    label6.Text = aswer1 + FormHandler.form1.getAnswer();
+                    label6.Text = aswer1 + FormHandler.main.getAnswer();
                 }
                 else if (randN >= 4 && randN < 7)
                 {
                     if (randN2 <= 3)
                     {
                         int randN3 = r.Next(4);
-                        label6.Text = aswer2 + FormHandler.form1.getuCurrentAnswerOnButtonu(randN3);
+                        label6.Text = aswer2 + FormHandler.main.getuCurrentAnswerOnButtonu(randN3);
                     }
                     else
                     {
-                        label6.Text = aswer2 + FormHandler.form1.getAnswer();
+                        label6.Text = aswer2 + FormHandler.main.getAnswer();
                     }
                 }
                 else
@@ -137,7 +137,7 @@ namespace Ekonomikare
             {
                 if (randN >= 0 && randN < 4)
                 {
-                    label6.Text = aswer1 + FormHandler.form1.getAnswer();
+                    label6.Text = aswer1 + FormHandler.main.getAnswer();
                 }
                 else if (randN >= 4 && randN < 7)
                 {
@@ -148,11 +148,11 @@ namespace Ekonomikare
                         {
                             randN3 = r.Next(4);
                         }
-                        label6.Text = aswer2 + FormHandler.form1.getuCurrentAnswerOnButtonu(randN3);
+                        label6.Text = aswer2 + FormHandler.main.getuCurrentAnswerOnButtonu(randN3);
                     }
                     else
                     {
-                        label6.Text = aswer2 + FormHandler.form1.getAnswer();
+                        label6.Text = aswer2 + FormHandler.main.getAnswer();
                     }
                 }
                 else
@@ -165,11 +165,11 @@ namespace Ekonomikare
 
         private void writeAnswers()
         {
-            List<string> odpo = new List<string>(new string[] { FormHandler.form1.getuCurrentAnswerOnButtonu(0), FormHandler.form1.getuCurrentAnswerOnButtonu(1), FormHandler.form1.getuCurrentAnswerOnButtonu(2), FormHandler.form1.getuCurrentAnswerOnButtonu(3) });
-            List<Button> buttons = new List<Button>(new Button[] { FormHandler.form1.getButtons(1), FormHandler.form1.getButtons(2), FormHandler.form1.getButtons(3), FormHandler.form1.getButtons(4) });
-            if (!FormHandler.form1.get5050bool())
+            List<string> odpo = new List<string>(new string[] { FormHandler.main.getuCurrentAnswerOnButtonu(0), FormHandler.main.getuCurrentAnswerOnButtonu(1), FormHandler.main.getuCurrentAnswerOnButtonu(2), FormHandler.main.getuCurrentAnswerOnButtonu(3) });
+            List<Button> buttons = new List<Button>(new Button[] { FormHandler.main.getButtons(1), FormHandler.main.getButtons(2), FormHandler.main.getButtons(3), FormHandler.main.getButtons(4) });
+            if (!FormHandler.main.get5050bool())
             {
-                label7.Text = "Za A) " + FormHandler.form1.getuCurrentAnswerOnButtonu(0) + " za B) " + FormHandler.form1.getuCurrentAnswerOnButtonu(1) + " za C) " + FormHandler.form1.getuCurrentAnswerOnButtonu(2) + " nebo za D) " + FormHandler.form1.getuCurrentAnswerOnButtonu(3);
+                label7.Text = "Za A) " + FormHandler.main.getuCurrentAnswerOnButtonu(0) + " za B) " + FormHandler.main.getuCurrentAnswerOnButtonu(1) + " za C) " + FormHandler.main.getuCurrentAnswerOnButtonu(2) + " nebo za D) " + FormHandler.main.getuCurrentAnswerOnButtonu(3);
             }
             else
             {
@@ -198,7 +198,7 @@ namespace Ekonomikare
             button1.Visible = true;
             label2.Text = "Ahoj Terko, dali mi za úkol uvádět nějakou hovadinu s otázkami.";
             label1.Text = "Poradíš mu, protože já žeprý nemůžu?";
-            FormHandler.form1.callHelpDis();
+            FormHandler.main.callHelpDis();
             guna2Button2.Hide();
             guna2Button1.Hide();
             panel1.Hide();
@@ -212,7 +212,7 @@ namespace Ekonomikare
             button1.Visible = true;
             label2.Text = "Ahoj Zdeňo, dali mi za úkol uvádět nějakou hovadinu s otázkami.";
             label1.Text = "Poradíš mu, protože já žeprý nemůžu?";
-            FormHandler.form1.callHelpDis();
+            FormHandler.main.callHelpDis();
             guna2Button2.Hide();
             guna2Button1.Hide();
             panel1.Hide();

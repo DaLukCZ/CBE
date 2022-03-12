@@ -109,9 +109,9 @@
             this.label_pocet.ForeColor = System.Drawing.Color.White;
             this.label_pocet.Location = new System.Drawing.Point(337, 243);
             this.label_pocet.Name = "label_pocet";
-            this.label_pocet.Size = new System.Drawing.Size(87, 36);
+            this.label_pocet.Size = new System.Drawing.Size(88, 36);
             this.label_pocet.TabIndex = 14;
-            this.label_pocet.Text = "10/10";
+            this.label_pocet.Text = "9 | 10";
             this.label_pocet.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Lose
@@ -128,6 +128,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button_newGame);
             this.Controls.Add(this.button_exit);
+            this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

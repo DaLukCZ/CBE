@@ -14,6 +14,7 @@ namespace Ekonomikare
         {
             InitializeComponent();
             transparent();
+            playMusic();
         }
 
         protected override CreateParams CreateParams
@@ -41,15 +42,16 @@ namespace Ekonomikare
         //load formu
         private void Menu_Load(object sender, EventArgs e)
         {
-            music.PlayLooping();
         }
         
         //začne novou hru
         private void button_Start_Click(object sender, EventArgs e)
         {
             contie(true);
-            FormHandler.form1.Show();
-            FormHandler.form1.restart();
+            music.Stop();
+            FormHandler.main.Show();
+            FormHandler.main.restart();
+            FormHandler.main.playMusic();
             this.Hide();
         }
 
@@ -66,29 +68,24 @@ namespace Ekonomikare
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FormHandler.sett.Show();
+            FormHandler.settings.Show();
             this.Hide();
         }
 
         private void Contienue_Click(object sender, EventArgs e)
         {
-            FormHandler.form1.Show();
+            FormHandler.main.Show();
+            FormHandler.main.playMusic();
+            music.Stop();
             this.Hide();
-        }
-
-        public void showContie()
-        {
-            if (!FormHandler.form1.getLose() && FormHandler.form1.getStep() > 0)
-            {
-                Contienue.Visible = true;
-            }
-            else
-            {
-                Contienue.Visible = false;
-            }
         }
         public void setText(string s) {
             label1.Text = s;
+        }
+
+        public void playMusic()
+        {
+            music.PlayLooping();
         }
     }
 }

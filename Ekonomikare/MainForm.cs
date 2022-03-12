@@ -28,13 +28,11 @@ namespace Ekonomikare
         private int buttonek = 5;
         private Question currentQuestion;
         private Random random = new Random();
-        private Ask ask = new Ask();
         private List<Question> questions = new List<Question>();
         private bool button50;
         private bool loseBool = false;
         string otazky = "Jiné_otázky.txt";
         private SoundPlayer music = new SoundPlayer(Properties.Resources.mainmusic);
-        public Victory victory = new Victory();
 
         //konstruktor
         public MainForm()
@@ -45,6 +43,7 @@ namespace Ekonomikare
             readTXT();
             showQuestion();
             transparent();
+            playMusic();
         }
 
         private void transparent()
@@ -63,7 +62,7 @@ namespace Ekonomikare
         //form load
         private void Main_Load_1(object sender, EventArgs e)
         {
-            music.PlayLooping();
+            playMusic();
             step();
         }
 
@@ -152,8 +151,8 @@ namespace Ekonomikare
         //restart
         public void restart()
         {
-            List<Label> answers = new List<Label>(new Label[] { ask.getLabels(1), ask.getLabels(2), ask.getLabels(3), ask.getLabels(4) });
-            List<ProgressBar> progressBars = new List<ProgressBar>(new ProgressBar[] { ask.getPG(1), ask.getPG(2), ask.getPG(3), ask.getPG(4) });
+            List<Label> answers = new List<Label>(new Label[] { FormHandler.ask.getLabels(1), FormHandler.ask.getLabels(2), FormHandler.ask.getLabels(3), FormHandler.ask.getLabels(4) });
+            List<ProgressBar> progressBars = new List<ProgressBar>(new ProgressBar[] { FormHandler.ask.getPG(1), FormHandler.ask.getPG(2), FormHandler.ask.getPG(3), FormHandler.ask.getPG(4) });
             Currentstep = 0;
             buttonek = 5;
             button_5050.Enabled = true;
@@ -162,7 +161,7 @@ namespace Ekonomikare
             button_HelpAudiance.BackgroundImage = Properties.Resources.audience;
             button_CallHelp.Enabled = true;
             button_CallHelp.BackgroundImage = Properties.Resources.call;
-            ask.setAsk();
+            FormHandler.ask.setAsk();
             for (int i = 0; i < 4; i++)
             {
                 answers[i].Text = "";
@@ -196,8 +195,8 @@ namespace Ekonomikare
                         else
                         {
                             this.Hide();
-                            FormHandler.form2.contie(false);
-                            victory.Show();
+                            FormHandler.menu.contie(false);
+                            FormHandler.victory.Show();
                         }
                     }
                     else
@@ -205,7 +204,7 @@ namespace Ekonomikare
                         Lose lose = new Lose();
                         buttons[buttonek].BackgroundImage = Properties.Resources.buttonBorderRed;
                         buttons[currentQuestion.rightAnswer].BackgroundImage = Properties.Resources.buttonBorderGreen;
-                        FormHandler.form2.contie(false);
+                        FormHandler.menu.contie(false);
                         loseBool = true;
                         lose.Show();
                     }
@@ -246,8 +245,10 @@ namespace Ekonomikare
         {
             if (!loseBool)
             {
-                FormHandler.form2.Show();
-                FormHandler.form2.contie(true);
+                music.Stop();
+                FormHandler.menu.Show();
+                FormHandler.menu.contie(true);
+                FormHandler.menu.playMusic();
                 this.Hide();
             }
         }
@@ -300,9 +301,14 @@ namespace Ekonomikare
         {
             if (!loseBool)
             {
-                ask.Show();
-                ask.setAnswer();
+                FormHandler.ask.Show();
+                FormHandler.ask.setAnswer();
             }
+        }
+
+        public void playMusic()
+        {
+            music.PlayLooping();
         }
         //obrazky
         private void step()
@@ -487,7 +493,7 @@ namespace Ekonomikare
                 resetColor();
                 mark(id);
             }
-            ask.Hide();
+            FormHandler.ask.Hide();
         }
 
         //pritelTelefon
@@ -510,7 +516,7 @@ namespace Ekonomikare
         private void button_Check_Click(object sender, EventArgs e)
         {
             button50 = false;
-            ask.Hide();
+            FormHandler.ask.Hide();
             checkAnswer();
         }
 

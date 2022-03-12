@@ -37,25 +37,25 @@ namespace Ekonomikare
         private void button_Back_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FormHandler.form2.Show();
+            FormHandler.menu.Show();
         }
 
         public void change()
         {
             if (!checkBox5050.Checked)
-                FormHandler.form1.setBool5050(false);
+                FormHandler.main.setBool5050(false);
             else
-                FormHandler.form1.setBool5050(true);
+                FormHandler.main.setBool5050(true);
 
             if (!checkBoxRada.Checked)
-                FormHandler.form1.setBoolRada(false);
+                FormHandler.main.setBoolRada(false);
             else
-                FormHandler.form1.setBoolRada(true);
+                FormHandler.main.setBoolRada(true);
 
             if (!checkBoxFriend.Checked)
-                FormHandler.form1.setBoolPritel(false);
+                FormHandler.main.setBoolPritel(false);
             else
-                FormHandler.form1.setBoolPritel(true);
+                FormHandler.main.setBoolPritel(true);
         }
 
         private void Settings_Load(object sender, EventArgs e)
@@ -94,33 +94,33 @@ namespace Ekonomikare
         {
             if (dropDown.Text != "Jiné")
             {
-                FormHandler.form1.setOtazky(dropDown.Text + "_otázky.txt");
-                FormHandler.form1.clearQuestions();
-                FormHandler.form1.readTXT();
-                FormHandler.form2.contie(false);
-                FormHandler.form3.setText(dropDown.Text);
-                FormHandler.form2.setText(dropDown.Text.ToUpper());
-                FormHandler.form1.setText(dropDown.Text.ToUpper());
+                FormHandler.main.setOtazky(dropDown.Text + "_otázky.txt");
+                FormHandler.main.clearQuestions();
+                FormHandler.main.readTXT();
+                FormHandler.menu.contie(false);
+                FormHandler.victory.setText(dropDown.Text);
+                FormHandler.menu.setText(dropDown.Text.ToUpper());
+                FormHandler.main.setText(dropDown.Text.ToUpper());
             }
             else
             {
                 buttonAplikovat.Visible = true;
                 textBox.Visible = true;
-                FormHandler.form1.setOtazky("Jiné_otázky.txt");
-                FormHandler.form1.clearQuestions();
-                FormHandler.form1.readTXT();
-                FormHandler.form2.contie(false);
+                FormHandler.main.setOtazky("Jiné_otázky.txt");
+                FormHandler.main.clearQuestions();
+                FormHandler.main.readTXT();
+                FormHandler.menu.contie(false);
             }
-            FormHandler.form1.restart();
+            FormHandler.main.restart();
         }
 
         private void buttonAplikovat_Click(object sender, EventArgs e)
         {
             if (textBox.Text != "" && textBox.Text.Length < 13)
             {
-                FormHandler.form3.setText(dropDown.Text);
-                FormHandler.form2.setText(textBox.Text.ToUpper());
-                FormHandler.form1.setText(textBox.Text.ToUpper());
+                FormHandler.victory.setText(textBox.Text);
+                FormHandler.menu.setText(textBox.Text.ToUpper());
+                FormHandler.main.setText(textBox.Text.ToUpper());
                 buttonAplikovat.Visible = false;
                 textBox.Visible = false;
             }

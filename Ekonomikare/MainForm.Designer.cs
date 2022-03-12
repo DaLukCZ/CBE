@@ -74,7 +74,7 @@ namespace Ekonomikare
             this.button_Answer4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button_Answer4.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Answer4.ForeColor = System.Drawing.Color.White;
-            this.button_Answer4.Location = new System.Drawing.Point(963, 775);
+            this.button_Answer4.Location = new System.Drawing.Point(978, 775);
             this.button_Answer4.Name = "button_Answer4";
             this.button_Answer4.Size = new System.Drawing.Size(550, 150);
             this.button_Answer4.TabIndex = 4;
@@ -86,7 +86,7 @@ namespace Ekonomikare
             // 
             this.panel2.BackgroundImage = global::Ekonomikare.Properties.Resources.postup0;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel2.Location = new System.Drawing.Point(1555, 299);
+            this.panel2.Location = new System.Drawing.Point(1556, 299);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(349, 536);
             this.panel2.TabIndex = 5;
@@ -112,7 +112,7 @@ namespace Ekonomikare
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1904, 1041);
+            this.panel1.Size = new System.Drawing.Size(1920, 1080);
             this.panel1.TabIndex = 0;
             // 
             // label2
@@ -145,7 +145,7 @@ namespace Ekonomikare
             this.label_otazka.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label_otazka.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label_otazka.ForeColor = System.Drawing.Color.White;
-            this.label_otazka.Location = new System.Drawing.Point(469, 472);
+            this.label_otazka.Location = new System.Drawing.Point(481, 473);
             this.label_otazka.Name = "label_otazka";
             this.label_otazka.Size = new System.Drawing.Size(972, 113);
             this.label_otazka.TabIndex = 15;
@@ -167,7 +167,7 @@ namespace Ekonomikare
             this.button_Zkontroluj.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button_Zkontroluj.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Zkontroluj.ForeColor = System.Drawing.Color.White;
-            this.button_Zkontroluj.Location = new System.Drawing.Point(670, 925);
+            this.button_Zkontroluj.Location = new System.Drawing.Point(684, 929);
             this.button_Zkontroluj.Name = "button_Zkontroluj";
             this.button_Zkontroluj.Size = new System.Drawing.Size(565, 93);
             this.button_Zkontroluj.TabIndex = 13;
@@ -252,7 +252,7 @@ namespace Ekonomikare
             this.button_otazka.Enabled = false;
             this.button_otazka.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_otazka.ForeColor = System.Drawing.Color.White;
-            this.button_otazka.Location = new System.Drawing.Point(372, 457);
+            this.button_otazka.Location = new System.Drawing.Point(384, 457);
             this.button_otazka.Name = "button_otazka";
             this.button_otazka.Size = new System.Drawing.Size(1164, 145);
             this.button_otazka.TabIndex = 9;
@@ -265,7 +265,7 @@ namespace Ekonomikare
             this.button_Answer3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button_Answer3.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Answer3.ForeColor = System.Drawing.Color.White;
-            this.button_Answer3.Location = new System.Drawing.Point(392, 775);
+            this.button_Answer3.Location = new System.Drawing.Point(407, 776);
             this.button_Answer3.Name = "button_Answer3";
             this.button_Answer3.Size = new System.Drawing.Size(550, 150);
             this.button_Answer3.TabIndex = 8;
@@ -280,7 +280,7 @@ namespace Ekonomikare
             this.button_Answer2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button_Answer2.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Answer2.ForeColor = System.Drawing.Color.White;
-            this.button_Answer2.Location = new System.Drawing.Point(963, 620);
+            this.button_Answer2.Location = new System.Drawing.Point(978, 620);
             this.button_Answer2.Name = "button_Answer2";
             this.button_Answer2.Size = new System.Drawing.Size(550, 150);
             this.button_Answer2.TabIndex = 7;
@@ -295,7 +295,7 @@ namespace Ekonomikare
             this.button_Answer1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button_Answer1.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Answer1.ForeColor = System.Drawing.Color.White;
-            this.button_Answer1.Location = new System.Drawing.Point(392, 620);
+            this.button_Answer1.Location = new System.Drawing.Point(407, 620);
             this.button_Answer1.Name = "button_Answer1";
             this.button_Answer1.Size = new System.Drawing.Size(550, 150);
             this.button_Answer1.TabIndex = 6;
@@ -310,10 +310,12 @@ namespace Ekonomikare
             this.AutoSize = true;
             this.BackgroundImage = global::Ekonomikare.Properties.Resources.Background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.ClientSize = new System.Drawing.Size(1920, 1080);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Chcete být milionářem?";
             this.Load += new System.EventHandler(this.Main_Load_1);
             this.panel1.ResumeLayout(false);

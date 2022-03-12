@@ -16,6 +16,7 @@ namespace Ekonomikare
         public Victory()
         {
             InitializeComponent();
+            transparent();
             FormBorderStyle = FormBorderStyle.None;
             WindowState = FormWindowState.Maximized;
         }
@@ -35,12 +36,26 @@ namespace Ekonomikare
             }
         }
 
+        private void transparent()
+        {
+            List<Button> buttons = new List<Button>(new Button[] { button_Exit, button1});
+            for (int i = 0; i < 2; i++)
+            {
+                buttons[i].FlatStyle = FlatStyle.Flat;
+                buttons[i].FlatAppearance.BorderSize = 0;
+                buttons[i].FlatAppearance.MouseDownBackColor = Color.Transparent;
+                buttons[i].FlatAppearance.MouseOverBackColor = Color.Transparent;
+                buttons[i].BackColor = Color.Transparent;
+            }
+        }
+
         //zpátky do menu
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
-            FormHandler.form1.Hide();
-            FormHandler.form2.Show();
+            FormHandler.main.Hide();
+            FormHandler.menu.playMusic();
+            FormHandler.menu.Show();
         }
 
         //vypíná aplikaci
@@ -51,7 +66,7 @@ namespace Ekonomikare
 
         public void setText(string s)
         {
-            label2.Text = "Tisíc korun z tebe asi Milionáře neudělá, alespoň jsi dobrým " + s +".";
+            label_obor.Text = "Tisíc korun z tebe asi Milionáře neudělá, alespoň jsi dobrým " + s +".";
         }
     }
 }

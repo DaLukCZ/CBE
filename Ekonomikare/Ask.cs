@@ -76,9 +76,9 @@ namespace Ekonomikare
             Random random = new Random();
             List<Label> answers = new List<Label>(new Label[] { label_Answer1, label_Answer2, label_Answer3, label_Answer4 });
             List<ProgressBar> progressBars = new List<ProgressBar>(new ProgressBar[] { progressBar1, progressBar2, progressBar3, progressBar4 });
-            List<Button> buttons = new List<Button>(new Button[] { FormHandler.form1.getButtons(1), FormHandler.form1.getButtons(2), FormHandler.form1.getButtons(3), FormHandler.form1.getButtons(4) });
-            int spravnaOdpoved = FormHandler.form1.getCurrentAnswer();
-            if (!FormHandler.form1.get5050bool())
+            List<Button> buttons = new List<Button>(new Button[] { FormHandler.main.getButtons(1), FormHandler.main.getButtons(2), FormHandler.main.getButtons(3), FormHandler.main.getButtons(4) });
+            int spravnaOdpoved = FormHandler.main.getCurrentAnswer();
+            if (!FormHandler.main.get5050bool())
             {
                 int randC1 = random.Next(36, 66);
                 int rest1 = (100 - randC1) - random.Next(10, 100 - randC1);
@@ -131,8 +131,8 @@ namespace Ekonomikare
             }
 
             button_Ask.Enabled = false;
-            FormHandler.form1.setAudiance(false);
-            FormHandler.form1.setAudianceBack(Properties.Resources.audienceOff);
+            FormHandler.main.setAudiance(false);
+            FormHandler.main.setAudianceBack(Properties.Resources.audienceOff);
             button_close.Enabled = true;
         }
 
@@ -151,10 +151,10 @@ namespace Ekonomikare
         //určuje text
         public void setAnswer()
         {
-            label_A.Text = "A) " + FormHandler.form1.getuCurrentAnswerOnButtonu(0);
-            label_B.Text = "B) " + FormHandler.form1.getuCurrentAnswerOnButtonu(1);
-            label_C.Text = "C) " + FormHandler.form1.getuCurrentAnswerOnButtonu(2);
-            label_D.Text = "D) " + FormHandler.form1.getuCurrentAnswerOnButtonu(3);
+            label_A.Text = "A) " + FormHandler.main.getuCurrentAnswerOnButtonu(0);
+            label_B.Text = "B) " + FormHandler.main.getuCurrentAnswerOnButtonu(1);
+            label_C.Text = "C) " + FormHandler.main.getuCurrentAnswerOnButtonu(2);
+            label_D.Text = "D) " + FormHandler.main.getuCurrentAnswerOnButtonu(3);
         }
     }
 }

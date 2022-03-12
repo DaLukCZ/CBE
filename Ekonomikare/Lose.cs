@@ -31,8 +31,8 @@ namespace Ekonomikare
         //load formu
         private void Lose_Load(object sender, EventArgs e)
         {
-            label3.Text = "Správná odpověď byla " + FormHandler.form1.getAnswer() + ".";
-            label_pocet.Text = "" + FormHandler.form1.getStep() + " / 10";
+            label3.Text = "Správná odpověď byla " + FormHandler.main.getAnswer() + ".";
+            label_pocet.Text = "" + FormHandler.main.getStep() + " | 10";
         }
 
         //vypne aplikaci
@@ -45,14 +45,15 @@ namespace Ekonomikare
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
-            FormHandler.form1.restart();
+            FormHandler.main.restart();
         }
 
         //pošle do menu
         private void button_Menu_Click(object sender, EventArgs e)
         {
-            FormHandler.form2.Show();
-            FormHandler.form1.Hide();
+            FormHandler.menu.playMusic();
+            FormHandler.menu.Show();
+            FormHandler.main.Hide();
             this.Hide();
         }
     }

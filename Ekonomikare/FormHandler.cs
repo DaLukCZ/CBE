@@ -9,10 +9,12 @@ namespace Ekonomikare
 {
     static class FormHandler
     {
-        public static MainForm form1 = new MainForm();
-        public static Menu form2 = new Menu();
-        public static Victory form3 = form1.victory;
-        public static Settings sett = new Settings();
+        public static MainForm main = new MainForm();
+        public static Menu menu = new Menu();
+        public static Victory victory = new Victory();
+        public static Settings settings = new Settings();
+        public static Ask ask = new Ask();
+        public static CallHelp callHelp = new CallHelp();
 
     }
 }
