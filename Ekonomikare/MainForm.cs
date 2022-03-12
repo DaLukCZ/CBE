@@ -31,7 +31,7 @@ namespace Ekonomikare
         private List<Question> questions = new List<Question>();
         private bool button50;
         private bool loseBool = false;
-        string otazky = "Jiné_otázky.txt";
+        string otazky = "Jiné_testy.csv";
         private SoundPlayer music = new SoundPlayer(Properties.Resources.mainmusic);
 
         //konstruktor

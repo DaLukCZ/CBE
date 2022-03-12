@@ -94,7 +94,7 @@ namespace Ekonomikare
         {
             if (dropDown.Text != "Jiné")
             {
-                FormHandler.main.setOtazky(dropDown.Text + "_otázky.csv");
+                FormHandler.main.setOtazky(dropDown.Text + "_testy.csv");
                 FormHandler.main.clearQuestions();
                 FormHandler.main.readTXT();
                 FormHandler.menu.contie(false);
@@ -106,7 +106,7 @@ namespace Ekonomikare
             {
                 buttonAplikovat.Visible = true;
                 textBox.Visible = true;
-                FormHandler.main.setOtazky("Jiné_otázky.csv");
+                FormHandler.main.setOtazky("Jiné_testy.csv");
                 FormHandler.main.clearQuestions();
                 FormHandler.main.readTXT();
                 FormHandler.menu.contie(false);
@@ -116,7 +116,7 @@ namespace Ekonomikare
 
         private void buttonAplikovat_Click(object sender, EventArgs e)
         {
-            if (textBox.Text != "" && textBox.Text.Length < 13)
+            if (textBox.Text != "" && textBox.Text.Length < 15)
             {
                 FormHandler.victory.setText(textBox.Text);
                 FormHandler.menu.setText(textBox.Text.ToUpper());
@@ -124,9 +124,17 @@ namespace Ekonomikare
                 buttonAplikovat.Visible = false;
                 textBox.Visible = false;
             }
-            else if (textBox.Text.Length >= 13)
+            else if (textBox.Text.Length >= 15 && textBox.Text.Length < 16)
             {
-                MessageBox.Show("Název je přiliš dlouhý. Maximálně 12 znaků", "Příliš dlouhý název!");
+                MessageBox.Show("Překročil jste název o " + (textBox.Text.Length - 14) + " znak. Maximálně 14 znaků", "Příliš dlouhý název!");
+            }
+            else if (textBox.Text.Length >= 16 && textBox.Text.Length < 19)
+            {
+                MessageBox.Show("Překročil jste název o " + (textBox.Text.Length - 14) + " znaky. Maximálně 14 znaků", "Příliš dlouhý název!");
+            }
+            else if (textBox.Text.Length >= 19)
+            {
+                MessageBox.Show("Překročil jste název o " + (textBox.Text.Length - 14) + " znaků. Maximálně 14 znaků", "Příliš dlouhý název!");
             }
             else
             {
