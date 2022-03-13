@@ -82,6 +82,10 @@ namespace Ekonomikare
         public void setText(string s) {
             label1.Text = s;
         }
+        public string getText()
+        {
+            return label1.Text;
+        }
 
         public void playMusic()
         {

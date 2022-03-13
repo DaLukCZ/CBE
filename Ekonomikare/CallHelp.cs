@@ -27,8 +27,7 @@ namespace Ekonomikare
         Random r = new Random();
         string aswer1 = "Vždyť jsme se nedávno učili. Je to ";
         string aswer2 = "Ty brďo, nevím přesně, ale asi ";
-        string aswer3 = "Ty brďo, to jste mě zaskočil. Opravdu nevím.";
-        string call;
+        string aswer3 = "Ty brďo, to jsi mě zaskočil. Opravdu nevím.";
         int randN;
         int randN2;
         public int progress = 0;
@@ -78,7 +77,7 @@ namespace Ekonomikare
             {
                 pictureBox2.Visible = true;
                 label4.Visible = true;
-                label4.Text = "Ahoj Adame, jasně ptej se";
+                label4.Text = "Zdravím Adame, alespoň se o to pokusím";
             }
             if (progress == 3)
             {
@@ -196,8 +195,8 @@ namespace Ekonomikare
             pictureBox2.BackgroundImage = Properties.Resources.TerkaKolo;
             pictureBox4.BackgroundImage = Properties.Resources.TerkaKolo;
             button1.Visible = true;
-            label2.Text = "Ahoj Terko, dali mi za úkol uvádět nějakou hovadinu s otázkami.";
-            label1.Text = "Poradíš mu, protože já žeprý nemůžu?";
+            label2.Text = "Zdravím Terezo, u telefonu Adam Skovajsa ze hry Chcete být " + FormHandler.menu.getText() + "?";
+            label1.Text = "Předemnou sedí tvůj student a potřebuje tvoji pomoc. Jsi schopná mu pomoc?";
             FormHandler.main.callHelpDis();
             guna2Button2.Hide();
             guna2Button1.Hide();
@@ -210,8 +209,8 @@ namespace Ekonomikare
             pictureBox4.BackgroundImage = Properties.Resources.hrdinaKolo;
             label2.Hide();
             button1.Visible = true;
-            label2.Text = "Ahoj Zdeňo, dali mi za úkol uvádět nějakou hovadinu s otázkami.";
-            label1.Text = "Poradíš mu, protože já žeprý nemůžu?";
+            label2.Text = "Zdravím Zdeňku, u telefonu Adam Skovajsa ze hry Chcete být " + FormHandler.menu.getText() + "?";
+            label1.Text = "Předemnou sedí tvůj student a potřebuje tvoji pomoc. Jsi schopný mu pomoc?";
             FormHandler.main.callHelpDis();
             guna2Button2.Hide();
             guna2Button1.Hide();

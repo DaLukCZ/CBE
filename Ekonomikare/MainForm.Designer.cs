@@ -72,7 +72,7 @@ namespace Ekonomikare
             this.button_Answer4.BackColor = System.Drawing.Color.Transparent;
             this.button_Answer4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_Answer4.BackgroundImage")));
             this.button_Answer4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button_Answer4.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Answer4.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button_Answer4.ForeColor = System.Drawing.Color.White;
             this.button_Answer4.Location = new System.Drawing.Point(965, 770);
             this.button_Answer4.Name = "button_Answer4";
@@ -143,7 +143,7 @@ namespace Ekonomikare
             this.label_otazka.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
             this.label_otazka.Cursor = System.Windows.Forms.Cursors.Default;
             this.label_otazka.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label_otazka.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label_otazka.Font = new System.Drawing.Font("Calibri", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label_otazka.ForeColor = System.Drawing.Color.White;
             this.label_otazka.Location = new System.Drawing.Point(484, 417);
             this.label_otazka.Name = "label_otazka";
@@ -165,7 +165,7 @@ namespace Ekonomikare
             this.button_Zkontroluj.BackColor = System.Drawing.Color.Transparent;
             this.button_Zkontroluj.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_Zkontroluj.BackgroundImage")));
             this.button_Zkontroluj.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button_Zkontroluj.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Zkontroluj.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold);
             this.button_Zkontroluj.ForeColor = System.Drawing.Color.White;
             this.button_Zkontroluj.Location = new System.Drawing.Point(683, 951);
             this.button_Zkontroluj.Name = "button_Zkontroluj";
@@ -263,7 +263,7 @@ namespace Ekonomikare
             this.button_Answer3.BackColor = System.Drawing.Color.Transparent;
             this.button_Answer3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_Answer3.BackgroundImage")));
             this.button_Answer3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button_Answer3.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Answer3.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button_Answer3.ForeColor = System.Drawing.Color.White;
             this.button_Answer3.Location = new System.Drawing.Point(390, 770);
             this.button_Answer3.Name = "button_Answer3";
@@ -278,7 +278,7 @@ namespace Ekonomikare
             this.button_Answer2.BackColor = System.Drawing.Color.Transparent;
             this.button_Answer2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_Answer2.BackgroundImage")));
             this.button_Answer2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button_Answer2.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Answer2.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button_Answer2.ForeColor = System.Drawing.Color.White;
             this.button_Answer2.Location = new System.Drawing.Point(965, 600);
             this.button_Answer2.Name = "button_Answer2";
@@ -293,7 +293,7 @@ namespace Ekonomikare
             this.button_Answer1.BackColor = System.Drawing.Color.Transparent;
             this.button_Answer1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_Answer1.BackgroundImage")));
             this.button_Answer1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button_Answer1.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Answer1.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button_Answer1.ForeColor = System.Drawing.Color.White;
             this.button_Answer1.Location = new System.Drawing.Point(390, 600);
             this.button_Answer1.Name = "button_Answer1";

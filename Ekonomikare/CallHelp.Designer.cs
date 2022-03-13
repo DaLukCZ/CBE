@@ -57,22 +57,24 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(225, 125);
+            this.label1.Location = new System.Drawing.Point(225, 112);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(666, 66);
+            this.label1.Size = new System.Drawing.Size(862, 50);
             this.label1.TabIndex = 3;
             this.label1.Text = ".";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label2
             // 
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(225, 80);
+            this.label2.Location = new System.Drawing.Point(225, 70);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(666, 30);
+            this.label2.Size = new System.Drawing.Size(862, 50);
             this.label2.TabIndex = 4;
             this.label2.Text = ".";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // button2
             // 
@@ -126,11 +128,12 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(225, 255);
+            this.label4.Location = new System.Drawing.Point(225, 209);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(666, 50);
+            this.label4.Size = new System.Drawing.Size(862, 120);
             this.label4.TabIndex = 29;
             this.label4.Text = ".";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // pictureBox3
             // 
@@ -158,34 +161,37 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(225, 400);
+            this.label5.Location = new System.Drawing.Point(225, 387);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(666, 30);
+            this.label5.Size = new System.Drawing.Size(862, 50);
             this.label5.TabIndex = 32;
             this.label5.Text = ".";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label6
             // 
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(225, 584);
+            this.label6.Location = new System.Drawing.Point(225, 533);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(600, 50);
+            this.label6.Size = new System.Drawing.Size(644, 112);
             this.label6.TabIndex = 33;
             this.label6.Text = ".";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label7
             // 
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(225, 436);
+            this.label7.Location = new System.Drawing.Point(225, 425);
             this.label7.Name = "label7";
             this.label7.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label7.Size = new System.Drawing.Size(666, 66);
+            this.label7.Size = new System.Drawing.Size(862, 70);
             this.label7.TabIndex = 34;
             this.label7.Text = ".";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // guna2Button1
             // 
@@ -250,6 +256,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CallHelp";

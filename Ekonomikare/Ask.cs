@@ -151,10 +151,10 @@ namespace Ekonomikare
         //určuje text
         public void setAnswer()
         {
-            label_A.Text = "A) " + FormHandler.main.getuCurrentAnswerOnButtonu(0);
-            label_B.Text = "B) " + FormHandler.main.getuCurrentAnswerOnButtonu(1);
-            label_C.Text = "C) " + FormHandler.main.getuCurrentAnswerOnButtonu(2);
-            label_D.Text = "D) " + FormHandler.main.getuCurrentAnswerOnButtonu(3);
+            label_A.Text = FormHandler.main.getuCurrentAnswerOnButtonu(0);
+            label_B.Text = FormHandler.main.getuCurrentAnswerOnButtonu(1);
+            label_C.Text = FormHandler.main.getuCurrentAnswerOnButtonu(2);
+            label_D.Text = FormHandler.main.getuCurrentAnswerOnButtonu(3);
         }
     }
 }
