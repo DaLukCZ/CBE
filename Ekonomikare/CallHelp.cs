@@ -31,6 +31,7 @@ namespace Ekonomikare
         string aswer1 = "Vždyť jsme se nedávno učili. Je to ";
         string aswer2 = "Ty brďo, nevím přesně, ale asi ";
         string aswer3 = "Ty brďo, to jsi mě zaskočil. Opravdu nevím.";
+        
         int randN;
         int randN2;
         public int progress = 0;
@@ -44,7 +45,6 @@ namespace Ekonomikare
             clear();
             randN = r.Next(10);
             randN2 = r.Next(10);
-            button2.Visible = true;
             writeAnswers();
         }
 
@@ -56,7 +56,7 @@ namespace Ekonomikare
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
         }
 
         public void clear()
@@ -103,6 +103,11 @@ namespace Ekonomikare
             {
                 button2.Visible = true;
             }
+        }
+
+        public void resCall()
+        {
+            button2.Visible = false;
         }
 
         public void generAswer()
@@ -192,13 +197,12 @@ namespace Ekonomikare
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            FormHandler.callHelp.playMusic();
+            button2.Visible = true;
+            playMusic();
             pictureBox2.BackgroundImage = Properties.Resources.TerkaKolo1;
             pictureBox4.BackgroundImage = Properties.Resources.TerkaKolo1;
-            
             label2.Text = "Zdravím Terezo, u telefonu Adam Skovajsa ze hry Chcete být " + FormHandler.menu.getText() + "?";
             label1.Text = "Předemnou sedí tvůj student a potřebuje tvoji pomoc. Jsi schopná mu pomoc?";
-            FormHandler.main.callHelpDis();
             guna2Button2.Hide();
             guna2Button1.Hide();
             panel1.Hide();
@@ -212,14 +216,14 @@ namespace Ekonomikare
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            FormHandler.callHelp.playMusic();
+            button2.Visible = true;
+            playMusic();
             pictureBox2.BackgroundImage = Properties.Resources.hrdinaKolo;
             pictureBox4.BackgroundImage = Properties.Resources.hrdinaKolo;
             label2.Hide();
             button2.Visible = false;
             label2.Text = "Zdravím Zdeňku, u telefonu Adam Skovajsa ze hry Chcete být " + FormHandler.menu.getText() + "?";
             label1.Text = "Předemnou sedí tvůj student a potřebuje tvoji pomoc. Jsi schopný mu pomoc?";
-            FormHandler.main.callHelpDis();
             guna2Button2.Hide();
             guna2Button1.Hide();
             panel1.Hide();

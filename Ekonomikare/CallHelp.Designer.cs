@@ -86,6 +86,7 @@
             this.button2.TabIndex = 13;
             this.button2.Text = "Zavřít";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Visible = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // pictureBox1
@@ -188,9 +189,9 @@
             this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(24, 321);
+            this.guna2Button1.Location = new System.Drawing.Point(24, 308);
             this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(281, 267);
+            this.guna2Button1.Size = new System.Drawing.Size(281, 270);
             this.guna2Button1.TabIndex = 0;
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
@@ -203,9 +204,9 @@
             this.guna2Button2.FillColor = System.Drawing.Color.Transparent;
             this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.Location = new System.Drawing.Point(24, 39);
+            this.guna2Button2.Location = new System.Drawing.Point(24, 36);
             this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(281, 276);
+            this.guna2Button2.Size = new System.Drawing.Size(281, 266);
             this.guna2Button2.TabIndex = 1;
             this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
@@ -218,7 +219,7 @@
             this.panel1.Controls.Add(this.guna2Button1);
             this.panel1.Location = new System.Drawing.Point(420, 57);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(330, 600);
+            this.panel1.Size = new System.Drawing.Size(330, 596);
             this.panel1.TabIndex = 35;
             // 
             // CallHelp

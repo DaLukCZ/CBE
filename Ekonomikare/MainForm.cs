@@ -505,7 +505,9 @@ namespace Ekonomikare
         {
             if (!loseBool)
             {
-                FormHandler.callHelp.Show();
+                CallHelp callHelp = new CallHelp();
+                callHelpDis();
+                callHelp.Show();
             }
         }
 
@@ -515,6 +517,7 @@ namespace Ekonomikare
             button_CallHelp.Enabled = false;
             button_CallHelp.BackgroundImage = Properties.Resources.callOff;
         }
+
         //kontrola
         private void button_Check_Click(object sender, EventArgs e)
         {
