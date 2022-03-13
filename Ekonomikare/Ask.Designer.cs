@@ -280,6 +280,7 @@
             this.Name = "Ask";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Ask";
+            this.TopMost = true;
             this.Load += new System.EventHandler(this.Ask_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

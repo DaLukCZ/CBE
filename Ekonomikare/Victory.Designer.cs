@@ -110,6 +110,7 @@
             this.Name = "Victory";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Chcete být Ekonomem?";
+            this.TopMost = true;
             this.Load += new System.EventHandler(this.Victory_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
