@@ -1,11 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Media;
 using System.Windows.Forms;
 
 namespace Ekonomikare
@@ -13,6 +9,7 @@ namespace Ekonomikare
     public partial class Victory : Form
     {
 
+        private SoundPlayer music = new SoundPlayer(Properties.Resources.musicVictory);
         public Victory()
         {
             InitializeComponent();
@@ -23,7 +20,7 @@ namespace Ekonomikare
 
         private void Victory_Load(object sender, EventArgs e)
         {
-            //song
+            music.Play();
         }
 
         protected override CreateParams CreateParams

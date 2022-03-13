@@ -504,5 +504,20 @@
   <ItemGroup>
     <None Include="Resources\Graphics\callOff.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TerkaKolo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Music\musicMain.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Music\musicMenu.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Music\musicTelefon.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Music\musicVictory.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

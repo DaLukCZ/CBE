@@ -86,9 +86,9 @@ namespace Ekonomikare
             // 
             this.panel2.BackgroundImage = global::Ekonomikare.Properties.Resources.postup0;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel2.Location = new System.Drawing.Point(1556, 299);
+            this.panel2.Location = new System.Drawing.Point(1556, 294);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(349, 536);
+            this.panel2.Size = new System.Drawing.Size(349, 545);
             this.panel2.TabIndex = 5;
             // 
             // panel1
@@ -185,7 +185,7 @@ namespace Ekonomikare
             this.tableLayoutPanel1.Controls.Add(this.button_CallHelp, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.button_HelpAudiance, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.button_5050, 0, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(1555, 182);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(1556, 188);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));

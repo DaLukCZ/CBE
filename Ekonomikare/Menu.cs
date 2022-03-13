@@ -8,7 +8,7 @@ namespace Ekonomikare
 {
     public partial class Menu : Form
     {
-        private SoundPlayer music = new SoundPlayer(Properties.Resources.menumusic);
+        private SoundPlayer music = new SoundPlayer(Properties.Resources.musicMenu);
         //konstuktor
         public Menu()
         {

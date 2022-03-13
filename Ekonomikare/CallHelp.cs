@@ -4,15 +4,18 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Guna.UI2.WinForms;
+using System.Threading;
 
 namespace Ekonomikare
 {
     public partial class CallHelp : Form
     {
+        private SoundPlayer music = new SoundPlayer(Properties.Resources.musicTelefon); 
 
         protected override CreateParams CreateParams
         {
@@ -41,9 +44,13 @@ namespace Ekonomikare
             clear();
             randN = r.Next(10);
             randN2 = r.Next(10);
-            button1.Visible = false;
             button2.Visible = true;
             writeAnswers();
+        }
+
+        public void playMusic()
+        {
+            music.Play();
         }
 
 
@@ -94,15 +101,8 @@ namespace Ekonomikare
             }
             if (progress >= 4)
             {
-                button1.Visible = false;
                 button2.Visible = true;
             }
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            progress++;
-            talk();
         }
 
         public void generAswer()
@@ -192,30 +192,49 @@ namespace Ekonomikare
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            pictureBox2.BackgroundImage = Properties.Resources.TerkaKolo;
-            pictureBox4.BackgroundImage = Properties.Resources.TerkaKolo;
-            button1.Visible = true;
+            FormHandler.callHelp.playMusic();
+            pictureBox2.BackgroundImage = Properties.Resources.TerkaKolo1;
+            pictureBox4.BackgroundImage = Properties.Resources.TerkaKolo1;
+            
             label2.Text = "Zdravím Terezo, u telefonu Adam Skovajsa ze hry Chcete být " + FormHandler.menu.getText() + "?";
             label1.Text = "Předemnou sedí tvůj student a potřebuje tvoji pomoc. Jsi schopná mu pomoc?";
             FormHandler.main.callHelpDis();
             guna2Button2.Hide();
             guna2Button1.Hide();
             panel1.Hide();
+            wait6();
+            for (int i = 0; i < 4; i++)
+            {
+                progress++;
+                talk();
+            }
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
+            FormHandler.callHelp.playMusic();
             pictureBox2.BackgroundImage = Properties.Resources.hrdinaKolo;
             pictureBox4.BackgroundImage = Properties.Resources.hrdinaKolo;
             label2.Hide();
-            button1.Visible = true;
+            button2.Visible = false;
             label2.Text = "Zdravím Zdeňku, u telefonu Adam Skovajsa ze hry Chcete být " + FormHandler.menu.getText() + "?";
             label1.Text = "Předemnou sedí tvůj student a potřebuje tvoji pomoc. Jsi schopný mu pomoc?";
             FormHandler.main.callHelpDis();
             guna2Button2.Hide();
             guna2Button1.Hide();
             panel1.Hide();
+            wait6();
+            for(int i = 0; i < 4; i++) 
+            { 
+                progress++;
+                talk();
+            }
+
+        }
+
+        private void wait6()
+        {
+            Thread.Sleep(6000);
         }
     }
-
 }

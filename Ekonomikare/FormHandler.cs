@@ -15,6 +15,7 @@ namespace Ekonomikare
         public static Settings settings = new Settings();
         public static Ask ask = new Ask();
         public static CallHelp callHelp = new CallHelp();
+        public static Lose lose = new Lose();
 
     }
 }

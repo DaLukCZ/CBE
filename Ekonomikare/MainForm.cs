@@ -32,7 +32,7 @@ namespace Ekonomikare
         private bool button50;
         private bool loseBool = false;
         string otazky = "Jiné_testy.csv";
-        private SoundPlayer music = new SoundPlayer(Properties.Resources.mainmusic);
+        private SoundPlayer music = new SoundPlayer(Properties.Resources.musicMain);
 
         //konstruktor
         public MainForm()
@@ -173,6 +173,7 @@ namespace Ekonomikare
             resetColor();
             showQuestion();
             step();
+            playMusic();
         }
 
         //zkontroluj
@@ -194,6 +195,7 @@ namespace Ekonomikare
                         }
                         else
                         {
+                            music.Stop();
                             this.Hide();
                             FormHandler.menu.contie(false);
                             FormHandler.victory.Show();
@@ -201,12 +203,12 @@ namespace Ekonomikare
                     }
                     else
                     {
-                        Lose lose = new Lose();
+                        music.Stop();
                         buttons[buttonek].BackgroundImage = Properties.Resources.buttonBorderRed;
                         buttons[currentQuestion.rightAnswer].BackgroundImage = Properties.Resources.buttonBorderGreen;
                         FormHandler.menu.contie(false);
                         loseBool = true;
-                        lose.Show();
+                        FormHandler.lose.Show();
                     }
                 }
                 catch (Exception)
@@ -503,8 +505,7 @@ namespace Ekonomikare
         {
             if (!loseBool)
             {
-                CallHelp help = new CallHelp();
-                help.Show();
+                FormHandler.callHelp.Show();
             }
         }
 
