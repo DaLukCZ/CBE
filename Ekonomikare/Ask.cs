@@ -17,6 +17,7 @@ namespace Ekonomikare
         public Ask()
         {
             InitializeComponent();
+            transparent();
         }
 
         protected override CreateParams CreateParams
@@ -29,10 +30,23 @@ namespace Ekonomikare
             }
         }
 
+        private void transparent()
+        {
+            List<Button> buttons = new List<Button>(new Button[] { button_Ask, button_close });
+            for (int i = 0; i < 2; i++)
+            {
+                buttons[i].FlatStyle = FlatStyle.Flat;
+                buttons[i].FlatAppearance.BorderSize = 0;
+                buttons[i].FlatAppearance.MouseDownBackColor = Color.Transparent;
+                buttons[i].FlatAppearance.MouseOverBackColor = Color.Transparent;
+                buttons[i].BackColor = Color.Transparent;
+            }
+        }
+
         //tlačítko ask nastavuje na true
         public void setAsk()
         {
-            button_Ask.Enabled = true;
+            button_close.Visible = false;
         }
 
         //vrací labely
@@ -129,8 +143,7 @@ namespace Ekonomikare
                 }
 
             }
-
-            button_Ask.Enabled = false;
+            button_close.Visible = true;
             FormHandler.main.setAudiance(false);
             FormHandler.main.setAudianceBack(Properties.Resources.audienceOff);
             button_close.Enabled = true;

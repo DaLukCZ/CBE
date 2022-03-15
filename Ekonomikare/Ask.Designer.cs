@@ -120,12 +120,14 @@
             // button_Ask
             // 
             this.button_Ask.AutoSize = true;
-            this.button_Ask.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
+            this.button_Ask.BackColor = System.Drawing.Color.Transparent;
+            this.button_Ask.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_Ask.BackgroundImage")));
+            this.button_Ask.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button_Ask.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Ask.ForeColor = System.Drawing.Color.White;
-            this.button_Ask.Location = new System.Drawing.Point(65, 327);
+            this.button_Ask.Location = new System.Drawing.Point(65, 338);
             this.button_Ask.Name = "button_Ask";
-            this.button_Ask.Size = new System.Drawing.Size(275, 100);
+            this.button_Ask.Size = new System.Drawing.Size(605, 100);
             this.button_Ask.TabIndex = 16;
             this.button_Ask.Text = "Hlasovat";
             this.button_Ask.UseVisualStyleBackColor = false;
@@ -134,15 +136,18 @@
             // button_close
             // 
             this.button_close.AutoSize = true;
-            this.button_close.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
+            this.button_close.BackColor = System.Drawing.Color.Transparent;
+            this.button_close.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_close.BackgroundImage")));
+            this.button_close.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button_close.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_close.ForeColor = System.Drawing.Color.White;
-            this.button_close.Location = new System.Drawing.Point(395, 327);
+            this.button_close.Location = new System.Drawing.Point(65, 338);
             this.button_close.Name = "button_close";
-            this.button_close.Size = new System.Drawing.Size(275, 100);
+            this.button_close.Size = new System.Drawing.Size(605, 100);
             this.button_close.TabIndex = 17;
             this.button_close.Text = "Zavřit";
             this.button_close.UseVisualStyleBackColor = false;
+            this.button_close.Visible = false;
             this.button_close.Click += new System.EventHandler(this.button_close_Click);
             // 
             // label_Answer1
