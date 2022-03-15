@@ -43,6 +43,8 @@
             this.dropDown = new System.Windows.Forms.ComboBox();
             this.textBox = new System.Windows.Forms.TextBox();
             this.buttonAplikovat = new System.Windows.Forms.Button();
+            this.checkBoxUčitel = new Guna.UI2.WinForms.Guna2CustomCheckBox();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -228,6 +230,36 @@
             this.buttonAplikovat.Visible = false;
             this.buttonAplikovat.Click += new System.EventHandler(this.buttonAplikovat_Click);
             // 
+            // checkBoxUčitel
+            // 
+            this.checkBoxUčitel.CheckedState.BorderColor = System.Drawing.Color.Transparent;
+            this.checkBoxUčitel.CheckedState.BorderRadius = 0;
+            this.checkBoxUčitel.CheckedState.BorderThickness = 0;
+            this.checkBoxUčitel.CheckedState.FillColor = System.Drawing.Color.White;
+            this.checkBoxUčitel.CheckMarkColor = System.Drawing.Color.Black;
+            this.checkBoxUčitel.Location = new System.Drawing.Point(525, 700);
+            this.checkBoxUčitel.Name = "checkBoxUčitel";
+            this.checkBoxUčitel.Size = new System.Drawing.Size(50, 50);
+            this.checkBoxUčitel.TabIndex = 45;
+            this.checkBoxUčitel.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.checkBoxUčitel.UncheckedState.BorderRadius = 0;
+            this.checkBoxUčitel.UncheckedState.BorderThickness = 0;
+            this.checkBoxUčitel.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
+            this.checkBoxUčitel.Click += new System.EventHandler(this.checkBoxUčitel_Click);
+            // 
+            // label6
+            // 
+            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
+            this.label6.Font = new System.Drawing.Font("Calibri", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(175, 700);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(325, 50);
+            this.label6.TabIndex = 44;
+            this.label6.Text = "Učitelská verze";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Settings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -236,6 +268,8 @@
             this.BackgroundImage = global::Ekonomikare.Properties.Resources.settingscrop;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(766, 950);
+            this.Controls.Add(this.checkBoxUčitel);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.buttonAplikovat);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -277,5 +311,7 @@
         private System.Windows.Forms.ComboBox dropDown;
         private System.Windows.Forms.TextBox textBox;
         private System.Windows.Forms.Button buttonAplikovat;
+        private Guna.UI2.WinForms.Guna2CustomCheckBox checkBoxUčitel;
+        private System.Windows.Forms.Label label6;
     }
 }

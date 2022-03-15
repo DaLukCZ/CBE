@@ -56,6 +56,12 @@ namespace Ekonomikare
                 FormHandler.main.setBoolPritel(false);
             else
                 FormHandler.main.setBoolPritel(true);
+
+            if (!checkBoxUčitel.Checked)
+                FormHandler.main.setDalsiBool(false);
+            else
+                FormHandler.main.setDalsiBool(true);
+
         }
 
         private void Settings_Load(object sender, EventArgs e)
@@ -70,14 +76,14 @@ namespace Ekonomikare
 
         public void read()
         {
-            List<Guna2CustomCheckBox> boxy = new List<Guna2CustomCheckBox>(new Guna2CustomCheckBox[] { checkBox5050, checkBoxRada, checkBoxFriend });
-            foreach (string line in File.ReadLines("settings.txt"))
+            List<Guna2CustomCheckBox> boxy = new List<Guna2CustomCheckBox>(new Guna2CustomCheckBox[] { checkBox5050, checkBoxRada, checkBoxFriend, checkBoxUčitel });
+            foreach (string line in File.ReadLines("Testy/settings.txt"))
             {
                 List<string> hodnoty = new List<string>(line.Split(';'));
                 for (int i = 0; i < hodnoty.Count; i++)
                     addBool(bool.Parse(hodnoty[i]));
             }
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < 4; i++)
             {
                 boxy[i].Checked = booleany[i];
             }
@@ -86,15 +92,15 @@ namespace Ekonomikare
 
         public void write()
         {
-            string radek = checkBox5050.Checked + ";" + checkBoxRada.Checked + ";" + checkBoxFriend.Checked;
-            File.WriteAllText("settings.txt", radek);
+            string radek = checkBox5050.Checked + ";" + checkBoxRada.Checked + ";" + checkBoxFriend.Checked + ";" + checkBoxUčitel.Checked;
+            File.WriteAllText("Testy/settings.txt", radek);
         }
 
         private void dropDown_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (dropDown.Text != "Jiné")
             {
-                FormHandler.main.setOtazky(dropDown.Text + "_testy.csv");
+                FormHandler.main.setOtazky("Testy/" + dropDown.Text + "_testy.csv");
                 FormHandler.main.clearQuestions();
                 FormHandler.main.readTXT();
                 FormHandler.menu.contie(false);
@@ -106,7 +112,7 @@ namespace Ekonomikare
             {
                 buttonAplikovat.Visible = true;
                 textBox.Visible = true;
-                FormHandler.main.setOtazky("Jiné_testy.csv");
+                FormHandler.main.setOtazky("Testy/Jiné_testy.csv");
                 FormHandler.main.clearQuestions();
                 FormHandler.main.readTXT();
                 FormHandler.menu.contie(false);
@@ -155,6 +161,12 @@ namespace Ekonomikare
         }
 
         private void checkBoxFriend_CheckedChanged(object sender, EventArgs e)
+        {
+            write();
+            change();
+        }
+
+        private void checkBoxUčitel_Click(object sender, EventArgs e)
         {
             write();
             change();

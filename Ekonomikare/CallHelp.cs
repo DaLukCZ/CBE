@@ -84,7 +84,7 @@ namespace Ekonomikare
             {
                 pictureBox2.Visible = true;
                 label4.Visible = true;
-                label4.Text = "Zdravím Adame, alespoň se o to pokusím";
+                label4.Text = "Zdravím Adame, jasně ptej se.";
             }
             if (progress == 3)
             {
@@ -202,7 +202,7 @@ namespace Ekonomikare
             pictureBox2.BackgroundImage = Properties.Resources.TerkaKolo1;
             pictureBox4.BackgroundImage = Properties.Resources.TerkaKolo1;
             label2.Text = "Zdravím Terezo, u telefonu Adam Skovajsa ze hry Chcete být " + FormHandler.menu.getText() + "?";
-            label1.Text = "Předemnou sedí tvůj student a potřebuje tvoji pomoc. Jsi schopná mu pomoc?";
+            label1.Text = "Předemnou sedí tvůj žák a potřebuje tvoji pomoc. Jsi schopná mu pomoci?";
             guna2Button2.Hide();
             guna2Button1.Hide();
             panel1.Hide();
@@ -223,7 +223,7 @@ namespace Ekonomikare
             label2.Hide();
             button2.Visible = false;
             label2.Text = "Zdravím Zdeňku, u telefonu Adam Skovajsa ze hry Chcete být " + FormHandler.menu.getText() + "?";
-            label1.Text = "Předemnou sedí tvůj student a potřebuje tvoji pomoc. Jsi schopný mu pomoc?";
+            label1.Text = "Předemnou sedí tvůj žák a potřebuje tvoji pomoc. Jsi schopný mu pomoci?";
             guna2Button2.Hide();
             guna2Button1.Hide();
             panel1.Hide();
@@ -235,7 +235,6 @@ namespace Ekonomikare
             }
 
         }
-
         private void wait6()
         {
             Thread.Sleep(6000);

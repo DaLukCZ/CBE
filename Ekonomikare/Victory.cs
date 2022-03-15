@@ -21,6 +21,7 @@ namespace Ekonomikare
         private void Victory_Load(object sender, EventArgs e)
         {
             music.Play();
+            
         }
 
         protected override CreateParams CreateParams
@@ -31,6 +32,26 @@ namespace Ekonomikare
                 handleParams.ExStyle |= 0x02000000;
                 return handleParams;
             }
+        }
+
+        public void setFalse5050()
+        {
+            button_5050.BackgroundImage = Properties.Resources._5050Off;
+        }
+        public void setFalseAudiance()
+        {
+            button_HelpAudiance.BackgroundImage = Properties.Resources.audienceOff;
+        }
+        public void setFalseCall()
+        {
+            button_CallHelp.BackgroundImage = Properties.Resources.callOff;
+        }
+
+        public void resetObr()
+        {
+            button_5050.BackgroundImage = Properties.Resources.a5050;
+            button_HelpAudiance.BackgroundImage = Properties.Resources.audience;
+            button_CallHelp.BackgroundImage = Properties.Resources.call;
         }
 
         private void transparent()
@@ -49,8 +70,7 @@ namespace Ekonomikare
         //zpátky do menu
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Close();
-            FormHandler.main.Hide();
+            this.Hide();
             FormHandler.menu.playMusic();
             FormHandler.menu.Show();
         }
@@ -64,6 +84,10 @@ namespace Ekonomikare
         public void setText(string s)
         {
             label_obor.Text = "Tisíc korun z tebe asi Milionáře neudělá, alespoň jsi dobrým " + s +".";
+        }
+        public void setPocet()
+        {
+            label_odpov.Text = "Správně " + FormHandler.main.getSpravne() + " / 10";
         }
     }
 }

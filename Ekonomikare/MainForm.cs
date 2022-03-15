@@ -31,14 +31,15 @@ namespace Ekonomikare
         private List<Question> questions = new List<Question>();
         private bool button50;
         private bool loseBool = false;
-        string otazky = "Jiné_testy.csv";
+        private int spravnéOdpovědi = 0;
+        string otazky = "Testy/Jiné_testy.csv";
         private SoundPlayer music = new SoundPlayer(Properties.Resources.musicMain);
 
         //konstruktor
         public MainForm()
         {
             InitializeComponent();
-            FormBorderStyle = FormBorderStyle.None;
+            FormBorderStyle = FormBorderStyle.None; ;
             WindowState = FormWindowState.Maximized;
             readTXT();
             showQuestion();
@@ -48,8 +49,8 @@ namespace Ekonomikare
 
         private void transparent()
         {
-            List<Button> buttons = new List<Button>(new Button[] { button_Answer1, button_Answer2, button_Answer3, button_Answer4, button_Zkontroluj, button_otazka });
-            for (int i = 0; i < 6; i++)
+            List<Button> buttons = new List<Button>(new Button[] { button_Answer1, button_Answer2, button_Answer3, button_Answer4, button_Zkontroluj, button_otazka, button_další });
+            for (int i = 0; i < 7; i++)
             {
                 buttons[i].FlatStyle = FlatStyle.Flat;
                 buttons[i].FlatAppearance.BorderSize = 0;
@@ -161,6 +162,7 @@ namespace Ekonomikare
             button_HelpAudiance.BackgroundImage = Properties.Resources.audience;
             button_CallHelp.Enabled = true;
             button_CallHelp.BackgroundImage = Properties.Resources.call;
+            FormHandler.victory.resetObr();
             FormHandler.ask.setAsk();
             for (int i = 0; i < 4; i++)
             {
@@ -174,6 +176,11 @@ namespace Ekonomikare
             showQuestion();
             step();
             playMusic();
+        }
+
+        public int getSpravne()
+        {
+            return spravnéOdpovědi;
         }
 
         //zkontroluj
@@ -190,11 +197,14 @@ namespace Ekonomikare
                         if (Currentstep != 9)
                         {
                             Currentstep += 1;
+                            spravnéOdpovědi += 1;
                             showQuestion();
                             step();
                         }
                         else
                         {
+                            spravnéOdpovědi += 1;
+                            FormHandler.victory.setPocet();
                             music.Stop();
                             this.Hide();
                             FormHandler.menu.contie(false);
@@ -292,6 +302,7 @@ namespace Ekonomikare
                     buttons[number].Enabled = false;
                     numbers.Remove(number);
                 }
+                FormHandler.victory.setFalse5050();
                 button50 = true;
                 button_5050.Enabled = false;
                 button_5050.BackgroundImage = Properties.Resources._5050Off;
@@ -303,6 +314,7 @@ namespace Ekonomikare
         {
             if (!loseBool)
             {
+                FormHandler.victory.setFalseAudiance();
                 FormHandler.ask.Show();
                 FormHandler.ask.setAnswer();
             }
@@ -505,6 +517,7 @@ namespace Ekonomikare
         {
             if (!loseBool)
             {
+                FormHandler.victory.setFalseCall();
                 CallHelp callHelp = new CallHelp();
                 callHelpDis();
                 callHelp.Show();
@@ -534,6 +547,32 @@ namespace Ekonomikare
         public void setText(string s)
         {
             label2.Text = s;
+        }
+
+        public void setDalsiBool(bool vis)
+        {
+            button_další.Visible = vis;
+        }
+
+        private void button_dalsi_Click(object sender, EventArgs e)
+        {
+            if (!loseBool)
+            {
+                if (Currentstep != 9)
+                {
+                    Currentstep += 1;
+                    showQuestion();
+                    step();
+                }
+                else
+                {
+                    FormHandler.victory.setPocet();
+                    music.Stop();
+                    this.Hide();
+                    FormHandler.menu.contie(false);
+                    FormHandler.victory.Show();
+                }
+            }
         }
     }
 }

@@ -36,6 +36,7 @@ namespace Ekonomikare
             this.button_Answer4 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button_další = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.button_exit = new System.Windows.Forms.Button();
             this.label_otazka = new System.Windows.Forms.Label();
@@ -96,6 +97,7 @@ namespace Ekonomikare
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.button_další);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.button_exit);
             this.panel1.Controls.Add(this.label_otazka);
@@ -114,6 +116,21 @@ namespace Ekonomikare
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1920, 1080);
             this.panel1.TabIndex = 0;
+            // 
+            // button_další
+            // 
+            this.button_další.BackColor = System.Drawing.Color.Transparent;
+            this.button_další.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_další.BackgroundImage")));
+            this.button_další.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button_další.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold);
+            this.button_další.ForeColor = System.Drawing.Color.White;
+            this.button_další.Location = new System.Drawing.Point(1538, 1015);
+            this.button_další.Name = "button_další";
+            this.button_další.Size = new System.Drawing.Size(369, 52);
+            this.button_další.TabIndex = 16;
+            this.button_další.Text = "Další";
+            this.button_další.UseVisualStyleBackColor = false;
+            this.button_další.Click += new System.EventHandler(this.button_dalsi_Click);
             // 
             // label2
             // 
@@ -345,6 +362,7 @@ namespace Ekonomikare
         private System.Windows.Forms.Button button_Answer2;
         private System.Windows.Forms.Button button_Answer1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button_další;
     }
 }
 
