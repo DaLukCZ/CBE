@@ -107,11 +107,11 @@
             this.label_pocet.BackColor = System.Drawing.Color.Transparent;
             this.label_pocet.Font = new System.Drawing.Font("Calibri", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label_pocet.ForeColor = System.Drawing.Color.White;
-            this.label_pocet.Location = new System.Drawing.Point(337, 243);
+            this.label_pocet.Location = new System.Drawing.Point(341, 241);
             this.label_pocet.Name = "label_pocet";
-            this.label_pocet.Size = new System.Drawing.Size(88, 36);
+            this.label_pocet.Size = new System.Drawing.Size(86, 36);
             this.label_pocet.TabIndex = 14;
-            this.label_pocet.Text = "9 | 10";
+            this.label_pocet.Text = "9 / 10";
             this.label_pocet.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Lose

@@ -160,7 +160,7 @@ namespace Ekonomikare
             this.label_otazka.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
             this.label_otazka.Cursor = System.Windows.Forms.Cursors.Default;
             this.label_otazka.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label_otazka.Font = new System.Drawing.Font("Calibri", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label_otazka.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label_otazka.ForeColor = System.Drawing.Color.White;
             this.label_otazka.Location = new System.Drawing.Point(484, 417);
             this.label_otazka.Name = "label_otazka";

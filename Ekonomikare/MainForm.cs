@@ -155,6 +155,7 @@ namespace Ekonomikare
             List<Label> answers = new List<Label>(new Label[] { FormHandler.ask.getLabels(1), FormHandler.ask.getLabels(2), FormHandler.ask.getLabels(3), FormHandler.ask.getLabels(4) });
             List<ProgressBar> progressBars = new List<ProgressBar>(new ProgressBar[] { FormHandler.ask.getPG(1), FormHandler.ask.getPG(2), FormHandler.ask.getPG(3), FormHandler.ask.getPG(4) });
             Currentstep = 0;
+            spravnéOdpovědi = 0;
             buttonek = 5;
             button_5050.Enabled = true;
             button_5050.BackgroundImage = Properties.Resources.a5050;
@@ -163,6 +164,7 @@ namespace Ekonomikare
             button_CallHelp.Enabled = true;
             button_CallHelp.BackgroundImage = Properties.Resources.call;
             FormHandler.victory.resetObr();
+            FormHandler.victory.setText(label2.Text);
             FormHandler.ask.setAsk();
             for (int i = 0; i < 4; i++)
             {
@@ -204,7 +206,6 @@ namespace Ekonomikare
                         else
                         {
                             spravnéOdpovědi += 1;
-                            FormHandler.victory.setPocet();
                             music.Stop();
                             this.Hide();
                             FormHandler.menu.contie(false);
@@ -238,7 +239,7 @@ namespace Ekonomikare
         {
             List<Button> buttons = new List<Button>(new Button[] { button_Answer1, button_Answer2, button_Answer3, button_Answer4 });
             if (!loseBool)
-                buttons[answerID].BackgroundImage = Properties.Resources.buttonBorderGreen;
+                buttons[answerID].BackgroundImage = Properties.Resources.buttonBorderGold;
         }
 
         //resetColor
@@ -558,6 +559,8 @@ namespace Ekonomikare
         {
             if (!loseBool)
             {
+                FormHandler.victory.testiky();
+                FormHandler.victory.setPrůchod();
                 if (Currentstep != 9)
                 {
                     Currentstep += 1;
@@ -566,7 +569,6 @@ namespace Ekonomikare
                 }
                 else
                 {
-                    FormHandler.victory.setPocet();
                     music.Stop();
                     this.Hide();
                     FormHandler.menu.contie(false);

@@ -52,7 +52,7 @@
             // label_D
             // 
             this.label_D.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
-            this.label_D.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label_D.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label_D.ForeColor = System.Drawing.Color.White;
             this.label_D.Location = new System.Drawing.Point(65, 253);
             this.label_D.Name = "label_D";
@@ -62,7 +62,7 @@
             // label_C
             // 
             this.label_C.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
-            this.label_C.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label_C.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label_C.ForeColor = System.Drawing.Color.White;
             this.label_C.Location = new System.Drawing.Point(65, 188);
             this.label_C.Name = "label_C";
@@ -72,7 +72,7 @@
             // label_B
             // 
             this.label_B.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
-            this.label_B.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label_B.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label_B.ForeColor = System.Drawing.Color.White;
             this.label_B.Location = new System.Drawing.Point(65, 121);
             this.label_B.Name = "label_B";
@@ -82,7 +82,7 @@
             // label_A
             // 
             this.label_A.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
-            this.label_A.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label_A.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label_A.ForeColor = System.Drawing.Color.White;
             this.label_A.Location = new System.Drawing.Point(65, 53);
             this.label_A.Name = "label_A";
@@ -123,7 +123,7 @@
             this.button_Ask.BackColor = System.Drawing.Color.Transparent;
             this.button_Ask.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_Ask.BackgroundImage")));
             this.button_Ask.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button_Ask.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Ask.Font = new System.Drawing.Font("Calibri", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button_Ask.ForeColor = System.Drawing.Color.White;
             this.button_Ask.Location = new System.Drawing.Point(65, 338);
             this.button_Ask.Name = "button_Ask";
@@ -139,13 +139,13 @@
             this.button_close.BackColor = System.Drawing.Color.Transparent;
             this.button_close.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_close.BackgroundImage")));
             this.button_close.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button_close.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_close.Font = new System.Drawing.Font("Calibri", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button_close.ForeColor = System.Drawing.Color.White;
             this.button_close.Location = new System.Drawing.Point(65, 338);
             this.button_close.Name = "button_close";
             this.button_close.Size = new System.Drawing.Size(605, 100);
             this.button_close.TabIndex = 17;
-            this.button_close.Text = "Zavřit";
+            this.button_close.Text = "Zavřít";
             this.button_close.UseVisualStyleBackColor = false;
             this.button_close.Visible = false;
             this.button_close.Click += new System.EventHandler(this.button_close_Click);
@@ -207,11 +207,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold);
+            this.label1.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(32, 70);
+            this.label1.Location = new System.Drawing.Point(27, 65);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(27, 21);
+            this.label1.Size = new System.Drawing.Size(32, 26);
             this.label1.TabIndex = 22;
             this.label1.Text = "A)";
             // 
@@ -219,11 +219,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold);
+            this.label2.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(32, 137);
+            this.label2.Location = new System.Drawing.Point(27, 132);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(27, 21);
+            this.label2.Size = new System.Drawing.Size(31, 26);
             this.label2.TabIndex = 23;
             this.label2.Text = "B)";
             // 
@@ -231,11 +231,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold);
+            this.label3.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label3.ForeColor = System.Drawing.SystemColors.Control;
-            this.label3.Location = new System.Drawing.Point(32, 204);
+            this.label3.Location = new System.Drawing.Point(27, 199);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(27, 21);
+            this.label3.Size = new System.Drawing.Size(30, 26);
             this.label3.TabIndex = 24;
             this.label3.Text = "C)";
             // 
@@ -243,11 +243,11 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold);
+            this.label4.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label4.ForeColor = System.Drawing.SystemColors.Control;
-            this.label4.Location = new System.Drawing.Point(32, 269);
+            this.label4.Location = new System.Drawing.Point(27, 264);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(28, 21);
+            this.label4.Size = new System.Drawing.Size(32, 26);
             this.label4.TabIndex = 25;
             this.label4.Text = "D)";
             // 

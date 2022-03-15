@@ -32,7 +32,7 @@ namespace Ekonomikare
         private void Lose_Load(object sender, EventArgs e)
         {
             label3.Text = "Správná odpověď byla " + FormHandler.main.getAnswer() + ".";
-            label_pocet.Text = "Měl jsi spávně : " + FormHandler.main.getSpravne() + " / 10";
+            label_pocet.Text = FormHandler.main.getSpravne() + " / 10";
         }
 
         //vypne aplikaci

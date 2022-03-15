@@ -37,17 +37,17 @@
             this.button_CallHelp = new System.Windows.Forms.Button();
             this.button_HelpAudiance = new System.Windows.Forms.Button();
             this.button_5050 = new System.Windows.Forms.Button();
-            this.label_odpov = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.button_testy = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Cambria", 80.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.Font = new System.Drawing.Font("Calibri", 80.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label1.ForeColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(330, 35);
+            this.label1.Location = new System.Drawing.Point(284, 52);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(616, 126);
             this.label1.TabIndex = 0;
@@ -59,7 +59,7 @@
             this.button1.BackColor = System.Drawing.Color.Transparent;
             this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Calibri", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(156, 830);
             this.button1.Name = "button1";
@@ -75,7 +75,7 @@
             this.button_Exit.BackColor = System.Drawing.Color.Transparent;
             this.button_Exit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_Exit.BackgroundImage")));
             this.button_Exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button_Exit.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Exit.Font = new System.Drawing.Font("Calibri", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button_Exit.ForeColor = System.Drawing.Color.White;
             this.button_Exit.Location = new System.Drawing.Point(156, 966);
             this.button_Exit.Name = "button_Exit";
@@ -91,13 +91,13 @@
             this.label_obor.BackColor = System.Drawing.Color.Transparent;
             this.label_obor.Font = new System.Drawing.Font("Calibri", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label_obor.ForeColor = System.Drawing.Color.White;
-            this.label_obor.Location = new System.Drawing.Point(140, 178);
+            this.label_obor.Location = new System.Drawing.Point(158, 178);
             this.label_obor.MaximumSize = new System.Drawing.Size(900, 0);
             this.label_obor.Name = "label_obor";
-            this.label_obor.Size = new System.Drawing.Size(814, 90);
+            this.label_obor.Size = new System.Drawing.Size(806, 90);
             this.label_obor.TabIndex = 18;
             this.label_obor.Text = "Tisíc korun z tebe asi Milionáře neudělá, alespoň jsi dobrým EXPERTEM.";
-            this.label_obor.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label_obor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel1
             // 
@@ -165,19 +165,28 @@
             this.button_5050.TabIndex = 0;
             this.button_5050.UseVisualStyleBackColor = false;
             // 
-            // label_odpov
+            // label6
             // 
-            this.label_odpov.AutoSize = true;
-            this.label_odpov.BackColor = System.Drawing.Color.Transparent;
-            this.label_odpov.Font = new System.Drawing.Font("Calibri", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label_odpov.ForeColor = System.Drawing.Color.White;
-            this.label_odpov.Location = new System.Drawing.Point(1551, 201);
-            this.label_odpov.MaximumSize = new System.Drawing.Size(900, 0);
-            this.label_odpov.Name = "label_odpov";
-            this.label_odpov.Size = new System.Drawing.Size(259, 45);
-            this.label_odpov.TabIndex = 20;
-            this.label_odpov.Text = "Správně 10 / 10";
-            this.label_odpov.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
+            this.label6.Font = new System.Drawing.Font("Calibri", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(1508, 198);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(269, 50);
+            this.label6.TabIndex = 46;
+            this.label6.Text = "Učitelská verze";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // button_testy
+            // 
+            this.button_testy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
+            this.button_testy.FlatAppearance.BorderSize = 0;
+            this.button_testy.Location = new System.Drawing.Point(1809, 198);
+            this.button_testy.Name = "button_testy";
+            this.button_testy.Size = new System.Drawing.Size(50, 50);
+            this.button_testy.TabIndex = 48;
+            this.button_testy.UseVisualStyleBackColor = false;
             // 
             // Victory
             // 
@@ -186,7 +195,8 @@
             this.BackgroundImage = global::Ekonomikare.Properties.Resources.konfetySkovy;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1920, 1080);
-            this.Controls.Add(this.label_odpov);
+            this.Controls.Add(this.button_testy);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.label_obor);
             this.Controls.Add(this.button_Exit);
@@ -216,6 +226,7 @@
         private System.Windows.Forms.Button button_CallHelp;
         private System.Windows.Forms.Button button_HelpAudiance;
         private System.Windows.Forms.Button button_5050;
-        private System.Windows.Forms.Label label_odpov;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button button_testy;
     }
 }

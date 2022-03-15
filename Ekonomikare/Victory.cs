@@ -49,6 +49,7 @@ namespace Ekonomikare
 
         public void resetObr()
         {
+            button_testy.BackgroundImage = Properties.Resources._false;
             button_5050.BackgroundImage = Properties.Resources.a5050;
             button_HelpAudiance.BackgroundImage = Properties.Resources.audience;
             button_CallHelp.BackgroundImage = Properties.Resources.call;
@@ -84,10 +85,17 @@ namespace Ekonomikare
         public void setText(string s)
         {
             label_obor.Text = "Tisíc korun z tebe asi Milionáře neudělá, alespoň jsi dobrým " + s +".";
+            label_obor.Location = new Point(158, 178);
         }
-        public void setPocet()
+
+        public void setPrůchod()
         {
-            label_odpov.Text = "Správně " + FormHandler.main.getSpravne() + " / 10";
+            label_obor.Text = "Blahopřeji, úspěšně jsi prošel testem.";
+            label_obor.Location = new Point(297, 178);
+        }
+        public void testiky()
+        {
+            button_testy.BackgroundImage = Properties.Resources._true;
         }
     }
 }

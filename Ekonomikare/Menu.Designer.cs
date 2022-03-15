@@ -49,7 +49,7 @@ namespace Ekonomikare
             this.button_Exit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button_Exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button_Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_Exit.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Exit.Font = new System.Drawing.Font("Calibri", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button_Exit.ForeColor = System.Drawing.Color.White;
             this.button_Exit.Location = new System.Drawing.Point(75, 750);
             this.button_Exit.Name = "button_Exit";
@@ -69,7 +69,7 @@ namespace Ekonomikare
             this.button_Start.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button_Start.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button_Start.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_Start.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Start.Font = new System.Drawing.Font("Calibri", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button_Start.ForeColor = System.Drawing.Color.Transparent;
             this.button_Start.Location = new System.Drawing.Point(75, 450);
             this.button_Start.Name = "button_Start";
@@ -89,7 +89,7 @@ namespace Ekonomikare
             this.button_settings.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button_settings.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button_settings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_settings.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_settings.Font = new System.Drawing.Font("Calibri", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button_settings.ForeColor = System.Drawing.Color.White;
             this.button_settings.Location = new System.Drawing.Point(75, 600);
             this.button_settings.Name = "button_settings";
@@ -106,7 +106,7 @@ namespace Ekonomikare
             this.Contienue.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Contienue.FlatAppearance.BorderSize = 0;
             this.Contienue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Contienue.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Contienue.Font = new System.Drawing.Font("Calibri", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.Contienue.ForeColor = System.Drawing.Color.Transparent;
             this.Contienue.Location = new System.Drawing.Point(75, 450);
             this.Contienue.Name = "Contienue";
