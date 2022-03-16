@@ -257,7 +257,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(325, 50);
             this.label6.TabIndex = 44;
-            this.label6.Text = "Verze pro testy";
+            this.label6.Text = "Verze na testy";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Settings

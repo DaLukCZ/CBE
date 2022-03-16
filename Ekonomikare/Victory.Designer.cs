@@ -175,7 +175,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(269, 50);
             this.label6.TabIndex = 46;
-            this.label6.Text = "Učitelská verze";
+            this.label6.Text = "Verze na testy";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button_testy
