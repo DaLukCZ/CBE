@@ -39,6 +39,7 @@
             this.button_5050 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.button_testy = new System.Windows.Forms.Button();
+            this.label_spravne = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -188,6 +189,19 @@
             this.button_testy.TabIndex = 48;
             this.button_testy.UseVisualStyleBackColor = false;
             // 
+            // label_spravne
+            // 
+            this.label_spravne.AutoSize = true;
+            this.label_spravne.BackColor = System.Drawing.Color.Transparent;
+            this.label_spravne.Font = new System.Drawing.Font("Calibri", 27.75F, System.Drawing.FontStyle.Bold);
+            this.label_spravne.ForeColor = System.Drawing.Color.Transparent;
+            this.label_spravne.Location = new System.Drawing.Point(211, 348);
+            this.label_spravne.Name = "label_spravne";
+            this.label_spravne.Size = new System.Drawing.Size(689, 45);
+            this.label_spravne.TabIndex = 49;
+            this.label_spravne.Text = "Správné odpovědi: A, B, C, D, C, B, A, B, C, D";
+            this.label_spravne.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Victory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -195,6 +209,7 @@
             this.BackgroundImage = global::Ekonomikare.Properties.Resources.konfetySkovy;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1920, 1080);
+            this.Controls.Add(this.label_spravne);
             this.Controls.Add(this.button_testy);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.tableLayoutPanel1);
@@ -228,5 +243,6 @@
         private System.Windows.Forms.Button button_5050;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button_testy;
+        private System.Windows.Forms.Label label_spravne;
     }
 }

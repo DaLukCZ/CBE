@@ -68,6 +68,10 @@ namespace Ekonomikare
             }
         }
 
+        public void setOdpo(string odpovedi)
+        {
+            label_spravne.Text = "Správné odpovědi byly: " + odpovedi;
+        }
         //zpátky do menu
         private void button1_Click(object sender, EventArgs e)
         {

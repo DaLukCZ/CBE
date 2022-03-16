@@ -34,6 +34,7 @@ namespace Ekonomikare
         private int spravnéOdpovědi = 0;
         string otazky = "Testy/Jiné_testy.csv";
         private SoundPlayer music = new SoundPlayer(Properties.Resources.musicMain);
+        private List<char> odpovediChar = new List<char>();
 
         //konstruktor
         public MainForm()
@@ -100,9 +101,9 @@ namespace Ekonomikare
                 return;
 
             }
-            List<String> list = new List<String>(question.answers);
+            List<string> list = new List<string>(question.answers);
             string[] answers = new string[4];
-            Boolean naslo = false;
+            bool naslo = false;
             for (int i = 0; i < 4; i++)
             {
                 int randomCislo = random.Next(list.Count);
@@ -125,6 +126,22 @@ namespace Ekonomikare
             button_Answer2.Text = "B) " + answers[1];
             button_Answer3.Text = "C) " + answers[2];
             button_Answer4.Text = "D) " + answers[3];
+        }
+
+        private void saveAnswer()
+        {
+            List<Button> buttons = new List<Button>(new Button[] { button_Answer1, button_Answer2, button_Answer3, button_Answer4});
+            odpovediChar.Add(buttons[currentQuestion.rightAnswer].Text[0]);
+        }
+
+        public void resetOdpovediChar()
+        {
+            odpovediChar.Clear();
+        }
+
+        public string getSpravnePismena()
+        {
+            return string.Join(", ", odpovediChar);
         }
 
 
@@ -174,6 +191,7 @@ namespace Ekonomikare
             }
             button50 = false;
             loseBool = false;
+            resetOdpovediChar();
             resetColor();
             showQuestion();
             step();
@@ -227,11 +245,6 @@ namespace Ekonomikare
                     MessageBox.Show("Prosím vyber odpověd");
                 }
             }
-        }
-
-        public bool getLose()
-        {
-            return loseBool;
         }
 
         //mark
@@ -565,11 +578,14 @@ namespace Ekonomikare
                 if (Currentstep != 9)
                 {
                     Currentstep += 1;
+                    saveAnswer();
                     showQuestion();
                     step();
                 }
                 else
                 {
+                    saveAnswer();
+                    FormHandler.victory.setOdpo(getSpravnePismena());
                     music.Stop();
                     this.Hide();
                     FormHandler.menu.contie(false);
