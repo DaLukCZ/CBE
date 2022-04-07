@@ -171,5 +171,10 @@ namespace Ekonomikare
             write();
             change();
         }
+
+        private void textBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
