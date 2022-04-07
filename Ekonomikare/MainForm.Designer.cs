@@ -50,8 +50,12 @@ namespace Ekonomikare
             this.button_Answer3 = new System.Windows.Forms.Button();
             this.button_Answer2 = new System.Windows.Forms.Button();
             this.button_Answer1 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lose = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lose)).BeginInit();
             this.SuspendLayout();
             // 
             // button_menu
@@ -97,6 +101,7 @@ namespace Ekonomikare
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.button_další);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.button_exit);
@@ -111,6 +116,7 @@ namespace Ekonomikare
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.button_Answer4);
             this.panel1.Controls.Add(this.button_menu);
+            this.panel1.Controls.Add(this.lose);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -320,6 +326,25 @@ namespace Ekonomikare
             this.button_Answer1.UseVisualStyleBackColor = false;
             this.button_Answer1.Click += new System.EventHandler(this.button_Answer1_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(-16, -16);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox1.TabIndex = 17;
+            this.pictureBox1.TabStop = false;
+            // 
+            // lose
+            // 
+            this.lose.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("lose.BackgroundImage")));
+            this.lose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.lose.Location = new System.Drawing.Point(-157, 279);
+            this.lose.Name = "lose";
+            this.lose.Size = new System.Drawing.Size(729, 560);
+            this.lose.TabIndex = 18;
+            this.lose.TabStop = false;
+            this.lose.Visible = false;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -339,6 +364,8 @@ namespace Ekonomikare
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lose)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -363,6 +390,8 @@ namespace Ekonomikare
         private System.Windows.Forms.Button button_Answer1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button_další;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox lose;
     }
 }
 

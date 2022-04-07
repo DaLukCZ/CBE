@@ -180,6 +180,7 @@ namespace Ekonomikare
             button_HelpAudiance.BackgroundImage = Properties.Resources.audience;
             button_CallHelp.Enabled = true;
             button_CallHelp.BackgroundImage = Properties.Resources.call;
+            lose.Visible = false;
             FormHandler.victory.resetObr();
             FormHandler.victory.setText(label2.Text);
             FormHandler.ask.setAsk();
@@ -233,6 +234,7 @@ namespace Ekonomikare
                     else
                     {
                         music.Stop();
+                        lose.Visible = true;
                         buttons[buttonek].BackgroundImage = Properties.Resources.buttonBorderRed;
                         buttons[currentQuestion.rightAnswer].BackgroundImage = Properties.Resources.buttonBorderGreen;
                         FormHandler.menu.contie(false);
