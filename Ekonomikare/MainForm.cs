@@ -45,7 +45,6 @@ namespace Ekonomikare
             readTXT();
             showQuestion();
             transparent();
-            playMusic();
         }
 
         private void transparent()
@@ -64,7 +63,7 @@ namespace Ekonomikare
         //form load
         private void Main_Load_1(object sender, EventArgs e)
         {
-            playMusic();
+            music.PlayLooping();
             step();
         }
 
@@ -199,7 +198,6 @@ namespace Ekonomikare
             resetColor();
             showQuestion();
             step();
-            playMusic();
         }
 
         public int getSpravne()
@@ -213,7 +211,6 @@ namespace Ekonomikare
 
             if (!loseBool)
             {
-                bool klik;
                 List<Button> buttons = new List<Button>(new Button[] { button_Answer1, button_Answer2, button_Answer3, button_Answer4 });
                 if (buttonek != 5) {
                     if (currentQuestion.rightAnswer == buttonek)
@@ -280,7 +277,6 @@ namespace Ekonomikare
                 music.Stop();
                 FormHandler.menu.Show();
                 FormHandler.menu.contie(true);
-                FormHandler.menu.playMusic();
                 this.Hide();
             }
         }
@@ -341,10 +337,6 @@ namespace Ekonomikare
             }
         }
 
-        public void playMusic()
-        {
-            music.PlayLooping();
-        }
         //obrazky
         private void step()
         {
@@ -599,6 +591,11 @@ namespace Ekonomikare
                     FormHandler.victory.Show();
                 }
             }
+        }
+
+        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            music.Stop();
         }
     }
 }

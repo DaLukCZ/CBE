@@ -51,7 +51,6 @@ namespace Ekonomikare
         //pošle do menu
         private void button_Menu_Click(object sender, EventArgs e)
         {
-            FormHandler.menu.playMusic();
             FormHandler.menu.Show();
             FormHandler.main.Hide();
             this.Hide();

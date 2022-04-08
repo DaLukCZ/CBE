@@ -238,6 +238,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Chcete být Ekonomem?";
             this.TopMost = true;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Victory_FormClosing);
             this.Load += new System.EventHandler(this.Victory_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);

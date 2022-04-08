@@ -21,9 +21,10 @@ namespace Ekonomikare
         private void Victory_Load(object sender, EventArgs e)
         {
             NameObor.Visible = true;
-            music.Play();
+            music.PlayLooping();
             
         }
+
 
         public void setBackNoMoney()
         {
@@ -92,7 +93,6 @@ namespace Ekonomikare
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FormHandler.menu.playMusic();
             FormHandler.menu.Show();
         }
 
@@ -116,6 +116,11 @@ namespace Ekonomikare
         public void setVerze()
         {
             button_testy.BackgroundImage = Properties.Resources._true;
+        }
+
+        private void Victory_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            music.Stop();
         }
     }
 }

@@ -360,6 +360,7 @@ namespace Ekonomikare
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Chcete být milionářem?";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Load += new System.EventHandler(this.Main_Load_1);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
