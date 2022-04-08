@@ -216,7 +216,6 @@
             this.textBox.Size = new System.Drawing.Size(400, 50);
             this.textBox.TabIndex = 42;
             this.textBox.Visible = false;
-            this.textBox.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // buttonAplikovat
             // 

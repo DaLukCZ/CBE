@@ -40,6 +40,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.button_testy = new System.Windows.Forms.Button();
             this.label_spravne = new System.Windows.Forms.Label();
+            this.NameObor = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,7 +49,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Calibri", 80.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label1.ForeColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(284, 52);
+            this.label1.Location = new System.Drawing.Point(12, 198);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(616, 126);
             this.label1.TabIndex = 0;
@@ -92,12 +93,12 @@
             this.label_obor.BackColor = System.Drawing.Color.Transparent;
             this.label_obor.Font = new System.Drawing.Font("Calibri", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label_obor.ForeColor = System.Drawing.Color.White;
-            this.label_obor.Location = new System.Drawing.Point(158, 178);
+            this.label_obor.Location = new System.Drawing.Point(148, 375);
             this.label_obor.MaximumSize = new System.Drawing.Size(900, 0);
             this.label_obor.Name = "label_obor";
-            this.label_obor.Size = new System.Drawing.Size(806, 90);
+            this.label_obor.Size = new System.Drawing.Size(596, 45);
             this.label_obor.TabIndex = 18;
-            this.label_obor.Text = "Tisíc korun z tebe asi Milionáře neudělá, alespoň jsi dobrým EXPERTEM.";
+            this.label_obor.Text = "Blahopřeji, úspěšně jsi prošel testem.";
             this.label_obor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel1
@@ -195,20 +196,33 @@
             this.label_spravne.BackColor = System.Drawing.Color.Transparent;
             this.label_spravne.Font = new System.Drawing.Font("Calibri", 27.75F, System.Drawing.FontStyle.Bold);
             this.label_spravne.ForeColor = System.Drawing.Color.Transparent;
-            this.label_spravne.Location = new System.Drawing.Point(211, 348);
+            this.label_spravne.Location = new System.Drawing.Point(110, 467);
             this.label_spravne.Name = "label_spravne";
             this.label_spravne.Size = new System.Drawing.Size(689, 45);
             this.label_spravne.TabIndex = 49;
             this.label_spravne.Text = "Správné odpovědi: A, B, C, D, C, B, A, B, C, D";
             this.label_spravne.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // NameObor
+            // 
+            this.NameObor.BackColor = System.Drawing.Color.Transparent;
+            this.NameObor.Font = new System.Drawing.Font("Georgia", 34F, System.Drawing.FontStyle.Bold);
+            this.NameObor.ForeColor = System.Drawing.Color.White;
+            this.NameObor.Location = new System.Drawing.Point(682, 212);
+            this.NameObor.Name = "NameObor";
+            this.NameObor.Size = new System.Drawing.Size(565, 50);
+            this.NameObor.TabIndex = 50;
+            this.NameObor.Text = "EXPERTEM";
+            this.NameObor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Victory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Ekonomikare.Properties.Resources.konfetySkovy;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1920, 1080);
+            this.Controls.Add(this.NameObor);
             this.Controls.Add(this.label_spravne);
             this.Controls.Add(this.button_testy);
             this.Controls.Add(this.label6);
@@ -244,5 +258,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button_testy;
         private System.Windows.Forms.Label label_spravne;
+        private System.Windows.Forms.Label NameObor;
     }
 }

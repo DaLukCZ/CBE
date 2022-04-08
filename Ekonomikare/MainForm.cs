@@ -130,7 +130,7 @@ namespace Ekonomikare
 
         private void saveAnswer()
         {
-            List<Button> buttons = new List<Button>(new Button[] { button_Answer1, button_Answer2, button_Answer3, button_Answer4});
+            List<Button> buttons = new List<Button>(new Button[] { button_Answer1, button_Answer2, button_Answer3, button_Answer4 });
             odpovediChar.Add(buttons[currentQuestion.rightAnswer].Text[0]);
         }
 
@@ -171,18 +171,21 @@ namespace Ekonomikare
         {
             List<Label> answers = new List<Label>(new Label[] { FormHandler.ask.getLabels(1), FormHandler.ask.getLabels(2), FormHandler.ask.getLabels(3), FormHandler.ask.getLabels(4) });
             List<ProgressBar> progressBars = new List<ProgressBar>(new ProgressBar[] { FormHandler.ask.getPG(1), FormHandler.ask.getPG(2), FormHandler.ask.getPG(3), FormHandler.ask.getPG(4) });
+            label2.Visible = true;
             Currentstep = 0;
             spravnéOdpovědi = 0;
             buttonek = 5;
+            panel2.Visible = true;
+            pictureBox2.Visible = false;
             button_5050.Enabled = true;
             button_5050.BackgroundImage = Properties.Resources.a5050;
             button_HelpAudiance.Enabled = true;
             button_HelpAudiance.BackgroundImage = Properties.Resources.audience;
             button_CallHelp.Enabled = true;
             button_CallHelp.BackgroundImage = Properties.Resources.call;
-            lose.Visible = false;
+            FormHandler.victory.setBackMoney();
             FormHandler.victory.resetObr();
-            FormHandler.victory.setText(label2.Text);
+            FormHandler.victory.noDalsi(label2.Text);
             FormHandler.ask.setAsk();
             for (int i = 0; i < 4; i++)
             {
@@ -210,9 +213,9 @@ namespace Ekonomikare
 
             if (!loseBool)
             {
+                bool klik;
                 List<Button> buttons = new List<Button>(new Button[] { button_Answer1, button_Answer2, button_Answer3, button_Answer4 });
-                try
-                {
+                if (buttonek != 5) {
                     if (currentQuestion.rightAnswer == buttonek)
                     {
                         if (Currentstep != 9)
@@ -234,7 +237,8 @@ namespace Ekonomikare
                     else
                     {
                         music.Stop();
-                        lose.Visible = true;
+                        panel2.Visible = false;
+                        pictureBox2.Visible = true;
                         buttons[buttonek].BackgroundImage = Properties.Resources.buttonBorderRed;
                         buttons[currentQuestion.rightAnswer].BackgroundImage = Properties.Resources.buttonBorderGreen;
                         FormHandler.menu.contie(false);
@@ -242,7 +246,7 @@ namespace Ekonomikare
                         FormHandler.lose.Show();
                     }
                 }
-                catch (Exception)
+                else
                 {
                     MessageBox.Show("Prosím vyber odpověd");
                 }
@@ -575,8 +579,9 @@ namespace Ekonomikare
         {
             if (!loseBool)
             {
-                FormHandler.victory.testiky();
-                FormHandler.victory.setPrůchod();
+                FormHandler.victory.setVerze();
+                FormHandler.victory.dalsiClick();
+                FormHandler.victory.setBackNoMoney();
                 if (Currentstep != 9)
                 {
                     Currentstep += 1;

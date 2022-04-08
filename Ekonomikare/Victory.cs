@@ -20,8 +20,19 @@ namespace Ekonomikare
 
         private void Victory_Load(object sender, EventArgs e)
         {
+            NameObor.Visible = true;
             music.Play();
             
+        }
+
+        public void setBackNoMoney()
+        {
+            this.BackgroundImage = Properties.Resources.WinNoMoney;
+        }
+
+        public void setBackMoney() 
+        {
+            this.BackgroundImage = Properties.Resources.WinMoney;
         }
 
         protected override CreateParams CreateParams
@@ -32,6 +43,11 @@ namespace Ekonomikare
                 handleParams.ExStyle |= 0x02000000;
                 return handleParams;
             }
+        }
+
+        public void setOborName(string obor)
+        {
+            NameObor.Text = obor;
         }
 
         public void setFalse5050()
@@ -86,18 +102,18 @@ namespace Ekonomikare
             Application.Exit();
         }
 
-        public void setText(string s)
+        public void noDalsi(string s)
         {
             label_obor.Text = "Tisíc korun z tebe asi Milionáře neudělá, alespoň jsi dobrým " + s +".";
-            label_obor.Location = new Point(158, 178);
+            label_obor.Location = new Point(50, 353);
         }
 
-        public void setPrůchod()
+        public void dalsiClick()
         {
             label_obor.Text = "Blahopřeji, úspěšně jsi prošel testem.";
-            label_obor.Location = new Point(297, 178);
+            label_obor.Location = new Point(148, 375);
         }
-        public void testiky()
+        public void setVerze()
         {
             button_testy.BackgroundImage = Properties.Resources._true;
         }

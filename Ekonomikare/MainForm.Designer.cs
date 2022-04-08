@@ -36,6 +36,9 @@ namespace Ekonomikare
             this.button_Answer4 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button_Answer2 = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button_další = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.button_exit = new System.Windows.Forms.Button();
@@ -48,14 +51,11 @@ namespace Ekonomikare
             this.button_5050 = new System.Windows.Forms.Button();
             this.button_otazka = new System.Windows.Forms.Button();
             this.button_Answer3 = new System.Windows.Forms.Button();
-            this.button_Answer2 = new System.Windows.Forms.Button();
             this.button_Answer1 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lose = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lose)).BeginInit();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button_menu
@@ -95,12 +95,16 @@ namespace Ekonomikare
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(349, 545);
             this.panel2.TabIndex = 5;
+            this.panel2.Visible = false;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.button_Answer4);
+            this.panel1.Controls.Add(this.button_Answer2);
+            this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.button_další);
             this.panel1.Controls.Add(this.label2);
@@ -111,17 +115,47 @@ namespace Ekonomikare
             this.panel1.Controls.Add(this.tableLayoutPanel1);
             this.panel1.Controls.Add(this.button_otazka);
             this.panel1.Controls.Add(this.button_Answer3);
-            this.panel1.Controls.Add(this.button_Answer2);
             this.panel1.Controls.Add(this.button_Answer1);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.button_Answer4);
             this.panel1.Controls.Add(this.button_menu);
-            this.panel1.Controls.Add(this.lose);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1920, 1080);
             this.panel1.TabIndex = 0;
+            // 
+            // button_Answer2
+            // 
+            this.button_Answer2.BackColor = System.Drawing.Color.Transparent;
+            this.button_Answer2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_Answer2.BackgroundImage")));
+            this.button_Answer2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button_Answer2.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button_Answer2.ForeColor = System.Drawing.Color.White;
+            this.button_Answer2.Location = new System.Drawing.Point(965, 600);
+            this.button_Answer2.Name = "button_Answer2";
+            this.button_Answer2.Size = new System.Drawing.Size(575, 175);
+            this.button_Answer2.TabIndex = 7;
+            this.button_Answer2.Text = "Odpověd 2";
+            this.button_Answer2.UseVisualStyleBackColor = false;
+            this.button_Answer2.Click += new System.EventHandler(this.button_Answer2_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.Location = new System.Drawing.Point(1435, 328);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(467, 685);
+            this.pictureBox2.TabIndex = 19;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(-16, -16);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox1.TabIndex = 17;
+            this.pictureBox1.TabStop = false;
             // 
             // button_další
             // 
@@ -296,21 +330,6 @@ namespace Ekonomikare
             this.button_Answer3.UseVisualStyleBackColor = false;
             this.button_Answer3.Click += new System.EventHandler(this.button_Answer3_Click);
             // 
-            // button_Answer2
-            // 
-            this.button_Answer2.BackColor = System.Drawing.Color.Transparent;
-            this.button_Answer2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_Answer2.BackgroundImage")));
-            this.button_Answer2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button_Answer2.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button_Answer2.ForeColor = System.Drawing.Color.White;
-            this.button_Answer2.Location = new System.Drawing.Point(965, 600);
-            this.button_Answer2.Name = "button_Answer2";
-            this.button_Answer2.Size = new System.Drawing.Size(575, 175);
-            this.button_Answer2.TabIndex = 7;
-            this.button_Answer2.Text = "Odpověd 2";
-            this.button_Answer2.UseVisualStyleBackColor = false;
-            this.button_Answer2.Click += new System.EventHandler(this.button_Answer2_Click);
-            // 
             // button_Answer1
             // 
             this.button_Answer1.BackColor = System.Drawing.Color.Transparent;
@@ -325,25 +344,6 @@ namespace Ekonomikare
             this.button_Answer1.Text = "Odpověd 1";
             this.button_Answer1.UseVisualStyleBackColor = false;
             this.button_Answer1.Click += new System.EventHandler(this.button_Answer1_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(-16, -16);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox1.TabIndex = 17;
-            this.pictureBox1.TabStop = false;
-            // 
-            // lose
-            // 
-            this.lose.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("lose.BackgroundImage")));
-            this.lose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.lose.Location = new System.Drawing.Point(-157, 279);
-            this.lose.Name = "lose";
-            this.lose.Size = new System.Drawing.Size(729, 560);
-            this.lose.TabIndex = 18;
-            this.lose.TabStop = false;
-            this.lose.Visible = false;
             // 
             // MainForm
             // 
@@ -363,9 +363,9 @@ namespace Ekonomikare
             this.Load += new System.EventHandler(this.Main_Load_1);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.tableLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lose)).EndInit();
+            this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -391,7 +391,7 @@ namespace Ekonomikare
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button_další;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox lose;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 

@@ -104,9 +104,10 @@ namespace Ekonomikare
                 FormHandler.main.clearQuestions();
                 FormHandler.main.readTXT();
                 FormHandler.menu.contie(false);
-                FormHandler.victory.setText(dropDown.Text);
+                FormHandler.victory.noDalsi(dropDown.Text);
                 FormHandler.menu.setText(dropDown.Text.ToUpper());
                 FormHandler.main.setText(dropDown.Text.ToUpper());
+                FormHandler.victory.setOborName(textBox.Text.ToUpper());
             }
             else
             {
@@ -124,9 +125,10 @@ namespace Ekonomikare
         {
             if (textBox.Text != "" && textBox.Text.Length < 15)
             {
-                FormHandler.victory.setText(textBox.Text);
+                FormHandler.victory.noDalsi(textBox.Text);
                 FormHandler.menu.setText(textBox.Text.ToUpper());
                 FormHandler.main.setText(textBox.Text.ToUpper());
+                FormHandler.victory.setOborName(textBox.Text.ToUpper());
                 buttonAplikovat.Visible = false;
                 textBox.Visible = false;
             }
@@ -170,11 +172,6 @@ namespace Ekonomikare
         {
             write();
             change();
-        }
-
-        private void textBox_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

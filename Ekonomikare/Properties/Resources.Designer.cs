@@ -439,6 +439,16 @@ namespace Ekonomikare.Properties {
         /// <summary>
         ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap palec_Back {
+            get {
+                object obj = ResourceManager.GetObject("palec_Back", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap postup0 {
             get {
                 object obj = ResourceManager.GetObject("postup0", resourceCulture);
@@ -611,6 +621,26 @@ namespace Ekonomikare.Properties {
         internal static System.Drawing.Bitmap TerkaKolo1 {
             get {
                 object obj = ResourceManager.GetObject("TerkaKolo1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WinMoney {
+            get {
+                object obj = ResourceManager.GetObject("WinMoney", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WinNoMoney {
+            get {
+                object obj = ResourceManager.GetObject("WinNoMoney", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

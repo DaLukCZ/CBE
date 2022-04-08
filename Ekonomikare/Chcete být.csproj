@@ -519,5 +519,23 @@
   <ItemGroup>
     <None Include="Resources\true.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Graphics\palec_L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Graphics\WinMoney.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Graphics\WinNoMoney.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Graphics\SkovaMoney.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Graphics\palec_Levá.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Graphics\palec_Back.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
