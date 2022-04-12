@@ -1,4 +1,4 @@
-﻿namespace Ekonomikare
+﻿namespace Chcete_byt_EXPERTEM
 {
     partial class Settings
     {
@@ -266,7 +266,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.BackgroundImage = global::Ekonomikare.Properties.Resources.settingscrop;
+            this.BackgroundImage = global::Chcete_byt_EXPERTEM.Properties.Resources.settingscrop;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(766, 950);
             this.Controls.Add(this.checkBoxUčitel);

@@ -1,5 +1,5 @@
 ﻿
-namespace Ekonomikare
+namespace Chcete_byt_EXPERTEM
 {
     partial class Menu
     {
@@ -145,7 +145,7 @@ namespace Ekonomikare
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
-            this.BackgroundImage = global::Ekonomikare.Properties.Resources.backgroundPhotocrop;
+            this.BackgroundImage = global::Chcete_byt_EXPERTEM.Properties.Resources.backgroundPhotocrop;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(750, 911);
             this.Controls.Add(this.Contienue);

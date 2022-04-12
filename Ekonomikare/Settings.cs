@@ -11,7 +11,7 @@ using System.Windows.Forms;
 using System.Reflection;
 using Guna.UI2.WinForms;
 
-namespace Ekonomikare
+namespace Chcete_byt_EXPERTEM
 {
     public partial class Settings : Form
     {

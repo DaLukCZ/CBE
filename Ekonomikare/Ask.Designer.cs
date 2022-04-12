@@ -1,4 +1,4 @@
-﻿namespace Ekonomikare
+﻿namespace Chcete_byt_EXPERTEM
 {
     partial class Ask
     {

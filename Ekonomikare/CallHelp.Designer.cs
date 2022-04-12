@@ -1,4 +1,4 @@
-﻿namespace Ekonomikare
+﻿namespace Chcete_byt_EXPERTEM
 {
     partial class CallHelp
     {
@@ -92,7 +92,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = global::Ekonomikare.Properties.Resources.skovyKolo;
+            this.pictureBox1.BackgroundImage = global::Chcete_byt_EXPERTEM.Properties.Resources.skovyKolo;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(76, 54);
             this.pictureBox1.Name = "pictureBox1";
@@ -125,7 +125,7 @@
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.BackgroundImage = global::Ekonomikare.Properties.Resources.skovyKolo;
+            this.pictureBox3.BackgroundImage = global::Chcete_byt_EXPERTEM.Properties.Resources.skovyKolo;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox3.Location = new System.Drawing.Point(76, 375);
             this.pictureBox3.Name = "pictureBox3";
@@ -213,7 +213,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.BackgroundImage = global::Ekonomikare.Properties.Resources.telefon;
+            this.panel1.BackgroundImage = global::Chcete_byt_EXPERTEM.Properties.Resources.telefon;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Controls.Add(this.guna2Button2);
             this.panel1.Controls.Add(this.guna2Button1);
@@ -227,7 +227,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
-            this.BackgroundImage = global::Ekonomikare.Properties.Resources.backgroundCallwindow;
+            this.BackgroundImage = global::Chcete_byt_EXPERTEM.Properties.Resources.backgroundCallwindow;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1149, 711);
             this.Controls.Add(this.panel1);

@@ -11,7 +11,7 @@ using System.Windows.Forms;
 using Guna.UI2.WinForms;
 using System.Threading;
 
-namespace Ekonomikare
+namespace Chcete_byt_EXPERTEM
 {
     public partial class CallHelp : Form
     {

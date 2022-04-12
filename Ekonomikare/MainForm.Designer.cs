@@ -1,7 +1,7 @@
 ﻿
 using System.Threading;
 
-namespace Ekonomikare
+namespace Chcete_byt_EXPERTEM
 {
     partial class MainForm
     {
@@ -61,7 +61,7 @@ namespace Ekonomikare
             // button_menu
             // 
             this.button_menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
-            this.button_menu.BackgroundImage = global::Ekonomikare.Properties.Resources.MENU;
+            this.button_menu.BackgroundImage = global::Chcete_byt_EXPERTEM.Properties.Resources.MENU;
             this.button_menu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button_menu.Cursor = System.Windows.Forms.Cursors.Default;
             this.button_menu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
@@ -89,7 +89,7 @@ namespace Ekonomikare
             // 
             // panel2
             // 
-            this.panel2.BackgroundImage = global::Ekonomikare.Properties.Resources.postup0;
+            this.panel2.BackgroundImage = global::Chcete_byt_EXPERTEM.Properties.Resources.postup0;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel2.Location = new System.Drawing.Point(1556, 294);
             this.panel2.Name = "panel2";
@@ -186,7 +186,7 @@ namespace Ekonomikare
             // button_exit
             // 
             this.button_exit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
-            this.button_exit.BackgroundImage = global::Ekonomikare.Properties.Resources.exit;
+            this.button_exit.BackgroundImage = global::Chcete_byt_EXPERTEM.Properties.Resources.exit;
             this.button_exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button_exit.Location = new System.Drawing.Point(82, 36);
             this.button_exit.Name = "button_exit";
@@ -253,7 +253,7 @@ namespace Ekonomikare
             // button_CallHelp
             // 
             this.button_CallHelp.BackColor = System.Drawing.Color.Transparent;
-            this.button_CallHelp.BackgroundImage = global::Ekonomikare.Properties.Resources.call;
+            this.button_CallHelp.BackgroundImage = global::Chcete_byt_EXPERTEM.Properties.Resources.call;
             this.button_CallHelp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button_CallHelp.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button_CallHelp.FlatAppearance.BorderSize = 0;
@@ -270,7 +270,7 @@ namespace Ekonomikare
             // button_HelpAudiance
             // 
             this.button_HelpAudiance.BackColor = System.Drawing.Color.Transparent;
-            this.button_HelpAudiance.BackgroundImage = global::Ekonomikare.Properties.Resources.audience;
+            this.button_HelpAudiance.BackgroundImage = global::Chcete_byt_EXPERTEM.Properties.Resources.audience;
             this.button_HelpAudiance.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button_HelpAudiance.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button_HelpAudiance.FlatAppearance.BorderSize = 0;
@@ -287,7 +287,7 @@ namespace Ekonomikare
             // button_5050
             // 
             this.button_5050.BackColor = System.Drawing.Color.Transparent;
-            this.button_5050.BackgroundImage = global::Ekonomikare.Properties.Resources.a5050;
+            this.button_5050.BackgroundImage = global::Chcete_byt_EXPERTEM.Properties.Resources.a5050;
             this.button_5050.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button_5050.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button_5050.FlatAppearance.BorderSize = 0;
@@ -304,7 +304,7 @@ namespace Ekonomikare
             // button_otazka
             // 
             this.button_otazka.BackColor = System.Drawing.Color.Transparent;
-            this.button_otazka.BackgroundImage = global::Ekonomikare.Properties.Resources.odpovedDark;
+            this.button_otazka.BackgroundImage = global::Chcete_byt_EXPERTEM.Properties.Resources.odpovedDark;
             this.button_otazka.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button_otazka.Enabled = false;
             this.button_otazka.Font = new System.Drawing.Font("Yu Gothic Medium", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -350,7 +350,7 @@ namespace Ekonomikare
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.BackgroundImage = global::Ekonomikare.Properties.Resources.Background;
+            this.BackgroundImage = global::Chcete_byt_EXPERTEM.Properties.Resources.Background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1920, 1080);
             this.Controls.Add(this.panel1);

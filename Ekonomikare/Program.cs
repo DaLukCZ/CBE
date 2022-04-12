@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Ekonomikare
+namespace Chcete_byt_EXPERTEM
 {
     static class Program
     {

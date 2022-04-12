@@ -4,7 +4,7 @@ using System.Drawing;
 using System.Media;
 using System.Windows.Forms;
 
-namespace Ekonomikare
+namespace Chcete_byt_EXPERTEM
 {
     public partial class Menu : Form
     {

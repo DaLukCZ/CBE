@@ -1,4 +1,4 @@
-﻿using Milionar;
+﻿using Chcete_byt_EXPERTEM;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -7,7 +7,7 @@ using System.Threading;
 using System.Windows.Forms;
 
 
-namespace Ekonomikare
+namespace Chcete_byt_EXPERTEM
 {
 
     public partial class MainForm : Form

@@ -1,4 +1,4 @@
-﻿namespace Ekonomikare
+﻿namespace Chcete_byt_EXPERTEM
 {
     partial class Victory
     {
@@ -122,7 +122,7 @@
             // button_CallHelp
             // 
             this.button_CallHelp.BackColor = System.Drawing.Color.Transparent;
-            this.button_CallHelp.BackgroundImage = global::Ekonomikare.Properties.Resources.call;
+            this.button_CallHelp.BackgroundImage = global::Chcete_byt_EXPERTEM.Properties.Resources.call;
             this.button_CallHelp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button_CallHelp.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button_CallHelp.FlatAppearance.BorderSize = 0;
@@ -138,7 +138,7 @@
             // button_HelpAudiance
             // 
             this.button_HelpAudiance.BackColor = System.Drawing.Color.Transparent;
-            this.button_HelpAudiance.BackgroundImage = global::Ekonomikare.Properties.Resources.audience;
+            this.button_HelpAudiance.BackgroundImage = global::Chcete_byt_EXPERTEM.Properties.Resources.audience;
             this.button_HelpAudiance.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button_HelpAudiance.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button_HelpAudiance.FlatAppearance.BorderSize = 0;
@@ -154,7 +154,7 @@
             // button_5050
             // 
             this.button_5050.BackColor = System.Drawing.Color.Transparent;
-            this.button_5050.BackgroundImage = global::Ekonomikare.Properties.Resources.a5050;
+            this.button_5050.BackgroundImage = global::Chcete_byt_EXPERTEM.Properties.Resources.a5050;
             this.button_5050.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button_5050.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button_5050.FlatAppearance.BorderSize = 0;
@@ -208,9 +208,9 @@
             this.NameObor.BackColor = System.Drawing.Color.Transparent;
             this.NameObor.Font = new System.Drawing.Font("Georgia", 34F, System.Drawing.FontStyle.Bold);
             this.NameObor.ForeColor = System.Drawing.Color.White;
-            this.NameObor.Location = new System.Drawing.Point(682, 212);
+            this.NameObor.Location = new System.Drawing.Point(682, 198);
             this.NameObor.Name = "NameObor";
-            this.NameObor.Size = new System.Drawing.Size(565, 50);
+            this.NameObor.Size = new System.Drawing.Size(565, 80);
             this.NameObor.TabIndex = 50;
             this.NameObor.Text = "EXPERTEM";
             this.NameObor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

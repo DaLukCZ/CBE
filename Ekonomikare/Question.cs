@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Milionar
+namespace Chcete_byt_EXPERTEM
 {
     class Question
     {
