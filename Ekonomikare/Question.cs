@@ -15,6 +15,7 @@ namespace Chcete_byt_EXPERTEM
         public string question;
         public string[] answers = new string[4];
         public int rightAnswer;
+        public string obor;
 
         public Question(int step, string question, string[] answers, int rightAnswer)
         {

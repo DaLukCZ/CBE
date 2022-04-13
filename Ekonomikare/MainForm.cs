@@ -471,6 +471,10 @@ namespace Chcete_byt_EXPERTEM
                 }
             }
         }
+        public void readDatabase()
+        {
+            
+        }
 
         //odpoved1
         private void button_Answer1_Click(object sender, EventArgs e)
