@@ -16,6 +16,7 @@ namespace Chcete_byt_EXPERTEM
         public string odpoved_4 { get; set; }
         public int spravna_odpoved { get; set; }
         public string obor { get; set; }
+        public string obor_nazev { get; set; }
         public int obtiznost { get; set; }
     }
 }

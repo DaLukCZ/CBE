@@ -36,6 +36,7 @@ namespace Chcete_byt_EXPERTEM
             this.Contienue = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.button_testy = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,7 +52,7 @@ namespace Chcete_byt_EXPERTEM
             this.button_Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Exit.Font = new System.Drawing.Font("Calibri", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button_Exit.ForeColor = System.Drawing.Color.White;
-            this.button_Exit.Location = new System.Drawing.Point(75, 750);
+            this.button_Exit.Location = new System.Drawing.Point(78, 795);
             this.button_Exit.Name = "button_Exit";
             this.button_Exit.Size = new System.Drawing.Size(600, 100);
             this.button_Exit.TabIndex = 14;
@@ -91,7 +92,7 @@ namespace Chcete_byt_EXPERTEM
             this.button_settings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_settings.Font = new System.Drawing.Font("Calibri", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button_settings.ForeColor = System.Drawing.Color.White;
-            this.button_settings.Location = new System.Drawing.Point(75, 600);
+            this.button_settings.Location = new System.Drawing.Point(75, 565);
             this.button_settings.Name = "button_settings";
             this.button_settings.Size = new System.Drawing.Size(600, 100);
             this.button_settings.TabIndex = 16;
@@ -140,6 +141,26 @@ namespace Chcete_byt_EXPERTEM
             this.label1.Text = "EXPERTEM";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // button_testy
+            // 
+            this.button_testy.AutoSize = true;
+            this.button_testy.BackColor = System.Drawing.Color.Transparent;
+            this.button_testy.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_testy.BackgroundImage")));
+            this.button_testy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button_testy.FlatAppearance.BorderSize = 0;
+            this.button_testy.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button_testy.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button_testy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_testy.Font = new System.Drawing.Font("Calibri", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button_testy.ForeColor = System.Drawing.Color.White;
+            this.button_testy.Location = new System.Drawing.Point(75, 680);
+            this.button_testy.Name = "button_testy";
+            this.button_testy.Size = new System.Drawing.Size(600, 100);
+            this.button_testy.TabIndex = 19;
+            this.button_testy.Text = "Testy";
+            this.button_testy.UseVisualStyleBackColor = false;
+            this.button_testy.Click += new System.EventHandler(this.button_testy_Click);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -148,6 +169,7 @@ namespace Chcete_byt_EXPERTEM
             this.BackgroundImage = global::Chcete_byt_EXPERTEM.Properties.Resources.backgroundPhotocrop;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(750, 911);
+            this.Controls.Add(this.button_testy);
             this.Controls.Add(this.Contienue);
             this.Controls.Add(this.button_Start);
             this.Controls.Add(this.panel1);
@@ -178,5 +200,6 @@ namespace Chcete_byt_EXPERTEM
         private System.Windows.Forms.Button Contienue;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button_testy;
     }
 }

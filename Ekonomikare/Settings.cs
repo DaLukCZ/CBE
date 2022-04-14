@@ -107,12 +107,12 @@ namespace Chcete_byt_EXPERTEM
                 FormHandler.victory.noDalsi(dropDown.Text);
                 FormHandler.menu.setText(dropDown.Text.ToUpper());
                 FormHandler.main.setText(dropDown.Text.ToUpper());
-                FormHandler.victory.setOborName(textBox.Text.ToUpper());
+                //FormHandler.victory.setOborName(textBox.Text.ToUpper());
             }
             else
             {
-                buttonAplikovat.Visible = true;
-                textBox.Visible = true;
+                //buttonAplikovat.Visible = true;
+                //textBox.Visible = true;
                 FormHandler.main.setOtazky("Testy/Jiné_testy.csv");
                 FormHandler.main.clearQuestions();
                 FormHandler.main.readTXT();
@@ -121,7 +121,7 @@ namespace Chcete_byt_EXPERTEM
             FormHandler.main.restart();
         }
 
-        private void buttonAplikovat_Click(object sender, EventArgs e)
+       /* private void buttonAplikovat_Click(object sender, EventArgs e)
         {
             if (textBox.Text != "" && textBox.Text.Length < 15)
             {
@@ -148,7 +148,7 @@ namespace Chcete_byt_EXPERTEM
             {
                 MessageBox.Show("Prosím zadejte název", "Nebyl zadán název");
             }
-        }
+        }*/
 
         private void checkBox5050_CheckedChanged(object sender, EventArgs e)
         {

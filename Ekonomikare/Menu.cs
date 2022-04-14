@@ -89,5 +89,12 @@ namespace Chcete_byt_EXPERTEM
         {
             music.Stop();
         }
+
+        private void button_testy_Click(object sender, EventArgs e)
+        {
+            FormHandler.dataBase.Show();
+            music.Stop();
+            this.Hide();
+        }
     }
 }

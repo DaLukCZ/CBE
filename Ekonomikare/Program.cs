@@ -16,7 +16,7 @@ namespace Chcete_byt_EXPERTEM
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Database());
+            Application.Run(new Menu());
         }
     }
 }
