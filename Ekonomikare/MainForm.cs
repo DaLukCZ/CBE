@@ -13,6 +13,8 @@ namespace Chcete_byt_EXPERTEM
     public partial class MainForm : Form
     {
 
+        private static List<QuestionHelper> _questions = new List<QuestionHelper>();
+
         protected override CreateParams CreateParams
         {
             get
@@ -42,7 +44,9 @@ namespace Chcete_byt_EXPERTEM
             InitializeComponent();
             FormBorderStyle = FormBorderStyle.None; ;
             WindowState = FormWindowState.Maximized;
-            readTXT();
+
+
+            readDatabase();
             showQuestion();
             transparent();
         }
@@ -458,10 +462,10 @@ namespace Chcete_byt_EXPERTEM
                     if (hodnoty1.Count == 7)
                     {
                         addQuestion(
-                            int.Parse(hodnoty1[0]),
-                            hodnoty1[1],
-                            new string[4] { hodnoty1[2], hodnoty1[3], hodnoty1[4], hodnoty1[5] },
-                            int.Parse(hodnoty1[6])
+                                int.Parse(hodnoty1[0]),
+                                hodnoty1[1],
+                                new string[4] { hodnoty1[2], hodnoty1[3], hodnoty1[4], hodnoty1[5] },
+                                int.Parse(hodnoty1[6])
                             );
                     }
                     else
@@ -471,9 +475,21 @@ namespace Chcete_byt_EXPERTEM
                 }
             }
         }
-        public void readDatabase()
+        public void readDatabase(string obor = "Expertem")
         {
-            
+
+            _questions = DatabaseHelper.GetQuestions(obor);
+
+            foreach(QuestionHelper helper in _questions)
+            {
+                addQuestion(
+                        helper.obtiznost,
+                                helper.otazka,
+                                new string[4] { helper.odpoved_1, helper.odpoved_2, helper.odpoved_3, helper.odpoved_4 },
+                                helper.spravna_odpoved
+                    );
+
+            }
         }
 
         //odpoved1

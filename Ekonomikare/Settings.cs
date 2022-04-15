@@ -17,6 +17,8 @@ namespace Chcete_byt_EXPERTEM
     {
         private List<bool> booleany = new List<bool>();
         public string obor;
+        List<ScopesHelper> scopes = new List<ScopesHelper>();
+
 
         public Settings()
         {
@@ -67,6 +69,7 @@ namespace Chcete_byt_EXPERTEM
         private void Settings_Load(object sender, EventArgs e)
         {
             read();
+            fillComboBox();
         }
 
         public void addBool(bool B)
@@ -98,57 +101,76 @@ namespace Chcete_byt_EXPERTEM
 
         private void dropDown_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (dropDown.Text != "Jiné")
+            if (dropDown.Text != "Expertem")
             {
-                FormHandler.main.setOtazky("Testy/" + dropDown.Text + "_testy.csv");
+                //FormHandler.main.setOtazky("Testy/" + dropDown.Text + "_testy.csv");
                 FormHandler.main.clearQuestions();
-                FormHandler.main.readTXT();
+                FormHandler.main.readDatabase(dropDown.Text);
                 FormHandler.menu.contie(false);
                 FormHandler.victory.noDalsi(dropDown.Text);
                 FormHandler.menu.setText(dropDown.Text.ToUpper());
                 FormHandler.main.setText(dropDown.Text.ToUpper());
-                //FormHandler.victory.setOborName(textBox.Text.ToUpper());
             }
             else
             {
                 //buttonAplikovat.Visible = true;
                 //textBox.Visible = true;
-                FormHandler.main.setOtazky("Testy/Jiné_testy.csv");
+                //FormHandler.main.setOtazky("Testy/Jiné_testy.csv");
                 FormHandler.main.clearQuestions();
-                FormHandler.main.readTXT();
+                FormHandler.main.readDatabase(dropDown.Text);                
                 FormHandler.menu.contie(false);
             }
             FormHandler.main.restart();
         }
 
-       /* private void buttonAplikovat_Click(object sender, EventArgs e)
+        public void fillComboBox()
         {
-            if (textBox.Text != "" && textBox.Text.Length < 15)
+            try
             {
-                FormHandler.victory.noDalsi(textBox.Text);
-                FormHandler.menu.setText(textBox.Text.ToUpper());
-                FormHandler.main.setText(textBox.Text.ToUpper());
-                FormHandler.victory.setOborName(textBox.Text.ToUpper());
-                buttonAplikovat.Visible = false;
-                textBox.Visible = false;
+                scopes = DatabaseHelper.getScopes();
+
+                dropDown.Items.Clear();
+                foreach (ScopesHelper scHelper in scopes)
+                {
+                    dropDown.Items.Add(scHelper.obor_nazev);
+                }
+                dropDown.Items.Add("Expertem");
+                dropDown.Update();
             }
-            else if (textBox.Text.Length >= 15 && textBox.Text.Length < 16)
+            catch (ArgumentNullException ex)
             {
-                MessageBox.Show("Překročil jste název o " + (textBox.Text.Length - 14) + " znak. Maximálně 14 znaků", "Příliš dlouhý název!");
+                MessageBox.Show(ex.Message);
             }
-            else if (textBox.Text.Length >= 16 && textBox.Text.Length < 19)
-            {
-                MessageBox.Show("Překročil jste název o " + (textBox.Text.Length - 14) + " znaky. Maximálně 14 znaků", "Příliš dlouhý název!");
-            }
-            else if (textBox.Text.Length >= 19)
-            {
-                MessageBox.Show("Překročil jste název o " + (textBox.Text.Length - 14) + " znaků. Maximálně 14 znaků", "Příliš dlouhý název!");
-            }
-            else
-            {
-                MessageBox.Show("Prosím zadejte název", "Nebyl zadán název");
-            }
-        }*/
+        }
+
+        /* private void buttonAplikovat_Click(object sender, EventArgs e)
+         {
+             if (textBox.Text != "" && textBox.Text.Length < 15)
+             {
+                 FormHandler.victory.noDalsi(textBox.Text);
+                 FormHandler.menu.setText(textBox.Text.ToUpper());
+                 FormHandler.main.setText(textBox.Text.ToUpper());
+                 FormHandler.victory.setOborName(textBox.Text.ToUpper());
+                 buttonAplikovat.Visible = false;
+                 textBox.Visible = false;
+             }
+             else if (textBox.Text.Length >= 15 && textBox.Text.Length < 16)
+             {
+                 MessageBox.Show("Překročil jste název o " + (textBox.Text.Length - 14) + " znak. Maximálně 14 znaků", "Příliš dlouhý název!");
+             }
+             else if (textBox.Text.Length >= 16 && textBox.Text.Length < 19)
+             {
+                 MessageBox.Show("Překročil jste název o " + (textBox.Text.Length - 14) + " znaky. Maximálně 14 znaků", "Příliš dlouhý název!");
+             }
+             else if (textBox.Text.Length >= 19)
+             {
+                 MessageBox.Show("Překročil jste název o " + (textBox.Text.Length - 14) + " znaků. Maximálně 14 znaků", "Příliš dlouhý název!");
+             }
+             else
+             {
+                 MessageBox.Show("Prosím zadejte název", "Nebyl zadán název");
+             }
+         }*/
 
         private void checkBox5050_CheckedChanged(object sender, EventArgs e)
         {

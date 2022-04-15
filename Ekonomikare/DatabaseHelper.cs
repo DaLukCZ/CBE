@@ -28,6 +28,58 @@ namespace Chcete_byt_EXPERTEM
             }
         }
 
+        public static List<QuestionHelper> GetQuestions(string obor)
+        {
+            using (SQLiteConnection conn = new SQLiteConnection(LoadConnectionString()))
+            {
+                try
+                {
+                    if(obor == "Expertem" || obor == "")
+                    {
+                        conn.Open();
+                        var result = conn.Query<QuestionHelper>("select * from Testy", new DynamicParameters());
+                        return result.ToList();
+                    }
+                    else
+                    {
+                        conn.Open();
+                        SQLiteCommand cmd = new SQLiteCommand(conn);
+                        cmd.CommandText = "SELECT * FROM Testy WHERE obor = @obor";
+                        cmd.Prepare();
+                        cmd.Parameters.AddWithValue("@obor", obor);
+
+                        SQLiteDataReader dr = cmd.ExecuteReader();
+
+                        List<QuestionHelper> result = new List<QuestionHelper>();
+
+                        while(dr.Read())
+                        {
+                            QuestionHelper question = new QuestionHelper();
+                            question.otazka = dr["otazka"].ToString();
+                            question.obor = dr["obor"].ToString();
+                            question.odpoved_1 = dr["odpoved_1"].ToString();
+                            question.odpoved_2 = dr["odpoved_2"].ToString();
+                            question.odpoved_3 = dr["odpoved_3"].ToString();
+                            question.odpoved_4 = dr["odpoved_4"].ToString();
+                            question.spravna_odpoved = Int32.Parse(dr["spravna_odpoved"].ToString());
+                            question.obtiznost = Int32.Parse(dr["obtiznost"].ToString());
+                            result.Add(question);
+                        }
+                        return result;
+                    }
+                    
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                    return null;
+                }finally
+                {
+                    conn.Close();
+                }
+            }
+        }
+
         public static void SaveQuestion(QuestionHelper helper)
         {
             using (SQLiteConnection conn = new SQLiteConnection(LoadConnectionString()))
@@ -151,7 +203,27 @@ namespace Chcete_byt_EXPERTEM
                 try
                 {
                     conn.Open();
-                    conn.Execute("DELETE FROM Testy WHERE id = @id", helper);
+
+                    /*
+                    string sql = "SELECT COUNT(*) FROM Testy WHERE obor = @obor";
+                    SQLiteCommand command = new SQLiteCommand(sql, conn);
+                    command.Prepare();
+                    command.Parameters.AddWithValue("@obor", helper.obor);
+
+                    SQLiteDataReader reader = command.ExecuteReader();
+                    reader.Read();
+                    Console.WriteLine(reader.GetInt32(0));
+                    if (reader.GetInt32(0) == 1)
+                    {
+                        string sql2 = "DELETE FROM Obory WHERE obor_nazev = @obor_nazev";
+                        SQLiteCommand cmd = new SQLiteCommand(sql2, conn);
+                        cmd.Prepare();
+                        cmd.Parameters.AddWithValue("@obor_nazev", helper.obor);
+                        cmd.ExecuteNonQuery();
+                    }*/
+
+                    var result = conn.Execute("DELETE FROM Testy WHERE id = @id", helper);                                 
+
                 }
                 catch (Exception ex)
                 {

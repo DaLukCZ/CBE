@@ -94,7 +94,6 @@ namespace Chcete_byt_EXPERTEM
                 foreach (ScopesHelper scHelper in scopes)
                 {
                     dropDown.Items.Add(scHelper.obor_nazev);
-                    Console.WriteLine(scHelper.obor_nazev);
                 }
                 dropDown.Items.Add("Všechny");
                 dropDown.Update();
