@@ -16,7 +16,6 @@ namespace Chcete_byt_EXPERTEM
     public partial class Database : Form
     {
         List<QuestionHelper> questions = new List<QuestionHelper>();
-        List<ScopesHelper> scopes = new List<ScopesHelper>();
 
 
         public Database()
@@ -28,7 +27,6 @@ namespace Chcete_byt_EXPERTEM
 
             //TODO: pokusit se to spustit ve vlastnich vlaknech
             LoadQuestions();
-            fillComboBox();
 
         }
 
@@ -39,27 +37,6 @@ namespace Chcete_byt_EXPERTEM
                 CreateParams handleParams = base.CreateParams;
                 handleParams.ExStyle |= 0x02000000;
                 return handleParams;
-            }
-        }
-
-        private void fillComboBox()
-        {
-            try
-            {
-                scopes = DatabaseHelper.getScopes();
-
-
-                dropDown.Items.Clear();
-                foreach (ScopesHelper scHelper in scopes)
-                {
-                    dropDown.Items.Add(scHelper.obor_nazev);
-                    Console.WriteLine(scHelper.obor_nazev);
-                }
-                dropDown.Items.Add("Všechny");
-                dropDown.Update();
-            }catch (ArgumentNullException ex)
-            {
-                MessageBox.Show(ex.Message);
             }
         }
 
@@ -97,7 +74,7 @@ namespace Chcete_byt_EXPERTEM
             {
                 foreach(QuestionHelper questionHelper in questions)
                 {
-                    dataGridView1.Rows.Add(questionHelper.otazka, questionHelper.odpoved_1, questionHelper.odpoved_2, questionHelper.odpoved_3, questionHelper.odpoved_4, questionHelper.spravna_odpoved, questionHelper.obor_nazev, questionHelper.obtiznost, questionHelper.obor, questionHelper.id);
+                    dataGridView1.Rows.Add(questionHelper.otazka, questionHelper.odpoved_1, questionHelper.odpoved_2, questionHelper.odpoved_3, questionHelper.odpoved_4, questionHelper.spravna_odpoved, questionHelper.obor, questionHelper.obtiznost, questionHelper.obor, questionHelper.id);
                 }
 
             }
@@ -130,20 +107,10 @@ namespace Chcete_byt_EXPERTEM
 
                 if (quesId.Text == "")
                 {                 
-                    DatabaseHelper.SaveQuestion(questionHelper);
+                    //DatabaseHelper.SaveQuestion(questionHelper);
                     LoadQuestions();
                     clear();
-                    fillComboBox();
-                }
-                else
-                {
-                    //update stare otazky
-                    questionHelper.id = Int32.Parse(quesId.Text);
-                    DatabaseHelper.UpdateQuestion(questionHelper);
-                    LoadQuestions();
-                    clear();
-                    fillComboBox();
-                }                
+                }           
             }
     }
 
@@ -343,30 +310,6 @@ namespace Chcete_byt_EXPERTEM
         {
             List<Guna2CustomCheckBox> boxy = new List<Guna2CustomCheckBox>(new Guna2CustomCheckBox[] { checkBox1, checkBox2, checkBox3, checkBox4 });
             
-            if (e.RowIndex >= 0 && dataGridView1.Rows[e.RowIndex].Cells[9].Value != null)
-            {
-                try
-                {
-                    int id = Int32.Parse(dataGridView1.Rows[e.RowIndex].Cells[9].Value.ToString());
-                    var quest = DatabaseHelper.getQuestion(id);
-                    ScopesHelper scp = DatabaseHelper.getScopeById(Int32.Parse(quest.obor));
-                    clear();
-                    quesId.Text = quest.id.ToString();
-                    Otazka.Text = quest.otazka;
-                    odpoved1.Text = quest.odpoved_1;
-                    odpoved2.Text = quest.odpoved_2;
-                    odpoved3.Text = quest.odpoved_3;
-                    odpoved4.Text = quest.odpoved_4;
-                    obor.Text = scp.obor_nazev;
-                    obtiznost.Text = quest.obtiznost.ToString();
-                    boxy[quest.spravna_odpoved - 1].Checked = true;
-
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -381,7 +324,7 @@ namespace Chcete_byt_EXPERTEM
                 int id = Int32.Parse(quesId.Text);
                 QuestionHelper helper = new QuestionHelper();
                 helper.id = id;
-                DatabaseHelper.DeleteQuestion(helper);
+                //DatabaseHelper.DeleteQuestion(helper);
 
             }
             catch (Exception ex)
