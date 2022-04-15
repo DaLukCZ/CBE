@@ -9,6 +9,7 @@ namespace Chcete_byt_EXPERTEM
     internal class ScopesHelper
     {
         public int obor_id { get; set; }
+
         public string obor_nazev { get; set; }
 
     }

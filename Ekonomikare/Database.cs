@@ -29,7 +29,6 @@ namespace Chcete_byt_EXPERTEM
             //TODO: pokusit se to spustit ve vlastnich vlaknech
             LoadQuestions();
             fillComboBox();
-
         }
 
         protected override CreateParams CreateParams
@@ -39,27 +38,6 @@ namespace Chcete_byt_EXPERTEM
                 CreateParams handleParams = base.CreateParams;
                 handleParams.ExStyle |= 0x02000000;
                 return handleParams;
-            }
-        }
-
-        private void fillComboBox()
-        {
-            try
-            {
-                scopes = DatabaseHelper.getScopes();
-
-
-                dropDown.Items.Clear();
-                foreach (ScopesHelper scHelper in scopes)
-                {
-                    dropDown.Items.Add(scHelper.obor_nazev);
-                    Console.WriteLine(scHelper.obor_nazev);
-                }
-                dropDown.Items.Add("Všechny");
-                dropDown.Update();
-            }catch (ArgumentNullException ex)
-            {
-                MessageBox.Show(ex.Message);
             }
         }
 
@@ -90,18 +68,37 @@ namespace Chcete_byt_EXPERTEM
             dataGridView1.Columns.Add("spravna_odpoved", "Správná odpověd");
             dataGridView1.Columns.Add("Obory.obor_nazev", "Název Oboru");
             dataGridView1.Columns.Add("obtiznost", "Obtížnost");
-            dataGridView1.Columns.Add("obor", "ID Oboru");
             dataGridView1.Columns.Add("id", "ID");
 
             try
             {
                 foreach(QuestionHelper questionHelper in questions)
                 {
-                    dataGridView1.Rows.Add(questionHelper.otazka, questionHelper.odpoved_1, questionHelper.odpoved_2, questionHelper.odpoved_3, questionHelper.odpoved_4, questionHelper.spravna_odpoved, questionHelper.obor_nazev, questionHelper.obtiznost, questionHelper.obor, questionHelper.id);
+                    dataGridView1.Rows.Add(questionHelper.otazka, questionHelper.odpoved_1, questionHelper.odpoved_2, questionHelper.odpoved_3, questionHelper.odpoved_4, questionHelper.spravna_odpoved, questionHelper.obor, questionHelper.obtiznost, questionHelper.id);
                 }
 
             }
             catch (NullReferenceException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void fillComboBox()
+        {
+            try
+            {
+                scopes = DatabaseHelper.getScopes();
+
+                dropDown.Items.Clear();
+                foreach (ScopesHelper scHelper in scopes)
+                {
+                    dropDown.Items.Add(scHelper.obor_nazev);
+                }
+                dropDown.Items.Add("Všechny");
+                dropDown.Update();
+            }
+            catch (ArgumentNullException ex)
             {
                 MessageBox.Show(ex.Message);
             }
@@ -134,16 +131,14 @@ namespace Chcete_byt_EXPERTEM
                     LoadQuestions();
                     clear();
                     fillComboBox();
-                }
-                else
+                }else
                 {
-                    //update stare otazky
                     questionHelper.id = Int32.Parse(quesId.Text);
                     DatabaseHelper.UpdateQuestion(questionHelper);
                     LoadQuestions();
                     clear();
                     fillComboBox();
-                }                
+                }           
             }
     }
 
@@ -342,14 +337,13 @@ namespace Chcete_byt_EXPERTEM
         private void dataGridView1_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             List<Guna2CustomCheckBox> boxy = new List<Guna2CustomCheckBox>(new Guna2CustomCheckBox[] { checkBox1, checkBox2, checkBox3, checkBox4 });
-            
-            if (e.RowIndex >= 0 && dataGridView1.Rows[e.RowIndex].Cells[9].Value != null)
+
+            if (e.RowIndex >= 0 && dataGridView1.Rows[e.RowIndex].Cells[8].Value != null)
             {
                 try
                 {
-                    int id = Int32.Parse(dataGridView1.Rows[e.RowIndex].Cells[9].Value.ToString());
+                    int id = Int32.Parse(dataGridView1.Rows[e.RowIndex].Cells[8].Value.ToString());
                     var quest = DatabaseHelper.getQuestion(id);
-                    ScopesHelper scp = DatabaseHelper.getScopeById(Int32.Parse(quest.obor));
                     clear();
                     quesId.Text = quest.id.ToString();
                     Otazka.Text = quest.otazka;
@@ -357,7 +351,7 @@ namespace Chcete_byt_EXPERTEM
                     odpoved2.Text = quest.odpoved_2;
                     odpoved3.Text = quest.odpoved_3;
                     odpoved4.Text = quest.odpoved_4;
-                    obor.Text = scp.obor_nazev;
+                    obor.Text = quest.obor;
                     obtiznost.Text = quest.obtiznost.ToString();
                     boxy[quest.spravna_odpoved - 1].Checked = true;
 
@@ -379,6 +373,7 @@ namespace Chcete_byt_EXPERTEM
             try
             {
                 int id = Int32.Parse(quesId.Text);
+
                 QuestionHelper helper = new QuestionHelper();
                 helper.id = id;
                 DatabaseHelper.DeleteQuestion(helper);
