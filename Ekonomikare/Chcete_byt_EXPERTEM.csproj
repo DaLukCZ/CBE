@@ -153,6 +153,7 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuestionHelper.cs" />
+    <Compile Include="ScopesHelper.cs" />
     <Compile Include="Settings.cs">
       <SubType>Form</SubType>
     </Compile>
