@@ -80,7 +80,7 @@ namespace Chcete_byt_EXPERTEM
         public void read()
         {
             List<Guna2CustomCheckBox> boxy = new List<Guna2CustomCheckBox>(new Guna2CustomCheckBox[] { checkBox5050, checkBoxRada, checkBoxFriend, checkBoxUčitel });
-            foreach (string line in File.ReadLines("Testy/settings.txt"))
+            foreach (string line in File.ReadLines("settings.txt"))
             {
                 List<string> hodnoty = new List<string>(line.Split(';'));
                 for (int i = 0; i < hodnoty.Count; i++)
@@ -96,16 +96,16 @@ namespace Chcete_byt_EXPERTEM
         public void write()
         {
             string radek = checkBox5050.Checked + ";" + checkBoxRada.Checked + ";" + checkBoxFriend.Checked + ";" + checkBoxUčitel.Checked;
-            File.WriteAllText("Testy/settings.txt", radek);
+            File.WriteAllText("settings.txt", radek);
         }
 
         private void dropDown_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (dropDown.Text != "Expertem")
             {
-                //FormHandler.main.setOtazky("Testy/" + dropDown.Text + "_testy.csv");
                 FormHandler.main.clearQuestions();
                 FormHandler.main.readDatabase(dropDown.Text);
+                FormHandler.main.showQuestion();
                 FormHandler.menu.contie(false);
                 FormHandler.victory.noDalsi(dropDown.Text);
                 FormHandler.menu.setText(dropDown.Text.ToUpper());
@@ -113,11 +113,9 @@ namespace Chcete_byt_EXPERTEM
             }
             else
             {
-                //buttonAplikovat.Visible = true;
-                //textBox.Visible = true;
-                //FormHandler.main.setOtazky("Testy/Jiné_testy.csv");
                 FormHandler.main.clearQuestions();
-                FormHandler.main.readDatabase(dropDown.Text);                
+                FormHandler.main.readDatabase(dropDown.Text);    
+                FormHandler.main.showQuestion();
                 FormHandler.menu.contie(false);
             }
             FormHandler.main.restart();
@@ -142,35 +140,6 @@ namespace Chcete_byt_EXPERTEM
                 MessageBox.Show(ex.Message);
             }
         }
-
-        /* private void buttonAplikovat_Click(object sender, EventArgs e)
-         {
-             if (textBox.Text != "" && textBox.Text.Length < 15)
-             {
-                 FormHandler.victory.noDalsi(textBox.Text);
-                 FormHandler.menu.setText(textBox.Text.ToUpper());
-                 FormHandler.main.setText(textBox.Text.ToUpper());
-                 FormHandler.victory.setOborName(textBox.Text.ToUpper());
-                 buttonAplikovat.Visible = false;
-                 textBox.Visible = false;
-             }
-             else if (textBox.Text.Length >= 15 && textBox.Text.Length < 16)
-             {
-                 MessageBox.Show("Překročil jste název o " + (textBox.Text.Length - 14) + " znak. Maximálně 14 znaků", "Příliš dlouhý název!");
-             }
-             else if (textBox.Text.Length >= 16 && textBox.Text.Length < 19)
-             {
-                 MessageBox.Show("Překročil jste název o " + (textBox.Text.Length - 14) + " znaky. Maximálně 14 znaků", "Příliš dlouhý název!");
-             }
-             else if (textBox.Text.Length >= 19)
-             {
-                 MessageBox.Show("Překročil jste název o " + (textBox.Text.Length - 14) + " znaků. Maximálně 14 znaků", "Příliš dlouhý název!");
-             }
-             else
-             {
-                 MessageBox.Show("Prosím zadejte název", "Nebyl zadán název");
-             }
-         }*/
 
         private void checkBox5050_CheckedChanged(object sender, EventArgs e)
         {

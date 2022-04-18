@@ -86,6 +86,7 @@ namespace Chcete_byt_EXPERTEM
 
         private void fillComboBox()
         {
+            var selectedItem = obor.Text;
             try
             {
                 scopes = DatabaseHelper.getScopes();
@@ -97,6 +98,14 @@ namespace Chcete_byt_EXPERTEM
                 }
                 dropDown.Items.Add("Všechny");
                 dropDown.Update();
+                try
+                {
+                    dropDown.SelectedItem = selectedItem;
+                }
+                catch
+                {
+
+                }
             }
             catch (ArgumentNullException ex)
             {
@@ -129,18 +138,20 @@ namespace Chcete_byt_EXPERTEM
                 {                 
                     DatabaseHelper.SaveQuestion(questionHelper);
                     LoadQuestions();
-                    clear();
+                    smallClear();
                     fillComboBox();
-                }else
+                }
+                else
                 {
                     questionHelper.id = Int32.Parse(quesId.Text);
                     DatabaseHelper.UpdateQuestion(questionHelper);
                     LoadQuestions();
-                    clear();
+                    fullClear();
                     fillComboBox();
                 }           
             }
-    }
+            FormHandler.settings.fillComboBox();
+        }
 
         private bool checkOtazka(string otazka)
         {
@@ -230,7 +241,7 @@ namespace Chcete_byt_EXPERTEM
         }
 
 
-        private void clear()
+        private void fullClear()
         {
             Otazka.Text = "";
             odpoved1.Text = "";
@@ -238,6 +249,20 @@ namespace Chcete_byt_EXPERTEM
             odpoved3.Text = "";
             odpoved4.Text = "";
             obor.Text = "";
+            obtiznost.Text = "";
+            checkBox1.Checked = false;
+            checkBox2.Checked = false;
+            checkBox3.Checked = false;
+            checkBox4.Checked = false;
+            quesId.Text = "";
+        }
+        private void smallClear()
+        {
+            Otazka.Text = "";
+            odpoved1.Text = "";
+            odpoved2.Text = "";
+            odpoved3.Text = "";
+            odpoved4.Text = "";
             obtiznost.Text = "";
             checkBox1.Checked = false;
             checkBox2.Checked = false;
@@ -344,7 +369,7 @@ namespace Chcete_byt_EXPERTEM
                 {
                     int id = Int32.Parse(dataGridView1.Rows[e.RowIndex].Cells[8].Value.ToString());
                     var quest = DatabaseHelper.getQuestion(id);
-                    clear();
+                    fullClear();
                     quesId.Text = quest.id.ToString();
                     Otazka.Text = quest.otazka;
                     odpoved1.Text = quest.odpoved_1;
@@ -365,7 +390,7 @@ namespace Chcete_byt_EXPERTEM
 
         private void button1_Click(object sender, EventArgs e)
         {
-            clear();
+            fullClear();
         }
 
         private void button2_Click_1(object sender, EventArgs e)
@@ -386,12 +411,20 @@ namespace Chcete_byt_EXPERTEM
             finally
             {
                 LoadQuestions();
-                clear();
+                fullClear();
             }
         }
 
         private void dropDown_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (dropDown.SelectedItem != "Všechny")
+            {
+                obor.Text = dropDown.SelectedItem + "";
+            }
+            else
+            {
+                obor.Text = "";
+            }
             LoadQuestions();
         }
     }

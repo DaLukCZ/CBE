@@ -93,7 +93,7 @@ namespace Chcete_byt_EXPERTEM
         }
 
         //zobrazOtazku
-        private void showQuestion()
+        public void showQuestion()
         {
             buttonek = 5;
             resetColor();
@@ -484,11 +484,10 @@ namespace Chcete_byt_EXPERTEM
             {
                 addQuestion(
                         helper.obtiznost,
-                                helper.otazka,
-                                new string[4] { helper.odpoved_1, helper.odpoved_2, helper.odpoved_3, helper.odpoved_4 },
-                                helper.spravna_odpoved
-                    );
-
+                        helper.otazka,
+                        new string[4] { helper.odpoved_1, helper.odpoved_2, helper.odpoved_3, helper.odpoved_4 },
+                        helper.spravna_odpoved
+                           );
             }
         }
 

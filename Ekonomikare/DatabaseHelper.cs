@@ -81,7 +81,7 @@ namespace Chcete_byt_EXPERTEM
         }
 
         public static void SaveQuestion(QuestionHelper helper)
-        {
+        { 
             using (SQLiteConnection conn = new SQLiteConnection(LoadConnectionString()))
             {
                 try
@@ -100,10 +100,7 @@ namespace Chcete_byt_EXPERTEM
                     cmd.Parameters.AddWithValue("@obtiznost", helper.obtiznost);
                     cmd.ExecuteNonQuery();
 
-                    if(oborExists(helper))
-                    {
-                        Console.WriteLine("obor existuje");
-                    }else
+                    if(!oborExists(helper))
                     {
                         string sql2 = "INSERT INTO Obory (obor_nazev) VALUES (@obor_nazev)";
                         SQLiteCommand cmd2 = new SQLiteCommand(sql2, conn);
@@ -130,7 +127,6 @@ namespace Chcete_byt_EXPERTEM
             {
                 try
                 {
-                    Console.WriteLine(helper.obor);
                     conn.Open();
                     string sql = "SELECT * FROM Obory WHERE obor_nazev = @obor";
                     SQLiteCommand command = new SQLiteCommand(sql, conn);
@@ -172,11 +168,7 @@ namespace Chcete_byt_EXPERTEM
 
                     conn.Execute("update Testy set otazka = @otazka, odpoved_1 = @odpoved_1, odpoved_2 = @odpoved_2, odpoved_3 = @odpoved_3, odpoved_4 = @odpoved_4, spravna_odpoved = @spravna_odpoved, obor = @obor, obtiznost = @obtiznost WHERE id = @id", helper);
 
-                    if (oborExists(helper))
-                    {
-                        Console.WriteLine("obor existuje");
-                    }
-                    else
+                    if (!oborExists(helper))
                     {
                         string sql2 = "INSERT INTO Obory (obor_nazev) VALUES (@obor_nazev)";
                         SQLiteCommand cmd2 = new SQLiteCommand(sql2, conn);
@@ -203,25 +195,6 @@ namespace Chcete_byt_EXPERTEM
                 try
                 {
                     conn.Open();
-
-                    /*
-                    string sql = "SELECT COUNT(*) FROM Testy WHERE obor = @obor";
-                    SQLiteCommand command = new SQLiteCommand(sql, conn);
-                    command.Prepare();
-                    command.Parameters.AddWithValue("@obor", helper.obor);
-
-                    SQLiteDataReader reader = command.ExecuteReader();
-                    reader.Read();
-                    Console.WriteLine(reader.GetInt32(0));
-                    if (reader.GetInt32(0) == 1)
-                    {
-                        string sql2 = "DELETE FROM Obory WHERE obor_nazev = @obor_nazev";
-                        SQLiteCommand cmd = new SQLiteCommand(sql2, conn);
-                        cmd.Prepare();
-                        cmd.Parameters.AddWithValue("@obor_nazev", helper.obor);
-                        cmd.ExecuteNonQuery();
-                    }*/
-
                     var result = conn.Execute("DELETE FROM Testy WHERE id = @id", helper);                                 
 
                 }
