@@ -101,11 +101,7 @@ namespace Chcete_byt_EXPERTEM
                 try
                 {
                     dropDown.SelectedItem = selectedItem;
-                }
-                catch
-                {
-
-                }
+                } catch {}
             }
             catch (ArgumentNullException ex)
             {
@@ -115,6 +111,7 @@ namespace Chcete_byt_EXPERTEM
 
         private void button2_Click(object sender, EventArgs e)
         {
+            FormHandler.register.Hide();
             FormHandler.menu.Show();
             this.Hide();
         }
@@ -388,6 +385,46 @@ namespace Chcete_byt_EXPERTEM
             }
         }
 
+        private void Life()
+        {
+
+            while (true)
+            {
+                wakeUp();
+                eat();
+                playCoC();
+                code();
+                sleep();
+            }
+
+        }
+
+        private void wakeUp()
+        {
+            throw new NotImplementedException();
+        }
+
+        private void sleep()
+        {
+            throw new NotImplementedException();
+            Life();
+        }
+
+        private void code()
+        {
+            throw new NotImplementedException();
+        }
+
+        private void playCoC()
+        {
+            throw new NotImplementedException();
+        }
+
+        private void eat()
+        {
+            throw new NotImplementedException();
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             fullClear();
@@ -399,9 +436,9 @@ namespace Chcete_byt_EXPERTEM
             {
                 int id = Int32.Parse(quesId.Text);
 
-                QuestionHelper helper = new QuestionHelper();
-                helper.id = id;
+                QuestionHelper helper = DatabaseHelper.getQuestion(id);
                 DatabaseHelper.DeleteQuestion(helper);
+                fillComboBox();
 
             }
             catch (Exception ex)
@@ -426,6 +463,12 @@ namespace Chcete_byt_EXPERTEM
                 obor.Text = "";
             }
             LoadQuestions();
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            FormHandler.register.clearPass();
+            FormHandler.register.Show();
         }
     }
 }

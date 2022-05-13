@@ -25,6 +25,10 @@ namespace Chcete_byt_EXPERTEM
                     MessageBox.Show(ex.Message);
                     return null;
                 }
+                finally
+                {
+                    conn.Close();
+                }
             }
         }
 
@@ -34,7 +38,7 @@ namespace Chcete_byt_EXPERTEM
             {
                 try
                 {
-                    if(obor == "Expertem" || obor == "")
+                    if (obor == "Expertem" || obor == "")
                     {
                         conn.Open();
                         var result = conn.Query<QuestionHelper>("select * from Testy", new DynamicParameters());
@@ -52,7 +56,7 @@ namespace Chcete_byt_EXPERTEM
 
                         List<QuestionHelper> result = new List<QuestionHelper>();
 
-                        while(dr.Read())
+                        while (dr.Read())
                         {
                             QuestionHelper question = new QuestionHelper();
                             question.otazka = dr["otazka"].ToString();
@@ -67,13 +71,14 @@ namespace Chcete_byt_EXPERTEM
                         }
                         return result;
                     }
-                    
+
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message);
                     return null;
-                }finally
+                }
+                finally
                 {
                     conn.Close();
                 }
@@ -81,7 +86,7 @@ namespace Chcete_byt_EXPERTEM
         }
 
         public static void SaveQuestion(QuestionHelper helper)
-        { 
+        {
             using (SQLiteConnection conn = new SQLiteConnection(LoadConnectionString()))
             {
                 try
@@ -100,20 +105,21 @@ namespace Chcete_byt_EXPERTEM
                     cmd.Parameters.AddWithValue("@obtiznost", helper.obtiznost);
                     cmd.ExecuteNonQuery();
 
-                    if(!oborExists(helper))
+                    if (!oborExists(helper))
                     {
-                        string sql2 = "INSERT INTO Obory (obor_nazev) VALUES (@obor_nazev)";
-                        SQLiteCommand cmd2 = new SQLiteCommand(sql2, conn);
-                        cmd2.Prepare();
-                        cmd2.Parameters.AddWithValue("@obor_nazev", helper.obor);
-                        cmd2.ExecuteNonQuery();
+                        string sql3 = "INSERT INTO Obory (obor_nazev) VALUES (@obor_nazev)";
+                        SQLiteCommand cmd3 = new SQLiteCommand(sql3, conn);
+                        cmd3.Prepare();
+                        cmd3.Parameters.AddWithValue("@obor_nazev", helper.obor);
+                        cmd3.ExecuteNonQuery();
                     }
 
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message);
-                }finally
+                }
+                finally
                 {
                     conn.Close();
                 }
@@ -134,15 +140,16 @@ namespace Chcete_byt_EXPERTEM
                     command.Parameters.AddWithValue("@obor", helper.obor);
                     
                     SQLiteDataReader reader = command.ExecuteReader();
-                    if(reader.Read())
+                    if (reader.Read())
                     {
                         return true;
-                    } else
+                    }
+                    else
                     {
                         return false;
                     }
                 }
-                catch(Exception ex)
+                catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message);
                     return false;
@@ -151,7 +158,7 @@ namespace Chcete_byt_EXPERTEM
                 {
                     conn.Close();
                 }
-                
+
             }
         }
 
@@ -195,13 +202,28 @@ namespace Chcete_byt_EXPERTEM
                 try
                 {
                     conn.Open();
-                    var result = conn.Execute("DELETE FROM Testy WHERE id = @id", helper);                                 
+                    var result = conn.Execute("DELETE FROM Testy WHERE `id` = @id", helper);
 
+                    string sql = "SELECT COUNT(id) AS `count` FROM Testy WHERE `obor` = @obor";
+                    SQLiteCommand cmd = new SQLiteCommand(sql, conn);
+                    cmd.Parameters.AddWithValue("@obor", helper.obor);
+
+                    SQLiteDataReader reader = cmd.ExecuteReader();
+                    reader.Read();
+
+                    int count = Int32.Parse(reader["count"].ToString());
+                    Console.WriteLine(count + "- count");
+                    Console.WriteLine(helper.obor);
+                    if (count <= 0)
+                    {
+                        conn.Execute("DELETE FROM Obory WHERE `obor_nazev` = @obor", helper);
+                    }
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message);
-                }finally
+                }
+                finally
                 {
                     conn.Close();
                 }
@@ -221,7 +243,7 @@ namespace Chcete_byt_EXPERTEM
 
                     SQLiteDataReader reader = cmd.ExecuteReader();
                     List<QuestionHelper> qesHelper = new List<QuestionHelper>();
-                    while(reader.Read())
+                    while (reader.Read())
                     {
                         QuestionHelper questoins = new QuestionHelper();
                         questoins.id = Int32.Parse(reader["id"].ToString());
@@ -243,6 +265,10 @@ namespace Chcete_byt_EXPERTEM
                 {
                     MessageBox.Show(ex.Message);
                     return null;
+                }
+                finally
+                {
+                    conn.Close();
                 }
             }
         }
@@ -278,6 +304,76 @@ namespace Chcete_byt_EXPERTEM
                     MessageBox.Show(ex.Message);
                     return null;
                 }
+                finally
+                {
+                    conn.Close();
+                }
+            }
+        }
+
+        public static string getPassword()
+        {
+            using (SQLiteConnection conn = new SQLiteConnection(LoadConnectionString()))
+            {
+                try
+                {
+                    conn.Open();
+                    string sql = "SELECT Heslo FROM Hesla WHERE ID = 0";
+                    SQLiteCommand command = new SQLiteCommand(sql, conn); ;
+                    command.Prepare();
+
+                    SQLiteDataReader reader = command.ExecuteReader();
+                    reader.Read();
+                    return reader.GetString(0);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                    return "Expert2022";
+                }
+                finally
+                {
+                    conn.Close();
+                }
+            }
+        }
+
+        public static void resetPassWord()
+        {
+            using (SQLiteConnection conn = new SQLiteConnection(LoadConnectionString()))
+            {
+                try
+                {
+                    conn.Open();
+                    conn.Execute("update Hesla set Heslo = " + null + " WHERE id = 1");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    conn.Close();
+                }
+            }
+        }
+        public static void setPassWord(string input)
+        {
+            using (SQLiteConnection conn = new SQLiteConnection(LoadConnectionString()))
+            {
+                try
+                {
+                    conn.Open();
+                    conn.Execute("update Hesla set Heslo = `" + input + "` WHERE id = 1");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    conn.Close();
+                }
             }
         }
 
@@ -296,11 +392,15 @@ namespace Chcete_byt_EXPERTEM
                     MessageBox.Show(ex.Message);
                     return null;
                 }
+                finally
+                {
+                    conn.Close();
+                }
             }
         }
 
         private static string LoadConnectionString(string id = "App")
-        {   
+        {
             return ConfigurationManager.ConnectionStrings[id].ConnectionString;
         }
     }

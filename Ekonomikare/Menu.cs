@@ -92,9 +92,19 @@ namespace Chcete_byt_EXPERTEM
 
         private void button_testy_Click(object sender, EventArgs e)
         {
-            FormHandler.dataBase.Show();
-            music.Stop();
-            this.Hide();
+            if (DatabaseHelper.getPassword() != "")
+            {
+                FormHandler.login.clearPass();
+                FormHandler.login.Show();
+                music.Stop();
+                this.Hide();
+            }
+            else
+            {
+                FormHandler.dataBase.Show();
+                music.Stop();
+                this.Hide();
+            }
         }
     }
 }

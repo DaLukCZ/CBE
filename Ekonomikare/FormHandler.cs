@@ -16,6 +16,7 @@ namespace Chcete_byt_EXPERTEM
         public static Ask ask = new Ask();
         public static Lose lose = new Lose();
         public static Database dataBase = new Database();
-
+        public static Login login = new Login();
+        public static Register register = new Register();
     }
 }
