@@ -92,7 +92,7 @@ namespace Chcete_byt_EXPERTEM
 
         private void button_testy_Click(object sender, EventArgs e)
         {
-            if (DatabaseHelper.getPassword() != "")
+            if (DatabaseHelper.getPassword() != "DisabledPassword")
             {
                 FormHandler.login.clearPass();
                 FormHandler.login.Show();

@@ -338,14 +338,14 @@ namespace Chcete_byt_EXPERTEM
             }
         }
 
-        public static void resetPassWord()
+        public static void resetPassword()
         {
             using (SQLiteConnection conn = new SQLiteConnection(LoadConnectionString()))
             {
                 try
                 {
                     conn.Open();
-                    conn.Execute("update Hesla set Heslo = " + null + " WHERE id = 1");
+                    conn.Execute("update Hesla set Heslo = 'DisabledPassword' WHERE ID = 0");
                 }
                 catch (Exception ex)
                 {
@@ -357,14 +357,14 @@ namespace Chcete_byt_EXPERTEM
                 }
             }
         }
-        public static void setPassWord(string input)
+        public static void setPassword(string input)
         {
             using (SQLiteConnection conn = new SQLiteConnection(LoadConnectionString()))
             {
                 try
                 {
                     conn.Open();
-                    conn.Execute("update Hesla set Heslo = `" + input + "` WHERE id = 1");
+                    conn.Execute("update Hesla set Heslo = '" + input + "' WHERE ID = 0");
                 }
                 catch (Exception ex)
                 {

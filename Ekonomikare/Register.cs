@@ -47,12 +47,21 @@ namespace Chcete_byt_EXPERTEM
 
         private void button_Save_Click(object sender, EventArgs e)
         {
-            DatabaseHelper.setPassWord(pass.Text);
+            if(pass.Text.Length >= 5 && pass.Text.Length <= 16)
+            {
+                DatabaseHelper.setPassword(pass.Text);
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Heslo musí být 5-16 znaků dlouhé", "Heslo má špatný formát");
+            }
         }
 
         private void button_Cencel_Click(object sender, EventArgs e)
         {
-            DatabaseHelper.resetPassWord();
+            DatabaseHelper.resetPassword();
+            this.Hide();
         }
         public void clearPass()
         {
