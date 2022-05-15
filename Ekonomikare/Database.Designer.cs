@@ -423,9 +423,9 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Calibri", 19F, System.Drawing.FontStyle.Bold);
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(977, 837);
+            this.button1.Location = new System.Drawing.Point(971, 837);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(425, 42);
+            this.button1.Size = new System.Drawing.Size(440, 42);
             this.button1.TabIndex = 84;
             this.button1.Text = "Nová otázka";
             this.button1.UseVisualStyleBackColor = false;
@@ -442,9 +442,9 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Calibri", 19F, System.Drawing.FontStyle.Bold);
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(1450, 836);
+            this.button2.Location = new System.Drawing.Point(1447, 836);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(431, 42);
+            this.button2.Size = new System.Drawing.Size(440, 42);
             this.button2.TabIndex = 85;
             this.button2.Text = "Odstranit";
             this.button2.UseVisualStyleBackColor = false;
@@ -471,9 +471,9 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Calibri", 17F, System.Drawing.FontStyle.Bold);
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(977, 60);
+            this.button3.Location = new System.Drawing.Point(971, 60);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(385, 30);
+            this.button3.Size = new System.Drawing.Size(390, 38);
             this.button3.TabIndex = 87;
             this.button3.Text = "Nové heslo";
             this.button3.UseVisualStyleBackColor = false;

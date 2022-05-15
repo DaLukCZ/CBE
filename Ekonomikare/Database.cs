@@ -238,7 +238,7 @@ namespace Chcete_byt_EXPERTEM
         }
 
 
-        private void fullClear()
+        public void fullClear()
         {
             Otazka.Text = "";
             odpoved1.Text = "";

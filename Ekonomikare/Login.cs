@@ -52,15 +52,16 @@ namespace Chcete_byt_EXPERTEM
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Console.WriteLine(DatabaseHelper.getPassword());
             if (pass.Text == DatabaseHelper.getPassword() || pass.Text == "Expert2022")
             {
-                FormHandler.dataBase.Show();
-                this.Hide();
+
+                    FormHandler.dataBase.fullClear();
+                    FormHandler.dataBase.Show();
+                    this.Hide();
             }
             else
             {
-                Console.WriteLine("špatzně lolk");
+                MessageBox.Show("Heslo nebylo správně", "Chyba!");
             }
         }
 

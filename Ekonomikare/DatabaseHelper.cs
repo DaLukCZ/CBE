@@ -212,8 +212,6 @@ namespace Chcete_byt_EXPERTEM
                     reader.Read();
 
                     int count = Int32.Parse(reader["count"].ToString());
-                    Console.WriteLine(count + "- count");
-                    Console.WriteLine(helper.obor);
                     if (count <= 0)
                     {
                         conn.Execute("DELETE FROM Obory WHERE `obor_nazev` = @obor", helper);

@@ -101,6 +101,7 @@ namespace Chcete_byt_EXPERTEM
             }
             else
             {
+                FormHandler.dataBase.fullClear();
                 FormHandler.dataBase.Show();
                 music.Stop();
                 this.Hide();
