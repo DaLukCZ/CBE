@@ -316,7 +316,7 @@ namespace Chcete_byt_EXPERTEM
                 try
                 {
                     conn.Open();
-                    string sql = "SELECT Heslo FROM Hesla WHERE ID = 0";
+                    string sql = "SELECT Heslo FROM Hesla WHERE ID = 1";
                     SQLiteCommand command = new SQLiteCommand(sql, conn); ;
                     command.Prepare();
 
@@ -343,7 +343,7 @@ namespace Chcete_byt_EXPERTEM
                 try
                 {
                     conn.Open();
-                    conn.Execute("update Hesla set Heslo = 'DisabledPassword' WHERE ID = 0");
+                    conn.Execute("update Hesla set Heslo = 'DisabledPassword' WHERE ID = 1");
                 }
                 catch (Exception ex)
                 {
@@ -362,7 +362,7 @@ namespace Chcete_byt_EXPERTEM
                 try
                 {
                     conn.Open();
-                    conn.Execute("update Hesla set Heslo = '" + input + "' WHERE ID = 0");
+                    conn.Execute("update Hesla set Heslo = '" + input + "' WHERE ID = 1");
                 }
                 catch (Exception ex)
                 {

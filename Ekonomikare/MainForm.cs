@@ -244,6 +244,7 @@ namespace Chcete_byt_EXPERTEM
                         buttons[currentQuestion.rightAnswer].BackgroundImage = Properties.Resources.buttonBorderGreen;
                         FormHandler.menu.contie(false);
                         loseBool = true;
+                        FormHandler.lose.setText();
                         FormHandler.lose.Show();
                     }
                 }
@@ -336,8 +337,8 @@ namespace Chcete_byt_EXPERTEM
             if (!loseBool)
             {
                 FormHandler.victory.setFalseAudiance();
-                FormHandler.ask.Show();
                 FormHandler.ask.setAnswer();
+                FormHandler.ask.Show();
             }
         }
 

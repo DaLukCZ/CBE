@@ -31,6 +31,11 @@ namespace Chcete_byt_EXPERTEM
         //load formu
         private void Lose_Load(object sender, EventArgs e)
         {
+            setText();
+        }
+
+        public void setText()
+        {
             label3.Text = "Správná odpověď byla " + FormHandler.main.getAnswer() + ".";
             label_pocet.Text = FormHandler.main.getSpravne() + " / 10";
         }
