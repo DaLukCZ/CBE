@@ -18,6 +18,94 @@ namespace Chcete_byt_EXPERTEM
         {
             InitializeComponent();
             transparent();
+            Calibration();
+        }
+
+        public int getSizeW()
+        {
+            int screenWidth = Screen.PrimaryScreen.Bounds.Width;
+            decimal screenWidthPercent = (decimal)screenWidth / 1920 * 100;
+            return (int)screenWidthPercent;
+        }
+
+        public int getSizeH()
+        {
+            int screenHeight = Screen.PrimaryScreen.Bounds.Height;
+            decimal screenHeightPercent = (decimal)screenHeight / 1080 * 100;
+            return (int)screenHeightPercent;
+        }
+
+        public void Calibration()
+        {
+            int Width = getSizeW();
+            int Height = getSizeH();
+
+            label1.Location = new Point((27 * Width) / 100, (65 * Height) / 100);
+            label1.Font = new Font(label1.Font.Name, (16 * Width) / 100, label1.Font.Style);
+
+            label2.Location = new Point((27 * Width) / 100, (132 * Height) / 100);
+            label2.Font = new Font(label2.Font.Name, (16 * Width) / 100, label2.Font.Style);
+
+            label3.Location = new Point((27 * Width) / 100, (199 * Height) / 100);
+            label3.Font = new Font(label3.Font.Name, (16 * Width) / 100, label3.Font.Style);
+
+            label4.Location = new Point((27 * Width) / 100, (264 * Height) / 100);
+            label4.Font = new Font(label4.Font.Name, (16 * Width) / 100, label4.Font.Style);
+
+            label_A.Size = new Size((275 * Width) / 100, (50 * Height) / 100);
+            label_A.Location = new Point((65 * Width) / 100, (53 * Height) / 100);
+            label_A.Font = new Font(label4.Font.Name, (14 * Width) / 100, label4.Font.Style);
+
+            label_B.Size = new Size((275 * Width) / 100, (50 * Height) / 100);
+            label_B.Location = new Point((65 * Width) / 100, (121 * Height) / 100);
+            label_B.Font = new Font(label_B.Font.Name, (14 * Width) / 100, label_B.Font.Style);
+
+            label_C.Size = new Size((275 * Width) / 100, (50 * Height) / 100);
+            label_C.Location = new Point((65 * Width) / 100, (188 * Height) / 100);
+            label_C.Font = new Font(label_C.Font.Name, (14 * Width) / 100, label_C.Font.Style);
+
+            label_D.Size = new Size((275 * Width) / 100, (50 * Height) / 100);
+            label_D.Location = new Point((65 * Width) / 100, (253 * Height) / 100);
+            label_D.Font = new Font(label_D.Font.Name, (14 * Width) / 100, label_D.Font.Style);
+
+            progressBar1.Size = new Size((275 * Width) / 100, (50 * Height) / 100);
+            progressBar1.Location = new Point((395 * Width) / 100, (53 * Height) / 100);
+
+            progressBar2.Size = new Size((275 * Width) / 100, (50 * Height) / 100);
+            progressBar2.Location = new Point((395 * Width) / 100, (121 * Height) / 100);
+
+            progressBar3.Size = new Size((275 * Width) / 100, (50 * Height) / 100);
+            progressBar3.Location = new Point((395 * Width) / 100, (188 * Height) / 100);
+
+            progressBar4.Size = new Size((275 * Width) / 100, (50 * Height) / 100);
+            progressBar4.Location = new Point((395 * Width) / 100, (253 * Height) / 100);
+
+            label_Answer1.Size = new Size((50 * Width) / 100, (25 * Height) / 100);
+            label_Answer1.Location = new Point((508 * Width) / 100, (66 * Height) / 100);
+            label_Answer1.Font = new Font(label_Answer1.Font.Name, (14 * Width) / 100, label_Answer1.Font.Style);
+
+            label_Answer2.Size = new Size((50 * Width) / 100, (25 * Height) / 100);
+            label_Answer2.Location = new Point((508 * Width) / 100, (133 * Height) / 100);
+            label_Answer2.Font = new Font(label_Answer2.Font.Name, (14 * Width) / 100, label_Answer2.Font.Style);
+
+            label_Answer3.Size = new Size((50 * Width) / 100, (25 * Height) / 100);
+            label_Answer3.Location = new Point((508 * Width) / 100, (200 * Height) / 100);
+            label_Answer3.Font = new Font(label_Answer3.Font.Name, (14 * Width) / 100, label_Answer3.Font.Style);
+
+            label_Answer4.Size = new Size((50 * Width) / 100, (25 * Height) / 100);
+            label_Answer4.Location = new Point((508 * Width) / 100, (265 * Height) / 100);
+            label_Answer4.Font = new Font(label_Answer4.Font.Name, (14 * Width) / 100, label_Answer4.Font.Style);
+
+            button_close.Size = new Size((605 * Width) / 100, (100 * Height) / 100);
+            button_close.Location = new Point((65 * Width) / 100, (338 * Height) / 100);
+            button_close.Font = new Font(button_close.Font.Name, (28 * Width) / 100, button_close.Font.Style);
+
+            button_Ask.Size = new Size((605 * Width) / 100, (100 * Height) / 100);
+            button_Ask.Location = new Point((65 * Width) / 100, (338 * Height) / 100);
+            button_Ask.Font = new Font(button_Ask.Font.Name, (28 * Width) / 100, button_Ask.Font.Style);
+
+            this.Location = new Point((590 * Width) / 100, (10 * Height) / 100);
+            this.Size = new Size((741 * Width) / 100, (488 * Height) / 100);
         }
 
         protected override CreateParams CreateParams

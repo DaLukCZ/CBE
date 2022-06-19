@@ -24,6 +24,74 @@ namespace Chcete_byt_EXPERTEM
         {
             InitializeComponent();
             read();
+            Calibration();
+        }
+
+        public int getSizeW()
+        {
+            int screenWidth = Screen.PrimaryScreen.Bounds.Width;
+            decimal screenWidthPercent = (decimal)screenWidth / 1920 * 100;
+            return (int)screenWidthPercent;
+        }
+
+        public int getSizeH()
+        {
+            int screenHeight = Screen.PrimaryScreen.Bounds.Height;
+            decimal screenHeightPercent = (decimal)screenHeight / 1080 * 100;
+            return (int)screenHeightPercent;
+        }
+
+        public void Calibration()
+        {
+            int Width = getSizeW();
+            int Height = getSizeH();
+
+            label4.Size = new Size((400 * Width) / 100, (100 * Height) / 100);
+            label4.Location = new Point((175 * Width) / 100, (25 * Height) / 100);
+            label4.Font = new Font(label4.Font.Name, (60 * Width) / 100, label4.Font.Style);
+
+            label5.Size = new Size((400 * Width) / 100, (50 * Height) / 100);
+            label5.Location = new Point((175 * Width) / 100, (150 * Height) / 100);
+            label5.Font = new Font(label5.Font.Name, (28 * Width) / 100, label5.Font.Style);
+
+            dropDown.Font = new Font(label4.Font.Name, (24 * Width) / 100, label4.Font.Style);
+            dropDown.Size = new Size((400 * Width) / 100, (47 * Height) / 100);
+            dropDown.Location = new Point((175 * Width) / 100, (200 * Height) / 100);
+
+            label1.Size = new Size((325 * Width) / 100, (50 * Height) / 100);
+            label1.Location = new Point((175 * Width) / 100, (350 * Height) / 100);
+            label1.Font = new Font(label1.Font.Name, (28 * Width) / 100, label1.Font.Style);
+
+            label2.Size = new Size((325 * Width) / 100, (50 * Height) / 100);
+            label2.Location = new Point((175 * Width) / 100, (475 * Height) / 100);
+            label2.Font = new Font(label2.Font.Name, (28 * Width) / 100, label2.Font.Style);
+
+            label3.Size = new Size((325 * Width) / 100, (50 * Height) / 100);
+            label3.Location = new Point((175 * Width) / 100, (600 * Height) / 100);
+            label3.Font = new Font(label3.Font.Name, (28 * Width) / 100, label3.Font.Style);
+
+            label6.Size = new Size((325 * Width) / 100, (50 * Height) / 100);
+            label6.Location = new Point((175 * Width) / 100, (725 * Height) / 100);
+            label6.Font = new Font(label6.Font.Name, (28 * Width) / 100, label6.Font.Style);
+
+            checkBox5050.Size = new Size((50 * Width) / 100, (50 * Height) / 100);
+            checkBox5050.Location = new Point((525 * Width) / 100, (350 * Height) / 100);
+
+            checkBoxRada.Size = new Size((50 * Width) / 100, (50 * Height) / 100);
+            checkBoxRada.Location = new Point((525 * Width) / 100, (475 * Height) / 100);
+
+            checkBoxFriend.Size = new Size((50 * Width) / 100, (50 * Height) / 100);
+            checkBoxFriend.Location = new Point((525 * Width) / 100, (600 * Height) / 100);
+
+            checkBoxUčitel.Size = new Size((50 * Width) / 100, (50 * Height) / 100);
+            checkBoxUčitel.Location = new Point((525 * Width) / 100, (725 * Height) / 100);
+
+            button1.Size = new Size((400 * Width) / 100, (50 * Height) / 100);
+            button1.Location = new Point((175 * Width) / 100, (838 * Height) / 100);
+            button1.Font = new Font(button1.Font.Name, (28 * Width) / 100, button1.Font.Style);
+
+
+            this.Size = new Size((750 * Width) / 100, (950 * Height) / 100);
         }
 
         protected override CreateParams CreateParams
@@ -39,6 +107,7 @@ namespace Chcete_byt_EXPERTEM
         private void button_Back_Click(object sender, EventArgs e)
         {
             this.Hide();
+            FormHandler.menu.Calibration();
             FormHandler.menu.Show();
         }
 

@@ -42,19 +42,91 @@ namespace Chcete_byt_EXPERTEM
         public MainForm()
         {
             InitializeComponent();
-            FormBorderStyle = FormBorderStyle.None; ;
+            FormBorderStyle = FormBorderStyle.None;
             WindowState = FormWindowState.Maximized;
 
-
+            Calibration();
             readDatabase();
             showQuestion();
             transparent();
         }
 
+        public int getSizeW()
+        {
+            int screenWidth = Screen.PrimaryScreen.Bounds.Width;
+            decimal screenWidthPercent = (decimal)screenWidth / 1920 * 100;
+            return (int)screenWidthPercent;
+        }
+
+        public int getSizeH()
+        {
+            int screenHeight = Screen.PrimaryScreen.Bounds.Height;
+            decimal screenHeightPercent = (decimal)screenHeight / 1080 * 100;
+            return (int)screenHeightPercent;
+        }
+
+        public void Calibration()
+        {
+            int Width = getSizeW();
+            int Height = getSizeH();
+
+            button_exit.Size = new Size((219 * Width) / 100, (82 * Height) / 100);
+            button_exit.Location = new Point((82 * Width) / 100, (36 * Height) / 100);
+
+            button_menu.Size = new Size((219 * Width) / 100, (82 * Height) / 100);
+            button_menu.Location = new Point((1619 * Width) / 100, (36 * Height) / 100);
+
+            button_otazka.Size = new Size((1150 * Width) / 100, (175 * Height) / 100);
+            button_otazka.Location = new Point((390 * Width) / 100, (400 * Height) / 100);
+
+            label_otazka.Size = new Size((961 * Width) / 100, (141 * Height) / 100);
+            label_otazka.Location = new Point((484 * Width) / 100, (417 * Height) / 100);
+            label_otazka.Font = new Font(label_otazka.Font.Name, (24 * Width) / 100, label_otazka.Font.Style);
+
+            button_Answer1.Size = new Size((575 * Width) / 100, (175 * Height) / 100);
+            button_Answer1.Location = new Point((390 * Width) / 100, (600 * Height) / 100);
+            button_Answer1.Font = new Font(button_Answer1.Font.Name, (20 * Width) / 100, button_Answer1.Font.Style);
+
+            button_Answer2.Size = new Size((575 * Width) / 100, (175 * Height) / 100);
+            button_Answer2.Location = new Point((965 * Width) / 100, (600 * Height) / 100);
+            button_Answer2.Font = new Font(button_Answer2.Font.Name, (20 * Width) / 100, button_Answer2.Font.Style);
+
+            button_Answer3.Size = new Size((575 * Width) / 100, (175 * Height) / 100);
+            button_Answer3.Location = new Point((390 * Width) / 100, (770 * Height) / 100);
+            button_Answer3.Font = new Font(button_Answer3.Font.Name, (20 * Width) / 100, button_Answer3.Font.Style);
+
+            button_Answer4.Size = new Size((575 * Width) / 100, (175 * Height) / 100);
+            button_Answer4.Location = new Point((965 * Width) / 100, (770 * Height) / 100);
+            button_Answer4.Font = new Font(button_Answer4.Font.Name, (20 * Width) / 100, button_Answer4.Font.Style);
+
+            button_Zkontroluj.Size = new Size((565 * Width) / 100, (93 * Height) / 100);
+            button_Zkontroluj.Location = new Point((683 * Width) / 100, (951 * Height) / 100);
+            button_Zkontroluj.Font = new Font(button_Zkontroluj.Font.Name, (20 * Width) / 100, button_Zkontroluj.Font.Style);
+
+            button_další.Size = new Size((369 * Width) / 100, (52 * Height) / 100);
+            button_další.Location = new Point((1538 * Width) / 100, (1015 * Height) / 100);
+            button_další.Font = new Font(button_další.Font.Name, (20 * Width) / 100, button_další.Font.Style);
+
+            pictureBox2.Size = new Size((467 * Width) / 100, (685 * Height) / 100);
+            pictureBox2.Location = new Point((1435 * Width) / 100, (328 * Height) / 100);
+
+            panel2.Size = new Size((349 * Width) / 100, (545 * Height) / 100);
+            panel2.Location = new Point((1556 * Width) / 100, (294 * Height) / 100);
+
+            tableLayoutPanel1.Size = new Size((346 * Width) / 100, (100 * Height) / 100);
+            tableLayoutPanel1.Location = new Point((1556 * Width) / 100, (188 * Height) / 100);
+
+            label2.Size = new Size((565 * Width) / 100, (50 * Height) / 100);
+            label2.Location = new Point((683 * Width) / 100, (213 * Height) / 100);
+            label2.Font = new Font(label2.Font.Name, (34 * Width) / 100, label2.Font.Style);
+
+            this.Size = new Size((1920 * Width) / 100, (1080 * Height) / 100);
+        }
+
         private void transparent()
         {
-            List<Button> buttons = new List<Button>(new Button[] { button_Answer1, button_Answer2, button_Answer3, button_Answer4, button_Zkontroluj, button_otazka, button_další });
-            for (int i = 0; i < 7; i++)
+            List<Button> buttons = new List<Button>(new Button[] { button_Answer1, button_Answer2, button_Answer3, button_Answer4, button_Zkontroluj, button_otazka, button_další, reset });
+            for (int i = 0; i < 8 ; i++)
             {
                 buttons[i].FlatStyle = FlatStyle.Flat;
                 buttons[i].FlatAppearance.BorderSize = 0;
@@ -232,6 +304,7 @@ namespace Chcete_byt_EXPERTEM
                             music.Stop();
                             this.Hide();
                             FormHandler.menu.contie(false);
+                            FormHandler.victory.Calibration();
                             FormHandler.victory.Show();
                         }
                     }
@@ -244,6 +317,7 @@ namespace Chcete_byt_EXPERTEM
                         buttons[currentQuestion.rightAnswer].BackgroundImage = Properties.Resources.buttonBorderGreen;
                         FormHandler.menu.contie(false);
                         loseBool = true;
+                        FormHandler.lose.Calibration();
                         FormHandler.lose.setText();
                         FormHandler.lose.Show();
                     }
@@ -280,6 +354,7 @@ namespace Chcete_byt_EXPERTEM
             if (!loseBool)
             {
                 music.Stop();
+                FormHandler.menu.Calibration();
                 FormHandler.menu.Show();
                 FormHandler.menu.contie(true);
                 this.Hide();
@@ -337,6 +412,7 @@ namespace Chcete_byt_EXPERTEM
             if (!loseBool)
             {
                 FormHandler.victory.setFalseAudiance();
+                FormHandler.ask.Calibration();
                 FormHandler.ask.setAnswer();
                 FormHandler.ask.Show();
             }
@@ -553,6 +629,7 @@ namespace Chcete_byt_EXPERTEM
                 FormHandler.victory.setFalseCall();
                 CallHelp callHelp = new CallHelp();
                 callHelpDis();
+                callHelp.Calibration();
                 callHelp.Show();
             }
         }
@@ -607,6 +684,7 @@ namespace Chcete_byt_EXPERTEM
                     FormHandler.victory.setOdpo(getSpravnePismena());
                     music.Stop();
                     this.Hide();
+                    FormHandler.victory.Calibration();
                     FormHandler.menu.contie(false);
                     FormHandler.victory.Show();
                 }
@@ -616,6 +694,11 @@ namespace Chcete_byt_EXPERTEM
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             music.Stop();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Calibration();
         }
     }
 }

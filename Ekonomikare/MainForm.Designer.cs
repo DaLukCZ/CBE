@@ -38,7 +38,6 @@ namespace Chcete_byt_EXPERTEM
             this.panel1 = new System.Windows.Forms.Panel();
             this.button_Answer2 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button_další = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.button_exit = new System.Windows.Forms.Button();
@@ -52,9 +51,9 @@ namespace Chcete_byt_EXPERTEM
             this.button_otazka = new System.Windows.Forms.Button();
             this.button_Answer3 = new System.Windows.Forms.Button();
             this.button_Answer1 = new System.Windows.Forms.Button();
+            this.reset = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -102,10 +101,10 @@ namespace Chcete_byt_EXPERTEM
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.reset);
             this.panel1.Controls.Add(this.button_Answer4);
             this.panel1.Controls.Add(this.button_Answer2);
             this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.button_další);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.button_exit);
@@ -143,19 +142,11 @@ namespace Chcete_byt_EXPERTEM
             // 
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(1435, 328);
+            this.pictureBox2.Location = new System.Drawing.Point(1538, 328);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(467, 685);
+            this.pictureBox2.Size = new System.Drawing.Size(364, 617);
             this.pictureBox2.TabIndex = 19;
             this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(-16, -16);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox1.TabIndex = 17;
-            this.pictureBox1.TabStop = false;
             // 
             // button_další
             // 
@@ -345,13 +336,27 @@ namespace Chcete_byt_EXPERTEM
             this.button_Answer1.UseVisualStyleBackColor = false;
             this.button_Answer1.Click += new System.EventHandler(this.button_Answer1_Click);
             // 
+            // reset
+            // 
+            this.reset.BackColor = System.Drawing.Color.Transparent;
+            this.reset.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("reset.BackgroundImage")));
+            this.reset.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.reset.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.reset.ForeColor = System.Drawing.Color.Transparent;
+            this.reset.Location = new System.Drawing.Point(0, 0);
+            this.reset.Name = "reset";
+            this.reset.Size = new System.Drawing.Size(25, 25);
+            this.reset.TabIndex = 20;
+            this.reset.UseVisualStyleBackColor = false;
+            this.reset.Click += new System.EventHandler(this.button1_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackgroundImage = global::Chcete_byt_EXPERTEM.Properties.Resources.Background;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1920, 1080);
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
@@ -365,7 +370,6 @@ namespace Chcete_byt_EXPERTEM
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -391,8 +395,8 @@ namespace Chcete_byt_EXPERTEM
         private System.Windows.Forms.Button button_Answer1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button_další;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button reset;
     }
 }
 

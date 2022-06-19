@@ -27,6 +27,77 @@ namespace Chcete_byt_EXPERTEM
             }
         }
 
+        public int getSizeW()
+        {
+            int screenWidth = Screen.PrimaryScreen.Bounds.Width;
+            decimal screenWidthPercent = (decimal)screenWidth / 1920 * 100;
+            return (int)screenWidthPercent;
+        }
+
+        public int getSizeH()
+        {
+            int screenHeight = Screen.PrimaryScreen.Bounds.Height;
+            decimal screenHeightPercent = (decimal)screenHeight / 1080 * 100;
+            return (int)screenHeightPercent;
+        }
+
+        public void Calibration()
+        {
+            int Width = getSizeW();
+            int Height = getSizeH();
+
+            pictureBox1.Size = new Size((131 * Width) / 100, (120 * Height) / 100);
+            pictureBox1.Location = new Point((76 * Width) / 100, (54 * Height) / 100);
+
+            pictureBox2.Size = new Size((131 * Width) / 100, (120 * Height) / 100);
+            pictureBox2.Location = new Point((76 * Width) / 100, (209 * Height) / 100);
+
+            pictureBox3.Size = new Size((131 * Width) / 100, (120 * Height) / 100);
+            pictureBox3.Location = new Point((76 * Width) / 100, (375 * Height) / 100);
+
+            pictureBox4.Size = new Size((131 * Width) / 100, (120 * Height) / 100);
+            pictureBox4.Location = new Point((76 * Width) / 100, (533 * Height) / 100);
+
+            panel1.Size = new Size((330 * Width) / 100, (596 * Height) / 100);
+            panel1.Location = new Point((420 * Width) / 100, (57 * Height) / 100);
+
+            guna2Button1.Size = new Size((281 * Width) / 100, (270 * Height) / 100);
+            guna2Button1.Location = new Point((24 * Width) / 100, (308 * Height) / 100);
+
+            guna2Button2.Size = new Size((281 * Width) / 100, (270 * Height) / 100);
+            guna2Button2.Location = new Point((24 * Width) / 100, (36 * Height) / 100);
+
+            button2.Size = new Size((212 * Width) / 100, (95 * Height) / 100);
+            button2.Location = new Point((875 * Width) / 100, (558 * Height) / 100);
+            button2.Font = new Font(button2.Font.Name, (22 * Width) / 100, button2.Font.Style);
+
+            label2.Size = new Size((862 * Width) / 100, (50 * Height) / 100);
+            label2.Location = new Point((225 * Width) / 100, (70 * Height) / 100);
+            label2.Font = new Font(label2.Font.Name, (18 * Width) / 100, label2.Font.Style);
+
+            label1.Size = new Size((862 * Width) / 100, (50 * Height) / 100);
+            label1.Location = new Point((225 * Width) / 100, (112 * Height) / 100);
+            label1.Font = new Font(label1.Font.Name, (18 * Width) / 100, label1.Font.Style);
+
+            label4.Size = new Size((862 * Width) / 100, (120 * Height) / 100);
+            label4.Location = new Point((225 * Width) / 100, (209 * Height) / 100);
+            label4.Font = new Font(label4.Font.Name, (18 * Width) / 100, label4.Font.Style);
+
+            label5.Size = new Size((862 * Width) / 100, (50 * Height) / 100);
+            label5.Location = new Point((225 * Width) / 100, (387 * Height) / 100);
+            label5.Font = new Font(label5.Font.Name, (18 * Width) / 100, label5.Font.Style);
+
+            label7.Size = new Size((862 * Width) / 100, (70 * Height) / 100);
+            label7.Location = new Point((225 * Width) / 100, (425 * Height) / 100);
+            label7.Font = new Font(label7.Font.Name, (18 * Width) / 100, label7.Font.Style);
+
+            label6.Size = new Size((644 * Width) / 100, (112 * Height) / 100);
+            label6.Location = new Point((225 * Width) / 100, (533 * Height) / 100);
+            label6.Font = new Font(label6.Font.Name, (18 * Width) / 100, label6.Font.Style);
+
+            this.Size = new Size((1149 * Width) / 100, (711 * Height) / 100);
+        }
+
         Random r = new Random();
         string aswer1 = "Vždyť jsme se nedávno učili. Je to ";
         string aswer2 = "Ty brďo, nevím přesně, ale asi ";
@@ -38,6 +109,7 @@ namespace Chcete_byt_EXPERTEM
         public CallHelp()
         {
             InitializeComponent();
+            Calibration();
         }
 
         private void CallHelp_Load(object sender, EventArgs e)

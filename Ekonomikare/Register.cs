@@ -17,6 +17,41 @@ namespace Chcete_byt_EXPERTEM
 
             InitializeComponent();
             transparent();
+            Calibration();
+        }
+
+                public int getSizeW()
+        {
+            int screenWidth = Screen.PrimaryScreen.Bounds.Width;
+            decimal screenWidthPercent = (decimal)screenWidth / 1920 * 100;
+            return (int)screenWidthPercent;
+        }
+
+        public int getSizeH()
+        {
+            int screenHeight = Screen.PrimaryScreen.Bounds.Height;
+            decimal screenHeightPercent = (decimal)screenHeight / 1080 * 100;
+            return (int)screenHeightPercent;
+        }
+
+        public void Calibration()
+        {
+            int Width = getSizeW();
+            int Height = getSizeH();
+
+            pass.Size = new Size((605 * Width) / 100, (100 * Height) / 100);
+            pass.Location = new Point((79 * Width) / 100, (35 * Height) / 100);
+            pass.Font = new Font(pass.Font.Name, (28 * Width) / 100, pass.Font.Style);
+
+            Save.Size = new Size((605 * Width) / 100, (100 * Height) / 100);
+            Save.Location = new Point((79 * Width) / 100, (176 * Height) / 100);
+            Save.Font = new Font(Save.Font.Name, (28 * Width) / 100, Save.Font.Style);
+
+            Cancel.Size = new Size((605 * Width) / 100, (100 * Height) / 100);
+            Cancel.Location = new Point((79 * Width) / 100, (317 * Height) / 100);
+            Cancel.Font = new Font(Cancel.Font.Name, (28 * Width) / 100, Cancel.Font.Style);
+
+            this.Size = new Size((725 * Width) / 100, (449 * Height) / 100);
         }
 
         protected override CreateParams CreateParams

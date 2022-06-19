@@ -58,7 +58,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Calibri", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(175, 850);
+            this.button1.Location = new System.Drawing.Point(175, 838);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(400, 100);
             this.button1.TabIndex = 17;
@@ -240,7 +240,7 @@
             this.AutoSize = true;
             this.BackgroundImage = global::Chcete_byt_EXPERTEM.Properties.Resources.settingscrop;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(766, 950);
+            this.ClientSize = new System.Drawing.Size(750, 950);
             this.Controls.Add(this.checkBoxUčitel);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);

@@ -41,6 +41,7 @@
             this.button_testy = new System.Windows.Forms.Button();
             this.label_spravne = new System.Windows.Forms.Label();
             this.NameObor = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -192,7 +193,6 @@
             // 
             // label_spravne
             // 
-            this.label_spravne.AutoSize = true;
             this.label_spravne.BackColor = System.Drawing.Color.Transparent;
             this.label_spravne.Font = new System.Drawing.Font("Calibri", 27.75F, System.Drawing.FontStyle.Bold);
             this.label_spravne.ForeColor = System.Drawing.Color.Transparent;
@@ -215,6 +215,20 @@
             this.NameObor.Text = "EXPERTEM";
             this.NameObor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
+            this.label2.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(1432, 940);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(477, 133);
+            this.label2.TabIndex = 59;
+            this.label2.Text = "                        Vytvořili :                          @smachlukas, @jakub_" +
+    "tvrdon";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Victory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -222,6 +236,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1920, 1080);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.NameObor);
             this.Controls.Add(this.label_spravne);
             this.Controls.Add(this.button_testy);
@@ -260,5 +275,6 @@
         private System.Windows.Forms.Button button_testy;
         private System.Windows.Forms.Label label_spravne;
         private System.Windows.Forms.Label NameObor;
+        private System.Windows.Forms.Label label2;
     }
 }

@@ -52,7 +52,7 @@ namespace Chcete_byt_EXPERTEM
             this.button_Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Exit.Font = new System.Drawing.Font("Calibri", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button_Exit.ForeColor = System.Drawing.Color.White;
-            this.button_Exit.Location = new System.Drawing.Point(78, 795);
+            this.button_Exit.Location = new System.Drawing.Point(75, 820);
             this.button_Exit.Name = "button_Exit";
             this.button_Exit.Size = new System.Drawing.Size(600, 100);
             this.button_Exit.TabIndex = 14;
@@ -72,7 +72,7 @@ namespace Chcete_byt_EXPERTEM
             this.button_Start.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Start.Font = new System.Drawing.Font("Calibri", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button_Start.ForeColor = System.Drawing.Color.Transparent;
-            this.button_Start.Location = new System.Drawing.Point(75, 450);
+            this.button_Start.Location = new System.Drawing.Point(75, 430);
             this.button_Start.Name = "button_Start";
             this.button_Start.Size = new System.Drawing.Size(600, 100);
             this.button_Start.TabIndex = 15;
@@ -92,7 +92,7 @@ namespace Chcete_byt_EXPERTEM
             this.button_settings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_settings.Font = new System.Drawing.Font("Calibri", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button_settings.ForeColor = System.Drawing.Color.White;
-            this.button_settings.Location = new System.Drawing.Point(75, 565);
+            this.button_settings.Location = new System.Drawing.Point(75, 560);
             this.button_settings.Name = "button_settings";
             this.button_settings.Size = new System.Drawing.Size(600, 100);
             this.button_settings.TabIndex = 16;
@@ -109,7 +109,7 @@ namespace Chcete_byt_EXPERTEM
             this.Contienue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Contienue.Font = new System.Drawing.Font("Calibri", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.Contienue.ForeColor = System.Drawing.Color.Transparent;
-            this.Contienue.Location = new System.Drawing.Point(75, 450);
+            this.Contienue.Location = new System.Drawing.Point(75, 430);
             this.Contienue.Name = "Contienue";
             this.Contienue.Size = new System.Drawing.Size(600, 100);
             this.Contienue.TabIndex = 17;
@@ -153,7 +153,7 @@ namespace Chcete_byt_EXPERTEM
             this.button_testy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_testy.Font = new System.Drawing.Font("Calibri", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button_testy.ForeColor = System.Drawing.Color.White;
-            this.button_testy.Location = new System.Drawing.Point(75, 680);
+            this.button_testy.Location = new System.Drawing.Point(75, 690);
             this.button_testy.Name = "button_testy";
             this.button_testy.Size = new System.Drawing.Size(600, 100);
             this.button_testy.TabIndex = 19;
@@ -168,7 +168,7 @@ namespace Chcete_byt_EXPERTEM
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.BackgroundImage = global::Chcete_byt_EXPERTEM.Properties.Resources.backgroundPhotocrop;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(750, 911);
+            this.ClientSize = new System.Drawing.Size(750, 950);
             this.Controls.Add(this.button_testy);
             this.Controls.Add(this.Contienue);
             this.Controls.Add(this.button_Start);

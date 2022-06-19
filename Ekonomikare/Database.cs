@@ -25,10 +25,152 @@ namespace Chcete_byt_EXPERTEM
             //transparent();
             FormBorderStyle = FormBorderStyle.None;
             WindowState = FormWindowState.Maximized;
-
-            //TODO: pokusit se to spustit ve vlastnich vlaknech
+            Calibration();
             LoadQuestions();
             fillComboBox();
+        }
+
+        public int getSizeW()
+        {
+            int screenWidth = Screen.PrimaryScreen.Bounds.Width;
+            decimal screenWidthPercent = (decimal)screenWidth / 1920 * 100;
+            return (int)screenWidthPercent;
+        }
+
+        public int getSizeH()
+        {
+            int screenHeight = Screen.PrimaryScreen.Bounds.Height;
+            decimal screenHeightPercent = (decimal)screenHeight / 1080 * 100;
+            return (int)screenHeightPercent;
+        }
+
+        public void Calibration()
+        {
+            int Width = getSizeW();
+            int Height = getSizeH();
+
+            quesId.Size = new Size((54 * Width) / 100, (20 * Height) / 100);
+            quesId.Location = new Point((754 * Width) / 100, (12 * Height) / 100);
+            quesId.Font = new Font(quesId.Font.Name, (8 * Width) / 100, quesId.Font.Style);
+
+            label6.Size = new Size((375 * Width) / 100, (43 * Height) / 100);
+            label6.Location = new Point((12 * Width) / 100, (31 * Height) / 100);
+            label6.Font = new Font(label6.Font.Name, (19 * Width) / 100, label6.Font.Style);
+
+            Otazka.Size = new Size((926 * Width) / 100, (150 * Height) / 100);
+            Otazka.Location = new Point((10 * Width) / 100, (77 * Height) / 100);
+            Otazka.Font = new Font(Otazka.Font.Name, (28 * Width) / 100, Otazka.Font.Style);
+
+            label5.Size = new Size((375 * Width) / 100, (35 * Height) / 100);
+            label5.Location = new Point((10 * Width) / 100, (230 * Height) / 100);
+            label5.Font = new Font(label5.Font.Name, (19 * Width) / 100, label5.Font.Style);
+
+            odpoved1.Size = new Size((800 * Width) / 100, (100 * Height) / 100);
+            odpoved1.Location = new Point((10 * Width) / 100, (268 * Height) / 100);
+            odpoved1.Font = new Font(odpoved1.Font.Name, (28 * Width) / 100, odpoved1.Font.Style);
+
+            label1.Size = new Size((375 * Width) / 100, (35 * Height) / 100);
+            label1.Location = new Point((12 * Width) / 100, (371 * Height) / 100);
+            label1.Font = new Font(label1.Font.Name, (19 * Width) / 100, label1.Font.Style);
+
+            odpoved4.Size = new Size((800 * Width) / 100, (100 * Height) / 100);
+            odpoved4.Location = new Point((8 * Width) / 100, (692 * Height) / 100);
+            odpoved4.Font = new Font(odpoved4.Font.Name, (28 * Width) / 100, odpoved4.Font.Style);
+
+            label2.Size = new Size((375 * Width) / 100, (35 * Height) / 100);
+            label2.Location = new Point((12 * Width) / 100, (512 * Height) / 100);
+            label2.Font = new Font(label2.Font.Name, (19 * Width) / 100, label2.Font.Style);
+
+            odpoved2.Size = new Size((800 * Width) / 100, (100 * Height) / 100);
+            odpoved2.Location = new Point((10 * Width) / 100, (409 * Height) / 100);
+            odpoved2.Font = new Font(odpoved2.Font.Name, (28 * Width) / 100, odpoved2.Font.Style);
+
+            label3.Size = new Size((375 * Width) / 100, (35 * Height) / 100);
+            label3.Location = new Point((10 * Width) / 100, (654 * Height) / 100);
+            label3.Font = new Font(label3.Font.Name, (19 * Width) / 100, label3.Font.Style);
+
+            odpoved3.Size = new Size((800 * Width) / 100, (100 * Height) / 100);
+            odpoved3.Location = new Point((8 * Width) / 100, (551 * Height) / 100);
+            odpoved3.Font = new Font(odpoved3.Font.Name, (28 * Width) / 100, odpoved3.Font.Style);
+
+            label4.Size = new Size((375 * Width) / 100, (35 * Height) / 100);
+            label4.Location = new Point((10 * Width) / 100, (795 * Height) / 100);
+            label4.Font = new Font(label4.Font.Name, (19 * Width) / 100, label4.Font.Style);
+
+            obor.Size = new Size((650 * Width) / 100, (50 * Height) / 100);
+            obor.Location = new Point((8 * Width) / 100, (833 * Height) / 100);
+            obor.Font = new Font(obor.Font.Name, (28 * Width) / 100, obor.Font.Style);
+
+            obtiznost.Size = new Size((200 * Width) / 100, (50 * Height) / 100);
+            obtiznost.Location = new Point((763 * Width) / 100, (833 * Height) / 100);
+            obtiznost.Font = new Font(obtiznost.Font.Name, (28 * Width) / 100, obtiznost.Font.Style);
+
+
+            label7.Size = new Size((206 * Width) / 100, (35 * Height) / 100);
+            label7.Location = new Point((730 * Width) / 100, (795 * Height) / 100);
+            label7.Font = new Font(label7.Font.Name, (19 * Width) / 100, label7.Font.Style);
+
+            checkBox1.Size = new Size((100 * Width) / 100, (100 * Height) / 100);
+            checkBox1.Location = new Point((836 * Width) / 100, (268 * Height) / 100);
+            checkBox1.Font = new Font(checkBox1.Font.Name, (8 * Width) / 100, checkBox1.Font.Style);
+
+            checkBox2.Size = new Size((100 * Width) / 100, (100 * Height) / 100);
+            checkBox2.Location = new Point((836 * Width) / 100, (409 * Height) / 100);
+            checkBox2.Font = new Font(checkBox2.Font.Name, (8 * Width) / 100, checkBox2.Font.Style);
+
+            checkBox3.Size = new Size((100 * Width) / 100, (100 * Height) / 100);
+            checkBox3.Location = new Point((836 * Width) / 100, (551 * Height) / 100);
+            checkBox3.Font = new Font(checkBox3.Font.Name, (8 * Width) / 100, checkBox3.Font.Style);
+
+            checkBox4.Size = new Size((100 * Width) / 100, (100 * Height) / 100);
+            checkBox4.Location = new Point((836 * Width) / 100, (692 * Height) / 100);
+            checkBox4.Font = new Font(checkBox4.Font.Name, (8 * Width) / 100, checkBox4.Font.Style);
+
+            button3.Size = new Size((390 * Width) / 100, (38 * Height) / 100);
+            button3.Location = new Point((971 * Width) / 100, (60 * Height) / 100);
+            button3.Font = new Font(button3.Font.Name, (17 * Width) / 100, button3.Font.Style);
+
+            dataGridView1.Size = new Size((904 * Width) / 100, (642 * Height) / 100);
+            dataGridView1.Location = new Point((977 * Width) / 100, (137 * Height) / 100);
+            dataGridView1.Font = new Font(dataGridView1.Font.Name, (8 * Width) / 100, dataGridView1.Font.Style);
+
+            textBox3.Size = new Size((926 * Width) / 100, (664 * Height) / 100);
+            textBox3.Location = new Point((966 * Width) / 100, (128 * Height) / 100);
+            textBox3.Font = new Font(textBox3.Font.Name, (24 * Width) / 100, textBox3.Font.Style);
+
+            button1.Size = new Size((440 * Width) / 100, (42 * Height) / 100);
+            button1.Location = new Point((971 * Width) / 100, (836 * Height) / 100);
+            button1.Font = new Font(button1.Font.Name, (19 * Width) / 100, button1.Font.Style);
+
+            button2.Size = new Size((440 * Width) / 100, (42 * Height) / 100);
+            button2.Location = new Point((1447 * Width) / 100, (836 * Height) / 100);
+            button2.Font = new Font(button2.Font.Name, (17 * Width) / 100, button2.Font.Style);
+
+            dropDown.Font = new Font(dropDown.Font.Name, (24 * Width) / 100, dropDown.Font.Style);
+            dropDown.Size = new Size((400 * Width) / 100, (47 * Height) / 100);
+            dropDown.Location = new Point((1492 * Width) / 100, (54 * Height) / 100);
+
+            textBox1.Size = new Size((450 * Width) / 100, (50 * Height) / 100);
+            textBox1.Location = new Point((966 * Width) / 100, (833 * Height) / 100);
+            textBox1.Font = new Font(textBox1.Font.Name, (28 * Width) / 100, textBox1.Font.Style);
+
+            textBox2.Size = new Size((450 * Width) / 100, (50 * Height) / 100);
+            textBox2.Location = new Point((1442 * Width) / 100, (833 * Height) / 100);
+            textBox2.Font = new Font(textBox2.Font.Name, (28 * Width) / 100, textBox2.Font.Style);
+
+            textBox4.Size = new Size((400 * Width) / 100, (47 * Height) / 100);
+            textBox4.Location = new Point((966 * Width) / 100, (54 * Height) / 100);
+            textBox4.Font = new Font(textBox4.Font.Name, (28 * Width) / 100, textBox4.Font.Style);
+
+            button_save.Size = new Size((930 * Width) / 100, (137 * Height) / 100);
+            button_save.Location = new Point((12 * Width) / 100, (931 * Height) / 100);
+            button_save.Font = new Font(button_save.Font.Name, (28 * Width) / 100, button_save.Font.Style);
+
+            button_back.Size = new Size((930 * Width) / 100, (137 * Height) / 100);
+            button_back.Location = new Point((982 * Width) / 100, (931 * Height) / 100);
+            button_back.Font = new Font(button_back.Font.Name, (28 * Width) / 100, button_back.Font.Style);
+
+            this.Size = new Size((1920 * Width) / 100, (1080 * Height) / 100);
         }
 
         protected override CreateParams CreateParams
@@ -112,6 +254,7 @@ namespace Chcete_byt_EXPERTEM
         private void button2_Click(object sender, EventArgs e)
         {
             FormHandler.register.Hide();
+            FormHandler.menu.Calibration();
             FormHandler.menu.Show();
             this.Hide();
         }
@@ -385,46 +528,6 @@ namespace Chcete_byt_EXPERTEM
             }
         }
 
-        private void Life()
-        {
-
-            while (true)
-            {
-                wakeUp();
-                eat();
-                playCoC();
-                code();
-                sleep();
-            }
-
-        }
-
-        private void wakeUp()
-        {
-            throw new NotImplementedException();
-        }
-
-        private void sleep()
-        {
-            throw new NotImplementedException();
-            Life();
-        }
-
-        private void code()
-        {
-            throw new NotImplementedException();
-        }
-
-        private void playCoC()
-        {
-            throw new NotImplementedException();
-        }
-
-        private void eat()
-        {
-            throw new NotImplementedException();
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             fullClear();
@@ -467,6 +570,7 @@ namespace Chcete_byt_EXPERTEM
 
         private void button3_Click_1(object sender, EventArgs e)
         {
+            FormHandler.register.Calibration();
             FormHandler.register.clearPass();
             FormHandler.register.Show();
         }
